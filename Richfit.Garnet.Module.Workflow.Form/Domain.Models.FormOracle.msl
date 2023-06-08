@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FromModelStoreContainer" CdmEntityContainer="Form">
+    <EntitySetMapping Name="W_HR_EMPLOYEE_RESUME">
+      <EntityTypeMapping TypeName="FromModel.W_HR_EMPLOYEE_RESUME">
+        <MappingFragment StoreEntitySet="W_HR_EMPLOYEE_RESUME">
+          <ScalarProperty Name="W_HR_EMPLOYEE_RESUME_ID" ColumnName="W_HR_EMPLOYEE_RESUME_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+          <ScalarProperty Name="USER_SEX" ColumnName="USER_SEX" />
+          <ScalarProperty Name="BIRTH_PLACE" ColumnName="BIRTH_PLACE" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="POLITIC_STATUS" ColumnName="POLITIC_STATUS" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="CURRENT_STATUS" ColumnName="CURRENT_STATUS" />
+          <ScalarProperty Name="FIRST_DEGREE" ColumnName="FIRST_DEGREE" />
+          <ScalarProperty Name="FIRST_SCHOOL" ColumnName="FIRST_SCHOOL" />
+          <ScalarProperty Name="MAJOR" ColumnName="MAJOR" />
+          <ScalarProperty Name="TOP_DEGREE" ColumnName="TOP_DEGREE" />
+          <ScalarProperty Name="TOP_SCHOOL" ColumnName="TOP_SCHOOL" />
+          <ScalarProperty Name="TOP_MAJOR" ColumnName="TOP_MAJOR" />
+          <ScalarProperty Name="IPHONE" ColumnName="IPHONE" />
+          <ScalarProperty Name="TRAIN" ColumnName="TRAIN" />
+          <ScalarProperty Name="WORK_EXPER_PRE" ColumnName="WORK_EXPER_PRE" />
+          <ScalarProperty Name="WORK_EXPER_ENTER" ColumnName="WORK_EXPER_ENTER" />
+          <ScalarProperty Name="IMAGE_URL" ColumnName="IMAGE_URL" />
+          <ScalarProperty Name="STUDY_MODE_FIRST" ColumnName="STUDY_MODE_FIRST" />
+          <ScalarProperty Name="STUDY_MODE_TOP" ColumnName="STUDY_MODE_TOP" />
+          <ScalarProperty Name="SELF_ASSESS" ColumnName="SELF_ASSESS" />
+          <ScalarProperty Name="FIRST_DATE" ColumnName="FIRST_DATE" />
+          <ScalarProperty Name="TOP_DATE" ColumnName="TOP_DATE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

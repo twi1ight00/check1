@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FromModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="W_HR_EMPLOYEE_RESUME">
+    <Key>
+      <PropertyRef Name="W_HR_EMPLOYEE_RESUME_ID" />
+    </Key>
+    <Property Name="W_HR_EMPLOYEE_RESUME_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="USER_CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="USER_SEX" Type="Guid" />
+    <Property Name="BIRTH_PLACE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="POLITIC_STATUS" Type="Guid" />
+    <Property Name="ENTRY_DATE" Type="DateTime" />
+    <Property Name="CURRENT_STATUS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FIRST_DEGREE" Type="Guid" />
+    <Property Name="FIRST_SCHOOL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MAJOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TOP_DEGREE" Type="Guid" />
+    <Property Name="TOP_SCHOOL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TOP_MAJOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IPHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAIN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_EXPER_PRE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_EXPER_ENTER" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE_URL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="STUDY_MODE_FIRST" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="STUDY_MODE_TOP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SELF_ASSESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FIRST_DATE" Type="DateTime" />
+    <Property Name="TOP_DATE" Type="DateTime" />
+    <Property Name="USER_ID" Type="Guid" />
+  </EntityType>
+  <EntityContainer Name="Form" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="W_HR_EMPLOYEE_RESUME" EntityType="Self.W_HR_EMPLOYEE_RESUME" />
+  </EntityContainer>
+</Schema>

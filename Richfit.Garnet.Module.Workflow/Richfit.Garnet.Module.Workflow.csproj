@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.Workflow</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.MailLogOracle.csdl" />
+    <None Remove="Domain.Models.WorkflowOracle.csdl" />
+    <None Remove="Domain.Models.MailLogOracle.msl" />
+    <None Remove="Domain.Models.WorkflowOracle.msl" />
+    <None Remove="Domain.Models.MailLogOracle.ssdl" />
+    <None Remove="Domain.Models.WorkflowOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.MailLogOracle.csdl" LogicalName="Domain.Models.MailLogOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.WorkflowOracle.csdl" LogicalName="Domain.Models.WorkflowOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.MailLogOracle.msl" LogicalName="Domain.Models.MailLogOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.WorkflowOracle.msl" LogicalName="Domain.Models.WorkflowOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.MailLogOracle.ssdl" LogicalName="Domain.Models.MailLogOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.WorkflowOracle.ssdl" LogicalName="Domain.Models.WorkflowOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data" />
+    <Reference Include="Richfit.Garnet.Module.SystemManagement">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.SystemManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Fundation">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Fundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Module.MessageCenter">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.MessageCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Dapper">
+      <HintPath>..\..\bin\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Dapper">
+      <HintPath>..\..\bin\Richfit.Garnet.Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

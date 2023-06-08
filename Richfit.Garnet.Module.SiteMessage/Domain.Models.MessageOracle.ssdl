@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="MSG_MESSAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MESSAGE_TITLE" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="MESSAGE_CONTENT" Type="clob" Nullable="false" />
+    <Property Name="SEND_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="SEND_USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SEND_ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="SEND_ORG_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="IS_ATTACHMENT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="R_USER_NAMES" Type="nvarchar2" MaxLength="1024" />
+  </EntityType>
+  <EntityType Name="MSG_MESSAGE_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MESSAGE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="STATUS" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USER_TYPE" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MSG_MESS_REFERENCE_MSG_MESS">
+    <End Role="MSG_MESSAGE" Type="Self.MSG_MESSAGE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MSG_MESSAGE_USER" Type="Self.MSG_MESSAGE_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MSG_MESSAGE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MSG_MESSAGE_USER">
+        <PropertyRef Name="MESSAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="MSG_MESSAGE" EntityType="Self.MSG_MESSAGE" Schema="" store:Type="Tables" />
+    <EntitySet Name="MSG_MESSAGE_USER" EntityType="Self.MSG_MESSAGE_USER" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_MSG_MESS_REFERENCE_MSG_MESS" Association="Self.FK_MSG_MESS_REFERENCE_MSG_MESS">
+      <End Role="MSG_MESSAGE" EntitySet="MSG_MESSAGE" />
+      <End Role="MSG_MESSAGE_USER" EntitySet="MSG_MESSAGE_USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

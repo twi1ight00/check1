@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AuthorizationModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Authorization" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_AUTHORIZATION" EntityType="AuthorizationModel.SYS_AUTHORIZATION" />
+    <EntitySet Name="SYS_AUTHORIZATION_DETAILS" EntityType="AuthorizationModel.SYS_AUTHORIZATION_DETAILS" />
+    <EntitySet Name="SYS_AUTHORIZATION_SPECIAL" EntityType="AuthorizationModel.SYS_AUTHORIZATION_SPECIAL" />
+    <AssociationSet Name="FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH" Association="AuthorizationModel.FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH">
+      <End Role="SYS_AUTHORIZATION" EntitySet="SYS_AUTHORIZATION" />
+      <End Role="SYS_AUTHORIZATION_DETAILS" EntitySet="SYS_AUTHORIZATION_DETAILS" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_AUTHORIZATION">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_ID" Type="Guid" Nullable="false" />
+    <Property Name="AUTHORIZATION_TYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="TO_ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="TO_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="START_TIME" Type="DateTime" Nullable="false" />
+    <Property Name="END_TIME" Type="DateTime" Nullable="false" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SYS_AUTHORIZATION_DETAILS" Relationship="AuthorizationModel.FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH" FromRole="SYS_AUTHORIZATION" ToRole="SYS_AUTHORIZATION_DETAILS" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION_DETAILS">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_DETAILS_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_DETAILS_ID" Type="Guid" Nullable="false" />
+    <Property Name="AUTHORIZATION_ID" Type="Guid" />
+    <Property Name="RESOURCES_TYPE" Type="Guid" />
+    <Property Name="RESOURCES_ID" Type="Guid" />
+    <Property Name="ROLE_ID" Type="Guid" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SYS_AUTHORIZATION" Relationship="AuthorizationModel.FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH" FromRole="SYS_AUTHORIZATION_DETAILS" ToRole="SYS_AUTHORIZATION" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION_SPECIAL">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_SPECIAL_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_SPECIAL_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TO_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="TO_USER_NAME" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TO_ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="TO_ORG_NAME" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TO_POSITION" Type="Guid" />
+    <Property Name="TO_POSITION_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="IS_EXCLUSIVE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+  </EntityType>
+  <Association Name="FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH">
+    <End Type="AuthorizationModel.SYS_AUTHORIZATION" Role="SYS_AUTHORIZATION" Multiplicity="0..1" />
+    <End Type="AuthorizationModel.SYS_AUTHORIZATION_DETAILS" Role="SYS_AUTHORIZATION_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_AUTHORIZATION">
+        <PropertyRef Name="SYS_AUTHORIZATION_ID" />
+      </Principal>
+      <Dependent Role="SYS_AUTHORIZATION_DETAILS">
+        <PropertyRef Name="AUTHORIZATION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

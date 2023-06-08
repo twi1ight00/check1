@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.Supervise</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.SuperviseOracle.csdl" />
+    <None Remove="Domain.Models.SuperviseOracle.msl" />
+    <None Remove="Domain.Models.SuperviseOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.SuperviseOracle.csdl" LogicalName="Domain.Models.SuperviseOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.SuperviseOracle.msl" LogicalName="Domain.Models.SuperviseOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.SuperviseOracle.ssdl" LogicalName="Domain.Models.SuperviseOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\bin\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Module.MessageCenter">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.MessageCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.SystemManagement">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.SystemManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.SiteMessage">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.SiteMessage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

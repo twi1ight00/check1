@@ -1,0 +1,7 @@
+namespace x32a884d842a34446;
+
+internal enum xf82c96da969931d7
+{
+	x3852411577c61867,
+	xe50738833af5ae57
+}

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRManageModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HRManage" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AB_CONTACT" EntityType="HRManageModel.AB_CONTACT" />
+    <EntitySet Name="AB_ORG_CONTACT" EntityType="HRManageModel.AB_ORG_CONTACT" />
+    <EntitySet Name="HR_DONATE_BLOOD" EntityType="HRManageModel.HR_DONATE_BLOOD" />
+    <EntitySet Name="HR_EMPLOYEE" EntityType="HRManageModel.HR_EMPLOYEE" />
+    <EntitySet Name="HR_VACATION_DAYS" EntityType="HRManageModel.HR_VACATION_DAYS" />
+    <EntitySet Name="LY_INFO" EntityType="HRManageModel.LY_INFO" />
+    <EntitySet Name="S_TEMP_STO_HRMANAGEMENT" EntityType="HRManageModel.S_TEMP_STO_HRMANAGEMENT" />
+    <EntitySet Name="SYS_ORG" EntityType="HRManageModel.SYS_ORG" />
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_AB_CONTA" Association="HRManageModel.FK_AB_ORG_C_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_SYS_ORG" Association="HRManageModel.FK_AB_ORG_C_REFERENCE_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_ORG" Association="HRManageModel.FK_HR_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="HR_EMPLOYEE" EntitySet="HR_EMPLOYEE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LY_INFO" Association="HRManageModel.FK_LY_INFO">
+      <End Role="HR_EMPLOYEE" EntitySet="HR_EMPLOYEE" />
+      <End Role="LY_INFO" EntitySet="LY_INFO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Org_Sys_Org" Association="HRManageModel.FK_Sys_Org_Sys_Org">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ORG1" EntitySet="SYS_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AB_CONTACT">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="POST" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_POSTCODE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_TEL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_FAX" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_TEL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_POSTCODE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="QQ" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MSN" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MATE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CHILD" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE_PATH" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="ROOM_NUMBER" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="PERSON_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="RESPONSIBILITY" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="PER_OFFICE_AREA" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="PER_ROOM_NUMBER" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="PER_STATION_NUMBER" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="PER_IP" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AB_ORG_CONTACT" Relationship="HRManageModel.FK_AB_ORG_C_REFERENCE_AB_CONTA" FromRole="AB_CONTACT" ToRole="AB_ORG_CONTACT" />
+  </EntityType>
+  <EntityType Name="AB_ORG_CONTACT">
+    <Key>
+      <PropertyRef Name="ORG_CONTACT_ID" />
+    </Key>
+    <Property Name="ORG_CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="CONTACT_ID" Type="Guid" />
+    <NavigationProperty Name="AB_CONTACT" Relationship="HRManageModel.FK_AB_ORG_C_REFERENCE_AB_CONTA" FromRole="AB_ORG_CONTACT" ToRole="AB_CONTACT" />
+    <NavigationProperty Name="SYS_ORG" Relationship="HRManageModel.FK_AB_ORG_C_REFERENCE_SYS_ORG" FromRole="AB_ORG_CONTACT" ToRole="SYS_ORG" />
+  </EntityType>
+  <EntityType Name="HR_DONATE_BLOOD">
+    <Key>
+      <PropertyRef Name="DONATE_BLOOD_ID" />
+    </Key>
+    <Property Name="DONATE_BLOOD_ID" Type="Guid" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="Guid" />
+    <Property Name="EMPLOYEE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DONATE_NUMBER" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DONATE_LOCATION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="DONATE_DATE" Type="DateTime" />
+    <Property Name="REMARK" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="EXTEND1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND2" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND4" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND5" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="USER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HR_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPLOYEE_ID" />
+    </Key>
+    <Property Name="EMPLOYEE_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_TYPE" Type="Guid" />
+    <Property Name="AFFILIATED_UNIT" Type="Guid" />
+    <Property Name="PERSON_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="EMPLOYEE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IN_CATEGORY" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="WROK_PLACE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WORKING_START_DATE" Type="DateTime" />
+    <Property Name="WORK_TIME" Type="DateTime" />
+    <Property Name="SEX" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NATION" Type="Guid" />
+    <Property Name="HOME_TOWN" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="POLITICS_STATUS" Type="Guid" />
+    <Property Name="PARTY_TIME" Type="DateTime" />
+    <Property Name="ENG_LEVEL" Type="Guid" />
+    <Property Name="EDUCATION" Type="Guid" />
+    <Property Name="EDUCATION_REMARK" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GRADUATION_COLLEGE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GRADUAION_TIME" Type="DateTime" />
+    <Property Name="SCHOOL_MAJOR" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ADMINISTRATIVE_FUNCTION" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ADMINISTRATIVE_LEVEL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ORIGINAL_UNIT" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_POSITION" Type="Guid" />
+    <Property Name="RANK" Type="Guid" />
+    <Property Name="QUALIFY_TIME" Type="DateTime" />
+    <Property Name="MOBILE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="MPHONE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="ID_NUMBER" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="UNIT_COMPILATION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ORDER_BK_BUSINESS_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOIN_RUI_TUO" Type="DateTime" />
+    <Property Name="YL_START_DATE" Type="DateTime" />
+    <Property Name="CONTRACT_NO" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRACT_TYPE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRACT_VALIDITY_DATE" Type="DateTime" />
+    <Property Name="CONTRACT_EXPIRY_DATE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_TEL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_HOME" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_UP_SEQ" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_SEQ" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_ETHNIC_GROUP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_LEVEL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_ID" Type="Guid" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IMAGE_PATH" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="POSITION" Type="Guid" />
+    <Property Name="MARITAL_STATUS" Type="Guid" />
+    <Property Name="FAMILY_CONTACT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FAMILY_CONTACT_TEL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="EMPLOYEE_STATUS" Type="Guid" />
+    <Property Name="APPOINTMENT_TIME" Type="DateTime" />
+    <Property Name="TRANSFERRED_TIME" Type="DateTime" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_TITLE" Type="Guid" />
+    <Property Name="HUKOU" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_TITLE_STR" Type="String" MaxLength="520" FixedLength="false" Unicode="false" />
+    <Property Name="LEAVE_DATE" Type="DateTime" />
+    <Property Name="LEAVE_REASON" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="VACATION_DAYS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WORK_AGE" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="SYS_ORG" Relationship="HRManageModel.FK_HR_ORG" FromRole="HR_EMPLOYEE" ToRole="SYS_ORG" />
+    <NavigationProperty Name="LY_INFO" Relationship="HRManageModel.FK_LY_INFO" FromRole="HR_EMPLOYEE" ToRole="LY_INFO" />
+  </EntityType>
+  <EntityType Name="HR_VACATION_DAYS">
+    <Key>
+      <PropertyRef Name="HR_VACATION_DAYS_ID" />
+    </Key>
+    <Property Name="HR_VACATION_DAYS_ID" Type="Guid" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="YEAR" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="VACATION_DAYS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LEFT_VACATION_DAYS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="APPLY_VACATION_DAYS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WORK_AGE" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="LY_INFO">
+    <Key>
+      <PropertyRef Name="LY_ID" />
+    </Key>
+    <Property Name="LY_ID" Type="Guid" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="CURRENT_YEAR" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_LY_YEAR" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="IS_HAVE_LY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="VACATION_DAYS" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="HR_EMPLOYEE" Relationship="HRManageModel.FK_LY_INFO" FromRole="LY_INFO" ToRole="HR_EMPLOYEE" />
+  </EntityType>
+  <EntityType Name="S_TEMP_STO_HRMANAGEMENT">
+    <Key>
+      <PropertyRef Name="S_TEMP_STO_HRMANAGEMENT_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="USER_TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="AFFILIATED_UNIT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EMPLOYEE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IN_CATEGORY" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ORG_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WROK_PLACE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WORKING_START_DATE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PRACTICE_DATE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SEX" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NATION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HOME_TOWN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="AGE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BIRTHDAY" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="POLITICS_STATUS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PARTY_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ENG_LEVEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EDUCATION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EDUCATION_REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GRADUATION_COLLEGE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GRADUAION_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SCHOOL_MAJOR" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ADMINISTRATIVE_FUNCTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ADMINISTRATIVE_LEVEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_UNIT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TECHNICAL_POSITION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RANK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="QUALIFY_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MOBILE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MPHONE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ID_NUMBER" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATETIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATOR" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFYTIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="UNIT_COMPILATION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_BK_BUSINESS_TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="POSITION_TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOIN_RUI_TUO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="YL_START_DATE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_NO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_VALIDITY_DATE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_EXPIRY_DATE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_TEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_HOME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOB_PO_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOB_PO_UP_SEQ" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOB_PO_SEQ" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOB_PO_ETHNIC_GROUP" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JOB_PO_LEVEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SORT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ISDEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE_PATH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFIER" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="POSITION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MARITAL_STATUS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FAMILY_CONTACT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FAMILY_CONTACT_TEL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EMPLOYEE_STATUS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="APPOINTMENT_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TRANSFERRED_TIME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TECHNICAL_TITLE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HUKOU" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TECHNICAL_TITLE_STR" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PERSON_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="S_TEMP_STO_HRMANAGEMENT_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="EXTEND1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND2" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND4" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND5" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AB_ORG_CONTACT" Relationship="HRManageModel.FK_AB_ORG_C_REFERENCE_SYS_ORG" FromRole="SYS_ORG" ToRole="AB_ORG_CONTACT" />
+    <NavigationProperty Name="HR_EMPLOYEE" Relationship="HRManageModel.FK_HR_ORG" FromRole="SYS_ORG" ToRole="HR_EMPLOYEE" />
+    <NavigationProperty Name="SYS_ORG1" Relationship="HRManageModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG" ToRole="SYS_ORG1" />
+    <NavigationProperty Name="SYS_ORG2" Relationship="HRManageModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG1" ToRole="SYS_ORG" />
+  </EntityType>
+  <Association Name="FK_AB_ORG_C_REFERENCE_AB_CONTA">
+    <End Type="HRManageModel.AB_CONTACT" Role="AB_CONTACT" Multiplicity="0..1" />
+    <End Type="HRManageModel.AB_ORG_CONTACT" Role="AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_ORG_C_REFERENCE_SYS_ORG">
+    <End Type="HRManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="HRManageModel.AB_ORG_CONTACT" Role="AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_ORG">
+    <End Type="HRManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="HRManageModel.HR_EMPLOYEE" Role="HR_EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="HR_EMPLOYEE">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LY_INFO">
+    <End Type="HRManageModel.HR_EMPLOYEE" Role="HR_EMPLOYEE" Multiplicity="0..1" />
+    <End Type="HRManageModel.LY_INFO" Role="LY_INFO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_EMPLOYEE">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Principal>
+      <Dependent Role="LY_INFO">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Org_Sys_Org">
+    <End Type="HRManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="HRManageModel.SYS_ORG" Role="SYS_ORG1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ORG1">
+        <PropertyRef Name="PARENT_ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

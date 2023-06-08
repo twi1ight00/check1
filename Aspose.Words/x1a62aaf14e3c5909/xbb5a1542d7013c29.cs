@@ -1,0 +1,12 @@
+namespace x1a62aaf14e3c5909;
+
+internal enum xbb5a1542d7013c29
+{
+	xb5fe04c34562f438 = 534,
+	xd69df86e2a88ddb2 = 980,
+	x26c36dd85013b919 = 1346,
+	x6339cdb9e2b512c7 = 1760,
+	x796ab23ce57ee1e0 = 1130,
+	xf2349baecb5c3dc0 = 1538,
+	xc2746d872ce402e9 = 1960
+}

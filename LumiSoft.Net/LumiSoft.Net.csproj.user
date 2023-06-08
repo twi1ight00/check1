@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="LumiSoft.Net.FTP.Server\FTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LumiSoft.Net.IMAP.Server\IMAP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LumiSoft.Net.POP3.Server\POP3_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LumiSoft.Net.SMTP.Server\SMTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LumiSoft.Net\SocketServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="10.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="SYS_ACTION" EntityType="Model.Store.SYS_ACTION" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_ACTION_GROUP" EntityType="Model.Store.SYS_ACTION_GROUP" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_ACTION_GROUP_ACTION" EntityType="Model.Store.SYS_ACTION_GROUP_ACTION" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_AUTHORIZATION" EntityType="Model.Store.SYS_AUTHORIZATION" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_BUSINESS" EntityType="Model.Store.SYS_BUSINESS" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_DOMAIN" EntityType="Model.Store.SYS_DOMAIN" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_HANDLER" EntityType="Model.Store.SYS_HANDLER" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_LIBRARY" EntityType="Model.Store.SYS_LIBRARY" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_LOG" EntityType="Model.Store.SYS_LOG" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_MENU" EntityType="Model.Store.SYS_MENU" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_MODULE" EntityType="Model.Store.SYS_MODULE" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_ORG" EntityType="Model.Store.SYS_ORG" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_PRIVILEGE" EntityType="Model.Store.SYS_PRIVILEGE" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_ROLE" EntityType="Model.Store.SYS_ROLE" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_ROLE_ORG" EntityType="Model.Store.SYS_ROLE_ORG" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_USER" EntityType="Model.Store.SYS_USER" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_USER_BUSINESS" EntityType="Model.Store.SYS_USER_BUSINESS" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_USER_ORG" EntityType="Model.Store.SYS_USER_ORG" store:Type="Tables" Schema="" />
+    <EntitySet Name="SYS_USER_ROLE" EntityType="Model.Store.SYS_USER_ROLE" store:Type="Tables" Schema="" />
+    <AssociationSet Name="FK_SYS_ACTI_ACTIONGRO_SYS_ACTI" Association="Model.Store.FK_SYS_ACTI_ACTIONGRO_SYS_ACTI">
+      <End Role="SYS_ACTION" EntitySet="SYS_ACTION" />
+      <End Role="SYS_ACTION_GROUP_ACTION" EntitySet="SYS_ACTION_GROUP_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_BUSINESSA_SYS_BUSI" Association="Model.Store.FK_SYS_ACTI_BUSINESSA_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_ACTION_GROUP" EntitySet="SYS_ACTION_GROUP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_FUNCTIONH_SYS_HAND" Association="Model.Store.FK_SYS_ACTI_FUNCTIONH_SYS_HAND">
+      <End Role="SYS_HANDLER" EntitySet="SYS_HANDLER" />
+      <End Role="SYS_ACTION" EntitySet="SYS_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_GROUPACTI_SYS_ACTI" Association="Model.Store.FK_SYS_ACTI_GROUPACTI_SYS_ACTI">
+      <End Role="SYS_ACTION_GROUP" EntitySet="SYS_ACTION_GROUP" />
+      <End Role="SYS_ACTION_GROUP_ACTION" EntitySet="SYS_ACTION_GROUP_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_BUSI_REFERENCE_SYS_LIBR" Association="Model.Store.FK_SYS_BUSI_REFERENCE_SYS_LIBR">
+      <End Role="SYS_LIBRARY" EntitySet="SYS_LIBRARY" />
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_HAND_REFERENCE_SYS_LIBR" Association="Model.Store.FK_SYS_HAND_REFERENCE_SYS_LIBR">
+      <End Role="SYS_LIBRARY" EntitySet="SYS_LIBRARY" />
+      <End Role="SYS_HANDLER" EntitySet="SYS_HANDLER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_MENU_MENUBUSIN_SYS_BUSI" Association="Model.Store.FK_SYS_MENU_MENUBUSIN_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_MENU" EntitySet="SYS_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Org_Sys_Org" Association="Model.Store.FK_Sys_Org_Sys_Org">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ORG1" EntitySet="SYS_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIV_BUSINESSP_SYS_BUSI" Association="Model.Store.FK_SYS_PRIV_BUSINESSP_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH" Association="Model.Store.FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ROLE_ORGROLEOR_SYS_ORG" Association="Model.Store.FK_SYS_ROLE_ORGROLEOR_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ROLE_ORG" EntitySet="SYS_ROLE_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ROLE_ROLEORGRO_SYS_AUTH" Association="Model.Store.FK_SYS_ROLE_ROLEORGRO_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_ROLE_ORG" EntitySet="SYS_ROLE_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_UR_REFERENCE_SYS_USER" Association="Model.Store.FK_SYS_UR_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ROLE" EntitySet="SYS_USER_ROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_ORGUSEROR_SYS_ORG" Association="Model.Store.FK_SYS_USER_ORGUSEROR_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_DOMA" Association="Model.Store.FK_SYS_USER_REFERENCE_SYS_DOMA">
+      <End Role="SYS_DOMAIN" EntitySet="SYS_DOMAIN" />
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_ROLEUSERR_SYS_AUTH" Association="Model.Store.FK_SYS_USER_ROLEUSERR_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_USER_ROLE" EntitySet="SYS_USER_ROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_US_SYS_BUSI1" Association="Model.Store.FK_SYS_USER_US_SYS_BUSI1">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_USER_BUSINESS" EntitySet="SYS_USER_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_US_SYS_BUSI2" Association="Model.Store.FK_SYS_USER_US_SYS_BUSI2">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_BUSINESS" EntitySet="SYS_USER_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_USERORGUS_SYS_USER" Association="Model.Store.FK_SYS_USER_USERORGUS_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_ACTION">
+    <Key>
+      <PropertyRef Name="ACTION_ID" />
+    </Key>
+    <Property Name="ACTION_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="HANDLER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ACTION_CODE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ACTION_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="PRIVIGE_VALIDATE_TYPE" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_ACTION_GROUP">
+    <Key>
+      <PropertyRef Name="ACTION_GROUP_ID" />
+    </Key>
+    <Property Name="ACTION_GROUP_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="BUSINESS_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="GROUP_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_ACTION_GROUP_ACTION">
+    <Key>
+      <PropertyRef Name="ACTION_GROUP_ACTION_ID" />
+    </Key>
+    <Property Name="ACTION_GROUP_ACTION_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ACTION_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ACTION_GROUP_ID" Type="raw" Nullable="false" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION">
+    <Key>
+      <PropertyRef Name="AUTHORIZATION_ID" />
+    </Key>
+    <Property Name="AUTHORIZATION_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="FROM_USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="TO_USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="TO_ROLE_ID" Type="raw" MaxLength="16" />
+    <Property Name="TO_RIGHT_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="START_TIME" Type="date" Nullable="false" />
+    <Property Name="END_TIME" Type="date" Nullable="false" />
+    <Property Name="SORT" Type="number" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_BUSINESS">
+    <Key>
+      <PropertyRef Name="BUSINESS_ID" />
+    </Key>
+    <Property Name="BUSINESS_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="LIBRARY_ID" Type="raw" MaxLength="16" />
+    <Property Name="BUSINESS_CODE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="BUSINESS_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="PARENT_BUSINESS_ID" Type="raw" MaxLength="16" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="IS_ADD_ACTION_GROUP" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_DOMAIN">
+    <Key>
+      <PropertyRef Name="DOMAIN_ID" />
+    </Key>
+    <Property Name="DOMAIN_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="DOMAIN_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_ADDRESS" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_ACCOUNT" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_PWD" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SORT" Type="number" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_HANDLER">
+    <Key>
+      <PropertyRef Name="HANDLER_ID" />
+    </Key>
+    <Property Name="HANDLER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="LIBRARY_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="HANDLER_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="HANDLER_FULL_NAME" Type="nvarchar2" Nullable="false" MaxLength="255" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_LIBRARY">
+    <Key>
+      <PropertyRef Name="LIBRARY_ID" />
+    </Key>
+    <Property Name="LIBRARY_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="LIBRARY_NAME" Type="nvarchar2" Nullable="false" MaxLength="255" />
+    <Property Name="ASSEMBLY_NAME" Type="nvarchar2" Nullable="false" MaxLength="255" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_LOG">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="BUSINESS_TYPE" Type="nvarchar2" MaxLength="64" />
+    <Property Name="DATA" Type="nvarchar2" />
+    <Property Name="IP" Type="nvarchar2" Nullable="false" MaxLength="64" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="DO_TIME" Type="date" />
+    <Property Name="TOKEN" Type="nchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+    </Key>
+    <Property Name="MENU_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MENU_URL" Type="nvarchar2" MaxLength="512" />
+    <Property Name="TITLE_IMAGE_URL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SORT" Type="number" Nullable="false" />
+    <Property Name="OPEN_MODE" Type="number" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="IS_SHORT_CUT" Type="number" />
+    <Property Name="SHORT_CUT_IMAGE_URL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SILVERLIGHT_IMAGE_URL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SILVERLIGHT_ASSEMBLY" Type="nvarchar2" MaxLength="512" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_MODULE">
+    <Key>
+      <PropertyRef Name="MODULE_ID" />
+    </Key>
+    <Property Name="MODULE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODULE_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="SYS_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="PARENT_ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="SORT" Type="number" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="SYS_PRIVILEGE">
+    <Key>
+      <PropertyRef Name="PRIVILEGE_ID" />
+    </Key>
+    <Property Name="PRIVILEGE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="BUSINESS_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ROLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SYS_ROLE">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Name="ROLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ROLE_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="ROLE_TYPE" Type="number" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_ROLE_ORG">
+    <Key>
+      <PropertyRef Name="ROLE_ORG_ID" />
+    </Key>
+    <Property Name="ROLE_ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ROLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="IS_CREATE_BY_SELF_ORG" Type="number" />
+    <Property Name="SOURCE_ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="DOMAIN_ID" Type="raw" MaxLength="16" />
+    <Property Name="LOGON_NAME" Type="nvarchar2" Nullable="false" MaxLength="64" />
+    <Property Name="DISPLAY_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="USER_PASSWORD" Type="nvarchar2" MaxLength="64" />
+    <Property Name="USER_TYPE" Type="number" />
+    <Property Name="SORT" Type="number" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+    <Property Name="IS_FORBIDDEN" Type="number" />
+  </EntityType>
+  <EntityType Name="SYS_USER_BUSINESS">
+    <Key>
+      <PropertyRef Name="USER_BUSINESS_ID" />
+    </Key>
+    <Property Name="USER_BUSINESS_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="BUSINESS_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ORG">
+    <Key>
+      <PropertyRef Name="USER_ORG_ID" />
+    </Key>
+    <Property Name="USER_ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_IDENTITY_TYPE" Type="number" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ROLE">
+    <Key>
+      <PropertyRef Name="USER_ROLE_ID" />
+    </Key>
+    <Property Name="USER_ROLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ROLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+  </EntityType>
+  <Association Name="FK_SYS_ACTI_ACTIONGRO_SYS_ACTI">
+    <End Role="SYS_ACTION" Type="Model.Store.SYS_ACTION" Multiplicity="1" />
+    <End Role="SYS_ACTION_GROUP_ACTION" Type="Model.Store.SYS_ACTION_GROUP_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ACTION">
+        <PropertyRef Name="ACTION_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP_ACTION">
+        <PropertyRef Name="ACTION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_BUSINESSA_SYS_BUSI">
+    <End Role="SYS_BUSINESS" Type="Model.Store.SYS_BUSINESS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_ACTION_GROUP" Type="Model.Store.SYS_ACTION_GROUP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_FUNCTIONH_SYS_HAND">
+    <End Role="SYS_HANDLER" Type="Model.Store.SYS_HANDLER" Multiplicity="1" />
+    <End Role="SYS_ACTION" Type="Model.Store.SYS_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_HANDLER">
+        <PropertyRef Name="HANDLER_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION">
+        <PropertyRef Name="HANDLER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_GROUPACTI_SYS_ACTI">
+    <End Role="SYS_ACTION_GROUP" Type="Model.Store.SYS_ACTION_GROUP" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_ACTION_GROUP_ACTION" Type="Model.Store.SYS_ACTION_GROUP_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ACTION_GROUP">
+        <PropertyRef Name="ACTION_GROUP_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP_ACTION">
+        <PropertyRef Name="ACTION_GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_BUSI_REFERENCE_SYS_LIBR">
+    <End Role="SYS_LIBRARY" Type="Model.Store.SYS_LIBRARY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_BUSINESS" Type="Model.Store.SYS_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LIBRARY">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Principal>
+      <Dependent Role="SYS_BUSINESS">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_HAND_REFERENCE_SYS_LIBR">
+    <End Role="SYS_LIBRARY" Type="Model.Store.SYS_LIBRARY" Multiplicity="1" />
+    <End Role="SYS_HANDLER" Type="Model.Store.SYS_HANDLER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LIBRARY">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Principal>
+      <Dependent Role="SYS_HANDLER">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_MENU_MENUBUSIN_SYS_BUSI">
+    <End Role="SYS_BUSINESS" Type="Model.Store.SYS_BUSINESS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_MENU" Type="Model.Store.SYS_MENU" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Org_Sys_Org">
+    <End Role="SYS_ORG" Type="Model.Store.SYS_ORG" Multiplicity="0..1" />
+    <End Role="SYS_ORG1" Type="Model.Store.SYS_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ORG1">
+        <PropertyRef Name="PARENT_ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIV_BUSINESSP_SYS_BUSI">
+    <End Role="SYS_BUSINESS" Type="Model.Store.SYS_BUSINESS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_PRIVILEGE" Type="Model.Store.SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH">
+    <End Role="SYS_ROLE" Type="Model.Store.SYS_ROLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_PRIVILEGE" Type="Model.Store.SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ROLE_ORGROLEOR_SYS_ORG">
+    <End Role="SYS_ORG" Type="Model.Store.SYS_ORG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_ROLE_ORG" Type="Model.Store.SYS_ROLE_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ROLE_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ROLE_ROLEORGRO_SYS_AUTH">
+    <End Role="SYS_ROLE" Type="Model.Store.SYS_ROLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_ROLE_ORG" Type="Model.Store.SYS_ROLE_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_ROLE_ORG">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_UR_REFERENCE_SYS_USER">
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="1" />
+    <End Role="SYS_USER_ROLE" Type="Model.Store.SYS_USER_ROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ROLE">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_ORGUSEROR_SYS_ORG">
+    <End Role="SYS_ORG" Type="Model.Store.SYS_ORG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER_ORG" Type="Model.Store.SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_DOMA">
+    <End Role="SYS_DOMAIN" Type="Model.Store.SYS_DOMAIN" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_DOMAIN">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_ROLEUSERR_SYS_AUTH">
+    <End Role="SYS_ROLE" Type="Model.Store.SYS_ROLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER_ROLE" Type="Model.Store.SYS_USER_ROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_US_SYS_BUSI1">
+    <End Role="SYS_BUSINESS" Type="Model.Store.SYS_BUSINESS" Multiplicity="1" />
+    <End Role="SYS_USER_BUSINESS" Type="Model.Store.SYS_USER_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_US_SYS_BUSI2">
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="1" />
+    <End Role="SYS_USER_BUSINESS" Type="Model.Store.SYS_USER_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_BUSINESS">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_USERORGUS_SYS_USER">
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER_ORG" Type="Model.Store.SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

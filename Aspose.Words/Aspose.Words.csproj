@@ -1,0 +1,1429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Aspose.Words</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Aspose.Words.Resources.ShapeTypes.txt" />
+    <None Remove="Aspose.Words.Resources.Aspose.License.BlackList.Real.xml" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.Definitions.xml" />
+    <None Remove="Aspose.Words.Resources.SdtImageDefaultContent.docx" />
+    <None Remove="Aspose.Words.Resources.AllStyles2003.docx" />
+    <None Remove="Aspose.Words.Resources.AllStyles2007.docx" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.100.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.101.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.102.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.103.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.104_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.105_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.106_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.107_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.108.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.109.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.110_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.111.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.112.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.113.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.114_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.115_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.116_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.117.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.118_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.119.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.120.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.121.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.122.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.123.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.124.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.125.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.126_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.127.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.128.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.129.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.130.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.131_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.132.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.133.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.134.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.135.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.136_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.137_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.138.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.139.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.140_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.141_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.142.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.143.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.144.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.145.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.146.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.147.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.148_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.149.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.150.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.151.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.152_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.153.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.154.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.155.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.156_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.157_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.158_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.159.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.160.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.161_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.162_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.163.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.164.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.165.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.166_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.167_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.168.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.169.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.170.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.171.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.172.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.173.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.174.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.175_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.176.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.177_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.178_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.179_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.180.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.181_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.182.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.183.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.184_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.185_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.186.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.187.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.188.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.189.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.190_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.191.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.192.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.193.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.194.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.195_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.196.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.197_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.198.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.199.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.200.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.201.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.202_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.203_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.204_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.205.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.206.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.207_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.208_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.209_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.210_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.211_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.212_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.213_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.214_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.215_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.216_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.217_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.218_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.219_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.220_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.221_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.222_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.223_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.224.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.225_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.226_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.227_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.64.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.65.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.66.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.67.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.68.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.69.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.70_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.71.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.72.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.73_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.74_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.75.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.76.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.77_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.78_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.79_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.80.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.81_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.82.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.83.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.84.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.85_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.86_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.87_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.88_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.89.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.90_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.91_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.92.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.93.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.94_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.95_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.96_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.97.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.98_8.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_1.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_2.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_3.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_4.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_5.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_6.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_7.wmf" />
+    <None Remove="Aspose.Words.Resources.PageBorderArt.99_8.wmf" />
+    <None Remove="Aspose.Words.Resources.Blank.doc" />
+    <None Remove="Aspose.Resources.NoImage.png" />
+    <None Remove="Aspose.Resources.HatchMasks.dat" />
+    <None Remove="Aspose.Resources.Viewer.swf" />
+    <None Remove="Aspose.Resources.PresetShapeDefinitions.xml" />
+    <None Remove="Aspose.Resources.DocumentDescriptorAbcData.bin" />
+    <None Remove="Aspose.Resources.PageAbcData.bin" />
+    <None Remove="Aspose.Resources.GenBasR.ttf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.ShapeTypes.txt" LogicalName="Aspose.Words.Resources.ShapeTypes.txt" />
+    <EmbeddedResource Include="Aspose.Words.Resources.Aspose.License.BlackList.Real.xml" LogicalName="Aspose.Words.Resources.Aspose.License.BlackList.Real.xml" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.Definitions.xml" LogicalName="Aspose.Words.Resources.PageBorderArt.Definitions.xml" />
+    <EmbeddedResource Include="Aspose.Words.Resources.SdtImageDefaultContent.docx" LogicalName="Aspose.Words.Resources.SdtImageDefaultContent.docx" />
+    <EmbeddedResource Include="Aspose.Words.Resources.AllStyles2003.docx" LogicalName="Aspose.Words.Resources.AllStyles2003.docx" />
+    <EmbeddedResource Include="Aspose.Words.Resources.AllStyles2007.docx" LogicalName="Aspose.Words.Resources.AllStyles2007.docx" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.100.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.100.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.101.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.101.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.102.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.102.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.103.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.103.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.104_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.104_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.105_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.105_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.106_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.106_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.107_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.107_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.108.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.108.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.109.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.109.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.110_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.110_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.111.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.111.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.112.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.112.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.113.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.113.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.114_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.114_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.115_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.115_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.116_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.116_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.117.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.117.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.118_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.118_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.119.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.119.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.120.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.120.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.121.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.121.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.122.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.122.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.123.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.123.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.124.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.124.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.125.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.125.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.126_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.126_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.127.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.127.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.128.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.128.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.129.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.129.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.130.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.130.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.131_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.131_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.132.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.132.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.133.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.133.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.134.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.134.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.135.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.135.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.136_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.136_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.137_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.137_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.138.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.138.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.139.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.139.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.140_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.140_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.141_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.141_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.142.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.142.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.143.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.143.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.144.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.144.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.145.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.145.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.146.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.146.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.147.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.147.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.148_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.148_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.149.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.149.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.150.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.150.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.151.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.151.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.152_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.152_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.153.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.153.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.154.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.154.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.155.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.155.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.156_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.156_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.157_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.157_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.158_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.158_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.159.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.159.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.160.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.160.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.161_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.161_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.162_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.162_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.163.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.163.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.164.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.164.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.165.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.165.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.166_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.166_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.167_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.167_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.168.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.168.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.169.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.169.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.170.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.170.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.171.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.171.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.172.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.172.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.173.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.173.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.174.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.174.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.175_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.175_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.176.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.176.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.177_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.177_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.178_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.178_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.179_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.179_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.180.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.180.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.181_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.181_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.182.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.182.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.183.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.183.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.184_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.184_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.185_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.185_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.186.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.186.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.187.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.187.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.188.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.188.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.189.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.189.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.190_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.190_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.191.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.191.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.192.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.192.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.193.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.193.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.194.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.194.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.195_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.195_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.196.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.196.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.197_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.197_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.198.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.198.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.199.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.199.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.200.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.200.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.201.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.201.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.202_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.202_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.203_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.203_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.204_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.204_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.205.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.205.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.206.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.206.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.207_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.207_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.208_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.208_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.209_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.209_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.210_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.210_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.211_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.211_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.212_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.212_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.213_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.213_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.214_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.214_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.215_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.215_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.216_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.216_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.217_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.217_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.218_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.218_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.219_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.219_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.220_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.220_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.221_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.221_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.222_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.222_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.223_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.223_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.224.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.224.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.225_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.225_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.226_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.226_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.227_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.227_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.64.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.64.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.65.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.65.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.66.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.66.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.67.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.67.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.68.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.68.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.69.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.69.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.70_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.70_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.71.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.71.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.72.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.72.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.73_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.73_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.74_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.74_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.75.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.75.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.76.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.76.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.77_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.77_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.78_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.78_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.79_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.79_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.80.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.80.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.81_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.81_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.82.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.82.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.83.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.83.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.84.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.84.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.85_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.85_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.86_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.86_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.87_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.87_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.88_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.88_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.89.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.89.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.90_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.90_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.91_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.91_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.92.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.92.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.93.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.93.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.94_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.94_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.95_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.95_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.96_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.96_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.97.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.97.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.98_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.98_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_1.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_1.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_2.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_2.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_3.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_3.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_4.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_4.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_5.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_5.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_6.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_6.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_7.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_7.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.PageBorderArt.99_8.wmf" LogicalName="Aspose.Words.Resources.PageBorderArt.99_8.wmf" />
+    <EmbeddedResource Include="Aspose.Words.Resources.Blank.doc" LogicalName="Aspose.Words.Resources.Blank.doc" />
+    <EmbeddedResource Include="Aspose.Resources.NoImage.png" LogicalName="Aspose.Resources.NoImage.png" />
+    <EmbeddedResource Include="Aspose.Resources.HatchMasks.dat" LogicalName="Aspose.Resources.HatchMasks.dat" />
+    <EmbeddedResource Include="Aspose.Resources.Viewer.swf" LogicalName="Aspose.Resources.Viewer.swf" />
+    <EmbeddedResource Include="Aspose.Resources.PresetShapeDefinitions.xml" LogicalName="Aspose.Resources.PresetShapeDefinitions.xml" />
+    <EmbeddedResource Include="Aspose.Resources.DocumentDescriptorAbcData.bin" LogicalName="Aspose.Resources.DocumentDescriptorAbcData.bin" />
+    <EmbeddedResource Include="Aspose.Resources.PageAbcData.bin" LogicalName="Aspose.Resources.PageAbcData.bin" />
+    <EmbeddedResource Include="Aspose.Resources.GenBasR.ttf" LogicalName="Aspose.Resources.GenBasR.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+</Project>

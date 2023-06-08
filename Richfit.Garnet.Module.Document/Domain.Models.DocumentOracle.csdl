@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DocumentModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Document" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DOC_CONTENTS" EntityType="DocumentModel.DOC_CONTENTS" />
+    <EntitySet Name="DOC_FILE" EntityType="DocumentModel.DOC_FILE" />
+  </EntityContainer>
+  <EntityType Name="DOC_CONTENTS">
+    <Key>
+      <PropertyRef Name="CONTENT_ID" />
+    </Key>
+    <Property Name="CONTENT_ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTENT_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_CONTENT_ID" Type="Guid" />
+    <Property Name="STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DOC_FILE">
+    <Key>
+      <PropertyRef Name="DOC_FILE_ID" />
+    </Key>
+    <Property Name="DOC_FILE_ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTENT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DOC_FILE_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="UPLOADER" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UPLOADTIME" Type="DateTime" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="ATTACHMENT_TYPE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FILE_RELATIVE_PATH" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ATTACHMENT_SIZE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ATTACHMENT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

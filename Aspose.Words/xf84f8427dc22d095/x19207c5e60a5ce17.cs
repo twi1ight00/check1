@@ -1,0 +1,54 @@
+using x0a3ff9616df4cd36;
+using x1c8faa688b1f0b0c;
+using x38a89dee67fc7a16;
+using x5794c252ba25e723;
+
+namespace xf84f8427dc22d095;
+
+internal class x19207c5e60a5ce17 : x2bfc048c6117997a
+{
+	private readonly xf276f6a75b584d31 x491c1af7ed6ea845;
+
+	public x19207c5e60a5ce17(xf276f6a75b584d31 chromaKey)
+	{
+		x491c1af7ed6ea845 = chromaKey;
+	}
+
+	internal override void x550781f8db1cf5f2(x1844bb3f2776c1ac xea2f73f1401ce568)
+	{
+		xea2f73f1401ce568.x698e9b05d858b9d7.xf276f6a75b584d31 = x491c1af7ed6ea845;
+	}
+
+	internal override void x550781f8db1cf5f2(xab391c46ff9a0a38 xe125219852864557)
+	{
+		if (xe125219852864557.x9e5d5f9128c69a8f != null)
+		{
+			xe125219852864557.x9e5d5f9128c69a8f = xaf84ec0e6972f23d(xe125219852864557.x9e5d5f9128c69a8f);
+		}
+		if (xe125219852864557.x60465f602599d327 != null)
+		{
+			xe125219852864557.x60465f602599d327 = x13351730ae0fdf34(xe125219852864557.x60465f602599d327);
+		}
+	}
+
+	private x31c19fcb724dfaf5 xaf84ec0e6972f23d(x31c19fcb724dfaf5 x90279591611601bc)
+	{
+		x31c19fcb724dfaf5 x31c19fcb724dfaf = x90279591611601bc.xfe8f67360e300e88();
+		x31c19fcb724dfaf.x60465f602599d327 = x13351730ae0fdf34(x90279591611601bc.x60465f602599d327);
+		return x31c19fcb724dfaf;
+	}
+
+	private x845d6a068e0b03c5 x13351730ae0fdf34(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		if (xd8f1949f8950238a.x4bc21f84846f912d != 0)
+		{
+			return xd8f1949f8950238a;
+		}
+		xc020fa2f5133cba8 xc020fa2f5133cba = (xc020fa2f5133cba8)xd8f1949f8950238a;
+		if (!x491c1af7ed6ea845.x01be14848dc45cb8(xc020fa2f5133cba.x9b41425268471380))
+		{
+			return xd8f1949f8950238a;
+		}
+		return new xc020fa2f5133cba8(x26d9ecb4bdf0456d.x66d844daa6e9f181);
+	}
+}

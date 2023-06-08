@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.Base</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.CommonDbSql.csdl" />
+    <None Remove="Domain.Models.CommonDbOracle.csdl" />
+    <None Remove="Domain.Models.CommonDbSql.msl" />
+    <None Remove="Domain.Models.CommonDbOracle.msl" />
+    <None Remove="Domain.Models.CommonDbSql.ssdl" />
+    <None Remove="Domain.Models.CommonDbOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbSql.csdl" LogicalName="Domain.Models.CommonDbSql.csdl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbOracle.csdl" LogicalName="Domain.Models.CommonDbOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbSql.msl" LogicalName="Domain.Models.CommonDbSql.msl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbOracle.msl" LogicalName="Domain.Models.CommonDbOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbSql.ssdl" LogicalName="Domain.Models.CommonDbSql.ssdl" />
+    <EmbeddedResource Include="Domain.Models.CommonDbOracle.ssdl" LogicalName="Domain.Models.CommonDbOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\..\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Web">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

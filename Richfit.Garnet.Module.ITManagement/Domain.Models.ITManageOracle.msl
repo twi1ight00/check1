@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ITManageModelStoreContainer" CdmEntityContainer="ITManage">
+    <EntitySetMapping Name="IT_ACCOUNT">
+      <EntityTypeMapping TypeName="ITManageModel.IT_ACCOUNT">
+        <MappingFragment StoreEntitySet="IT_ACCOUNT">
+          <ScalarProperty Name="ACCOUNT_DATE" ColumnName="ACCOUNT_DATE" />
+          <ScalarProperty Name="IS_CHECK" ColumnName="IS_CHECK" />
+          <ScalarProperty Name="IS_BUY" ColumnName="IS_BUY" />
+          <ScalarProperty Name="LEFT_VALUE" ColumnName="LEFT_VALUE" />
+          <ScalarProperty Name="EMPLOYEE_BUY_DATE" ColumnName="EMPLOYEE_BUY_DATE" />
+          <ScalarProperty Name="BUY_PRICE" ColumnName="BUY_PRICE" />
+          <ScalarProperty Name="ASSURANCE_YEAR" ColumnName="ASSURANCE_YEAR" />
+          <ScalarProperty Name="KEEP_DESCRIPTION" ColumnName="KEEP_DESCRIPTION" />
+          <ScalarProperty Name="KEEP_TYPE_NAME" ColumnName="KEEP_TYPE_NAME" />
+          <ScalarProperty Name="KEEP_TYPE_ID" ColumnName="KEEP_TYPE_ID" />
+          <ScalarProperty Name="ALLOCATE_DATE" ColumnName="ALLOCATE_DATE" />
+          <ScalarProperty Name="BUY_DATE" ColumnName="BUY_DATE" />
+          <ScalarProperty Name="DEVICE_SEQ" ColumnName="DEVICE_SEQ" />
+          <ScalarProperty Name="DEVICE_SPECIFICATION" ColumnName="DEVICE_SPECIFICATION" />
+          <ScalarProperty Name="DEVICE_TYPE_NAME" ColumnName="DEVICE_TYPE_NAME" />
+          <ScalarProperty Name="DEVICE_TYPE_ID" ColumnName="DEVICE_TYPE_ID" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="IT_ACCOUNT_ID" ColumnName="IT_ACCOUNT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_DEVICE">
+      <EntityTypeMapping TypeName="ITManageModel.IT_DEVICE">
+        <MappingFragment StoreEntitySet="IT_DEVICE">
+          <ScalarProperty Name="SCRAP_DATE" ColumnName="SCRAP_DATE" />
+          <ScalarProperty Name="SCRAP" ColumnName="SCRAP" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ASSIGN_DATE" ColumnName="ASSIGN_DATE" />
+          <ScalarProperty Name="PRE_SCRAP_DATE" ColumnName="PRE_SCRAP_DATE" />
+          <ScalarProperty Name="PRE_SCRAP" ColumnName="PRE_SCRAP" />
+          <ScalarProperty Name="USE_STATUS" ColumnName="USE_STATUS" />
+          <ScalarProperty Name="REMAIN_VALUE" ColumnName="REMAIN_VALUE" />
+          <ScalarProperty Name="ORIGINAL_VALUE" ColumnName="ORIGINAL_VALUE" />
+          <ScalarProperty Name="WARRANTY_PERIOD" ColumnName="WARRANTY_PERIOD" />
+          <ScalarProperty Name="DEPRECIATE_DATE" ColumnName="DEPRECIATE_DATE" />
+          <ScalarProperty Name="PURCHASE_DATE" ColumnName="PURCHASE_DATE" />
+          <ScalarProperty Name="SUB_CENTER" ColumnName="SUB_CENTER" />
+          <ScalarProperty Name="SERIES" ColumnName="SERIES" />
+          <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="IT_DEVICE_ID" ColumnName="IT_DEVICE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_DEVICE_SCRAP">
+      <EntityTypeMapping TypeName="ITManageModel.IT_DEVICE_SCRAP">
+        <MappingFragment StoreEntitySet="IT_DEVICE_SCRAP">
+          <ScalarProperty Name="CONFIRM_DATE" ColumnName="CONFIRM_DATE" />
+          <ScalarProperty Name="CONFIRMED_BY" ColumnName="CONFIRMED_BY" />
+          <ScalarProperty Name="RUN_STATE" ColumnName="RUN_STATE" />
+          <ScalarProperty Name="BUY_DATE_END" ColumnName="BUY_DATE_END" />
+          <ScalarProperty Name="BUY_DATE_PRIOR" ColumnName="BUY_DATE_PRIOR" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="SUB_CENTER" ColumnName="SUB_CENTER" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="CLOSED_BY" ColumnName="CLOSED_BY" />
+          <ScalarProperty Name="CLOSE_DATE" ColumnName="CLOSE_DATE" />
+          <ScalarProperty Name="IT_DEVICE_SCRAP_ID" ColumnName="IT_DEVICE_SCRAP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_DEVICE_SCRAP_DETAIL">
+      <EntityTypeMapping TypeName="ITManageModel.IT_DEVICE_SCRAP_DETAIL">
+        <MappingFragment StoreEntitySet="IT_DEVICE_SCRAP_DETAIL">
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="BUY_DATE" ColumnName="BUY_DATE" />
+          <ScalarProperty Name="BUYER_ID" ColumnName="BUYER_ID" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IT_DEVICE_ID" ColumnName="IT_DEVICE_ID" />
+          <ScalarProperty Name="IT_DEVICE_SCRAP_ID" ColumnName="IT_DEVICE_SCRAP_ID" />
+          <ScalarProperty Name="IT_DEVICE_SCRAP_DETAIL_ID" ColumnName="IT_DEVICE_SCRAP_DETAIL_ID" />
+          <ScalarProperty Name="NOT_BUY" ColumnName="NOT_BUY" />
+          <ScalarProperty Name="PAYMENT_STATUS" ColumnName="PAYMENT_STATUS" />
+          <ScalarProperty Name="PAYMENT_DATE" ColumnName="PAYMENT_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_MATERIAL">
+      <EntityTypeMapping TypeName="ITManageModel.IT_MATERIAL">
+        <MappingFragment StoreEntitySet="IT_MATERIAL">
+          <ScalarProperty Name="IS_AVAILABLE" ColumnName="IS_AVAILABLE" />
+          <ScalarProperty Name="STOCK_QUANTITY" ColumnName="STOCK_QUANTITY" />
+          <ScalarProperty Name="IS_CHECK" ColumnName="IS_CHECK" />
+          <ScalarProperty Name="IS_BUY" ColumnName="IS_BUY" />
+          <ScalarProperty Name="BUY_PRICE" ColumnName="BUY_PRICE" />
+          <ScalarProperty Name="ASSURANCE_YEAR" ColumnName="ASSURANCE_YEAR" />
+          <ScalarProperty Name="BUY_DATE" ColumnName="BUY_DATE" />
+          <ScalarProperty Name="MATERIAL_TYPE_NAME" ColumnName="MATERIAL_TYPE_NAME" />
+          <ScalarProperty Name="MATERIAL_TYPE_ID" ColumnName="MATERIAL_TYPE_ID" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="MATERIAL_NAME" ColumnName="MATERIAL_NAME" />
+          <ScalarProperty Name="IT_MATERIAL_ID" ColumnName="IT_MATERIAL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_MATERIAL_APPLY_DETAIL">
+      <EntityTypeMapping TypeName="ITManageModel.IT_MATERIAL_APPLY_DETAIL">
+        <MappingFragment StoreEntitySet="IT_MATERIAL_APPLY_DETAIL">
+          <ScalarProperty Name="IT_MATERIAL_APPLY_ID" ColumnName="IT_MATERIAL_APPLY_ID" />
+          <ScalarProperty Name="IT_MATERIAL_APPLY_DETAIL_ID" ColumnName="IT_MATERIAL_APPLY_DETAIL_ID" />
+          <ScalarProperty Name="MATERIAL_USER_NAME" ColumnName="MATERIAL_USER_NAME" />
+          <ScalarProperty Name="MATERIAL_USER_ID" ColumnName="MATERIAL_USER_ID" />
+          <ScalarProperty Name="MATERIAL_NUMBER" ColumnName="MATERIAL_NUMBER" />
+          <ScalarProperty Name="MATERIAL_TYPE_NAME" ColumnName="MATERIAL_TYPE_NAME" />
+          <ScalarProperty Name="MATERIAL_TYPE_ID" ColumnName="MATERIAL_TYPE_ID" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_MATERIAL_CHECKIN">
+      <EntityTypeMapping TypeName="ITManageModel.IT_MATERIAL_CHECKIN">
+        <MappingFragment StoreEntitySet="IT_MATERIAL_CHECKIN">
+          <ScalarProperty Name="IT_MATERIAL_NAME" ColumnName="IT_MATERIAL_NAME" />
+          <ScalarProperty Name="IT_MATERIAL_APPLY_ID" ColumnName="IT_MATERIAL_APPLY_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="CHECK_IN_NO" ColumnName="CHECK_IN_NO" />
+          <ScalarProperty Name="IT_MATERIAL_ID" ColumnName="IT_MATERIAL_ID" />
+          <ScalarProperty Name="IT_MATERIAL_CHECKIN_ID" ColumnName="IT_MATERIAL_CHECKIN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_STOCK_IN">
+      <EntityTypeMapping TypeName="ITManageModel.IT_STOCK_IN">
+        <MappingFragment StoreEntitySet="IT_STOCK_IN">
+          <ScalarProperty Name="MATERIAL_DETAIL" ColumnName="MATERIAL_DETAIL" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="IT_STOCK_IN_NO" ColumnName="IT_STOCK_IN_NO" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="APPLY_DATE" ColumnName="APPLY_DATE" />
+          <ScalarProperty Name="TOTALMONEY" ColumnName="TOTALMONEY" />
+          <ScalarProperty Name="IT_STOCK_IN_ID" ColumnName="IT_STOCK_IN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_STOCK_IN_DETAIL">
+      <EntityTypeMapping TypeName="ITManageModel.IT_STOCK_IN_DETAIL">
+        <MappingFragment StoreEntitySet="IT_STOCK_IN_DETAIL">
+          <ScalarProperty Name="IT_PURCHASING_APPLY_DETAIL_ID" ColumnName="IT_PURCHASING_APPLY_DETAIL_ID" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+          <ScalarProperty Name="STOCK_QUANTITY" ColumnName="STOCK_QUANTITY" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="MATERIAL_NUMBER" ColumnName="MATERIAL_NUMBER" />
+          <ScalarProperty Name="MATERIAL_NAME" ColumnName="MATERIAL_NAME" />
+          <ScalarProperty Name="MATERIAL_ID" ColumnName="MATERIAL_ID" />
+          <ScalarProperty Name="IT_STOCK_IN_ID" ColumnName="IT_STOCK_IN_ID" />
+          <ScalarProperty Name="IT_STOCK_IN_DETAIL_ID" ColumnName="IT_STOCK_IN_DETAIL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_SUPPORTMANG">
+      <EntityTypeMapping TypeName="ITManageModel.IT_SUPPORTMANG">
+        <MappingFragment StoreEntitySet="IT_SUPPORTMANG">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="FILE_NETWORK_PATH" ColumnName="FILE_NETWORK_PATH" />
+          <ScalarProperty Name="FILE_RELATIVE_PATH" ColumnName="FILE_RELATIVE_PATH" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="IT_SUPPORTMANG_TYPE_NAME" ColumnName="IT_SUPPORTMANG_TYPE_NAME" />
+          <ScalarProperty Name="IT_SUPPORTMANG_TYPE_ID" ColumnName="IT_SUPPORTMANG_TYPE_ID" />
+          <ScalarProperty Name="IT_SUPPORTMANG_NAME" ColumnName="IT_SUPPORTMANG_NAME" />
+          <ScalarProperty Name="IT_SUPPORTMANG_ID" ColumnName="IT_SUPPORTMANG_ID" />
+          <ScalarProperty Name="IT_SUPPORTMANG_SIZE" ColumnName="IT_SUPPORTMANG_SIZE" />
+          <ScalarProperty Name="FILE_TYPE" ColumnName="FILE_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IT_STOCK_OUT_DETAIL">
+      <EntityTypeMapping TypeName="ITManageModel.IT_STOCK_OUT_DETAIL">
+        <MappingFragment StoreEntitySet="IT_STOCK_OUT_DETAIL">
+          <ScalarProperty Name="STOCK_QUANTITY" ColumnName="STOCK_QUANTITY" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MATERIAL_NUMBER" ColumnName="MATERIAL_NUMBER" />
+          <ScalarProperty Name="MATERIAL_NAME" ColumnName="MATERIAL_NAME" />
+          <ScalarProperty Name="MATERIAL_ID" ColumnName="MATERIAL_ID" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+          <ScalarProperty Name="IT_MATERIAL_APPLY_ID" ColumnName="IT_MATERIAL_APPLY_ID" />
+          <ScalarProperty Name="IT_STOCK_OUT_DETAIL_ID" ColumnName="IT_STOCK_OUT_DETAIL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\2023\\代码审计\\中石油审计服务中心协同办公系统\\decompile\\Richfit.Garnet.Module.Supervise\\Richfit.Garnet.Module.Supervise.csproj": {}
+  },
+  "projects": {
+    "D:\\2023\\代码审计\\中石油审计服务中心协同办公系统\\decompile\\Richfit.Garnet.Module.Supervise\\Richfit.Garnet.Module.Supervise.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\2023\\代码审计\\中石油审计服务中心协同办公系统\\decompile\\Richfit.Garnet.Module.Supervise\\Richfit.Garnet.Module.Supervise.csproj",
+        "projectName": "Richfit.Garnet.Module.Supervise",
+        "projectPath": "D:\\2023\\代码审计\\中石油审计服务中心协同办公系统\\decompile\\Richfit.Garnet.Module.Supervise\\Richfit.Garnet.Module.Supervise.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\代码审计\\中石油审计服务中心协同办公系统\\decompile\\Richfit.Garnet.Module.Supervise\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

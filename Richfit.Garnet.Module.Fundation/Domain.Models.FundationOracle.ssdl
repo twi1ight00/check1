@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="10.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="SYS_DOMAIN" EntityType="Model.Store.SYS_DOMAIN" store:Type="Tables" />
+    <EntitySet Name="SYS_USER" EntityType="Model.Store.SYS_USER" store:Type="Tables" />
+    <EntitySet Name="SYS_USER_ORG" EntityType="Model.Store.SYS_USER_ORG" store:Type="Tables" />
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_DOMA" Association="Model.Store.FK_SYS_USER_REFERENCE_SYS_DOMA">
+      <End Role="SYS_DOMAIN" EntitySet="SYS_DOMAIN" />
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_USERORGUS_SYS_USER" Association="Model.Store.FK_SYS_USER_USERORGUS_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_DOMAIN">
+    <Key>
+      <PropertyRef Name="DOMAIN_ID" />
+    </Key>
+    <Property Name="DOMAIN_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="DOMAIN_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_ADDRESS" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_ACCOUNT" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="DOMAIN_PWD" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SORT" Type="number" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="DOMAIN_ID" Type="raw" MaxLength="16" />
+    <Property Name="LOGON_NAME" Type="nvarchar2" Nullable="false" MaxLength="64" />
+    <Property Name="DISPLAY_NAME" Type="nvarchar2" Nullable="false" MaxLength="128" />
+    <Property Name="USER_PASSWORD" Type="nvarchar2" MaxLength="64" />
+    <Property Name="USER_TYPE" Type="number" />
+    <Property Name="SORT" Type="number" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+    <Property Name="IS_FORBIDDEN" Type="number" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ORG">
+    <Key>
+      <PropertyRef Name="USER_ORG_ID" />
+    </Key>
+    <Property Name="USER_ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="USER_IDENTITY_TYPE" Type="number" />
+  </EntityType>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_DOMA">
+    <End Role="SYS_DOMAIN" Type="Model.Store.SYS_DOMAIN" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_DOMAIN">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_USERORGUS_SYS_USER">
+    <End Role="SYS_USER" Type="Model.Store.SYS_USER" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SYS_USER_ORG" Type="Model.Store.SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

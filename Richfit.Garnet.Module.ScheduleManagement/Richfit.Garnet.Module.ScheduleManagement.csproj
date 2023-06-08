@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.ScheduleManagement</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.ScheduleManagementOracle.csdl" />
+    <None Remove="Domain.Models.ScheduleManagementOracle.msl" />
+    <None Remove="Domain.Models.ScheduleManagementOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.ScheduleManagementOracle.csdl" LogicalName="Domain.Models.ScheduleManagementOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.ScheduleManagementOracle.msl" LogicalName="Domain.Models.ScheduleManagementOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.ScheduleManagementOracle.ssdl" LogicalName="Domain.Models.ScheduleManagementOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\bin\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="cn.jpush.api">
+      <HintPath>..\..\bin\cn.jpush.api.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Module.SystemManagement">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.SystemManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.MessageCenter">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.MessageCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Oracle.DataAccess</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Oracle.DataAccess.src.Client.Icons.OracleConnectionToolBox_hc.bmp" />
+    <None Remove="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaMapping.msl" />
+    <None Remove="Oracle.DataAccess.src.Client.Icons.OracleDataAdapterToolBox_hc.bmp" />
+    <None Remove="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleProviderManifest.xml" />
+    <None Remove="Oracle.DataAccess.src.Client.Icons.OracleCommandBuilderToolBox_hc.bmp" />
+    <None Remove="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaDefinition.ssdl" />
+    <None Remove="Oracle.DataAccess.src.Client.Icons.OracleCommandToolBox_hc.bmp" />
+    <None Remove="Oracle.DataAccess.src.Client.Resources.TimesTenMetaData.xml" />
+    <None Remove="Oracle.DataAccess.src.Client.Resources.OracleMetaData.xml" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Icons.OracleConnectionToolBox_hc.bmp" LogicalName="Oracle.DataAccess.src.Client.Icons.OracleConnectionToolBox_hc.bmp" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaMapping.msl" LogicalName="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaMapping.msl" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Icons.OracleDataAdapterToolBox_hc.bmp" LogicalName="Oracle.DataAccess.src.Client.Icons.OracleDataAdapterToolBox_hc.bmp" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleProviderManifest.xml" LogicalName="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleProviderManifest.xml" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Icons.OracleCommandBuilderToolBox_hc.bmp" LogicalName="Oracle.DataAccess.src.Client.Icons.OracleCommandBuilderToolBox_hc.bmp" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaDefinition.ssdl" LogicalName="Oracle.DataAccess.src.EntityFramework.Resources.EFOracleStoreSchemaDefinition.ssdl" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Icons.OracleCommandToolBox_hc.bmp" LogicalName="Oracle.DataAccess.src.Client.Icons.OracleCommandToolBox_hc.bmp" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Resources.TimesTenMetaData.xml" LogicalName="Oracle.DataAccess.src.Client.Resources.TimesTenMetaData.xml" />
+    <EmbeddedResource Include="Oracle.DataAccess.src.Client.Resources.OracleMetaData.xml" LogicalName="Oracle.DataAccess.src.Client.Resources.OracleMetaData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

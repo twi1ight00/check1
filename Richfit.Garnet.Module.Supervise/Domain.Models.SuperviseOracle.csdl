@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="SuperviseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Supervise" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SUP_ASSIGN_TASK" EntityType="SuperviseModel.SUP_ASSIGN_TASK" />
+    <EntitySet Name="SUP_CHANGE" EntityType="SuperviseModel.SUP_CHANGE" />
+    <EntitySet Name="SUP_FEED_BACK" EntityType="SuperviseModel.SUP_FEED_BACK" />
+    <EntitySet Name="SUP_PORJECT" EntityType="SuperviseModel.SUP_PORJECT" />
+    <EntitySet Name="SUP_PORJECT_USER" EntityType="SuperviseModel.SUP_PORJECT_USER" />
+    <EntitySet Name="SUP_TASK_PROGRESS" EntityType="SuperviseModel.SUP_TASK_PROGRESS" />
+    <EntitySet Name="SUP_TASK_USER" EntityType="SuperviseModel.SUP_TASK_USER" />
+    <EntitySet Name="SYS_USER" EntityType="SuperviseModel.SYS_USER" />
+    <AssociationSet Name="FK_SUP_ASSI_REFERENCE_SUP_PORJ" Association="SuperviseModel.FK_SUP_ASSI_REFERENCE_SUP_PORJ">
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_CHAN_REFERENCE_SUP_ASSI" Association="SuperviseModel.FK_SUP_CHAN_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_CHANGE" EntitySet="SUP_CHANGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_FEED_REFERENCE_SUP_ASSI" Association="SuperviseModel.FK_SUP_FEED_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_FEED_BACK" EntitySet="SUP_FEED_BACK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PROG_REFERENCE_SUP_TASK" Association="SuperviseModel.FK_SUP_PROG_REFERENCE_SUP_TASK">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_TASK_PROGRESS" EntitySet="SUP_TASK_PROGRESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_TASK_REFERENCE_SUP_ASSI" Association="SuperviseModel.FK_SUP_TASK_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_TASK_USER" EntitySet="SUP_TASK_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PORJ_REFERENCE_SUP_PORJ" Association="SuperviseModel.FK_SUP_PORJ_REFERENCE_SUP_PORJ">
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+      <End Role="SUP_PORJECT_USER" EntitySet="SUP_PORJECT_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_SUPERVISOR" Association="SuperviseModel.FK_SUP_SUPERVISOR">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_USER" Association="SuperviseModel.FK_SUP_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PORJ_REFERENCE_SYS_USER" Association="SuperviseModel.FK_SUP_PORJ_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT_USER" EntitySet="SUP_PORJECT_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_TASK_REFERENCE_SYS_USER" Association="SuperviseModel.FK_SUP_TASK_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_TASK_USER" EntitySet="SUP_TASK_USER" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SUP_ASSIGN_TASK">
+    <Key>
+      <PropertyRef Name="ASSIGN_TASK_ID" />
+    </Key>
+    <Property Name="ASSIGN_TASK_ID" Type="Guid" Nullable="false" />
+    <Property Name="PORJECT_ID" Type="Guid" />
+    <Property Name="PARENT_ASSIGN_TASK_ID" Type="Guid" />
+    <Property Name="WORK_TITLE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ASSIGN_TIME" Type="DateTime" />
+    <Property Name="BEGIN_TIME" Type="DateTime" />
+    <Property Name="END_TIME" Type="DateTime" />
+    <Property Name="HAND_REQUIREMENT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FINISH_TIME" Type="DateTime" />
+    <Property Name="FINISH_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="FEEDBACK_RATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_EVALUATION" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EVALUATION_CONTENT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IS_EXCEED" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_CAN_CHANGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_CHANGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TASK_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="TASK_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="APPLY_COPLETION_TIME" Type="DateTime" />
+    <NavigationProperty Name="SUP_PORJECT" Relationship="SuperviseModel.FK_SUP_ASSI_REFERENCE_SUP_PORJ" FromRole="SUP_ASSIGN_TASK" ToRole="SUP_PORJECT" />
+    <NavigationProperty Name="SUP_CHANGE" Relationship="SuperviseModel.FK_SUP_CHAN_REFERENCE_SUP_ASSI" FromRole="SUP_ASSIGN_TASK" ToRole="SUP_CHANGE" />
+    <NavigationProperty Name="SUP_FEED_BACK" Relationship="SuperviseModel.FK_SUP_FEED_REFERENCE_SUP_ASSI" FromRole="SUP_ASSIGN_TASK" ToRole="SUP_FEED_BACK" />
+    <NavigationProperty Name="SUP_TASK_PROGRESS" Relationship="SuperviseModel.FK_SUP_PROG_REFERENCE_SUP_TASK" FromRole="SUP_ASSIGN_TASK" ToRole="SUP_TASK_PROGRESS" />
+    <NavigationProperty Name="SUP_TASK_USER" Relationship="SuperviseModel.FK_SUP_TASK_REFERENCE_SUP_ASSI" FromRole="SUP_ASSIGN_TASK" ToRole="SUP_TASK_USER" />
+  </EntityType>
+  <EntityType Name="SUP_CHANGE">
+    <Key>
+      <PropertyRef Name="CHANGE_ID" />
+    </Key>
+    <Property Name="CHANGE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="Guid" />
+    <Property Name="CHANGE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CHANGE_END_TIME" Type="DateTime" />
+    <Property Name="CHANGE_REASON" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CHANGE_TIME" Type="DateTime" />
+    <Property Name="CHANGE_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SUP_ASSIGN_TASK" Relationship="SuperviseModel.FK_SUP_CHAN_REFERENCE_SUP_ASSI" FromRole="SUP_CHANGE" ToRole="SUP_ASSIGN_TASK" />
+  </EntityType>
+  <EntityType Name="SUP_FEED_BACK">
+    <Key>
+      <PropertyRef Name="FEED_BACK_ID" />
+    </Key>
+    <Property Name="FEED_BACK_ID" Type="Guid" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="Guid" />
+    <Property Name="FEED_BACK_USER" Type="Guid" />
+    <Property Name="FEED_BACK_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FEED_BACK_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="FEED_BACK_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SUP_ASSIGN_TASK" Relationship="SuperviseModel.FK_SUP_FEED_REFERENCE_SUP_ASSI" FromRole="SUP_FEED_BACK" ToRole="SUP_ASSIGN_TASK" />
+  </EntityType>
+  <EntityType Name="SUP_PORJECT">
+    <Key>
+      <PropertyRef Name="PORJECT_ID" />
+    </Key>
+    <Property Name="PORJECT_ID" Type="Guid" Nullable="false" />
+    <Property Name="SUPERVISE_NUMBER" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SUPERVISE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SUPERVISE_CLASSIFY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISSUED_ORGNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISSUED_FILENUMBER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PORJECT_TITLE" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="LEADER_INSTRUCTION" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="LEADER_NAME" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="ASSIGN_TIME" Type="DateTime" />
+    <Property Name="BEGIN_TIME" Type="DateTime" />
+    <Property Name="END_TIME" Type="DateTime" />
+    <Property Name="HAND_REQUIREMENT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FINISH_TIME" Type="DateTime" />
+    <Property Name="FINISH_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="IS_EXCEED" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SUPERVISE_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SUPERVISOR_ID" Type="Guid" />
+    <Property Name="FOCUS_ON" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TIME_LIMIT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="SUP_ASSIGN_TASK" Relationship="SuperviseModel.FK_SUP_ASSI_REFERENCE_SUP_PORJ" FromRole="SUP_PORJECT" ToRole="SUP_ASSIGN_TASK" />
+    <NavigationProperty Name="SUP_PORJECT_USER" Relationship="SuperviseModel.FK_SUP_PORJ_REFERENCE_SUP_PORJ" FromRole="SUP_PORJECT" ToRole="SUP_PORJECT_USER" />
+    <NavigationProperty Name="SYS_USER" Relationship="SuperviseModel.FK_SUP_SUPERVISOR" FromRole="SUP_PORJECT" ToRole="SYS_USER" />
+    <NavigationProperty Name="SYS_USER1" Relationship="SuperviseModel.FK_SUP_USER" FromRole="SUP_PORJECT" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SUP_PORJECT_USER">
+    <Key>
+      <PropertyRef Name="PORJECT_USER_ID" />
+    </Key>
+    <Property Name="PORJECT_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="PORJECT_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="SUP_PORJECT" Relationship="SuperviseModel.FK_SUP_PORJ_REFERENCE_SUP_PORJ" FromRole="SUP_PORJECT_USER" ToRole="SUP_PORJECT" />
+    <NavigationProperty Name="SYS_USER" Relationship="SuperviseModel.FK_SUP_PORJ_REFERENCE_SYS_USER" FromRole="SUP_PORJECT_USER" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SUP_TASK_PROGRESS">
+    <Key>
+      <PropertyRef Name="PROGRESS_ID" />
+    </Key>
+    <Property Name="PROGRESS_ID" Type="Guid" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="Guid" />
+    <Property Name="PROGRESS_USER_ID" Type="Guid" />
+    <Property Name="PROGRESS_USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PROGRESS_CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SUP_ASSIGN_TASK" Relationship="SuperviseModel.FK_SUP_PROG_REFERENCE_SUP_TASK" FromRole="SUP_TASK_PROGRESS" ToRole="SUP_ASSIGN_TASK" />
+  </EntityType>
+  <EntityType Name="SUP_TASK_USER">
+    <Key>
+      <PropertyRef Name="TASK_USER_ID" />
+    </Key>
+    <Property Name="TASK_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ID" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="SUP_ASSIGN_TASK" Relationship="SuperviseModel.FK_SUP_TASK_REFERENCE_SUP_ASSI" FromRole="SUP_TASK_USER" ToRole="SUP_ASSIGN_TASK" />
+    <NavigationProperty Name="SYS_USER" Relationship="SuperviseModel.FK_SUP_TASK_REFERENCE_SYS_USER" FromRole="SUP_TASK_USER" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="DOMAIN_ID" Type="Guid" />
+    <Property Name="LOGON_NAME" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DISPLAY_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="USER_PASSWORD" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="USER_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_FORBIDDEN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="EXTEND1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND2" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND4" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND5" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SUP_PORJECT" Relationship="SuperviseModel.FK_SUP_SUPERVISOR" FromRole="SYS_USER" ToRole="SUP_PORJECT" />
+    <NavigationProperty Name="SUP_PORJECT1" Relationship="SuperviseModel.FK_SUP_USER" FromRole="SYS_USER" ToRole="SUP_PORJECT" />
+    <NavigationProperty Name="SUP_PORJECT_USER" Relationship="SuperviseModel.FK_SUP_PORJ_REFERENCE_SYS_USER" FromRole="SYS_USER" ToRole="SUP_PORJECT_USER" />
+    <NavigationProperty Name="SUP_TASK_USER" Relationship="SuperviseModel.FK_SUP_TASK_REFERENCE_SYS_USER" FromRole="SYS_USER" ToRole="SUP_TASK_USER" />
+  </EntityType>
+  <Association Name="FK_SUP_ASSI_REFERENCE_SUP_PORJ">
+    <End Type="SuperviseModel.SUP_PORJECT" Role="SUP_PORJECT" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_ASSIGN_TASK" Role="SUP_ASSIGN_TASK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_PORJECT">
+        <PropertyRef Name="PORJECT_ID" />
+      </Principal>
+      <Dependent Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="PORJECT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_CHAN_REFERENCE_SUP_ASSI">
+    <End Type="SuperviseModel.SUP_ASSIGN_TASK" Role="SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_CHANGE" Role="SUP_CHANGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_CHANGE">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_FEED_REFERENCE_SUP_ASSI">
+    <End Type="SuperviseModel.SUP_ASSIGN_TASK" Role="SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_FEED_BACK" Role="SUP_FEED_BACK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_FEED_BACK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PROG_REFERENCE_SUP_TASK">
+    <End Type="SuperviseModel.SUP_ASSIGN_TASK" Role="SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_TASK_PROGRESS" Role="SUP_TASK_PROGRESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_PROGRESS">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_TASK_REFERENCE_SUP_ASSI">
+    <End Type="SuperviseModel.SUP_ASSIGN_TASK" Role="SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_TASK_USER" Role="SUP_TASK_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_USER">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PORJ_REFERENCE_SUP_PORJ">
+    <End Type="SuperviseModel.SUP_PORJECT" Role="SUP_PORJECT" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_PORJECT_USER" Role="SUP_PORJECT_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_PORJECT">
+        <PropertyRef Name="PORJECT_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT_USER">
+        <PropertyRef Name="PORJECT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_SUPERVISOR">
+    <End Type="SuperviseModel.SYS_USER" Role="SYS_USER" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_PORJECT" Role="SUP_PORJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT">
+        <PropertyRef Name="SUPERVISOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_USER">
+    <End Type="SuperviseModel.SYS_USER" Role="SYS_USER" Multiplicity="1" />
+    <End Type="SuperviseModel.SUP_PORJECT" Role="SUP_PORJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PORJ_REFERENCE_SYS_USER">
+    <End Type="SuperviseModel.SYS_USER" Role="SYS_USER" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_PORJECT_USER" Role="SUP_PORJECT_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT_USER">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_TASK_REFERENCE_SYS_USER">
+    <End Type="SuperviseModel.SYS_USER" Role="SYS_USER" Multiplicity="0..1" />
+    <End Type="SuperviseModel.SUP_TASK_USER" Role="SUP_TASK_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_USER">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

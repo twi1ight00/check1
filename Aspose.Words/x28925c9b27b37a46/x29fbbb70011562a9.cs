@@ -1,0 +1,8 @@
+namespace x28925c9b27b37a46;
+
+internal interface x29fbbb70011562a9 : x11e014059489ae95
+{
+	x29fbbb70011562a9 x8810335244b90b9d(x29fbbb70011562a9 xc2cb9a5cf10fb63f);
+
+	void x968eca275aff04e3(x29fbbb70011562a9 xc2cb9a5cf10fb63f);
+}

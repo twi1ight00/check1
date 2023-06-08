@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Aspose.Cells</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Aspose.Cells.Aspose.License.BlackList.xml" />
+    <None Remove="Aspose.Cells.Book1.xls" />
+    <None Remove="Aspose.Cells.filepass.dat" />
+    <None Remove="Aspose.Cells.OleObject.dat" />
+    <None Remove="Aspose.Cells.Theme2007.dat" />
+    <None Remove="Aspose.Cells.PDF_A_DestOutputData.dat" />
+    <None Remove="Aspose.Cells.PatternMasks.dat" />
+    <None Remove="Aspose.Cells.NoImage.png" />
+    <None Remove="Aspose.Cells.font.zip" />
+    <None Remove="Aspose.Cells.StyleObject.ConditionStyle.IconImages.zip" />
+    <None Remove="Aspose.Total.License.xml" />
+    <EmbeddedResource Include="Aspose.Cells.Aspose.License.BlackList.xml" LogicalName="Aspose.Cells.Aspose.License.BlackList.xml" />
+    <EmbeddedResource Include="Aspose.Cells.Book1.xls" LogicalName="Aspose.Cells.Book1.xls" />
+    <EmbeddedResource Include="Aspose.Cells.filepass.dat" LogicalName="Aspose.Cells.filepass.dat" />
+    <EmbeddedResource Include="Aspose.Cells.OleObject.dat" LogicalName="Aspose.Cells.OleObject.dat" />
+    <EmbeddedResource Include="Aspose.Cells.Theme2007.dat" LogicalName="Aspose.Cells.Theme2007.dat" />
+    <EmbeddedResource Include="Aspose.Cells.PDF_A_DestOutputData.dat" LogicalName="Aspose.Cells.PDF_A_DestOutputData.dat" />
+    <EmbeddedResource Include="Aspose.Cells.PatternMasks.dat" LogicalName="Aspose.Cells.PatternMasks.dat" />
+    <EmbeddedResource Include="Aspose.Cells.NoImage.png" LogicalName="Aspose.Cells.NoImage.png" />
+    <EmbeddedResource Include="Aspose.Cells.font.zip" LogicalName="Aspose.Cells.font.zip" />
+    <EmbeddedResource Include="Aspose.Cells.StyleObject.ConditionStyle.IconImages.zip" LogicalName="Aspose.Cells.StyleObject.ConditionStyle.IconImages.zip" />
+    <EmbeddedResource Include="Aspose.Total.License.xml" LogicalName="Aspose.Total.License.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+</Project>

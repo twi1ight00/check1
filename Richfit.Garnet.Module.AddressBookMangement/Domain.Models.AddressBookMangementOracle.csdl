@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AddressBookMangementModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AddressBookMangement" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AB_CATEGORY" EntityType="AddressBookMangementModel.AB_CATEGORY" />
+    <EntitySet Name="AB_CONTACT" EntityType="AddressBookMangementModel.AB_CONTACT" />
+    <EntitySet Name="AB_GROUP_CONTACT" EntityType="AddressBookMangementModel.AB_GROUP_CONTACT" />
+    <EntitySet Name="AB_ORG_CONTACT" EntityType="AddressBookMangementModel.AB_ORG_CONTACT" />
+    <EntitySet Name="AB_PERSONAL_GROUP" EntityType="AddressBookMangementModel.AB_PERSONAL_GROUP" />
+    <EntitySet Name="AB_VIRTUAL_CONTACT" EntityType="AddressBookMangementModel.AB_VIRTUAL_CONTACT" />
+    <EntitySet Name="AB_VIRTUAL_ORG" EntityType="AddressBookMangementModel.AB_VIRTUAL_ORG" />
+    <EntitySet Name="HR_EMPLOYEE" EntityType="AddressBookMangementModel.HR_EMPLOYEE" />
+    <EntitySet Name="SYS_ORG" EntityType="AddressBookMangementModel.SYS_ORG" />
+    <AssociationSet Name="FK_AB_PERSO_REFERENCE_AB_CATEG" Association="AddressBookMangementModel.FK_AB_PERSO_REFERENCE_AB_CATEG">
+      <End Role="AB_CATEGORY" EntitySet="AB_CATEGORY" />
+      <End Role="AB_PERSONAL_GROUP" EntitySet="AB_PERSONAL_GROUP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_GROUP_REFERENCE_AB_CONTA" Association="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_GROUP_CONTACT" EntitySet="AB_GROUP_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_AB_CONTA" Association="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_VIRTU_REFERENCE_AB_CONTA" Association="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_VIRTUAL_CONTACT" EntitySet="AB_VIRTUAL_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_GROUP_REFERENCE_AB_PERSO" Association="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_PERSO">
+      <End Role="AB_PERSONAL_GROUP" EntitySet="AB_PERSONAL_GROUP" />
+      <End Role="AB_GROUP_CONTACT" EntitySet="AB_GROUP_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_SYS_ORG" Association="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_VIRTU_REFERENCE_AB_VIRTU" Association="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_VIRTU">
+      <End Role="AB_VIRTUAL_ORG" EntitySet="AB_VIRTUAL_ORG" />
+      <End Role="AB_VIRTUAL_CONTACT" EntitySet="AB_VIRTUAL_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_ORG" Association="AddressBookMangementModel.FK_HR_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="HR_EMPLOYEE" EntitySet="HR_EMPLOYEE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Org_Sys_Org" Association="AddressBookMangementModel.FK_Sys_Org_Sys_Org">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ORG1" EntitySet="SYS_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AB_CATEGORY">
+    <Key>
+      <PropertyRef Name="CATEGORY_ID" />
+    </Key>
+    <Property Name="CATEGORY_ID" Type="Guid" Nullable="false" />
+    <Property Name="CATEGORY_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CATEGORY_TYPE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="AB_PERSONAL_GROUP" Relationship="AddressBookMangementModel.FK_AB_PERSO_REFERENCE_AB_CATEG" FromRole="AB_CATEGORY" ToRole="AB_PERSONAL_GROUP" />
+  </EntityType>
+  <EntityType Name="AB_CONTACT">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="POST" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT_POSTCODE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_TEL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_FAX" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_TEL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HOME_POSTCODE" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="QQ" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MSN" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MATE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CHILD" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE_PATH" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="ROOM_NUMBER" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="PERSON_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="RESPONSIBILITY" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AB_GROUP_CONTACT" Relationship="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_CONTA" FromRole="AB_CONTACT" ToRole="AB_GROUP_CONTACT" />
+    <NavigationProperty Name="AB_ORG_CONTACT" Relationship="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_AB_CONTA" FromRole="AB_CONTACT" ToRole="AB_ORG_CONTACT" />
+    <NavigationProperty Name="AB_VIRTUAL_CONTACT" Relationship="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_CONTA" FromRole="AB_CONTACT" ToRole="AB_VIRTUAL_CONTACT" />
+  </EntityType>
+  <EntityType Name="AB_GROUP_CONTACT">
+    <Key>
+      <PropertyRef Name="GROUP_CONTACT_ID" />
+    </Key>
+    <Property Name="GROUP_CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="GROUP_ID" Type="Guid" />
+    <Property Name="CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="AB_CONTACT" Relationship="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_CONTA" FromRole="AB_GROUP_CONTACT" ToRole="AB_CONTACT" />
+    <NavigationProperty Name="AB_PERSONAL_GROUP" Relationship="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_PERSO" FromRole="AB_GROUP_CONTACT" ToRole="AB_PERSONAL_GROUP" />
+  </EntityType>
+  <EntityType Name="AB_ORG_CONTACT">
+    <Key>
+      <PropertyRef Name="ORG_CONTACT_ID" />
+    </Key>
+    <Property Name="ORG_CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="CONTACT_ID" Type="Guid" />
+    <NavigationProperty Name="AB_CONTACT" Relationship="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_AB_CONTA" FromRole="AB_ORG_CONTACT" ToRole="AB_CONTACT" />
+    <NavigationProperty Name="SYS_ORG" Relationship="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_SYS_ORG" FromRole="AB_ORG_CONTACT" ToRole="SYS_ORG" />
+  </EntityType>
+  <EntityType Name="AB_PERSONAL_GROUP">
+    <Key>
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="GROUP_ID" Type="Guid" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="GROUP_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CATEGORY_TYPE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="AB_CATEGORY" Relationship="AddressBookMangementModel.FK_AB_PERSO_REFERENCE_AB_CATEG" FromRole="AB_PERSONAL_GROUP" ToRole="AB_CATEGORY" />
+    <NavigationProperty Name="AB_GROUP_CONTACT" Relationship="AddressBookMangementModel.FK_AB_GROUP_REFERENCE_AB_PERSO" FromRole="AB_PERSONAL_GROUP" ToRole="AB_GROUP_CONTACT" />
+  </EntityType>
+  <EntityType Name="AB_VIRTUAL_CONTACT">
+    <Key>
+      <PropertyRef Name="VIRTUAL_CONTACT_ID" />
+    </Key>
+    <Property Name="VIRTUAL_CONTACT_ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTACT_ID" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <NavigationProperty Name="AB_CONTACT" Relationship="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_CONTA" FromRole="AB_VIRTUAL_CONTACT" ToRole="AB_CONTACT" />
+    <NavigationProperty Name="AB_VIRTUAL_ORG" Relationship="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_VIRTU" FromRole="AB_VIRTUAL_CONTACT" ToRole="AB_VIRTUAL_ORG" />
+  </EntityType>
+  <EntityType Name="AB_VIRTUAL_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="AB_VIRTUAL_CONTACT" Relationship="AddressBookMangementModel.FK_AB_VIRTU_REFERENCE_AB_VIRTU" FromRole="AB_VIRTUAL_ORG" ToRole="AB_VIRTUAL_CONTACT" />
+  </EntityType>
+  <EntityType Name="HR_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPLOYEE_ID" />
+    </Key>
+    <Property Name="EMPLOYEE_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_TYPE" Type="Guid" />
+    <Property Name="AFFILIATED_UNIT" Type="Guid" />
+    <Property Name="PERSON_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="EMPLOYEE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IN_CATEGORY" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="WROK_PLACE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WORKING_START_DATE" Type="DateTime" />
+    <Property Name="WORK_TIME" Type="DateTime" />
+    <Property Name="SEX" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NATION" Type="Guid" />
+    <Property Name="HOME_TOWN" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="POLITICS_STATUS" Type="Guid" />
+    <Property Name="PARTY_TIME" Type="DateTime" />
+    <Property Name="ENG_LEVEL" Type="Guid" />
+    <Property Name="EDUCATION" Type="Guid" />
+    <Property Name="EDUCATION_REMARK" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GRADUATION_COLLEGE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GRADUAION_TIME" Type="DateTime" />
+    <Property Name="SCHOOL_MAJOR" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ADMINISTRATIVE_FUNCTION" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ADMINISTRATIVE_LEVEL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ORIGINAL_UNIT" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_POSITION" Type="Guid" />
+    <Property Name="RANK" Type="Guid" />
+    <Property Name="QUALIFY_TIME" Type="DateTime" />
+    <Property Name="MOBILE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="MPHONE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="ID_NUMBER" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="UNIT_COMPILATION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ORDER_BK_BUSINESS_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="POSITION_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOIN_RUI_TUO" Type="DateTime" />
+    <Property Name="YL_START_DATE" Type="DateTime" />
+    <Property Name="CONTRACT_NO" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRACT_TYPE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRACT_VALIDITY_DATE" Type="DateTime" />
+    <Property Name="CONTRACT_EXPIRY_DATE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_TEL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="WORK_HOME" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_UP_SEQ" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_SEQ" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_ETHNIC_GROUP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="JOB_PO_LEVEL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CONTACT_ID" Type="Guid" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IMAGE_PATH" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="POSITION" Type="Guid" />
+    <Property Name="MARITAL_STATUS" Type="Guid" />
+    <Property Name="FAMILY_CONTACT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FAMILY_CONTACT_TEL" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="EMPLOYEE_STATUS" Type="Guid" />
+    <Property Name="APPOINTMENT_TIME" Type="DateTime" />
+    <Property Name="TRANSFERRED_TIME" Type="DateTime" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_TITLE" Type="Guid" />
+    <Property Name="HUKOU" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TECHNICAL_TITLE_STR" Type="String" MaxLength="520" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_ORG" Relationship="AddressBookMangementModel.FK_HR_ORG" FromRole="HR_EMPLOYEE" ToRole="SYS_ORG" />
+  </EntityType>
+  <EntityType Name="SYS_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="EXTEND1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND2" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND4" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND5" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AB_ORG_CONTACT" Relationship="AddressBookMangementModel.FK_AB_ORG_C_REFERENCE_SYS_ORG" FromRole="SYS_ORG" ToRole="AB_ORG_CONTACT" />
+    <NavigationProperty Name="HR_EMPLOYEE" Relationship="AddressBookMangementModel.FK_HR_ORG" FromRole="SYS_ORG" ToRole="HR_EMPLOYEE" />
+    <NavigationProperty Name="SYS_ORG1" Relationship="AddressBookMangementModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG" ToRole="SYS_ORG1" />
+    <NavigationProperty Name="SYS_ORG2" Relationship="AddressBookMangementModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG1" ToRole="SYS_ORG" />
+  </EntityType>
+  <Association Name="FK_AB_PERSO_REFERENCE_AB_CATEG">
+    <End Type="AddressBookMangementModel.AB_CATEGORY" Role="AB_CATEGORY" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_PERSONAL_GROUP" Role="AB_PERSONAL_GROUP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CATEGORY">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Principal>
+      <Dependent Role="AB_PERSONAL_GROUP">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_GROUP_REFERENCE_AB_CONTA">
+    <End Type="AddressBookMangementModel.AB_CONTACT" Role="AB_CONTACT" Multiplicity="1" />
+    <End Type="AddressBookMangementModel.AB_GROUP_CONTACT" Role="AB_GROUP_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_GROUP_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_ORG_C_REFERENCE_AB_CONTA">
+    <End Type="AddressBookMangementModel.AB_CONTACT" Role="AB_CONTACT" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_ORG_CONTACT" Role="AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_VIRTU_REFERENCE_AB_CONTA">
+    <End Type="AddressBookMangementModel.AB_CONTACT" Role="AB_CONTACT" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_VIRTUAL_CONTACT" Role="AB_VIRTUAL_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_VIRTUAL_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_GROUP_REFERENCE_AB_PERSO">
+    <End Type="AddressBookMangementModel.AB_PERSONAL_GROUP" Role="AB_PERSONAL_GROUP" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_GROUP_CONTACT" Role="AB_GROUP_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_PERSONAL_GROUP">
+        <PropertyRef Name="GROUP_ID" />
+      </Principal>
+      <Dependent Role="AB_GROUP_CONTACT">
+        <PropertyRef Name="GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_ORG_C_REFERENCE_SYS_ORG">
+    <End Type="AddressBookMangementModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_ORG_CONTACT" Role="AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_VIRTU_REFERENCE_AB_VIRTU">
+    <End Type="AddressBookMangementModel.AB_VIRTUAL_ORG" Role="AB_VIRTUAL_ORG" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.AB_VIRTUAL_CONTACT" Role="AB_VIRTUAL_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_VIRTUAL_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="AB_VIRTUAL_CONTACT">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_ORG">
+    <End Type="AddressBookMangementModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.HR_EMPLOYEE" Role="HR_EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="HR_EMPLOYEE">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Org_Sys_Org">
+    <End Type="AddressBookMangementModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="AddressBookMangementModel.SYS_ORG" Role="SYS_ORG1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ORG1">
+        <PropertyRef Name="PARENT_ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

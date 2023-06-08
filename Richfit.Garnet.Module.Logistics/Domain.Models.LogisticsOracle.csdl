@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LogisticsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="LM_VEHICLE_MANAGE">
+    <Key>
+      <PropertyRef Name="VEHICLE_ID" />
+    </Key>
+    <Property Name="VEHICLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="VEHICLE_NO" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DRIVER" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="VEHICLE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IS_ENABLED" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ODOMETER_NO" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IS_BOUND_DRIVE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="URER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="IS_DEL" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="Logistics" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LM_VEHICLE_MANAGE" EntityType="LogisticsModel.LM_VEHICLE_MANAGE" />
+  </EntityContainer>
+</Schema>

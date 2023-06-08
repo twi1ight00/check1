@@ -1,0 +1,101 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[ComVisible(false)]
+[ComEventInterface(typeof(EDocument_0000), typeof(EDocument_EventProvider_0000))]
+[TypeLibType(16)]
+public interface EDocument_Event
+{
+	event EDocument_DocumentOpenedEventHandler DocumentOpened;
+
+	event EDocument_DocumentCreatedEventHandler DocumentCreated;
+
+	event EDocument_DocumentSavedEventHandler DocumentSaved;
+
+	event EDocument_DocumentSavedAsEventHandler DocumentSavedAs;
+
+	event EDocument_DocumentChangedEventHandler DocumentChanged;
+
+	event EDocument_BeforeDocumentCloseEventHandler BeforeDocumentClose;
+
+	event EDocument_StyleAddedEventHandler StyleAdded;
+
+	event EDocument_StyleChangedEventHandler StyleChanged;
+
+	event EDocument_BeforeStyleDeleteEventHandler BeforeStyleDelete;
+
+	event EDocument_MasterAddedEventHandler MasterAdded;
+
+	event EDocument_MasterChangedEventHandler MasterChanged;
+
+	event EDocument_BeforeMasterDeleteEventHandler BeforeMasterDelete;
+
+	event EDocument_PageAddedEventHandler PageAdded;
+
+	event EDocument_PageChangedEventHandler PageChanged;
+
+	event EDocument_BeforePageDeleteEventHandler BeforePageDelete;
+
+	event EDocument_ShapeAddedEventHandler ShapeAdded;
+
+	event EDocument_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EDocument_RunModeEnteredEventHandler RunModeEntered;
+
+	event EDocument_DesignModeEnteredEventHandler DesignModeEntered;
+
+	event EDocument_BeforeDocumentSaveEventHandler BeforeDocumentSave;
+
+	event EDocument_BeforeDocumentSaveAsEventHandler BeforeDocumentSaveAs;
+
+	event EDocument_QueryCancelDocumentCloseEventHandler QueryCancelDocumentClose;
+
+	event EDocument_DocumentCloseCanceledEventHandler DocumentCloseCanceled;
+
+	event EDocument_QueryCancelStyleDeleteEventHandler QueryCancelStyleDelete;
+
+	event EDocument_StyleDeleteCanceledEventHandler StyleDeleteCanceled;
+
+	event EDocument_QueryCancelMasterDeleteEventHandler QueryCancelMasterDelete;
+
+	event EDocument_MasterDeleteCanceledEventHandler MasterDeleteCanceled;
+
+	event EDocument_QueryCancelPageDeleteEventHandler QueryCancelPageDelete;
+
+	event EDocument_PageDeleteCanceledEventHandler PageDeleteCanceled;
+
+	event EDocument_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EDocument_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EDocument_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EDocument_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EDocument_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EDocument_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EDocument_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EDocument_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EDocument_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EDocument_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EDocument_GroupCanceledEventHandler GroupCanceled;
+
+	event EDocument_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+
+	event EDocument_BeforeDataRecordsetDeleteEventHandler BeforeDataRecordsetDelete;
+
+	event EDocument_DataRecordsetAddedEventHandler DataRecordsetAdded;
+
+	event EDocument_AfterRemoveHiddenInformationEventHandler AfterRemoveHiddenInformation;
+
+	event EDocument_RuleSetValidatedEventHandler RuleSetValidated;
+
+	event EDocument_AfterDocumentMergeEventHandler AfterDocumentMerge;
+}

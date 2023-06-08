@@ -1,0 +1,9 @@
+namespace x011d489fb9df7027;
+
+internal enum x6d4b101fe08bc376
+{
+	xb8751dec55f64252,
+	xd265a220a45d3124,
+	x7b6a6d281546db99,
+	x7f4d496937f8c24c
+}

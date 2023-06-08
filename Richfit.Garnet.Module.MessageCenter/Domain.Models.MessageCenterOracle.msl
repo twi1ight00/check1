@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="MessageCenter">
+    <EntitySetMapping Name="MSG_CENTER">
+      <EntityTypeMapping TypeName="Model.MSG_CENTER">
+        <MappingFragment StoreEntitySet="MSG_CENTER">
+          <ScalarProperty Name="MSG_OPEN_TYPE" ColumnName="MSG_OPEN_TYPE" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="SEND_ORG_NAME" ColumnName="SEND_ORG_NAME" />
+          <ScalarProperty Name="SEND_ORG_ID" ColumnName="SEND_ORG_ID" />
+          <ScalarProperty Name="SEND_USER_NAME" ColumnName="SEND_USER_NAME" />
+          <ScalarProperty Name="SEND_USER_ID" ColumnName="SEND_USER_ID" />
+          <ScalarProperty Name="SEND_TIME" ColumnName="SEND_TIME" />
+          <ScalarProperty Name="MSG_SOURCE" ColumnName="MSG_SOURCE" />
+          <ScalarProperty Name="MSG_BUSINESS_ID" ColumnName="MSG_BUSINESS_ID" />
+          <ScalarProperty Name="MSG_TYPE" ColumnName="MSG_TYPE" />
+          <ScalarProperty Name="MSG_TITLE" ColumnName="MSG_TITLE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSG_CENTER_USER">
+      <EntityTypeMapping TypeName="Model.MSG_CENTER_USER">
+        <MappingFragment StoreEntitySet="MSG_CENTER_USER">
+          <ScalarProperty Name="ISIM" ColumnName="ISIM" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="READ_TIME" ColumnName="READ_TIME" />
+          <ScalarProperty Name="ISREAD" ColumnName="ISREAD" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MSG_CENTER_ID" ColumnName="MSG_CENTER_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PortalModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Portal" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_PORTAL" EntityType="PortalModel.SYS_PORTAL" />
+    <EntitySet Name="SYS_SHORTCUT" EntityType="PortalModel.SYS_SHORTCUT" />
+    <EntitySet Name="SYS_USER_PORTAL" EntityType="PortalModel.SYS_USER_PORTAL" />
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_PORT" Association="PortalModel.FK_SYS_USER_REFERENCE_SYS_PORT">
+      <End Role="SYS_PORTAL" EntitySet="SYS_PORTAL" />
+      <End Role="SYS_USER_PORTAL" EntitySet="SYS_USER_PORTAL" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_PORTAL">
+    <Key>
+      <PropertyRef Name="PORTAL_ID" />
+    </Key>
+    <Property Name="PORTAL_ID" Type="Guid" Nullable="false" />
+    <Property Name="PORTAL_URL" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="IMAGE_URL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SORT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IS_REFRESH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SYS_USER_PORTAL" Relationship="PortalModel.FK_SYS_USER_REFERENCE_SYS_PORT" FromRole="SYS_PORTAL" ToRole="SYS_USER_PORTAL" />
+  </EntityType>
+  <EntityType Name="SYS_SHORTCUT">
+    <Key>
+      <PropertyRef Name="SHORTCUT_ID" />
+    </Key>
+    <Property Name="SHORTCUT_ID" Type="Guid" Nullable="false" />
+    <Property Name="MENU_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="SORT" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="SYS_USER_PORTAL">
+    <Key>
+      <PropertyRef Name="USER_PORTAL_ID" />
+    </Key>
+    <Property Name="USER_PORTAL_ID" Type="Guid" Nullable="false" />
+    <Property Name="PORTAL_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="COL_NUMBER" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="SYS_PORTAL" Relationship="PortalModel.FK_SYS_USER_REFERENCE_SYS_PORT" FromRole="SYS_USER_PORTAL" ToRole="SYS_PORTAL" />
+  </EntityType>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_PORT">
+    <End Role="SYS_PORTAL" Type="PortalModel.SYS_PORTAL" Multiplicity="0..1" />
+    <End Role="SYS_USER_PORTAL" Type="PortalModel.SYS_USER_PORTAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_PORTAL">
+        <PropertyRef Name="PORTAL_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_PORTAL">
+        <PropertyRef Name="PORTAL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

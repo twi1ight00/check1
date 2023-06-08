@@ -1,0 +1,38 @@
+namespace xad5c68c1ad3b0224;
+
+internal enum x2c127adefb5db3a3
+{
+	xed481cc115d56292,
+	x346626c30e7ddb97,
+	x3ec426f7bc5b3568,
+	xcc203ebd00328bf9,
+	x31c669cffab87c82,
+	x93c1b4f8ca3c6608,
+	x1d14078afead3939,
+	x4f22f67c3a2a2291,
+	x831803cdfcd433fb,
+	x1c0d56aa74903bbc,
+	xc869533ad93d98d3,
+	x62819e9fb2110ddc,
+	x24ff467b392c1a38,
+	xa9993ed2e0c64574,
+	x64fbe51d5b1a2101,
+	x3c1388d994dacf98,
+	xc4cfbad937290bb1,
+	x6eb0d2123bd826c2,
+	x73e16be67dff80ab,
+	x297e14bc7c061d46,
+	xd66c446deaa4e705,
+	x138f3e7bd8930522,
+	x22925f509223ea15,
+	x6afb9736bfd31348,
+	x51913d1ca000a17c,
+	xca7daa32761c533a,
+	x4d883cbc8156f773,
+	xaaf37e072a068e79,
+	xabd66677efe36eb6,
+	xc08adeedaa9916be,
+	x7e0b0092fe472ee7,
+	xb7a27d079d767cf7,
+	x1d03f9dbb48b31c4
+}

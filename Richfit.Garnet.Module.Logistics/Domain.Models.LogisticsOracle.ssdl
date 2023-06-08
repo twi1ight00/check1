@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Logistics.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="LM_VEHICLE_MANAGE">
+    <Key>
+      <PropertyRef Name="VEHICLE_ID" />
+    </Key>
+    <Property Name="VEHICLE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="VEHICLE_NO" Type="nvarchar2" MaxLength="128" />
+    <Property Name="DRIVER" Type="nvarchar2" MaxLength="128" />
+    <Property Name="VEHICLE_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IS_ENABLED" Type="number" Precision="38" Scale="0" />
+    <Property Name="ODOMETER_NO" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IS_BOUND_DRIVE" Type="number" Precision="38" Scale="0" />
+    <Property Name="URER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="LogisticsStoreContainer">
+    <EntitySet Name="LM_VEHICLE_MANAGE" EntityType="Self.LM_VEHICLE_MANAGE" Schema="" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

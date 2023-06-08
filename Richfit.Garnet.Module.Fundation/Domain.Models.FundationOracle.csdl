@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_DOMAIN" EntityType="Model.SYS_DOMAIN" />
+    <EntitySet Name="SYS_USER" EntityType="Model.SYS_USER" />
+    <EntitySet Name="SYS_USER_ORG" EntityType="Model.SYS_USER_ORG" />
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_DOMA" Association="Model.FK_SYS_USER_REFERENCE_SYS_DOMA">
+      <End Role="SYS_DOMAIN" EntitySet="SYS_DOMAIN" />
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_USERORGUS_SYS_USER" Association="Model.FK_SYS_USER_USERORGUS_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_DOMAIN">
+    <Key>
+      <PropertyRef Name="DOMAIN_ID" />
+    </Key>
+    <Property Type="Guid" Name="DOMAIN_ID" Nullable="false" />
+    <Property Type="String" Name="DOMAIN_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_ADDRESS" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_ACCOUNT" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_PWD" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SORT" Precision="38" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_USER" Relationship="Model.FK_SYS_USER_REFERENCE_SYS_DOMA" FromRole="SYS_DOMAIN" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="DOMAIN_ID" />
+    <Property Type="String" Name="LOGON_NAME" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DISPLAY_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USER_PASSWORD" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="USER_TYPE" Precision="38" Scale="0" />
+    <Property Type="Decimal" Name="SORT" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <Property Type="String" Name="EXTEND1" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND2" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND3" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND4" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND5" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="IS_FORBIDDEN" Precision="38" Scale="0" />
+    <NavigationProperty Name="SYS_DOMAIN" Relationship="Model.FK_SYS_USER_REFERENCE_SYS_DOMA" FromRole="SYS_USER" ToRole="SYS_DOMAIN" />
+    <NavigationProperty Name="SYS_USER_ORG" Relationship="Model.FK_SYS_USER_USERORGUS_SYS_USER" FromRole="SYS_USER" ToRole="SYS_USER_ORG" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ORG">
+    <Key>
+      <PropertyRef Name="USER_ORG_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_ORG_ID" Nullable="false" />
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <Property Type="Decimal" Name="USER_IDENTITY_TYPE" Precision="38" Scale="0" />
+    <NavigationProperty Name="SYS_USER" Relationship="Model.FK_SYS_USER_USERORGUS_SYS_USER" FromRole="SYS_USER_ORG" ToRole="SYS_USER" />
+  </EntityType>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_DOMA">
+    <End Type="Model.SYS_DOMAIN" Role="SYS_DOMAIN" Multiplicity="0..1" />
+    <End Type="Model.SYS_USER" Role="SYS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_DOMAIN">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_USERORGUS_SYS_USER">
+    <End Type="Model.SYS_USER" Role="SYS_USER" Multiplicity="1" />
+    <End Type="Model.SYS_USER_ORG" Role="SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

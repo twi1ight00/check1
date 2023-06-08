@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="SuperviseOracle" />
+  <Alias Key="Target" Value="SuperviseOracle.Store" />
+  <EntityContainerMapping CdmEntityContainer="Supervise" StorageEntityContainer="SuperviseOracleStoreContainer">
+    <EntitySetMapping Name="SUP_ASSIGN_TASK">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_ASSIGN_TASK">
+        <MappingFragment StoreEntitySet="SUP_ASSIGN_TASK">
+          <ScalarProperty Name="APPLY_COPLETION_TIME" ColumnName="APPLY_COPLETION_TIME" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="TASK_TYPE" ColumnName="TASK_TYPE" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="TASK_STATUS" ColumnName="TASK_STATUS" />
+          <ScalarProperty Name="IS_CHANGE" ColumnName="IS_CHANGE" />
+          <ScalarProperty Name="IS_CAN_CHANGE" ColumnName="IS_CAN_CHANGE" />
+          <ScalarProperty Name="IS_EXCEED" ColumnName="IS_EXCEED" />
+          <ScalarProperty Name="EVALUATION_CONTENT" ColumnName="EVALUATION_CONTENT" />
+          <ScalarProperty Name="IS_EVALUATION" ColumnName="IS_EVALUATION" />
+          <ScalarProperty Name="FEEDBACK_RATE" ColumnName="FEEDBACK_RATE" />
+          <ScalarProperty Name="FINISH_CONTENT" ColumnName="FINISH_CONTENT" />
+          <ScalarProperty Name="FINISH_TIME" ColumnName="FINISH_TIME" />
+          <ScalarProperty Name="HAND_REQUIREMENT" ColumnName="HAND_REQUIREMENT" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="BEGIN_TIME" ColumnName="BEGIN_TIME" />
+          <ScalarProperty Name="ASSIGN_TIME" ColumnName="ASSIGN_TIME" />
+          <ScalarProperty Name="WORK_CONTENT" ColumnName="WORK_CONTENT" />
+          <ScalarProperty Name="WORK_TITLE" ColumnName="WORK_TITLE" />
+          <ScalarProperty Name="PARENT_ASSIGN_TASK_ID" ColumnName="PARENT_ASSIGN_TASK_ID" />
+          <ScalarProperty Name="PORJECT_ID" ColumnName="PORJECT_ID" />
+          <ScalarProperty Name="ASSIGN_TASK_ID" ColumnName="ASSIGN_TASK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_CHANGE">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_CHANGE">
+        <MappingFragment StoreEntitySet="SUP_CHANGE">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CHANGE_STATUS" ColumnName="CHANGE_STATUS" />
+          <ScalarProperty Name="CHANGE_TIME" ColumnName="CHANGE_TIME" />
+          <ScalarProperty Name="CHANGE_REASON" ColumnName="CHANGE_REASON" />
+          <ScalarProperty Name="CHANGE_END_TIME" ColumnName="CHANGE_END_TIME" />
+          <ScalarProperty Name="CHANGE_TYPE" ColumnName="CHANGE_TYPE" />
+          <ScalarProperty Name="ASSIGN_TASK_ID" ColumnName="ASSIGN_TASK_ID" />
+          <ScalarProperty Name="CHANGE_ID" ColumnName="CHANGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_FEED_BACK">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_FEED_BACK">
+        <MappingFragment StoreEntitySet="SUP_FEED_BACK">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="FEED_BACK_STATUS" ColumnName="FEED_BACK_STATUS" />
+          <ScalarProperty Name="FEED_BACK_CONTENT" ColumnName="FEED_BACK_CONTENT" />
+          <ScalarProperty Name="FEED_BACK_NAME" ColumnName="FEED_BACK_NAME" />
+          <ScalarProperty Name="FEED_BACK_USER" ColumnName="FEED_BACK_USER" />
+          <ScalarProperty Name="ASSIGN_TASK_ID" ColumnName="ASSIGN_TASK_ID" />
+          <ScalarProperty Name="FEED_BACK_ID" ColumnName="FEED_BACK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_PORJECT">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_PORJECT">
+        <MappingFragment StoreEntitySet="SUP_PORJECT">
+          <ScalarProperty Name="TIME_LIMIT" ColumnName="TIME_LIMIT" />
+          <ScalarProperty Name="FOCUS_ON" ColumnName="FOCUS_ON" />
+          <ScalarProperty Name="SUPERVISOR_ID" ColumnName="SUPERVISOR_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="SUPERVISE_STATUS" ColumnName="SUPERVISE_STATUS" />
+          <ScalarProperty Name="IS_EXCEED" ColumnName="IS_EXCEED" />
+          <ScalarProperty Name="FINISH_CONTENT" ColumnName="FINISH_CONTENT" />
+          <ScalarProperty Name="FINISH_TIME" ColumnName="FINISH_TIME" />
+          <ScalarProperty Name="HAND_REQUIREMENT" ColumnName="HAND_REQUIREMENT" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="BEGIN_TIME" ColumnName="BEGIN_TIME" />
+          <ScalarProperty Name="ASSIGN_TIME" ColumnName="ASSIGN_TIME" />
+          <ScalarProperty Name="LEADER_NAME" ColumnName="LEADER_NAME" />
+          <ScalarProperty Name="LEADER_INSTRUCTION" ColumnName="LEADER_INSTRUCTION" />
+          <ScalarProperty Name="WORK_CONTENT" ColumnName="WORK_CONTENT" />
+          <ScalarProperty Name="PORJECT_TITLE" ColumnName="PORJECT_TITLE" />
+          <ScalarProperty Name="ISSUED_FILENUMBER" ColumnName="ISSUED_FILENUMBER" />
+          <ScalarProperty Name="ISSUED_ORGNAME" ColumnName="ISSUED_ORGNAME" />
+          <ScalarProperty Name="SUPERVISE_CLASSIFY" ColumnName="SUPERVISE_CLASSIFY" />
+          <ScalarProperty Name="SUPERVISE_TYPE" ColumnName="SUPERVISE_TYPE" />
+          <ScalarProperty Name="SUPERVISE_NUMBER" ColumnName="SUPERVISE_NUMBER" />
+          <ScalarProperty Name="PORJECT_ID" ColumnName="PORJECT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_PORJECT_USER">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_PORJECT_USER">
+        <MappingFragment StoreEntitySet="SUP_PORJECT_USER">
+          <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="PORJECT_ID" ColumnName="PORJECT_ID" />
+          <ScalarProperty Name="PORJECT_USER_ID" ColumnName="PORJECT_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_TASK_PROGRESS">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_TASK_PROGRESS">
+        <MappingFragment StoreEntitySet="SUP_TASK_PROGRESS">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="PROGRESS_CONTENT" ColumnName="PROGRESS_CONTENT" />
+          <ScalarProperty Name="PROGRESS_USER_NAME" ColumnName="PROGRESS_USER_NAME" />
+          <ScalarProperty Name="PROGRESS_USER_ID" ColumnName="PROGRESS_USER_ID" />
+          <ScalarProperty Name="ASSIGN_TASK_ID" ColumnName="ASSIGN_TASK_ID" />
+          <ScalarProperty Name="PROGRESS_ID" ColumnName="PROGRESS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUP_TASK_USER">
+      <EntityTypeMapping TypeName="SuperviseModel.SUP_TASK_USER">
+        <MappingFragment StoreEntitySet="SUP_TASK_USER">
+          <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ASSIGN_TASK_ID" ColumnName="ASSIGN_TASK_ID" />
+          <ScalarProperty Name="TASK_USER_ID" ColumnName="TASK_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER">
+      <EntityTypeMapping TypeName="SuperviseModel.SYS_USER">
+        <MappingFragment StoreEntitySet="SYS_USER">
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_FORBIDDEN" ColumnName="IS_FORBIDDEN" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+          <ScalarProperty Name="LOGON_NAME" ColumnName="LOGON_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

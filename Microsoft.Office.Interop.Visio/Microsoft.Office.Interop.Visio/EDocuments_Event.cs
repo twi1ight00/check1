@@ -1,0 +1,139 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[ComVisible(false)]
+[ComEventInterface(typeof(EDocuments_0000), typeof(EDocuments_EventProvider_0000))]
+[TypeLibType(16)]
+public interface EDocuments_Event
+{
+	event EDocuments_DocumentOpenedEventHandler DocumentOpened;
+
+	event EDocuments_DocumentCreatedEventHandler DocumentCreated;
+
+	event EDocuments_DocumentSavedEventHandler DocumentSaved;
+
+	event EDocuments_DocumentSavedAsEventHandler DocumentSavedAs;
+
+	event EDocuments_DocumentChangedEventHandler DocumentChanged;
+
+	event EDocuments_BeforeDocumentCloseEventHandler BeforeDocumentClose;
+
+	event EDocuments_StyleAddedEventHandler StyleAdded;
+
+	event EDocuments_StyleChangedEventHandler StyleChanged;
+
+	event EDocuments_BeforeStyleDeleteEventHandler BeforeStyleDelete;
+
+	event EDocuments_MasterAddedEventHandler MasterAdded;
+
+	event EDocuments_MasterChangedEventHandler MasterChanged;
+
+	event EDocuments_BeforeMasterDeleteEventHandler BeforeMasterDelete;
+
+	event EDocuments_PageAddedEventHandler PageAdded;
+
+	event EDocuments_PageChangedEventHandler PageChanged;
+
+	event EDocuments_BeforePageDeleteEventHandler BeforePageDelete;
+
+	event EDocuments_ShapeAddedEventHandler ShapeAdded;
+
+	event EDocuments_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EDocuments_ShapeChangedEventHandler ShapeChanged;
+
+	event EDocuments_SelectionAddedEventHandler SelectionAdded;
+
+	event EDocuments_BeforeShapeDeleteEventHandler BeforeShapeDelete;
+
+	event EDocuments_TextChangedEventHandler TextChanged;
+
+	event EDocuments_CellChangedEventHandler CellChanged;
+
+	event EDocuments_RunModeEnteredEventHandler RunModeEntered;
+
+	event EDocuments_DesignModeEnteredEventHandler DesignModeEntered;
+
+	event EDocuments_BeforeDocumentSaveEventHandler BeforeDocumentSave;
+
+	event EDocuments_BeforeDocumentSaveAsEventHandler BeforeDocumentSaveAs;
+
+	event EDocuments_FormulaChangedEventHandler FormulaChanged;
+
+	event EDocuments_ConnectionsAddedEventHandler ConnectionsAdded;
+
+	event EDocuments_ConnectionsDeletedEventHandler ConnectionsDeleted;
+
+	event EDocuments_QueryCancelDocumentCloseEventHandler QueryCancelDocumentClose;
+
+	event EDocuments_DocumentCloseCanceledEventHandler DocumentCloseCanceled;
+
+	event EDocuments_QueryCancelStyleDeleteEventHandler QueryCancelStyleDelete;
+
+	event EDocuments_StyleDeleteCanceledEventHandler StyleDeleteCanceled;
+
+	event EDocuments_QueryCancelMasterDeleteEventHandler QueryCancelMasterDelete;
+
+	event EDocuments_MasterDeleteCanceledEventHandler MasterDeleteCanceled;
+
+	event EDocuments_QueryCancelPageDeleteEventHandler QueryCancelPageDelete;
+
+	event EDocuments_PageDeleteCanceledEventHandler PageDeleteCanceled;
+
+	event EDocuments_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EDocuments_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EDocuments_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EDocuments_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EDocuments_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EDocuments_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EDocuments_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EDocuments_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EDocuments_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EDocuments_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EDocuments_GroupCanceledEventHandler GroupCanceled;
+
+	event EDocuments_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+
+	event EDocuments_BeforeDataRecordsetDeleteEventHandler BeforeDataRecordsetDelete;
+
+	event EDocuments_DataRecordsetChangedEventHandler DataRecordsetChanged;
+
+	event EDocuments_DataRecordsetAddedEventHandler DataRecordsetAdded;
+
+	event EDocuments_ShapeLinkAddedEventHandler ShapeLinkAdded;
+
+	event EDocuments_ShapeLinkDeletedEventHandler ShapeLinkDeleted;
+
+	event EDocuments_AfterRemoveHiddenInformationEventHandler AfterRemoveHiddenInformation;
+
+	event EDocuments_ContainerRelationshipAddedEventHandler ContainerRelationshipAdded;
+
+	event EDocuments_ContainerRelationshipDeletedEventHandler ContainerRelationshipDeleted;
+
+	event EDocuments_CalloutRelationshipAddedEventHandler CalloutRelationshipAdded;
+
+	event EDocuments_CalloutRelationshipDeletedEventHandler CalloutRelationshipDeleted;
+
+	event EDocuments_RuleSetValidatedEventHandler RuleSetValidated;
+
+	event EDocuments_QueryCancelReplaceShapesEventHandler QueryCancelReplaceShapes;
+
+	event EDocuments_ReplaceShapesCanceledEventHandler ReplaceShapesCanceled;
+
+	event EDocuments_BeforeReplaceShapesEventHandler BeforeReplaceShapes;
+
+	event EDocuments_AfterReplaceShapesEventHandler AfterReplaceShapes;
+
+	event EDocuments_AfterDocumentMergeEventHandler AfterDocumentMerge;
+}

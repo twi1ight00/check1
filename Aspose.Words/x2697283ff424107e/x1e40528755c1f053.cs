@@ -1,0 +1,13 @@
+namespace x2697283ff424107e;
+
+internal enum x1e40528755c1f053
+{
+	x1dd2250c6e384ef7,
+	xf8569aac1192e1a0,
+	xe50ab9ba6636a13d,
+	x4a498a651d07aefe,
+	x9b41425268471380,
+	x8c0d22e4c133799d,
+	x1be93eed8950d961,
+	x2f7951fa0946af7e
+}

@@ -1,0 +1,1732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="xhtml_symbol" type="System.Byte[], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"><value>
+	PCEtLSBNYXRoZW1hdGljYWwsIEdyZWVrIGFuZCBTeW1ib2xpYyBjaGFyYWN0ZXJzIGZvciBYSFRNTCAt
+	LT4KCjwhLS0gQ2hhcmFjdGVyIGVudGl0eSBzZXQuIFR5cGljYWwgaW52b2NhdGlvbjoKICAgICA8IUVO
+	VElUWSAlIEhUTUxzeW1ib2wgUFVCTElDCiAgICAgICAgIi0vL1czQy8vRU5USVRJRVMgU3ltYm9scyBm
+	b3IgWEhUTUwvL0VOIgogICAgICAgICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEvRFREL3hodG1s
+	LXN5bWJvbC5lbnQiPgogICAgICVIVE1Mc3ltYm9sOwotLT4KCjwhLS0gUG9ydGlvbnMgKEMpIEludGVy
+	bmF0aW9uYWwgT3JnYW5pemF0aW9uIGZvciBTdGFuZGFyZGl6YXRpb24gMTk4NjoKICAgICBQZXJtaXNz
+	aW9uIHRvIGNvcHkgaW4gYW55IGZvcm0gaXMgZ3JhbnRlZCBmb3IgdXNlIHdpdGgKICAgICBjb25mb3Jt
+	aW5nIFNHTUwgc3lzdGVtcyBhbmQgYXBwbGljYXRpb25zIGFzIGRlZmluZWQgaW4KICAgICBJU08gODg3
+	OSwgcHJvdmlkZWQgdGhpcyBub3RpY2UgaXMgaW5jbHVkZWQgaW4gYWxsIGNvcGllcy4KLS0+Cgo8IS0t
+	IFJlbGV2YW50IElTTyBlbnRpdHkgc2V0IGlzIGdpdmVuIHVubGVzcyBuYW1lcyBhcmUgbmV3bHkgaW50
+	cm9kdWNlZC4KICAgICBOZXcgbmFtZXMgKGkuZS4sIG5vdCBpbiBJU08gODg3OSBsaXN0KSBkbyBub3Qg
+	Y2xhc2ggd2l0aCBhbnkKICAgICBleGlzdGluZyBJU08gODg3OSBlbnRpdHkgbmFtZXMuIElTTyAxMDY0
+	NiBjaGFyYWN0ZXIgbnVtYmVycwogICAgIGFyZSBnaXZlbiBmb3IgZWFjaCBjaGFyYWN0ZXIsIGluIGhl
+	eC4gdmFsdWVzIGFyZSBkZWNpbWFsCiAgICAgY29udmVyc2lvbnMgb2YgdGhlIElTTyAxMDY0NiB2YWx1
+	ZXMgYW5kIHJlZmVyIHRvIHRoZSBkb2N1bWVudAogICAgIGNoYXJhY3RlciBzZXQuIE5hbWVzIGFyZSBV
+	bmljb2RlIG5hbWVzLiAKLS0+Cgo8IS0tIExhdGluIEV4dGVuZGVkLUIgLS0+CjwhRU5USVRZIGZub2Yg
+	ICAgICImIzQwMjsiPiA8IS0tIGxhdGluIHNtYWxsIGxldHRlciBmIHdpdGggaG9vayA9IGZ1bmN0aW9u
+	CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID0gZmxvcmluLCBVKzAxOTIgSVNPdGVj
+	aCAtLT4KCjwhLS0gR3JlZWsgLS0+CjwhRU5USVRZIEFscGhhICAgICImIzkxMzsiPiA8IS0tIGdyZWVr
+	IGNhcGl0YWwgbGV0dGVyIGFscGhhLCBVKzAzOTEgLS0+CjwhRU5USVRZIEJldGEgICAgICImIzkxNDsi
+	PiA8IS0tIGdyZWVrIGNhcGl0YWwgbGV0dGVyIGJldGEsIFUrMDM5MiAtLT4KPCFFTlRJVFkgR2FtbWEg
+	ICAgIiYjOTE1OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgZ2FtbWEsCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDM5MyBJU09ncmszIC0tPgo8IUVOVElUWSBEZWx0YSAgICAi
+	JiM5MTY7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRlciBkZWx0YSwKICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgVSswMzk0IElTT2dyazMgLS0+CjwhRU5USVRZIEVwc2lsb24gICImIzkx
+	NzsiPiA8IS0tIGdyZWVrIGNhcGl0YWwgbGV0dGVyIGVwc2lsb24sIFUrMDM5NSAtLT4KPCFFTlRJVFkg
+	WmV0YSAgICAgIiYjOTE4OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgemV0YSwgVSswMzk2IC0t
+	Pgo8IUVOVElUWSBFdGEgICAgICAiJiM5MTk7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRlciBldGEs
+	IFUrMDM5NyAtLT4KPCFFTlRJVFkgVGhldGEgICAgIiYjOTIwOyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBs
+	ZXR0ZXIgdGhldGEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDM5OCBJU09n
+	cmszIC0tPgo8IUVOVElUWSBJb3RhICAgICAiJiM5MjE7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRl
+	ciBpb3RhLCBVKzAzOTkgLS0+CjwhRU5USVRZIEthcHBhICAgICImIzkyMjsiPiA8IS0tIGdyZWVrIGNh
+	cGl0YWwgbGV0dGVyIGthcHBhLCBVKzAzOUEgLS0+CjwhRU5USVRZIExhbWJkYSAgICImIzkyMzsiPiA8
+	IS0tIGdyZWVrIGNhcGl0YWwgbGV0dGVyIGxhbWRhLAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAzOUIgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgTXUgICAgICAgIiYjOTI0OyI+IDwhLS0g
+	Z3JlZWsgY2FwaXRhbCBsZXR0ZXIgbXUsIFUrMDM5QyAtLT4KPCFFTlRJVFkgTnUgICAgICAgIiYjOTI1
+	OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgbnUsIFUrMDM5RCAtLT4KPCFFTlRJVFkgWGkgICAg
+	ICAgIiYjOTI2OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgeGksIFUrMDM5RSBJU09ncmszIC0t
+	Pgo8IUVOVElUWSBPbWljcm9uICAiJiM5Mjc7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRlciBvbWlj
+	cm9uLCBVKzAzOUYgLS0+CjwhRU5USVRZIFBpICAgICAgICImIzkyODsiPiA8IS0tIGdyZWVrIGNhcGl0
+	YWwgbGV0dGVyIHBpLCBVKzAzQTAgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgUmhvICAgICAgIiYjOTI5OyI+
+	IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgcmhvLCBVKzAzQTEgLS0+CjwhLS0gdGhlcmUgaXMgbm8g
+	U2lnbWFmLCBhbmQgbm8gVSswM0EyIGNoYXJhY3RlciBlaXRoZXIgLS0+CjwhRU5USVRZIFNpZ21hICAg
+	ICImIzkzMTsiPiA8IS0tIGdyZWVrIGNhcGl0YWwgbGV0dGVyIHNpZ21hLAogICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICBVKzAzQTMgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgVGF1ICAgICAgIiYj
+	OTMyOyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgdGF1LCBVKzAzQTQgLS0+CjwhRU5USVRZIFVw
+	c2lsb24gICImIzkzMzsiPiA8IS0tIGdyZWVrIGNhcGl0YWwgbGV0dGVyIHVwc2lsb24sCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDNBNSBJU09ncmszIC0tPgo8IUVOVElUWSBQaGkg
+	ICAgICAiJiM5MzQ7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRlciBwaGksCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDNBNiBJU09ncmszIC0tPgo8IUVOVElUWSBDaGkgICAgICAi
+	JiM5MzU7Ij4gPCEtLSBncmVlayBjYXBpdGFsIGxldHRlciBjaGksIFUrMDNBNyAtLT4KPCFFTlRJVFkg
+	UHNpICAgICAgIiYjOTM2OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgcHNpLAogICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAzQTggSVNPZ3JrMyAtLT4KPCFFTlRJVFkgT21lZ2Eg
+	ICAgIiYjOTM3OyI+IDwhLS0gZ3JlZWsgY2FwaXRhbCBsZXR0ZXIgb21lZ2EsCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDNBOSBJU09ncmszIC0tPgoKPCFFTlRJVFkgYWxwaGEgICAg
+	IiYjOTQ1OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIGFscGhhLAogICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICBVKzAzQjEgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgYmV0YSAgICAgIiYjOTQ2
+	OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIGJldGEsIFUrMDNCMiBJU09ncmszIC0tPgo8IUVOVElU
+	WSBnYW1tYSAgICAiJiM5NDc7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgZ2FtbWEsCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDNCMyBJU09ncmszIC0tPgo8IUVOVElUWSBkZWx0
+	YSAgICAiJiM5NDg7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgZGVsdGEsCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDNCNCBJU09ncmszIC0tPgo8IUVOVElUWSBlcHNpbG9uICAi
+	JiM5NDk7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgZXBzaWxvbiwKICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgVSswM0I1IElTT2dyazMgLS0+CjwhRU5USVRZIHpldGEgICAgICImIzk1
+	MDsiPiA8IS0tIGdyZWVrIHNtYWxsIGxldHRlciB6ZXRhLCBVKzAzQjYgSVNPZ3JrMyAtLT4KPCFFTlRJ
+	VFkgZXRhICAgICAgIiYjOTUxOyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIGV0YSwgVSswM0I3IElT
+	T2dyazMgLS0+CjwhRU5USVRZIHRoZXRhICAgICImIzk1MjsiPiA8IS0tIGdyZWVrIHNtYWxsIGxldHRl
+	ciB0aGV0YSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswM0I4IElTT2dyazMg
+	LS0+CjwhRU5USVRZIGlvdGEgICAgICImIzk1MzsiPiA8IS0tIGdyZWVrIHNtYWxsIGxldHRlciBpb3Rh
+	LCBVKzAzQjkgSVNPZ3JrMyAtLT4KPCFFTlRJVFkga2FwcGEgICAgIiYjOTU0OyI+IDwhLS0gZ3JlZWsg
+	c21hbGwgbGV0dGVyIGthcHBhLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAz
+	QkEgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgbGFtYmRhICAgIiYjOTU1OyI+IDwhLS0gZ3JlZWsgc21hbGwg
+	bGV0dGVyIGxhbWRhLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAzQkIgSVNP
+	Z3JrMyAtLT4KPCFFTlRJVFkgbXUgICAgICAgIiYjOTU2OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVy
+	IG11LCBVKzAzQkMgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgbnUgICAgICAgIiYjOTU3OyI+IDwhLS0gZ3Jl
+	ZWsgc21hbGwgbGV0dGVyIG51LCBVKzAzQkQgSVNPZ3JrMyAtLT4KPCFFTlRJVFkgeGkgICAgICAgIiYj
+	OTU4OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIHhpLCBVKzAzQkUgSVNPZ3JrMyAtLT4KPCFFTlRJ
+	VFkgb21pY3JvbiAgIiYjOTU5OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIG9taWNyb24sIFUrMDNC
+	RiBORVcgLS0+CjwhRU5USVRZIHBpICAgICAgICImIzk2MDsiPiA8IS0tIGdyZWVrIHNtYWxsIGxldHRl
+	ciBwaSwgVSswM0MwIElTT2dyazMgLS0+CjwhRU5USVRZIHJobyAgICAgICImIzk2MTsiPiA8IS0tIGdy
+	ZWVrIHNtYWxsIGxldHRlciByaG8sIFUrMDNDMSBJU09ncmszIC0tPgo8IUVOVElUWSBzaWdtYWYgICAi
+	JiM5NjI7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgZmluYWwgc2lnbWEsCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDNDMiBJU09ncmszIC0tPgo8IUVOVElUWSBzaWdtYSAgICAi
+	JiM5NjM7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgc2lnbWEsCiAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgIFUrMDNDMyBJU09ncmszIC0tPgo8IUVOVElUWSB0YXUgICAgICAiJiM5NjQ7
+	Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgdGF1LCBVKzAzQzQgSVNPZ3JrMyAtLT4KPCFFTlRJVFkg
+	dXBzaWxvbiAgIiYjOTY1OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIHVwc2lsb24sCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDNDNSBJU09ncmszIC0tPgo8IUVOVElUWSBwaGkg
+	ICAgICAiJiM5NjY7Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgcGhpLCBVKzAzQzYgSVNPZ3JrMyAt
+	LT4KPCFFTlRJVFkgY2hpICAgICAgIiYjOTY3OyI+IDwhLS0gZ3JlZWsgc21hbGwgbGV0dGVyIGNoaSwg
+	VSswM0M3IElTT2dyazMgLS0+CjwhRU5USVRZIHBzaSAgICAgICImIzk2ODsiPiA8IS0tIGdyZWVrIHNt
+	YWxsIGxldHRlciBwc2ksIFUrMDNDOCBJU09ncmszIC0tPgo8IUVOVElUWSBvbWVnYSAgICAiJiM5Njk7
+	Ij4gPCEtLSBncmVlayBzbWFsbCBsZXR0ZXIgb21lZ2EsCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgIFUrMDNDOSBJU09ncmszIC0tPgo8IUVOVElUWSB0aGV0YXN5bSAiJiM5Nzc7Ij4gPCEt
+	LSBncmVlayB0aGV0YSBzeW1ib2wsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUr
+	MDNEMSBORVcgLS0+CjwhRU5USVRZIHVwc2loICAgICImIzk3ODsiPiA8IS0tIGdyZWVrIHVwc2lsb24g
+	d2l0aCBob29rIHN5bWJvbCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswM0Qy
+	IE5FVyAtLT4KPCFFTlRJVFkgcGl2ICAgICAgIiYjOTgyOyI+IDwhLS0gZ3JlZWsgcGkgc3ltYm9sLCBV
+	KzAzRDYgSVNPZ3JrMyAtLT4KCjwhLS0gR2VuZXJhbCBQdW5jdHVhdGlvbiAtLT4KPCFFTlRJVFkgYnVs
+	bCAgICAgIiYjODIyNjsiPiA8IS0tIGJ1bGxldCA9IGJsYWNrIHNtYWxsIGNpcmNsZSwKICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjAyMiBJU09wdWIgIC0tPgo8IS0tIGJ1bGxldCBp
+	cyBOT1QgdGhlIHNhbWUgYXMgYnVsbGV0IG9wZXJhdG9yLCBVKzIyMTkgLS0+CjwhRU5USVRZIGhlbGxp
+	cCAgICImIzgyMzA7Ij4gPCEtLSBob3Jpem9udGFsIGVsbGlwc2lzID0gdGhyZWUgZG90IGxlYWRlciwK
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjAyNiBJU09wdWIgIC0tPgo8IUVO
+	VElUWSBwcmltZSAgICAiJiM4MjQyOyI+IDwhLS0gcHJpbWUgPSBtaW51dGVzID0gZmVldCwgVSsyMDMy
+	IElTT3RlY2ggLS0+CjwhRU5USVRZIFByaW1lICAgICImIzgyNDM7Ij4gPCEtLSBkb3VibGUgcHJpbWUg
+	PSBzZWNvbmRzID0gaW5jaGVzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsy
+	MDMzIElTT3RlY2ggLS0+CjwhRU5USVRZIG9saW5lICAgICImIzgyNTQ7Ij4gPCEtLSBvdmVybGluZSA9
+	IHNwYWNpbmcgb3ZlcnNjb3JlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsy
+	MDNFIE5FVyAtLT4KPCFFTlRJVFkgZnJhc2wgICAgIiYjODI2MDsiPiA8IS0tIGZyYWN0aW9uIHNsYXNo
+	LCBVKzIwNDQgTkVXIC0tPgoKPCEtLSBMZXR0ZXJsaWtlIFN5bWJvbHMgLS0+CjwhRU5USVRZIHdlaWVy
+	cCAgICImIzg0NzI7Ij4gPCEtLSBzY3JpcHQgY2FwaXRhbCBQID0gcG93ZXIgc2V0CiAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICA9IFdlaWVyc3RyYXNzIHAsIFUrMjExOCBJU09hbXNvIC0t
+	Pgo8IUVOVElUWSBpbWFnZSAgICAiJiM4NDY1OyI+IDwhLS0gYmxhY2stbGV0dGVyIGNhcGl0YWwgSSA9
+	IGltYWdpbmFyeSBwYXJ0LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsyMTEx
+	IElTT2Ftc28gLS0+CjwhRU5USVRZIHJlYWwgICAgICImIzg0NzY7Ij4gPCEtLSBibGFjay1sZXR0ZXIg
+	Y2FwaXRhbCBSID0gcmVhbCBwYXJ0IHN5bWJvbCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgIFUrMjExQyBJU09hbXNvIC0tPgo8IUVOVElUWSB0cmFkZSAgICAiJiM4NDgyOyI+IDwhLS0g
+	dHJhZGUgbWFyayBzaWduLCBVKzIxMjIgSVNPbnVtIC0tPgo8IUVOVElUWSBhbGVmc3ltICAiJiM4NTAx
+	OyI+IDwhLS0gYWxlZiBzeW1ib2wgPSBmaXJzdCB0cmFuc2Zpbml0ZSBjYXJkaW5hbCwKICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjEzNSBORVcgLS0+CjwhLS0gYWxlZiBzeW1ib2wg
+	aXMgTk9UIHRoZSBzYW1lIGFzIGhlYnJldyBsZXR0ZXIgYWxlZiwKICAgICBVKzA1RDAgYWx0aG91Z2gg
+	dGhlIHNhbWUgZ2x5cGggY291bGQgYmUgdXNlZCB0byBkZXBpY3QgYm90aCBjaGFyYWN0ZXJzIC0tPgoK
+	PCEtLSBBcnJvd3MgLS0+CjwhRU5USVRZIGxhcnIgICAgICImIzg1OTI7Ij4gPCEtLSBsZWZ0d2FyZHMg
+	YXJyb3csIFUrMjE5MCBJU09udW0gLS0+CjwhRU5USVRZIHVhcnIgICAgICImIzg1OTM7Ij4gPCEtLSB1
+	cHdhcmRzIGFycm93LCBVKzIxOTEgSVNPbnVtLS0+CjwhRU5USVRZIHJhcnIgICAgICImIzg1OTQ7Ij4g
+	PCEtLSByaWdodHdhcmRzIGFycm93LCBVKzIxOTIgSVNPbnVtIC0tPgo8IUVOVElUWSBkYXJyICAgICAi
+	JiM4NTk1OyI+IDwhLS0gZG93bndhcmRzIGFycm93LCBVKzIxOTMgSVNPbnVtIC0tPgo8IUVOVElUWSBo
+	YXJyICAgICAiJiM4NTk2OyI+IDwhLS0gbGVmdCByaWdodCBhcnJvdywgVSsyMTk0IElTT2Ftc2EgLS0+
+	CjwhRU5USVRZIGNyYXJyICAgICImIzg2Mjk7Ij4gPCEtLSBkb3dud2FyZHMgYXJyb3cgd2l0aCBjb3Ju
+	ZXIgbGVmdHdhcmRzCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA9IGNhcnJpYWdl
+	IHJldHVybiwgVSsyMUI1IE5FVyAtLT4KPCFFTlRJVFkgbEFyciAgICAgIiYjODY1NjsiPiA8IS0tIGxl
+	ZnR3YXJkcyBkb3VibGUgYXJyb3csIFUrMjFEMCBJU090ZWNoIC0tPgo8IS0tIFVuaWNvZGUgZG9lcyBu
+	b3Qgc2F5IHRoYXQgbEFyciBpcyB0aGUgc2FtZSBhcyB0aGUgJ2lzIGltcGxpZWQgYnknIGFycm93CiAg
+	ICBidXQgYWxzbyBkb2VzIG5vdCBoYXZlIGFueSBvdGhlciBjaGFyYWN0ZXIgZm9yIHRoYXQgZnVuY3Rp
+	b24uIFNvIGxBcnIgY2FuCiAgICBiZSB1c2VkIGZvciAnaXMgaW1wbGllZCBieScgYXMgSVNPdGVjaCBz
+	dWdnZXN0cyAtLT4KPCFFTlRJVFkgdUFyciAgICAgIiYjODY1NzsiPiA8IS0tIHVwd2FyZHMgZG91Ymxl
+	IGFycm93LCBVKzIxRDEgSVNPYW1zYSAtLT4KPCFFTlRJVFkgckFyciAgICAgIiYjODY1ODsiPiA8IS0t
+	IHJpZ2h0d2FyZHMgZG91YmxlIGFycm93LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgVSsyMUQyIElTT3RlY2ggLS0+CjwhLS0gVW5pY29kZSBkb2VzIG5vdCBzYXkgdGhpcyBpcyB0aGUg
+	J2ltcGxpZXMnIGNoYXJhY3RlciBidXQgZG9lcyBub3QgaGF2ZSAKICAgICBhbm90aGVyIGNoYXJhY3Rl
+	ciB3aXRoIHRoaXMgZnVuY3Rpb24gc28gckFyciBjYW4gYmUgdXNlZCBmb3IgJ2ltcGxpZXMnCiAgICAg
+	YXMgSVNPdGVjaCBzdWdnZXN0cyAtLT4KPCFFTlRJVFkgZEFyciAgICAgIiYjODY1OTsiPiA8IS0tIGRv
+	d253YXJkcyBkb3VibGUgYXJyb3csIFUrMjFEMyBJU09hbXNhIC0tPgo8IUVOVElUWSBoQXJyICAgICAi
+	JiM4NjYwOyI+IDwhLS0gbGVmdCByaWdodCBkb3VibGUgYXJyb3csCiAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICBVKzIxRDQgSVNPYW1zYSAtLT4KCjwhLS0gTWF0aGVtYXRpY2FsIE9wZXJh
+	dG9ycyAtLT4KPCFFTlRJVFkgZm9yYWxsICAgIiYjODcwNDsiPiA8IS0tIGZvciBhbGwsIFUrMjIwMCBJ
+	U090ZWNoIC0tPgo8IUVOVElUWSBwYXJ0ICAgICAiJiM4NzA2OyI+IDwhLS0gcGFydGlhbCBkaWZmZXJl
+	bnRpYWwsIFUrMjIwMiBJU090ZWNoICAtLT4KPCFFTlRJVFkgZXhpc3QgICAgIiYjODcwNzsiPiA8IS0t
+	IHRoZXJlIGV4aXN0cywgVSsyMjAzIElTT3RlY2ggLS0+CjwhRU5USVRZIGVtcHR5ICAgICImIzg3MDk7
+	Ij4gPCEtLSBlbXB0eSBzZXQgPSBudWxsIHNldCwgVSsyMjA1IElTT2Ftc28gLS0+CjwhRU5USVRZIG5h
+	YmxhICAgICImIzg3MTE7Ij4gPCEtLSBuYWJsYSA9IGJhY2t3YXJkIGRpZmZlcmVuY2UsCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIyMDcgSVNPdGVjaCAtLT4KPCFFTlRJVFkgaXNp
+	biAgICAgIiYjODcxMjsiPiA8IS0tIGVsZW1lbnQgb2YsIFUrMjIwOCBJU090ZWNoIC0tPgo8IUVOVElU
+	WSBub3RpbiAgICAiJiM4NzEzOyI+IDwhLS0gbm90IGFuIGVsZW1lbnQgb2YsIFUrMjIwOSBJU090ZWNo
+	IC0tPgo8IUVOVElUWSBuaSAgICAgICAiJiM4NzE1OyI+IDwhLS0gY29udGFpbnMgYXMgbWVtYmVyLCBV
+	KzIyMEIgSVNPdGVjaCAtLT4KPCFFTlRJVFkgcHJvZCAgICAgIiYjODcxOTsiPiA8IS0tIG4tYXJ5IHBy
+	b2R1Y3QgPSBwcm9kdWN0IHNpZ24sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBV
+	KzIyMEYgSVNPYW1zYiAtLT4KPCEtLSBwcm9kIGlzIE5PVCB0aGUgc2FtZSBjaGFyYWN0ZXIgYXMgVSsw
+	M0EwICdncmVlayBjYXBpdGFsIGxldHRlciBwaScgdGhvdWdoCiAgICAgdGhlIHNhbWUgZ2x5cGggbWln
+	aHQgYmUgdXNlZCBmb3IgYm90aCAtLT4KPCFFTlRJVFkgc3VtICAgICAgIiYjODcyMTsiPiA8IS0tIG4t
+	YXJ5IHN1bW1hdGlvbiwgVSsyMjExIElTT2Ftc2IgLS0+CjwhLS0gc3VtIGlzIE5PVCB0aGUgc2FtZSBj
+	aGFyYWN0ZXIgYXMgVSswM0EzICdncmVlayBjYXBpdGFsIGxldHRlciBzaWdtYScKICAgICB0aG91Z2gg
+	dGhlIHNhbWUgZ2x5cGggbWlnaHQgYmUgdXNlZCBmb3IgYm90aCAtLT4KPCFFTlRJVFkgbWludXMgICAg
+	IiYjODcyMjsiPiA8IS0tIG1pbnVzIHNpZ24sIFUrMjIxMiBJU090ZWNoIC0tPgo8IUVOVElUWSBsb3dh
+	c3QgICAiJiM4NzI3OyI+IDwhLS0gYXN0ZXJpc2sgb3BlcmF0b3IsIFUrMjIxNyBJU090ZWNoIC0tPgo8
+	IUVOVElUWSByYWRpYyAgICAiJiM4NzMwOyI+IDwhLS0gc3F1YXJlIHJvb3QgPSByYWRpY2FsIHNpZ24s
+	CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIyMUEgSVNPdGVjaCAtLT4KPCFF
+	TlRJVFkgcHJvcCAgICAgIiYjODczMzsiPiA8IS0tIHByb3BvcnRpb25hbCB0bywgVSsyMjFEIElTT3Rl
+	Y2ggLS0+CjwhRU5USVRZIGluZmluICAgICImIzg3MzQ7Ij4gPCEtLSBpbmZpbml0eSwgVSsyMjFFIElT
+	T3RlY2ggLS0+CjwhRU5USVRZIGFuZyAgICAgICImIzg3MzY7Ij4gPCEtLSBhbmdsZSwgVSsyMjIwIElT
+	T2Ftc28gLS0+CjwhRU5USVRZIGFuZCAgICAgICImIzg3NDM7Ij4gPCEtLSBsb2dpY2FsIGFuZCA9IHdl
+	ZGdlLCBVKzIyMjcgSVNPdGVjaCAtLT4KPCFFTlRJVFkgb3IgICAgICAgIiYjODc0NDsiPiA8IS0tIGxv
+	Z2ljYWwgb3IgPSB2ZWUsIFUrMjIyOCBJU090ZWNoIC0tPgo8IUVOVElUWSBjYXAgICAgICAiJiM4NzQ1
+	OyI+IDwhLS0gaW50ZXJzZWN0aW9uID0gY2FwLCBVKzIyMjkgSVNPdGVjaCAtLT4KPCFFTlRJVFkgY3Vw
+	ICAgICAgIiYjODc0NjsiPiA8IS0tIHVuaW9uID0gY3VwLCBVKzIyMkEgSVNPdGVjaCAtLT4KPCFFTlRJ
+	VFkgaW50ICAgICAgIiYjODc0NzsiPiA8IS0tIGludGVncmFsLCBVKzIyMkIgSVNPdGVjaCAtLT4KPCFF
+	TlRJVFkgdGhlcmU0ICAgIiYjODc1NjsiPiA8IS0tIHRoZXJlZm9yZSwgVSsyMjM0IElTT3RlY2ggLS0+
+	CjwhRU5USVRZIHNpbSAgICAgICImIzg3NjQ7Ij4gPCEtLSB0aWxkZSBvcGVyYXRvciA9IHZhcmllcyB3
+	aXRoID0gc2ltaWxhciB0bywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjIz
+	QyBJU090ZWNoIC0tPgo8IS0tIHRpbGRlIG9wZXJhdG9yIGlzIE5PVCB0aGUgc2FtZSBjaGFyYWN0ZXIg
+	YXMgdGhlIHRpbGRlLCBVKzAwN0UsCiAgICAgYWx0aG91Z2ggdGhlIHNhbWUgZ2x5cGggbWlnaHQgYmUg
+	dXNlZCB0byByZXByZXNlbnQgYm90aCAgLS0+CjwhRU5USVRZIGNvbmcgICAgICImIzg3NzM7Ij4gPCEt
+	LSBhcHByb3hpbWF0ZWx5IGVxdWFsIHRvLCBVKzIyNDUgSVNPdGVjaCAtLT4KPCFFTlRJVFkgYXN5bXAg
+	ICAgIiYjODc3NjsiPiA8IS0tIGFsbW9zdCBlcXVhbCB0byA9IGFzeW1wdG90aWMgdG8sCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIyNDggSVNPYW1zciAtLT4KPCFFTlRJVFkgbmUg
+	ICAgICAgIiYjODgwMDsiPiA8IS0tIG5vdCBlcXVhbCB0bywgVSsyMjYwIElTT3RlY2ggLS0+CjwhRU5U
+	SVRZIGVxdWl2ICAgICImIzg4MDE7Ij4gPCEtLSBpZGVudGljYWwgdG8sIFUrMjI2MSBJU090ZWNoIC0t
+	Pgo8IUVOVElUWSBsZSAgICAgICAiJiM4ODA0OyI+IDwhLS0gbGVzcy10aGFuIG9yIGVxdWFsIHRvLCBV
+	KzIyNjQgSVNPdGVjaCAtLT4KPCFFTlRJVFkgZ2UgICAgICAgIiYjODgwNTsiPiA8IS0tIGdyZWF0ZXIt
+	dGhhbiBvciBlcXVhbCB0bywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjI2
+	NSBJU090ZWNoIC0tPgo8IUVOVElUWSBzdWIgICAgICAiJiM4ODM0OyI+IDwhLS0gc3Vic2V0IG9mLCBV
+	KzIyODIgSVNPdGVjaCAtLT4KPCFFTlRJVFkgc3VwICAgICAgIiYjODgzNTsiPiA8IS0tIHN1cGVyc2V0
+	IG9mLCBVKzIyODMgSVNPdGVjaCAtLT4KPCFFTlRJVFkgbnN1YiAgICAgIiYjODgzNjsiPiA8IS0tIG5v
+	dCBhIHN1YnNldCBvZiwgVSsyMjg0IElTT2Ftc24gLS0+CjwhRU5USVRZIHN1YmUgICAgICImIzg4Mzg7
+	Ij4gPCEtLSBzdWJzZXQgb2Ygb3IgZXF1YWwgdG8sIFUrMjI4NiBJU090ZWNoIC0tPgo8IUVOVElUWSBz
+	dXBlICAgICAiJiM4ODM5OyI+IDwhLS0gc3VwZXJzZXQgb2Ygb3IgZXF1YWwgdG8sCiAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIyODcgSVNPdGVjaCAtLT4KPCFFTlRJVFkgb3BsdXMg
+	ICAgIiYjODg1MzsiPiA8IS0tIGNpcmNsZWQgcGx1cyA9IGRpcmVjdCBzdW0sCiAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICBVKzIyOTUgSVNPYW1zYiAtLT4KPCFFTlRJVFkgb3RpbWVzICAg
+	IiYjODg1NTsiPiA8IS0tIGNpcmNsZWQgdGltZXMgPSB2ZWN0b3IgcHJvZHVjdCwKICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgIFUrMjI5NyBJU09hbXNiIC0tPgo8IUVOVElUWSBwZXJwICAg
+	ICAiJiM4ODY5OyI+IDwhLS0gdXAgdGFjayA9IG9ydGhvZ29uYWwgdG8gPSBwZXJwZW5kaWN1bGFyLAog
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsyMkE1IElTT3RlY2ggLS0+CjwhRU5U
+	SVRZIHNkb3QgICAgICImIzg5MDE7Ij4gPCEtLSBkb3Qgb3BlcmF0b3IsIFUrMjJDNSBJU09hbXNiIC0t
+	Pgo8IS0tIGRvdCBvcGVyYXRvciBpcyBOT1QgdGhlIHNhbWUgY2hhcmFjdGVyIGFzIFUrMDBCNyBtaWRk
+	bGUgZG90IC0tPgoKPCEtLSBNaXNjZWxsYW5lb3VzIFRlY2huaWNhbCAtLT4KPCFFTlRJVFkgbGNlaWwg
+	ICAgIiYjODk2ODsiPiA8IS0tIGxlZnQgY2VpbGluZyA9IEFQTCB1cHN0aWxlLAogICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgVSsyMzA4IElTT2Ftc2MgIC0tPgo8IUVOVElUWSByY2VpbCAg
+	ICAiJiM4OTY5OyI+IDwhLS0gcmlnaHQgY2VpbGluZywgVSsyMzA5IElTT2Ftc2MgIC0tPgo8IUVOVElU
+	WSBsZmxvb3IgICAiJiM4OTcwOyI+IDwhLS0gbGVmdCBmbG9vciA9IEFQTCBkb3duc3RpbGUsCiAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIzMEEgSVNPYW1zYyAgLS0+CjwhRU5USVRZ
+	IHJmbG9vciAgICImIzg5NzE7Ij4gPCEtLSByaWdodCBmbG9vciwgVSsyMzBCIElTT2Ftc2MgIC0tPgo8
+	IUVOVElUWSBsYW5nICAgICAiJiM5MDAxOyI+IDwhLS0gbGVmdC1wb2ludGluZyBhbmdsZSBicmFja2V0
+	ID0gYnJhLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsyMzI5IElTT3RlY2gg
+	LS0+CjwhLS0gbGFuZyBpcyBOT1QgdGhlIHNhbWUgY2hhcmFjdGVyIGFzIFUrMDAzQyAnbGVzcyB0aGFu
+	IHNpZ24nIAogICAgIG9yIFUrMjAzOSAnc2luZ2xlIGxlZnQtcG9pbnRpbmcgYW5nbGUgcXVvdGF0aW9u
+	IG1hcmsnIC0tPgo8IUVOVElUWSByYW5nICAgICAiJiM5MDAyOyI+IDwhLS0gcmlnaHQtcG9pbnRpbmcg
+	YW5nbGUgYnJhY2tldCA9IGtldCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUr
+	MjMyQSBJU090ZWNoIC0tPgo8IS0tIHJhbmcgaXMgTk9UIHRoZSBzYW1lIGNoYXJhY3RlciBhcyBVKzAw
+	M0UgJ2dyZWF0ZXIgdGhhbiBzaWduJyAKICAgICBvciBVKzIwM0EgJ3NpbmdsZSByaWdodC1wb2ludGlu
+	ZyBhbmdsZSBxdW90YXRpb24gbWFyaycgLS0+Cgo8IS0tIEdlb21ldHJpYyBTaGFwZXMgLS0+CjwhRU5U
+	SVRZIGxveiAgICAgICImIzk2NzQ7Ij4gPCEtLSBsb3plbmdlLCBVKzI1Q0EgSVNPcHViIC0tPgoKPCEt
+	LSBNaXNjZWxsYW5lb3VzIFN5bWJvbHMgLS0+CjwhRU5USVRZIHNwYWRlcyAgICImIzk4MjQ7Ij4gPCEt
+	LSBibGFjayBzcGFkZSBzdWl0LCBVKzI2NjAgSVNPcHViIC0tPgo8IS0tIGJsYWNrIGhlcmUgc2VlbXMg
+	dG8gbWVhbiBmaWxsZWQgYXMgb3Bwb3NlZCB0byBob2xsb3cgLS0+CjwhRU5USVRZIGNsdWJzICAgICIm
+	Izk4Mjc7Ij4gPCEtLSBibGFjayBjbHViIHN1aXQgPSBzaGFtcm9jaywKICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgIFUrMjY2MyBJU09wdWIgLS0+CjwhRU5USVRZIGhlYXJ0cyAgICImIzk4
+	Mjk7Ij4gPCEtLSBibGFjayBoZWFydCBzdWl0ID0gdmFsZW50aW5lLAogICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgVSsyNjY1IElTT3B1YiAtLT4KPCFFTlRJVFkgZGlhbXMgICAgIiYjOTgz
+	MDsiPiA8IS0tIGJsYWNrIGRpYW1vbmQgc3VpdCwgVSsyNjY2IElTT3B1YiAtLT4K
+</value></data><data name="xhtml1_transitional"><value>&lt;!--
+   Extensible HTML version 1.0 Transitional DTD
+
+   This is the same as HTML 4 Transitional except for
+   changes due to the differences between XML and SGML.
+
+   Namespace = http://www.w3.org/1999/xhtml
+
+   For further information, see: http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-2002 W3C (MIT, INRIA, Keio),
+   All Rights Reserved. 
+
+   This DTD module is identified by the PUBLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+   $Revision: 1.2 $
+   $Date: 2002/08/01 18:37:55 $
+
+--&gt;
+
+&lt;!--================ Character mnemonic entities =========================--&gt;
+
+&lt;!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent"&gt;
+%HTMLlat1;
+
+&lt;!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols for XHTML//EN"
+   "xhtml-symbol.ent"&gt;
+%HTMLsymbol;
+
+&lt;!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.ent"&gt;
+%HTMLspecial;
+
+&lt;!--================== Imported Names ====================================--&gt;
+
+&lt;!ENTITY % ContentType "CDATA"&gt;
+    &lt;!-- media type, as per [RFC2045] --&gt;
+
+&lt;!ENTITY % ContentTypes "CDATA"&gt;
+    &lt;!-- comma-separated list of media types, as per [RFC2045] --&gt;
+
+&lt;!ENTITY % Charset "CDATA"&gt;
+    &lt;!-- a character encoding, as per [RFC2045] --&gt;
+
+&lt;!ENTITY % Charsets "CDATA"&gt;
+    &lt;!-- a space separated list of character encodings, as per [RFC2045] --&gt;
+
+&lt;!ENTITY % LanguageCode "NMTOKEN"&gt;
+    &lt;!-- a language code, as per [RFC3066] --&gt;
+
+&lt;!ENTITY % Character "CDATA"&gt;
+    &lt;!-- a single character, as per section 2.2 of [XML] --&gt;
+
+&lt;!ENTITY % Number "CDATA"&gt;
+    &lt;!-- one or more digits --&gt;
+
+&lt;!ENTITY % LinkTypes "CDATA"&gt;
+    &lt;!-- space-separated list of link types --&gt;
+
+&lt;!ENTITY % MediaDesc "CDATA"&gt;
+    &lt;!-- single or comma-separated list of media descriptors --&gt;
+
+&lt;!ENTITY % URI "CDATA"&gt;
+    &lt;!-- a Uniform Resource Identifier, see [RFC2396] --&gt;
+
+&lt;!ENTITY % UriList "CDATA"&gt;
+    &lt;!-- a space separated list of Uniform Resource Identifiers --&gt;
+
+&lt;!ENTITY % Datetime "CDATA"&gt;
+    &lt;!-- date and time information. ISO date format --&gt;
+
+&lt;!ENTITY % Script "CDATA"&gt;
+    &lt;!-- script expression --&gt;
+
+&lt;!ENTITY % StyleSheet "CDATA"&gt;
+    &lt;!-- style sheet data --&gt;
+
+&lt;!ENTITY % Text "CDATA"&gt;
+    &lt;!-- used for titles etc. --&gt;
+
+&lt;!ENTITY % FrameTarget "NMTOKEN"&gt;
+    &lt;!-- render in this frame --&gt;
+
+&lt;!ENTITY % Length "CDATA"&gt;
+    &lt;!-- nn for pixels or nn% for percentage length --&gt;
+
+&lt;!ENTITY % MultiLength "CDATA"&gt;
+    &lt;!-- pixel, percentage, or relative --&gt;
+
+&lt;!ENTITY % Pixels "CDATA"&gt;
+    &lt;!-- integer representing length in pixels --&gt;
+
+&lt;!-- these are used for image maps --&gt;
+
+&lt;!ENTITY % Shape "(rect|circle|poly|default)"&gt;
+
+&lt;!ENTITY % Coords "CDATA"&gt;
+    &lt;!-- comma separated list of lengths --&gt;
+
+&lt;!-- used for object, applet, img, input and iframe --&gt;
+&lt;!ENTITY % ImgAlign "(top|middle|bottom|left|right)"&gt;
+
+&lt;!-- a color using sRGB: #RRGGBB as Hex values --&gt;
+&lt;!ENTITY % Color "CDATA"&gt;
+
+&lt;!-- There are also 16 widely known color names with their sRGB values:
+
+    Black  = #000000    Green  = #008000
+    Silver = #C0C0C0    Lime   = #00FF00
+    Gray   = #808080    Olive  = #808000
+    White  = #FFFFFF    Yellow = #FFFF00
+    Maroon = #800000    Navy   = #000080
+    Red    = #FF0000    Blue   = #0000FF
+    Purple = #800080    Teal   = #008080
+    Fuchsia= #FF00FF    Aqua   = #00FFFF
+--&gt;
+
+&lt;!--=================== Generic Attributes ===============================--&gt;
+
+&lt;!-- core attributes common to most elements
+  id       document-wide unique id
+  class    space separated list of classes
+  style    associated style info
+  title    advisory title/amplification
+--&gt;
+&lt;!ENTITY % coreattrs
+ "id          ID             #IMPLIED
+  class       CDATA          #IMPLIED
+  style       %StyleSheet;   #IMPLIED
+  title       %Text;         #IMPLIED"
+  &gt;
+
+&lt;!-- internationalization attributes
+  lang        language code (backwards compatible)
+  xml:lang    language code (as per XML 1.0 spec)
+  dir         direction for weak/neutral text
+--&gt;
+&lt;!ENTITY % i18n
+ "lang        %LanguageCode; #IMPLIED
+  xml:lang    %LanguageCode; #IMPLIED
+  dir         (ltr|rtl)      #IMPLIED"
+  &gt;
+
+&lt;!-- attributes for common UI events
+  onclick     a pointer button was clicked
+  ondblclick  a pointer button was double clicked
+  onmousedown a pointer button was pressed down
+  onmouseup   a pointer button was released
+  onmousemove a pointer was moved onto the element
+  onmouseout  a pointer was moved away from the element
+  onkeypress  a key was pressed and released
+  onkeydown   a key was pressed down
+  onkeyup     a key was released
+--&gt;
+&lt;!ENTITY % events
+ "onclick     %Script;       #IMPLIED
+  ondblclick  %Script;       #IMPLIED
+  onmousedown %Script;       #IMPLIED
+  onmouseup   %Script;       #IMPLIED
+  onmouseover %Script;       #IMPLIED
+  onmousemove %Script;       #IMPLIED
+  onmouseout  %Script;       #IMPLIED
+  onkeypress  %Script;       #IMPLIED
+  onkeydown   %Script;       #IMPLIED
+  onkeyup     %Script;       #IMPLIED"
+  &gt;
+
+&lt;!-- attributes for elements that can get the focus
+  accesskey   accessibility key character
+  tabindex    position in tabbing order
+  onfocus     the element got the focus
+  onblur      the element lost the focus
+--&gt;
+&lt;!ENTITY % focus
+ "accesskey   %Character;    #IMPLIED
+  tabindex    %Number;       #IMPLIED
+  onfocus     %Script;       #IMPLIED
+  onblur      %Script;       #IMPLIED"
+  &gt;
+
+&lt;!ENTITY % attrs "%coreattrs; %i18n; %events;"&gt;
+
+&lt;!-- text alignment for p, div, h1-h6. The default is
+     align="left" for ltr headings, "right" for rtl --&gt;
+
+&lt;!ENTITY % TextAlign "align (left|center|right|justify) #IMPLIED"&gt;
+
+&lt;!--=================== Text Elements ====================================--&gt;
+
+&lt;!ENTITY % special.extra
+   "object | applet | img | map | iframe"&gt;
+	
+&lt;!ENTITY % special.basic
+	"br | span | bdo"&gt;
+
+&lt;!ENTITY % special
+   "%special.basic; | %special.extra;"&gt;
+
+&lt;!ENTITY % fontstyle.extra "big | small | font | basefont"&gt;
+
+&lt;!ENTITY % fontstyle.basic "tt | i | b | u
+                      | s | strike "&gt;
+
+&lt;!ENTITY % fontstyle "%fontstyle.basic; | %fontstyle.extra;"&gt;
+
+&lt;!ENTITY % phrase.extra "sub | sup"&gt;
+&lt;!ENTITY % phrase.basic "em | strong | dfn | code | q |
+                   samp | kbd | var | cite | abbr | acronym"&gt;
+
+&lt;!ENTITY % phrase "%phrase.basic; | %phrase.extra;"&gt;
+
+&lt;!ENTITY % inline.forms "input | select | textarea | label | button"&gt;
+
+&lt;!-- these can occur at block or inline level --&gt;
+&lt;!ENTITY % misc.inline "ins | del | script"&gt;
+
+&lt;!-- these can only occur at block level --&gt;
+&lt;!ENTITY % misc "noscript | %misc.inline;"&gt;
+
+&lt;!ENTITY % inline "a | %special; | %fontstyle; | %phrase; | %inline.forms;"&gt;
+
+&lt;!-- %Inline; covers inline or "text-level" elements --&gt;
+&lt;!ENTITY % Inline "(#PCDATA | %inline; | %misc.inline;)*"&gt;
+
+&lt;!--================== Block level elements ==============================--&gt;
+
+&lt;!ENTITY % heading "h1|h2|h3|h4|h5|h6"&gt;
+&lt;!ENTITY % lists "ul | ol | dl | menu | dir"&gt;
+&lt;!ENTITY % blocktext "pre | hr | blockquote | address | center | noframes"&gt;
+
+&lt;!ENTITY % block
+    "p | %heading; | div | %lists; | %blocktext; | isindex |fieldset | table"&gt;
+
+&lt;!-- %Flow; mixes block and inline and is used for list items etc. --&gt;
+&lt;!ENTITY % Flow "(#PCDATA | %block; | form | %inline; | %misc;)*"&gt;
+
+&lt;!--================== Content models for exclusions =====================--&gt;
+
+&lt;!-- a elements use %Inline; excluding a --&gt;
+
+&lt;!ENTITY % a.content
+   "(#PCDATA | %special; | %fontstyle; | %phrase; | %inline.forms; | %misc.inline;)*"&gt;
+
+&lt;!-- pre uses %Inline excluding img, object, applet, big, small,
+     font, or basefont --&gt;
+
+&lt;!ENTITY % pre.content
+   "(#PCDATA | a | %special.basic; | %fontstyle.basic; | %phrase.basic; |
+	   %inline.forms; | %misc.inline;)*"&gt;
+
+&lt;!-- form uses %Flow; excluding form --&gt;
+
+&lt;!ENTITY % form.content "(#PCDATA | %block; | %inline; | %misc;)*"&gt;
+
+&lt;!-- button uses %Flow; but excludes a, form, form controls, iframe --&gt;
+
+&lt;!ENTITY % button.content
+   "(#PCDATA | p | %heading; | div | %lists; | %blocktext; |
+      table | br | span | bdo | object | applet | img | map |
+      %fontstyle; | %phrase; | %misc;)*"&gt;
+
+&lt;!--================ Document Structure ==================================--&gt;
+
+&lt;!-- the namespace URI designates the document profile --&gt;
+
+&lt;!ELEMENT html (head, body)&gt;
+&lt;!ATTLIST html
+  %i18n;
+  id          ID             #IMPLIED
+  xmlns       %URI;          #FIXED 'http://www.w3.org/1999/xhtml'
+  &gt;
+
+&lt;!--================ Document Head =======================================--&gt;
+
+&lt;!ENTITY % head.misc "(script|style|meta|link|object|isindex)*"&gt;
+
+&lt;!-- content model is %head.misc; combined with a single
+     title and an optional base element in any order --&gt;
+
+&lt;!ELEMENT head (%head.misc;,
+     ((title, %head.misc;, (base, %head.misc;)?) |
+      (base, %head.misc;, (title, %head.misc;))))&gt;
+
+&lt;!ATTLIST head
+  %i18n;
+  id          ID             #IMPLIED
+  profile     %URI;          #IMPLIED
+  &gt;
+
+&lt;!-- The title element is not considered part of the flow of text.
+       It should be displayed, for example as the page header or
+       window title. Exactly one title is required per document.
+    --&gt;
+&lt;!ELEMENT title (#PCDATA)&gt;
+&lt;!ATTLIST title 
+  %i18n;
+  id          ID             #IMPLIED
+  &gt;
+
+&lt;!-- document base URI --&gt;
+
+&lt;!ELEMENT base EMPTY&gt;
+&lt;!ATTLIST base
+  id          ID             #IMPLIED
+  href        %URI;          #IMPLIED
+  target      %FrameTarget;  #IMPLIED
+  &gt;
+
+&lt;!-- generic metainformation --&gt;
+&lt;!ELEMENT meta EMPTY&gt;
+&lt;!ATTLIST meta
+  %i18n;
+  id          ID             #IMPLIED
+  http-equiv  CDATA          #IMPLIED
+  name        CDATA          #IMPLIED
+  content     CDATA          #REQUIRED
+  scheme      CDATA          #IMPLIED
+  &gt;
+
+&lt;!--
+  Relationship values can be used in principle:
+
+   a) for document specific toolbars/menus when used
+      with the link element in document head e.g.
+        start, contents, previous, next, index, end, help
+   b) to link to a separate style sheet (rel="stylesheet")
+   c) to make a link to a script (rel="script")
+   d) by stylesheets to control how collections of
+      html nodes are rendered into printed documents
+   e) to make a link to a printable version of this document
+      e.g. a PostScript or PDF version (rel="alternate" media="print")
+--&gt;
+
+&lt;!ELEMENT link EMPTY&gt;
+&lt;!ATTLIST link
+  %attrs;
+  charset     %Charset;      #IMPLIED
+  href        %URI;          #IMPLIED
+  hreflang    %LanguageCode; #IMPLIED
+  type        %ContentType;  #IMPLIED
+  rel         %LinkTypes;    #IMPLIED
+  rev         %LinkTypes;    #IMPLIED
+  media       %MediaDesc;    #IMPLIED
+  target      %FrameTarget;  #IMPLIED
+  &gt;
+
+&lt;!-- style info, which may include CDATA sections --&gt;
+&lt;!ELEMENT style (#PCDATA)&gt;
+&lt;!ATTLIST style
+  %i18n;
+  id          ID             #IMPLIED
+  type        %ContentType;  #REQUIRED
+  media       %MediaDesc;    #IMPLIED
+  title       %Text;         #IMPLIED
+  xml:space   (preserve)     #FIXED 'preserve'
+  &gt;
+
+&lt;!-- script statements, which may include CDATA sections --&gt;
+&lt;!ELEMENT script (#PCDATA)&gt;
+&lt;!ATTLIST script
+  id          ID             #IMPLIED
+  charset     %Charset;      #IMPLIED
+  type        %ContentType;  #REQUIRED
+  language    CDATA          #IMPLIED
+  src         %URI;          #IMPLIED
+  defer       (defer)        #IMPLIED
+  xml:space   (preserve)     #FIXED 'preserve'
+  &gt;
+
+&lt;!-- alternate content container for non script-based rendering --&gt;
+
+&lt;!ELEMENT noscript %Flow;&gt;
+&lt;!ATTLIST noscript
+  %attrs;
+  &gt;
+
+&lt;!--======================= Frames =======================================--&gt;
+
+&lt;!-- inline subwindow --&gt;
+
+&lt;!ELEMENT iframe %Flow;&gt;
+&lt;!ATTLIST iframe
+  %coreattrs;
+  longdesc    %URI;          #IMPLIED
+  name        NMTOKEN        #IMPLIED
+  src         %URI;          #IMPLIED
+  frameborder (1|0)          "1"
+  marginwidth %Pixels;       #IMPLIED
+  marginheight %Pixels;      #IMPLIED
+  scrolling   (yes|no|auto)  "auto"
+  align       %ImgAlign;     #IMPLIED
+  height      %Length;       #IMPLIED
+  width       %Length;       #IMPLIED
+  &gt;
+
+&lt;!-- alternate content container for non frame-based rendering --&gt;
+
+&lt;!ELEMENT noframes %Flow;&gt;
+&lt;!ATTLIST noframes
+  %attrs;
+  &gt;
+
+&lt;!--=================== Document Body ====================================--&gt;
+
+&lt;!ELEMENT body %Flow;&gt;
+&lt;!ATTLIST body
+  %attrs;
+  onload      %Script;       #IMPLIED
+  onunload    %Script;       #IMPLIED
+  background  %URI;          #IMPLIED
+  bgcolor     %Color;        #IMPLIED
+  text        %Color;        #IMPLIED
+  link        %Color;        #IMPLIED
+  vlink       %Color;        #IMPLIED
+  alink       %Color;        #IMPLIED
+  &gt;
+
+&lt;!ELEMENT div %Flow;&gt;  &lt;!-- generic language/style container --&gt;
+&lt;!ATTLIST div
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!--=================== Paragraphs =======================================--&gt;
+
+&lt;!ELEMENT p %Inline;&gt;
+&lt;!ATTLIST p
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!--=================== Headings =========================================--&gt;
+
+&lt;!--
+  There are six levels of headings from h1 (the most important)
+  to h6 (the least important).
+--&gt;
+
+&lt;!ELEMENT h1  %Inline;&gt;
+&lt;!ATTLIST h1
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!ELEMENT h2 %Inline;&gt;
+&lt;!ATTLIST h2
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!ELEMENT h3 %Inline;&gt;
+&lt;!ATTLIST h3
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!ELEMENT h4 %Inline;&gt;
+&lt;!ATTLIST h4
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!ELEMENT h5 %Inline;&gt;
+&lt;!ATTLIST h5
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!ELEMENT h6 %Inline;&gt;
+&lt;!ATTLIST h6
+  %attrs;
+  %TextAlign;
+  &gt;
+
+&lt;!--=================== Lists ============================================--&gt;
+
+&lt;!-- Unordered list bullet styles --&gt;
+
+&lt;!ENTITY % ULStyle "(disc|square|circle)"&gt;
+
+&lt;!-- Unordered list --&gt;
+
+&lt;!ELEMENT ul (li)+&gt;
+&lt;!ATTLIST ul
+  %attrs;
+  type        %ULStyle;     #IMPLIED
+  compact     (compact)     #IMPLIED
+  &gt;
+
+&lt;!-- Ordered list numbering style
+
+    1   arabic numbers      1, 2, 3, ...
+    a   lower alpha         a, b, c, ...
+    A   upper alpha         A, B, C, ...
+    i   lower roman         i, ii, iii, ...
+    I   upper roman         I, II, III, ...
+
+    The style is applied to the sequence number which by default
+    is reset to 1 for the first list item in an ordered list.
+--&gt;
+&lt;!ENTITY % OLStyle "CDATA"&gt;
+
+&lt;!-- Ordered (numbered) list --&gt;
+
+&lt;!ELEMENT ol (li)+&gt;
+&lt;!ATTLIST ol
+  %attrs;
+  type        %OLStyle;      #IMPLIED
+  compact     (compact)      #IMPLIED
+  start       %Number;       #IMPLIED
+  &gt;
+
+&lt;!-- single column list (DEPRECATED) --&gt; 
+&lt;!ELEMENT menu (li)+&gt;
+&lt;!ATTLIST menu
+  %attrs;
+  compact     (compact)     #IMPLIED
+  &gt;
+
+&lt;!-- multiple column list (DEPRECATED) --&gt; 
+&lt;!ELEMENT dir (li)+&gt;
+&lt;!ATTLIST dir
+  %attrs;
+  compact     (compact)     #IMPLIED
+  &gt;
+
+&lt;!-- LIStyle is constrained to: "(%ULStyle;|%OLStyle;)" --&gt;
+&lt;!ENTITY % LIStyle "CDATA"&gt;
+
+&lt;!-- list item --&gt;
+
+&lt;!ELEMENT li %Flow;&gt;
+&lt;!ATTLIST li
+  %attrs;
+  type        %LIStyle;      #IMPLIED
+  value       %Number;       #IMPLIED
+  &gt;
+
+&lt;!-- definition lists - dt for term, dd for its definition --&gt;
+
+&lt;!ELEMENT dl (dt|dd)+&gt;
+&lt;!ATTLIST dl
+  %attrs;
+  compact     (compact)      #IMPLIED
+  &gt;
+
+&lt;!ELEMENT dt %Inline;&gt;
+&lt;!ATTLIST dt
+  %attrs;
+  &gt;
+
+&lt;!ELEMENT dd %Flow;&gt;
+&lt;!ATTLIST dd
+  %attrs;
+  &gt;
+
+&lt;!--=================== Address ==========================================--&gt;
+
+&lt;!-- information on author --&gt;
+
+&lt;!ELEMENT address (#PCDATA | %inline; | %misc.inline; | p)*&gt;
+&lt;!ATTLIST address
+  %attrs;
+  &gt;
+
+&lt;!--=================== Horizontal Rule ==================================--&gt;
+
+&lt;!ELEMENT hr EMPTY&gt;
+&lt;!ATTLIST hr
+  %attrs;
+  align       (left|center|right) #IMPLIED
+  noshade     (noshade)      #IMPLIED
+  size        %Pixels;       #IMPLIED
+  width       %Length;       #IMPLIED
+  &gt;
+
+&lt;!--=================== Preformatted Text ================================--&gt;
+
+&lt;!-- content is %Inline; excluding 
+        "img|object|applet|big|small|sub|sup|font|basefont" --&gt;
+
+&lt;!ELEMENT pre %pre.content;&gt;
+&lt;!ATTLIST pre
+  %attrs;
+  width       %Number;      #IMPLIED
+  xml:space   (preserve)    #FIXED 'preserve'
+  &gt;
+
+&lt;!--=================== Block-like Quotes ================================--&gt;
+
+&lt;!ELEMENT blockquote %Flow;&gt;
+&lt;!ATTLIST blockquote
+  %attrs;
+  cite        %URI;          #IMPLIED
+  &gt;
+
+&lt;!--=================== Text alignment ===================================--&gt;
+
+&lt;!-- center content --&gt;
+&lt;!ELEMENT center %Flow;&gt;
+&lt;!ATTLIST center
+  %attrs;
+  &gt;
+
+&lt;!--=================== Inserted/Deleted Text ============================--&gt;
+
+&lt;!--
+  ins/del are allowed in block and inline content, but its
+  inappropriate to include block content within an ins element
+  occurring in inline content.
+--&gt;
+&lt;!ELEMENT ins %Flow;&gt;
+&lt;!ATTLIST ins
+  %attrs;
+  cite        %URI;          #IMPLIED
+  datetime    %Datetime;     #IMPLIED
+  &gt;
+
+&lt;!ELEMENT del %Flow;&gt;
+&lt;!ATTLIST del
+  %attrs;
+  cite        %URI;          #IMPLIED
+  datetime    %Datetime;     #IMPLIED
+  &gt;
+
+&lt;!--================== The Anchor Element ================================--&gt;
+
+&lt;!-- content is %Inline; except that anchors shouldn't be nested --&gt;
+
+&lt;!ELEMENT a %a.content;&gt;
+&lt;!ATTLIST a
+  %attrs;
+  %focus;
+  charset     %Charset;      #IMPLIED
+  type        %ContentType;  #IMPLIED
+  name        NMTOKEN        #IMPLIED
+  href        %URI;          #IMPLIED
+  hreflang    %LanguageCode; #IMPLIED
+  rel         %LinkTypes;    #IMPLIED
+  rev         %LinkTypes;    #IMPLIED
+  shape       %Shape;        "rect"
+  coords      %Coords;       #IMPLIED
+  target      %FrameTarget;  #IMPLIED
+  &gt;
+
+&lt;!--===================== Inline Elements ================================--&gt;
+
+&lt;!ELEMENT span %Inline;&gt; &lt;!-- generic language/style container --&gt;
+&lt;!ATTLIST span
+  %attrs;
+  &gt;
+
+&lt;!ELEMENT bdo %Inline;&gt;  &lt;!-- I18N BiDi over-ride --&gt;
+&lt;!ATTLIST bdo
+  %coreattrs;
+  %events;
+  lang        %LanguageCode; #IMPLIED
+  xml:lang    %LanguageCode; #IMPLIED
+  dir         (ltr|rtl)      #REQUIRED
+  &gt;
+
+&lt;!ELEMENT br EMPTY&gt;   &lt;!-- forced line break --&gt;
+&lt;!ATTLIST br
+  %coreattrs;
+  clear       (left|all|right|none) "none"
+  &gt;
+
+&lt;!ELEMENT em %Inline;&gt;   &lt;!-- emphasis --&gt;
+&lt;!ATTLIST em %attrs;&gt;
+
+&lt;!ELEMENT strong %Inline;&gt;   &lt;!-- strong emphasis --&gt;
+&lt;!ATTLIST strong %attrs;&gt;
+
+&lt;!ELEMENT dfn %Inline;&gt;   &lt;!-- definitional --&gt;
+&lt;!ATTLIST dfn %attrs;&gt;
+
+&lt;!ELEMENT code %Inline;&gt;   &lt;!-- program code --&gt;
+&lt;!ATTLIST code %attrs;&gt;
+
+&lt;!ELEMENT samp %Inline;&gt;   &lt;!-- sample --&gt;
+&lt;!ATTLIST samp %attrs;&gt;
+
+&lt;!ELEMENT kbd %Inline;&gt;  &lt;!-- something user would type --&gt;
+&lt;!ATTLIST kbd %attrs;&gt;
+
+&lt;!ELEMENT var %Inline;&gt;   &lt;!-- variable --&gt;
+&lt;!ATTLIST var %attrs;&gt;
+
+&lt;!ELEMENT cite %Inline;&gt;   &lt;!-- citation --&gt;
+&lt;!ATTLIST cite %attrs;&gt;
+
+&lt;!ELEMENT abbr %Inline;&gt;   &lt;!-- abbreviation --&gt;
+&lt;!ATTLIST abbr %attrs;&gt;
+
+&lt;!ELEMENT acronym %Inline;&gt;   &lt;!-- acronym --&gt;
+&lt;!ATTLIST acronym %attrs;&gt;
+
+&lt;!ELEMENT q %Inline;&gt;   &lt;!-- inlined quote --&gt;
+&lt;!ATTLIST q
+  %attrs;
+  cite        %URI;          #IMPLIED
+  &gt;
+
+&lt;!ELEMENT sub %Inline;&gt; &lt;!-- subscript --&gt;
+&lt;!ATTLIST sub %attrs;&gt;
+
+&lt;!ELEMENT sup %Inline;&gt; &lt;!-- superscript --&gt;
+&lt;!ATTLIST sup %attrs;&gt;
+
+&lt;!ELEMENT tt %Inline;&gt;   &lt;!-- fixed pitch font --&gt;
+&lt;!ATTLIST tt %attrs;&gt;
+
+&lt;!ELEMENT i %Inline;&gt;   &lt;!-- italic font --&gt;
+&lt;!ATTLIST i %attrs;&gt;
+
+&lt;!ELEMENT b %Inline;&gt;   &lt;!-- bold font --&gt;
+&lt;!ATTLIST b %attrs;&gt;
+
+&lt;!ELEMENT big %Inline;&gt;   &lt;!-- bigger font --&gt;
+&lt;!ATTLIST big %attrs;&gt;
+
+&lt;!ELEMENT small %Inline;&gt;   &lt;!-- smaller font --&gt;
+&lt;!ATTLIST small %attrs;&gt;
+
+&lt;!ELEMENT u %Inline;&gt;   &lt;!-- underline --&gt;
+&lt;!ATTLIST u %attrs;&gt;
+
+&lt;!ELEMENT s %Inline;&gt;   &lt;!-- strike-through --&gt;
+&lt;!ATTLIST s %attrs;&gt;
+
+&lt;!ELEMENT strike %Inline;&gt;   &lt;!-- strike-through --&gt;
+&lt;!ATTLIST strike %attrs;&gt;
+
+&lt;!ELEMENT basefont EMPTY&gt;  &lt;!-- base font size --&gt;
+&lt;!ATTLIST basefont
+  id          ID             #IMPLIED
+  size        CDATA          #REQUIRED
+  color       %Color;        #IMPLIED
+  face        CDATA          #IMPLIED
+  &gt;
+
+&lt;!ELEMENT font %Inline;&gt; &lt;!-- local change to font --&gt;
+&lt;!ATTLIST font
+  %coreattrs;
+  %i18n;
+  size        CDATA          #IMPLIED
+  color       %Color;        #IMPLIED
+  face        CDATA          #IMPLIED
+  &gt;
+
+&lt;!--==================== Object ======================================--&gt;
+&lt;!--
+  object is used to embed objects as part of HTML pages.
+  param elements should precede other content. Parameters
+  can also be expressed as attribute/value pairs on the
+  object element itself when brevity is desired.
+--&gt;
+
+&lt;!ELEMENT object (#PCDATA | param | %block; | form | %inline; | %misc;)*&gt;
+&lt;!ATTLIST object
+  %attrs;
+  declare     (declare)      #IMPLIED
+  classid     %URI;          #IMPLIED
+  codebase    %URI;          #IMPLIED
+  data        %URI;          #IMPLIED
+  type        %ContentType;  #IMPLIED
+  codetype    %ContentType;  #IMPLIED
+  archive     %UriList;      #IMPLIED
+  standby     %Text;         #IMPLIED
+  height      %Length;       #IMPLIED
+  width       %Length;       #IMPLIED
+  usemap      %URI;          #IMPLIED
+  name        NMTOKEN        #IMPLIED
+  tabindex    %Number;       #IMPLIED
+  align       %ImgAlign;     #IMPLIED
+  border      %Pixels;       #IMPLIED
+  hspace      %Pixels;       #IMPLIED
+  vspace      %Pixels;       #IMPLIED
+  &gt;
+
+&lt;!--
+  param is used to supply a named property value.
+  In XML it would seem natural to follow RDF and support an
+  abbreviated syntax where the param elements are replaced
+  by attribute value pairs on the object start tag.
+--&gt;
+&lt;!ELEMENT param EMPTY&gt;
+&lt;!ATTLIST param
+  id          ID             #IMPLIED
+  name        CDATA          #REQUIRED
+  value       CDATA          #IMPLIED
+  valuetype   (data|ref|object) "data"
+  type        %ContentType;  #IMPLIED
+  &gt;
+
+&lt;!--=================== Java applet ==================================--&gt;
+&lt;!--
+  One of code or object attributes must be present.
+  Place param elements before other content.
+--&gt;
+&lt;!ELEMENT applet (#PCDATA | param | %block; | form | %inline; | %misc;)*&gt;
+&lt;!ATTLIST applet
+  %coreattrs;
+  codebase    %URI;          #IMPLIED
+  archive     CDATA          #IMPLIED
+  code        CDATA          #IMPLIED
+  object      CDATA          #IMPLIED
+  alt         %Text;         #IMPLIED
+  name        NMTOKEN        #IMPLIED
+  width       %Length;       #REQUIRED
+  height      %Length;       #REQUIRED
+  align       %ImgAlign;     #IMPLIED
+  hspace      %Pixels;       #IMPLIED
+  vspace      %Pixels;       #IMPLIED
+  &gt;
+
+&lt;!--=================== Images ===========================================--&gt;
+
+&lt;!--
+   To avoid accessibility problems for people who aren't
+   able to see the image, you should provide a text
+   description using the alt and longdesc attributes.
+   In addition, avoid the use of server-side image maps.
+--&gt;
+
+&lt;!ELEMENT img EMPTY&gt;
+&lt;!ATTLIST img
+  %attrs;
+  src         %URI;          #REQUIRED
+  alt         %Text;         #REQUIRED
+  name        NMTOKEN        #IMPLIED
+  longdesc    %URI;          #IMPLIED
+  height      %Length;       #IMPLIED
+  width       %Length;       #IMPLIED
+  usemap      %URI;          #IMPLIED
+  ismap       (ismap)        #IMPLIED
+  align       %ImgAlign;     #IMPLIED
+  border      %Length;       #IMPLIED
+  hspace      %Pixels;       #IMPLIED
+  vspace      %Pixels;       #IMPLIED
+  &gt;
+
+&lt;!-- usemap points to a map element which may be in this document
+  or an external document, although the latter is not widely supported --&gt;
+
+&lt;!--================== Client-side image maps ============================--&gt;
+
+&lt;!-- These can be placed in the same document or grouped in a
+     separate document although this isn't yet widely supported --&gt;
+
+&lt;!ELEMENT map ((%block; | form | %misc;)+ | area+)&gt;
+&lt;!ATTLIST map
+  %i18n;
+  %events;
+  id          ID             #REQUIRED
+  class       CDATA          #IMPLIED
+  style       %StyleSheet;   #IMPLIED
+  title       %Text;         #IMPLIED
+  name        CDATA          #IMPLIED
+  &gt;
+
+&lt;!ELEMENT area EMPTY&gt;
+&lt;!ATTLIST area
+  %attrs;
+  %focus;
+  shape       %Shape;        "rect"
+  coords      %Coords;       #IMPLIED
+  href        %URI;          #IMPLIED
+  nohref      (nohref)       #IMPLIED
+  alt         %Text;         #REQUIRED
+  target      %FrameTarget;  #IMPLIED
+  &gt;
+
+&lt;!--================ Forms ===============================================--&gt;
+
+&lt;!ELEMENT form %form.content;&gt;   &lt;!-- forms shouldn't be nested --&gt;
+
+&lt;!ATTLIST form
+  %attrs;
+  action      %URI;          #REQUIRED
+  method      (get|post)     "get"
+  name        NMTOKEN        #IMPLIED
+  enctype     %ContentType;  "application/x-www-form-urlencoded"
+  onsubmit    %Script;       #IMPLIED
+  onreset     %Script;       #IMPLIED
+  accept      %ContentTypes; #IMPLIED
+  accept-charset %Charsets;  #IMPLIED
+  target      %FrameTarget;  #IMPLIED
+  &gt;
+
+&lt;!--
+  Each label must not contain more than ONE field
+  Label elements shouldn't be nested.
+--&gt;
+&lt;!ELEMENT label %Inline;&gt;
+&lt;!ATTLIST label
+  %attrs;
+  for         IDREF          #IMPLIED
+  accesskey   %Character;    #IMPLIED
+  onfocus     %Script;       #IMPLIED
+  onblur      %Script;       #IMPLIED
+  &gt;
+
+&lt;!ENTITY % InputType
+  "(text | password | checkbox |
+    radio | submit | reset |
+    file | hidden | image | button)"
+   &gt;
+
+&lt;!-- the name attribute is required for all but submit &amp; reset --&gt;
+
+&lt;!ELEMENT input EMPTY&gt;     &lt;!-- form control --&gt;
+&lt;!ATTLIST input
+  %attrs;
+  %focus;
+  type        %InputType;    "text"
+  name        CDATA          #IMPLIED
+  value       CDATA          #IMPLIED
+  checked     (checked)      #IMPLIED
+  disabled    (disabled)     #IMPLIED
+  readonly    (readonly)     #IMPLIED
+  size        CDATA          #IMPLIED
+  maxlength   %Number;       #IMPLIED
+  src         %URI;          #IMPLIED
+  alt         CDATA          #IMPLIED
+  usemap      %URI;          #IMPLIED
+  onselect    %Script;       #IMPLIED
+  onchange    %Script;       #IMPLIED
+  accept      %ContentTypes; #IMPLIED
+  align       %ImgAlign;     #IMPLIED
+  &gt;
+
+&lt;!ELEMENT select (optgroup|option)+&gt;  &lt;!-- option selector --&gt;
+&lt;!ATTLIST select
+  %attrs;
+  name        CDATA          #IMPLIED
+  size        %Number;       #IMPLIED
+  multiple    (multiple)     #IMPLIED
+  disabled    (disabled)     #IMPLIED
+  tabindex    %Number;       #IMPLIED
+  onfocus     %Script;       #IMPLIED
+  onblur      %Script;       #IMPLIED
+  onchange    %Script;       #IMPLIED
+  &gt;
+
+&lt;!ELEMENT optgroup (option)+&gt;   &lt;!-- option group --&gt;
+&lt;!ATTLIST optgroup
+  %attrs;
+  disabled    (disabled)     #IMPLIED
+  label       %Text;         #REQUIRED
+  &gt;
+
+&lt;!ELEMENT option (#PCDATA)&gt;     &lt;!-- selectable choice --&gt;
+&lt;!ATTLIST option
+  %attrs;
+  selected    (selected)     #IMPLIED
+  disabled    (disabled)     #IMPLIED
+  label       %Text;         #IMPLIED
+  value       CDATA          #IMPLIED
+  &gt;
+
+&lt;!ELEMENT textarea (#PCDATA)&gt;     &lt;!-- multi-line text field --&gt;
+&lt;!ATTLIST textarea
+  %attrs;
+  %focus;
+  name        CDATA          #IMPLIED
+  rows        %Number;       #REQUIRED
+  cols        %Number;       #REQUIRED
+  disabled    (disabled)     #IMPLIED
+  readonly    (readonly)     #IMPLIED
+  onselect    %Script;       #IMPLIED
+  onchange    %Script;       #IMPLIED
+  &gt;
+
+&lt;!--
+  The fieldset element is used to group form fields.
+  Only one legend element should occur in the content
+  and if present should only be preceded by whitespace.
+--&gt;
+&lt;!ELEMENT fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*&gt;
+&lt;!ATTLIST fieldset
+  %attrs;
+  &gt;
+
+&lt;!ENTITY % LAlign "(top|bottom|left|right)"&gt;
+
+&lt;!ELEMENT legend %Inline;&gt;     &lt;!-- fieldset label --&gt;
+&lt;!ATTLIST legend
+  %attrs;
+  accesskey   %Character;    #IMPLIED
+  align       %LAlign;       #IMPLIED
+  &gt;
+
+&lt;!--
+ Content is %Flow; excluding a, form, form controls, iframe
+--&gt; 
+&lt;!ELEMENT button %button.content;&gt;  &lt;!-- push button --&gt;
+&lt;!ATTLIST button
+  %attrs;
+  %focus;
+  name        CDATA          #IMPLIED
+  value       CDATA          #IMPLIED
+  type        (button|submit|reset) "submit"
+  disabled    (disabled)     #IMPLIED
+  &gt;
+
+&lt;!-- single-line text input control (DEPRECATED) --&gt;
+&lt;!ELEMENT isindex EMPTY&gt;
+&lt;!ATTLIST isindex
+  %coreattrs;
+  %i18n;
+  prompt      %Text;         #IMPLIED
+  &gt;
+
+&lt;!--======================= Tables =======================================--&gt;
+
+&lt;!-- Derived from IETF HTML table standard, see [RFC1942] --&gt;
+
+&lt;!--
+ The border attribute sets the thickness of the frame around the
+ table. The default units are screen pixels.
+
+ The frame attribute specifies which parts of the frame around
+ the table should be rendered. The values are not the same as
+ CALS to avoid a name clash with the valign attribute.
+--&gt;
+&lt;!ENTITY % TFrame "(void|above|below|hsides|lhs|rhs|vsides|box|border)"&gt;
+
+&lt;!--
+ The rules attribute defines which rules to draw between cells:
+
+ If rules is absent then assume:
+     "none" if border is absent or border="0" otherwise "all"
+--&gt;
+
+&lt;!ENTITY % TRules "(none | groups | rows | cols | all)"&gt;
+  
+&lt;!-- horizontal placement of table relative to document --&gt;
+&lt;!ENTITY % TAlign "(left|center|right)"&gt;
+
+&lt;!-- horizontal alignment attributes for cell contents
+
+  char        alignment char, e.g. char=':'
+  charoff     offset for alignment char
+--&gt;
+&lt;!ENTITY % cellhalign
+  "align      (left|center|right|justify|char) #IMPLIED
+   char       %Character;    #IMPLIED
+   charoff    %Length;       #IMPLIED"
+  &gt;
+
+&lt;!-- vertical alignment attributes for cell contents --&gt;
+&lt;!ENTITY % cellvalign
+  "valign     (top|middle|bottom|baseline) #IMPLIED"
+  &gt;
+
+&lt;!ELEMENT table
+     (caption?, (col*|colgroup*), thead?, tfoot?, (tbody+|tr+))&gt;
+&lt;!ELEMENT caption  %Inline;&gt;
+&lt;!ELEMENT thead    (tr)+&gt;
+&lt;!ELEMENT tfoot    (tr)+&gt;
+&lt;!ELEMENT tbody    (tr)+&gt;
+&lt;!ELEMENT colgroup (col)*&gt;
+&lt;!ELEMENT col      EMPTY&gt;
+&lt;!ELEMENT tr       (th|td)+&gt;
+&lt;!ELEMENT th       %Flow;&gt;
+&lt;!ELEMENT td       %Flow;&gt;
+
+&lt;!ATTLIST table
+  %attrs;
+  summary     %Text;         #IMPLIED
+  width       %Length;       #IMPLIED
+  border      %Pixels;       #IMPLIED
+  frame       %TFrame;       #IMPLIED
+  rules       %TRules;       #IMPLIED
+  cellspacing %Length;       #IMPLIED
+  cellpadding %Length;       #IMPLIED
+  align       %TAlign;       #IMPLIED
+  bgcolor     %Color;        #IMPLIED
+  &gt;
+
+&lt;!ENTITY % CAlign "(top|bottom|left|right)"&gt;
+
+&lt;!ATTLIST caption
+  %attrs;
+  align       %CAlign;       #IMPLIED
+  &gt;
+
+&lt;!--
+colgroup groups a set of col elements. It allows you to group
+several semantically related columns together.
+--&gt;
+&lt;!ATTLIST colgroup
+  %attrs;
+  span        %Number;       "1"
+  width       %MultiLength;  #IMPLIED
+  %cellhalign;
+  %cellvalign;
+  &gt;
+
+&lt;!--
+ col elements define the alignment properties for cells in
+ one or more columns.
+
+ The width attribute specifies the width of the columns, e.g.
+
+     width=64        width in screen pixels
+     width=0.5*      relative width of 0.5
+
+ The span attribute causes the attributes of one
+ col element to apply to more than one column.
+--&gt;
+&lt;!ATTLIST col
+  %attrs;
+  span        %Number;       "1"
+  width       %MultiLength;  #IMPLIED
+  %cellhalign;
+  %cellvalign;
+  &gt;
+
+&lt;!--
+    Use thead to duplicate headers when breaking table
+    across page boundaries, or for static headers when
+    tbody sections are rendered in scrolling panel.
+
+    Use tfoot to duplicate footers when breaking table
+    across page boundaries, or for static footers when
+    tbody sections are rendered in scrolling panel.
+
+    Use multiple tbody sections when rules are needed
+    between groups of table rows.
+--&gt;
+&lt;!ATTLIST thead
+  %attrs;
+  %cellhalign;
+  %cellvalign;
+  &gt;
+
+&lt;!ATTLIST tfoot
+  %attrs;
+  %cellhalign;
+  %cellvalign;
+  &gt;
+
+&lt;!ATTLIST tbody
+  %attrs;
+  %cellhalign;
+  %cellvalign;
+  &gt;
+
+&lt;!ATTLIST tr
+  %attrs;
+  %cellhalign;
+  %cellvalign;
+  bgcolor     %Color;        #IMPLIED
+  &gt;
+
+&lt;!-- Scope is simpler than headers attribute for common tables --&gt;
+&lt;!ENTITY % Scope "(row|col|rowgroup|colgroup)"&gt;
+
+&lt;!-- th is for headers, td for data and for cells acting as both --&gt;
+
+&lt;!ATTLIST th
+  %attrs;
+  abbr        %Text;         #IMPLIED
+  axis        CDATA          #IMPLIED
+  headers     IDREFS         #IMPLIED
+  scope       %Scope;        #IMPLIED
+  rowspan     %Number;       "1"
+  colspan     %Number;       "1"
+  %cellhalign;
+  %cellvalign;
+  nowrap      (nowrap)       #IMPLIED
+  bgcolor     %Color;        #IMPLIED
+  width       %Length;       #IMPLIED
+  height      %Length;       #IMPLIED
+  &gt;
+
+&lt;!ATTLIST td
+  %attrs;
+  abbr        %Text;         #IMPLIED
+  axis        CDATA          #IMPLIED
+  headers     IDREFS         #IMPLIED
+  scope       %Scope;        #IMPLIED
+  rowspan     %Number;       "1"
+  colspan     %Number;       "1"
+  %cellhalign;
+  %cellvalign;
+  nowrap      (nowrap)       #IMPLIED
+  bgcolor     %Color;        #IMPLIED
+  width       %Length;       #IMPLIED
+  height      %Length;       #IMPLIED
+  &gt;
+
+</value></data>
+  <data name="xhtml_special" type="System.Byte[], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"><value>
+	PCEtLSBTcGVjaWFsIGNoYXJhY3RlcnMgZm9yIFhIVE1MIC0tPgoKPCEtLSBDaGFyYWN0ZXIgZW50aXR5
+	IHNldC4gVHlwaWNhbCBpbnZvY2F0aW9uOgogICAgIDwhRU5USVRZICUgSFRNTHNwZWNpYWwgUFVCTElD
+	CiAgICAgICAgIi0vL1czQy8vRU5USVRJRVMgU3BlY2lhbCBmb3IgWEhUTUwvL0VOIgogICAgICAgICJo
+	dHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEvRFREL3hodG1sLXNwZWNpYWwuZW50Ij4KICAgICAlSFRN
+	THNwZWNpYWw7Ci0tPgoKPCEtLSBQb3J0aW9ucyAoQykgSW50ZXJuYXRpb25hbCBPcmdhbml6YXRpb24g
+	Zm9yIFN0YW5kYXJkaXphdGlvbiAxOTg2OgogICAgIFBlcm1pc3Npb24gdG8gY29weSBpbiBhbnkgZm9y
+	bSBpcyBncmFudGVkIGZvciB1c2Ugd2l0aAogICAgIGNvbmZvcm1pbmcgU0dNTCBzeXN0ZW1zIGFuZCBh
+	cHBsaWNhdGlvbnMgYXMgZGVmaW5lZCBpbgogICAgIElTTyA4ODc5LCBwcm92aWRlZCB0aGlzIG5vdGlj
+	ZSBpcyBpbmNsdWRlZCBpbiBhbGwgY29waWVzLgotLT4KCjwhLS0gUmVsZXZhbnQgSVNPIGVudGl0eSBz
+	ZXQgaXMgZ2l2ZW4gdW5sZXNzIG5hbWVzIGFyZSBuZXdseSBpbnRyb2R1Y2VkLgogICAgIE5ldyBuYW1l
+	cyAoaS5lLiwgbm90IGluIElTTyA4ODc5IGxpc3QpIGRvIG5vdCBjbGFzaCB3aXRoIGFueQogICAgIGV4
+	aXN0aW5nIElTTyA4ODc5IGVudGl0eSBuYW1lcy4gSVNPIDEwNjQ2IGNoYXJhY3RlciBudW1iZXJzCiAg
+	ICAgYXJlIGdpdmVuIGZvciBlYWNoIGNoYXJhY3RlciwgaW4gaGV4LiB2YWx1ZXMgYXJlIGRlY2ltYWwK
+	ICAgICBjb252ZXJzaW9ucyBvZiB0aGUgSVNPIDEwNjQ2IHZhbHVlcyBhbmQgcmVmZXIgdG8gdGhlIGRv
+	Y3VtZW50CiAgICAgY2hhcmFjdGVyIHNldC4gTmFtZXMgYXJlIFVuaWNvZGUgbmFtZXMuIAotLT4KCjwh
+	LS0gQzAgQ29udHJvbHMgYW5kIEJhc2ljIExhdGluIC0tPgo8IUVOVElUWSBxdW90ICAgICImIzM0OyI+
+	IDwhLS0gIHF1b3RhdGlvbiBtYXJrLCBVKzAwMjIgSVNPbnVtIC0tPgo8IUVOVElUWSBhbXAgICAgICIm
+	IzM4OyMzODsiPiA8IS0tICBhbXBlcnNhbmQsIFUrMDAyNiBJU09udW0gLS0+CjwhRU5USVRZIGx0ICAg
+	ICAgIiYjMzg7IzYwOyI+IDwhLS0gIGxlc3MtdGhhbiBzaWduLCBVKzAwM0MgSVNPbnVtIC0tPgo8IUVO
+	VElUWSBndCAgICAgICImIzYyOyI+IDwhLS0gIGdyZWF0ZXItdGhhbiBzaWduLCBVKzAwM0UgSVNPbnVt
+	IC0tPgo8IUVOVElUWSBhcG9zCSAiJiMzOTsiPiA8IS0tICBhcG9zdHJvcGhlID0gQVBMIHF1b3RlLCBV
+	KzAwMjcgSVNPbnVtIC0tPgoKPCEtLSBMYXRpbiBFeHRlbmRlZC1BIC0tPgo8IUVOVElUWSBPRWxpZyAg
+	ICImIzMzODsiPiA8IS0tICBsYXRpbiBjYXBpdGFsIGxpZ2F0dXJlIE9FLAogICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICBVKzAxNTIgSVNPbGF0MiAtLT4KPCFFTlRJVFkgb2VsaWcgICAiJiMz
+	Mzk7Ij4gPCEtLSAgbGF0aW4gc21hbGwgbGlnYXR1cmUgb2UsIFUrMDE1MyBJU09sYXQyIC0tPgo8IS0t
+	IGxpZ2F0dXJlIGlzIGEgbWlzbm9tZXIsIHRoaXMgaXMgYSBzZXBhcmF0ZSBjaGFyYWN0ZXIgaW4gc29t
+	ZSBsYW5ndWFnZXMgLS0+CjwhRU5USVRZIFNjYXJvbiAgIiYjMzUyOyI+IDwhLS0gIGxhdGluIGNhcGl0
+	YWwgbGV0dGVyIFMgd2l0aCBjYXJvbiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	VSswMTYwIElTT2xhdDIgLS0+CjwhRU5USVRZIHNjYXJvbiAgIiYjMzUzOyI+IDwhLS0gIGxhdGluIHNt
+	YWxsIGxldHRlciBzIHdpdGggY2Fyb24sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	IFUrMDE2MSBJU09sYXQyIC0tPgo8IUVOVElUWSBZdW1sICAgICImIzM3NjsiPiA8IS0tICBsYXRpbiBj
+	YXBpdGFsIGxldHRlciBZIHdpdGggZGlhZXJlc2lzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAxNzggSVNPbGF0MiAtLT4KCjwhLS0gU3BhY2luZyBNb2RpZmllciBMZXR0ZXJzIC0t
+	Pgo8IUVOVElUWSBjaXJjICAgICImIzcxMDsiPiA8IS0tICBtb2RpZmllciBsZXR0ZXIgY2lyY3VtZmxl
+	eCBhY2NlbnQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDJDNiBJU09wdWIg
+	LS0+CjwhRU5USVRZIHRpbGRlICAgIiYjNzMyOyI+IDwhLS0gIHNtYWxsIHRpbGRlLCBVKzAyREMgSVNP
+	ZGlhIC0tPgoKPCEtLSBHZW5lcmFsIFB1bmN0dWF0aW9uIC0tPgo8IUVOVElUWSBlbnNwICAgICImIzgx
+	OTQ7Ij4gPCEtLSBlbiBzcGFjZSwgVSsyMDAyIElTT3B1YiAtLT4KPCFFTlRJVFkgZW1zcCAgICAiJiM4
+	MTk1OyI+IDwhLS0gZW0gc3BhY2UsIFUrMjAwMyBJU09wdWIgLS0+CjwhRU5USVRZIHRoaW5zcCAgIiYj
+	ODIwMTsiPiA8IS0tIHRoaW4gc3BhY2UsIFUrMjAwOSBJU09wdWIgLS0+CjwhRU5USVRZIHp3bmogICAg
+	IiYjODIwNDsiPiA8IS0tIHplcm8gd2lkdGggbm9uLWpvaW5lciwKICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgVSsyMDBDIE5FVyBSRkMgMjA3MCAtLT4KPCFFTlRJVFkgendqICAgICAiJiM4
+	MjA1OyI+IDwhLS0gemVybyB3aWR0aCBqb2luZXIsIFUrMjAwRCBORVcgUkZDIDIwNzAgLS0+CjwhRU5U
+	SVRZIGxybSAgICAgIiYjODIwNjsiPiA8IS0tIGxlZnQtdG8tcmlnaHQgbWFyaywgVSsyMDBFIE5FVyBS
+	RkMgMjA3MCAtLT4KPCFFTlRJVFkgcmxtICAgICAiJiM4MjA3OyI+IDwhLS0gcmlnaHQtdG8tbGVmdCBt
+	YXJrLCBVKzIwMEYgTkVXIFJGQyAyMDcwIC0tPgo8IUVOVElUWSBuZGFzaCAgICImIzgyMTE7Ij4gPCEt
+	LSBlbiBkYXNoLCBVKzIwMTMgSVNPcHViIC0tPgo8IUVOVElUWSBtZGFzaCAgICImIzgyMTI7Ij4gPCEt
+	LSBlbSBkYXNoLCBVKzIwMTQgSVNPcHViIC0tPgo8IUVOVElUWSBsc3F1byAgICImIzgyMTY7Ij4gPCEt
+	LSBsZWZ0IHNpbmdsZSBxdW90YXRpb24gbWFyaywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgVSsyMDE4IElTT251bSAtLT4KPCFFTlRJVFkgcnNxdW8gICAiJiM4MjE3OyI+IDwhLS0gcmln
+	aHQgc2luZ2xlIHF1b3RhdGlvbiBtYXJrLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICBVKzIwMTkgSVNPbnVtIC0tPgo8IUVOVElUWSBzYnF1byAgICImIzgyMTg7Ij4gPCEtLSBzaW5nbGUg
+	bG93LTkgcXVvdGF0aW9uIG1hcmssIFUrMjAxQSBORVcgLS0+CjwhRU5USVRZIGxkcXVvICAgIiYjODIy
+	MDsiPiA8IS0tIGxlZnQgZG91YmxlIHF1b3RhdGlvbiBtYXJrLAogICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICBVKzIwMUMgSVNPbnVtIC0tPgo8IUVOVElUWSByZHF1byAgICImIzgyMjE7Ij4g
+	PCEtLSByaWdodCBkb3VibGUgcXVvdGF0aW9uIG1hcmssCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgIFUrMjAxRCBJU09udW0gLS0+CjwhRU5USVRZIGJkcXVvICAgIiYjODIyMjsiPiA8IS0t
+	IGRvdWJsZSBsb3ctOSBxdW90YXRpb24gbWFyaywgVSsyMDFFIE5FVyAtLT4KPCFFTlRJVFkgZGFnZ2Vy
+	ICAiJiM4MjI0OyI+IDwhLS0gZGFnZ2VyLCBVKzIwMjAgSVNPcHViIC0tPgo8IUVOVElUWSBEYWdnZXIg
+	ICImIzgyMjU7Ij4gPCEtLSBkb3VibGUgZGFnZ2VyLCBVKzIwMjEgSVNPcHViIC0tPgo8IUVOVElUWSBw
+	ZXJtaWwgICImIzgyNDA7Ij4gPCEtLSBwZXIgbWlsbGUgc2lnbiwgVSsyMDMwIElTT3RlY2ggLS0+Cjwh
+	RU5USVRZIGxzYXF1byAgIiYjODI0OTsiPiA8IS0tIHNpbmdsZSBsZWZ0LXBvaW50aW5nIGFuZ2xlIHF1
+	b3RhdGlvbiBtYXJrLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzIwMzkgSVNP
+	IHByb3Bvc2VkIC0tPgo8IS0tIGxzYXF1byBpcyBwcm9wb3NlZCBidXQgbm90IHlldCBJU08gc3RhbmRh
+	cmRpemVkIC0tPgo8IUVOVElUWSByc2FxdW8gICImIzgyNTA7Ij4gPCEtLSBzaW5nbGUgcmlnaHQtcG9p
+	bnRpbmcgYW5nbGUgcXVvdGF0aW9uIG1hcmssCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgIFUrMjAzQSBJU08gcHJvcG9zZWQgLS0+CjwhLS0gcnNhcXVvIGlzIHByb3Bvc2VkIGJ1dCBub3Qg
+	eWV0IElTTyBzdGFuZGFyZGl6ZWQgLS0+Cgo8IS0tIEN1cnJlbmN5IFN5bWJvbHMgLS0+CjwhRU5USVRZ
+	IGV1cm8gICAiJiM4MzY0OyI+IDwhLS0gIGV1cm8gc2lnbiwgVSsyMEFDIE5FVyAtLT4K
+</value></data><data name="xhtml_lat1" type="System.Byte[], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"><value>
+	PCEtLSBQb3J0aW9ucyAoQykgSW50ZXJuYXRpb25hbCBPcmdhbml6YXRpb24gZm9yIFN0YW5kYXJkaXph
+	dGlvbiAxOTg2CiAgICAgUGVybWlzc2lvbiB0byBjb3B5IGluIGFueSBmb3JtIGlzIGdyYW50ZWQgZm9y
+	IHVzZSB3aXRoCiAgICAgY29uZm9ybWluZyBTR01MIHN5c3RlbXMgYW5kIGFwcGxpY2F0aW9ucyBhcyBk
+	ZWZpbmVkIGluCiAgICAgSVNPIDg4NzksIHByb3ZpZGVkIHRoaXMgbm90aWNlIGlzIGluY2x1ZGVkIGlu
+	IGFsbCBjb3BpZXMuCi0tPgo8IS0tIENoYXJhY3RlciBlbnRpdHkgc2V0LiBUeXBpY2FsIGludm9jYXRp
+	b246CiAgICA8IUVOVElUWSAlIEhUTUxsYXQxIFBVQkxJQwogICAgICAgIi0vL1czQy8vRU5USVRJRVMg
+	TGF0aW4gMSBmb3IgWEhUTUwvL0VOIgogICAgICAgImh0dHA6Ly93d3cudzMub3JnL1RSL3hodG1sMS9E
+	VEQveGh0bWwtbGF0MS5lbnQiPgogICAgJUhUTUxsYXQxOwotLT4KCjwhRU5USVRZIG5ic3AgICAiJiMx
+	NjA7Ij4gPCEtLSBuby1icmVhayBzcGFjZSA9IG5vbi1icmVha2luZyBzcGFjZSwKICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgIFUrMDBBMCBJU09udW0gLS0+CjwhRU5USVRZIGlleGNsICAiJiMx
+	NjE7Ij4gPCEtLSBpbnZlcnRlZCBleGNsYW1hdGlvbiBtYXJrLCBVKzAwQTEgSVNPbnVtIC0tPgo8IUVO
+	VElUWSBjZW50ICAgIiYjMTYyOyI+IDwhLS0gY2VudCBzaWduLCBVKzAwQTIgSVNPbnVtIC0tPgo8IUVO
+	VElUWSBwb3VuZCAgIiYjMTYzOyI+IDwhLS0gcG91bmQgc2lnbiwgVSswMEEzIElTT251bSAtLT4KPCFF
+	TlRJVFkgY3VycmVuICImIzE2NDsiPiA8IS0tIGN1cnJlbmN5IHNpZ24sIFUrMDBBNCBJU09udW0gLS0+
+	CjwhRU5USVRZIHllbiAgICAiJiMxNjU7Ij4gPCEtLSB5ZW4gc2lnbiA9IHl1YW4gc2lnbiwgVSswMEE1
+	IElTT251bSAtLT4KPCFFTlRJVFkgYnJ2YmFyICImIzE2NjsiPiA8IS0tIGJyb2tlbiBiYXIgPSBicm9r
+	ZW4gdmVydGljYWwgYmFyLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEE2IElT
+	T251bSAtLT4KPCFFTlRJVFkgc2VjdCAgICImIzE2NzsiPiA8IS0tIHNlY3Rpb24gc2lnbiwgVSswMEE3
+	IElTT251bSAtLT4KPCFFTlRJVFkgdW1sICAgICImIzE2ODsiPiA8IS0tIGRpYWVyZXNpcyA9IHNwYWNp
+	bmcgZGlhZXJlc2lzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEE4IElTT2Rp
+	YSAtLT4KPCFFTlRJVFkgY29weSAgICImIzE2OTsiPiA8IS0tIGNvcHlyaWdodCBzaWduLCBVKzAwQTkg
+	SVNPbnVtIC0tPgo8IUVOVElUWSBvcmRmICAgIiYjMTcwOyI+IDwhLS0gZmVtaW5pbmUgb3JkaW5hbCBp
+	bmRpY2F0b3IsIFUrMDBBQSBJU09udW0gLS0+CjwhRU5USVRZIGxhcXVvICAiJiMxNzE7Ij4gPCEtLSBs
+	ZWZ0LXBvaW50aW5nIGRvdWJsZSBhbmdsZSBxdW90YXRpb24gbWFyawogICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgPSBsZWZ0IHBvaW50aW5nIGd1aWxsZW1ldCwgVSswMEFCIElTT251bSAtLT4K
+	PCFFTlRJVFkgbm90ICAgICImIzE3MjsiPiA8IS0tIG5vdCBzaWduID0gYW5nbGVkIGRhc2gsCiAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwQUMgSVNPbnVtIC0tPgo8IUVOVElUWSBzaHkg
+	ICAgIiYjMTczOyI+IDwhLS0gc29mdCBoeXBoZW4gPSBkaXNjcmV0aW9uYXJ5IGh5cGhlbiwKICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBBRCBJU09udW0gLS0+CjwhRU5USVRZIHJlZyAg
+	ICAiJiMxNzQ7Ij4gPCEtLSByZWdpc3RlcmVkIHNpZ24gPSByZWdpc3RlcmVkIHRyYWRlIG1hcmsgc2ln
+	biwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBBRSBJU09udW0gLS0+CjwhRU5U
+	SVRZIG1hY3IgICAiJiMxNzU7Ij4gPCEtLSBtYWNyb24gPSBzcGFjaW5nIG1hY3JvbiA9IG92ZXJsaW5l
+	CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA9IEFQTCBvdmVyYmFyLCBVKzAwQUYgSVNP
+	ZGlhIC0tPgo8IUVOVElUWSBkZWcgICAgIiYjMTc2OyI+IDwhLS0gZGVncmVlIHNpZ24sIFUrMDBCMCBJ
+	U09udW0gLS0+CjwhRU5USVRZIHBsdXNtbiAiJiMxNzc7Ij4gPCEtLSBwbHVzLW1pbnVzIHNpZ24gPSBw
+	bHVzLW9yLW1pbnVzIHNpZ24sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwQjEg
+	SVNPbnVtIC0tPgo8IUVOVElUWSBzdXAyICAgIiYjMTc4OyI+IDwhLS0gc3VwZXJzY3JpcHQgdHdvID0g
+	c3VwZXJzY3JpcHQgZGlnaXQgdHdvCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA9IHNx
+	dWFyZWQsIFUrMDBCMiBJU09udW0gLS0+CjwhRU5USVRZIHN1cDMgICAiJiMxNzk7Ij4gPCEtLSBzdXBl
+	cnNjcmlwdCB0aHJlZSA9IHN1cGVyc2NyaXB0IGRpZ2l0IHRocmVlCiAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICA9IGN1YmVkLCBVKzAwQjMgSVNPbnVtIC0tPgo8IUVOVElUWSBhY3V0ZSAgIiYj
+	MTgwOyI+IDwhLS0gYWN1dGUgYWNjZW50ID0gc3BhY2luZyBhY3V0ZSwKICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgIFUrMDBCNCBJU09kaWEgLS0+CjwhRU5USVRZIG1pY3JvICAiJiMxODE7Ij4g
+	PCEtLSBtaWNybyBzaWduLCBVKzAwQjUgSVNPbnVtIC0tPgo8IUVOVElUWSBwYXJhICAgIiYjMTgyOyI+
+	IDwhLS0gcGlsY3JvdyBzaWduID0gcGFyYWdyYXBoIHNpZ24sCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICBVKzAwQjYgSVNPbnVtIC0tPgo8IUVOVElUWSBtaWRkb3QgIiYjMTgzOyI+IDwhLS0g
+	bWlkZGxlIGRvdCA9IEdlb3JnaWFuIGNvbW1hCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICA9IEdyZWVrIG1pZGRsZSBkb3QsIFUrMDBCNyBJU09udW0gLS0+CjwhRU5USVRZIGNlZGlsICAiJiMx
+	ODQ7Ij4gPCEtLSBjZWRpbGxhID0gc3BhY2luZyBjZWRpbGxhLCBVKzAwQjggSVNPZGlhIC0tPgo8IUVO
+	VElUWSBzdXAxICAgIiYjMTg1OyI+IDwhLS0gc3VwZXJzY3JpcHQgb25lID0gc3VwZXJzY3JpcHQgZGln
+	aXQgb25lLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEI5IElTT251bSAtLT4K
+	PCFFTlRJVFkgb3JkbSAgICImIzE4NjsiPiA8IS0tIG1hc2N1bGluZSBvcmRpbmFsIGluZGljYXRvciwK
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBCQSBJU09udW0gLS0+CjwhRU5USVRZ
+	IHJhcXVvICAiJiMxODc7Ij4gPCEtLSByaWdodC1wb2ludGluZyBkb3VibGUgYW5nbGUgcXVvdGF0aW9u
+	IG1hcmsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID0gcmlnaHQgcG9pbnRpbmcgZ3Vp
+	bGxlbWV0LCBVKzAwQkIgSVNPbnVtIC0tPgo8IUVOVElUWSBmcmFjMTQgIiYjMTg4OyI+IDwhLS0gdnVs
+	Z2FyIGZyYWN0aW9uIG9uZSBxdWFydGVyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA9
+	IGZyYWN0aW9uIG9uZSBxdWFydGVyLCBVKzAwQkMgSVNPbnVtIC0tPgo8IUVOVElUWSBmcmFjMTIgIiYj
+	MTg5OyI+IDwhLS0gdnVsZ2FyIGZyYWN0aW9uIG9uZSBoYWxmCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICA9IGZyYWN0aW9uIG9uZSBoYWxmLCBVKzAwQkQgSVNPbnVtIC0tPgo8IUVOVElUWSBm
+	cmFjMzQgIiYjMTkwOyI+IDwhLS0gdnVsZ2FyIGZyYWN0aW9uIHRocmVlIHF1YXJ0ZXJzCiAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgICAgICA9IGZyYWN0aW9uIHRocmVlIHF1YXJ0ZXJzLCBVKzAwQkUg
+	SVNPbnVtIC0tPgo8IUVOVElUWSBpcXVlc3QgIiYjMTkxOyI+IDwhLS0gaW52ZXJ0ZWQgcXVlc3Rpb24g
+	bWFyawogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPSB0dXJuZWQgcXVlc3Rpb24gbWFy
+	aywgVSswMEJGIElTT251bSAtLT4KPCFFTlRJVFkgQWdyYXZlICImIzE5MjsiPiA8IS0tIGxhdGluIGNh
+	cGl0YWwgbGV0dGVyIEEgd2l0aCBncmF2ZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	PSBsYXRpbiBjYXBpdGFsIGxldHRlciBBIGdyYXZlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgVSswMEMwIElTT2xhdDEgLS0+CjwhRU5USVRZIEFhY3V0ZSAiJiMxOTM7Ij4gPCEtLSBsYXRp
+	biBjYXBpdGFsIGxldHRlciBBIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICBVKzAwQzEgSVNPbGF0MSAtLT4KPCFFTlRJVFkgQWNpcmMgICImIzE5NDsiPiA8IS0tIGxhdGlu
+	IGNhcGl0YWwgbGV0dGVyIEEgd2l0aCBjaXJjdW1mbGV4LAogICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgVSswMEMyIElTT2xhdDEgLS0+CjwhRU5USVRZIEF0aWxkZSAiJiMxOTU7Ij4gPCEtLSBs
+	YXRpbiBjYXBpdGFsIGxldHRlciBBIHdpdGggdGlsZGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAwQzMgSVNPbGF0MSAtLT4KPCFFTlRJVFkgQXVtbCAgICImIzE5NjsiPiA8IS0tIGxh
+	dGluIGNhcGl0YWwgbGV0dGVyIEEgd2l0aCBkaWFlcmVzaXMsCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICBVKzAwQzQgSVNPbGF0MSAtLT4KPCFFTlRJVFkgQXJpbmcgICImIzE5NzsiPiA8IS0t
+	IGxhdGluIGNhcGl0YWwgbGV0dGVyIEEgd2l0aCByaW5nIGFib3ZlCiAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICA9IGxhdGluIGNhcGl0YWwgbGV0dGVyIEEgcmluZywKICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgIFUrMDBDNSBJU09sYXQxIC0tPgo8IUVOVElUWSBBRWxpZyAgIiYjMTk4
+	OyI+IDwhLS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgQUUKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgID0gbGF0aW4gY2FwaXRhbCBsaWdhdHVyZSBBRSwKICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgIFUrMDBDNiBJU09sYXQxIC0tPgo8IUVOVElUWSBDY2VkaWwgIiYjMTk5OyI+IDwhLS0g
+	bGF0aW4gY2FwaXRhbCBsZXR0ZXIgQyB3aXRoIGNlZGlsbGEsCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICBVKzAwQzcgSVNPbGF0MSAtLT4KPCFFTlRJVFkgRWdyYXZlICImIzIwMDsiPiA8IS0t
+	IGxhdGluIGNhcGl0YWwgbGV0dGVyIEUgd2l0aCBncmF2ZSwKICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgIFUrMDBDOCBJU09sYXQxIC0tPgo8IUVOVElUWSBFYWN1dGUgIiYjMjAxOyI+IDwhLS0g
+	bGF0aW4gY2FwaXRhbCBsZXR0ZXIgRSB3aXRoIGFjdXRlLAogICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgVSswMEM5IElTT2xhdDEgLS0+CjwhRU5USVRZIEVjaXJjICAiJiMyMDI7Ij4gPCEtLSBs
+	YXRpbiBjYXBpdGFsIGxldHRlciBFIHdpdGggY2lyY3VtZmxleCwKICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgIFUrMDBDQSBJU09sYXQxIC0tPgo8IUVOVElUWSBFdW1sICAgIiYjMjAzOyI+IDwh
+	LS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgRSB3aXRoIGRpYWVyZXNpcywKICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgIFUrMDBDQiBJU09sYXQxIC0tPgo8IUVOVElUWSBJZ3JhdmUgIiYjMjA0OyI+
+	IDwhLS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgSSB3aXRoIGdyYXZlLAogICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgVSswMENDIElTT2xhdDEgLS0+CjwhRU5USVRZIElhY3V0ZSAiJiMyMDU7Ij4g
+	PCEtLSBsYXRpbiBjYXBpdGFsIGxldHRlciBJIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICBVKzAwQ0QgSVNPbGF0MSAtLT4KPCFFTlRJVFkgSWNpcmMgICImIzIwNjsiPiA8
+	IS0tIGxhdGluIGNhcGl0YWwgbGV0dGVyIEkgd2l0aCBjaXJjdW1mbGV4LAogICAgICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgVSswMENFIElTT2xhdDEgLS0+CjwhRU5USVRZIEl1bWwgICAiJiMyMDc7
+	Ij4gPCEtLSBsYXRpbiBjYXBpdGFsIGxldHRlciBJIHdpdGggZGlhZXJlc2lzLAogICAgICAgICAgICAg
+	ICAgICAgICAgICAgICAgICAgICAgVSswMENGIElTT2xhdDEgLS0+CjwhRU5USVRZIEVUSCAgICAiJiMy
+	MDg7Ij4gPCEtLSBsYXRpbiBjYXBpdGFsIGxldHRlciBFVEgsIFUrMDBEMCBJU09sYXQxIC0tPgo8IUVO
+	VElUWSBOdGlsZGUgIiYjMjA5OyI+IDwhLS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgTiB3aXRoIHRpbGRl
+	LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEQxIElTT2xhdDEgLS0+CjwhRU5U
+	SVRZIE9ncmF2ZSAiJiMyMTA7Ij4gPCEtLSBsYXRpbiBjYXBpdGFsIGxldHRlciBPIHdpdGggZ3JhdmUs
+	CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwRDIgSVNPbGF0MSAtLT4KPCFFTlRJ
+	VFkgT2FjdXRlICImIzIxMTsiPiA8IS0tIGxhdGluIGNhcGl0YWwgbGV0dGVyIE8gd2l0aCBhY3V0ZSwK
+	ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBEMyBJU09sYXQxIC0tPgo8IUVOVElU
+	WSBPY2lyYyAgIiYjMjEyOyI+IDwhLS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgTyB3aXRoIGNpcmN1bWZs
+	ZXgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwRDQgSVNPbGF0MSAtLT4KPCFF
+	TlRJVFkgT3RpbGRlICImIzIxMzsiPiA8IS0tIGxhdGluIGNhcGl0YWwgbGV0dGVyIE8gd2l0aCB0aWxk
+	ZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBENSBJU09sYXQxIC0tPgo8IUVO
+	VElUWSBPdW1sICAgIiYjMjE0OyI+IDwhLS0gbGF0aW4gY2FwaXRhbCBsZXR0ZXIgTyB3aXRoIGRpYWVy
+	ZXNpcywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBENiBJU09sYXQxIC0tPgo8
+	IUVOVElUWSB0aW1lcyAgIiYjMjE1OyI+IDwhLS0gbXVsdGlwbGljYXRpb24gc2lnbiwgVSswMEQ3IElT
+	T251bSAtLT4KPCFFTlRJVFkgT3NsYXNoICImIzIxNjsiPiA8IS0tIGxhdGluIGNhcGl0YWwgbGV0dGVy
+	IE8gd2l0aCBzdHJva2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID0gbGF0aW4gY2Fw
+	aXRhbCBsZXR0ZXIgTyBzbGFzaCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBE
+	OCBJU09sYXQxIC0tPgo8IUVOVElUWSBVZ3JhdmUgIiYjMjE3OyI+IDwhLS0gbGF0aW4gY2FwaXRhbCBs
+	ZXR0ZXIgVSB3aXRoIGdyYXZlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEQ5
+	IElTT2xhdDEgLS0+CjwhRU5USVRZIFVhY3V0ZSAiJiMyMTg7Ij4gPCEtLSBsYXRpbiBjYXBpdGFsIGxl
+	dHRlciBVIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwREEg
+	SVNPbGF0MSAtLT4KPCFFTlRJVFkgVWNpcmMgICImIzIxOTsiPiA8IS0tIGxhdGluIGNhcGl0YWwgbGV0
+	dGVyIFUgd2l0aCBjaXJjdW1mbGV4LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsw
+	MERCIElTT2xhdDEgLS0+CjwhRU5USVRZIFV1bWwgICAiJiMyMjA7Ij4gPCEtLSBsYXRpbiBjYXBpdGFs
+	IGxldHRlciBVIHdpdGggZGlhZXJlc2lzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	VSswMERDIElTT2xhdDEgLS0+CjwhRU5USVRZIFlhY3V0ZSAiJiMyMjE7Ij4gPCEtLSBsYXRpbiBjYXBp
+	dGFsIGxldHRlciBZIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBV
+	KzAwREQgSVNPbGF0MSAtLT4KPCFFTlRJVFkgVEhPUk4gICImIzIyMjsiPiA8IS0tIGxhdGluIGNhcGl0
+	YWwgbGV0dGVyIFRIT1JOLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMERFIElT
+	T2xhdDEgLS0+CjwhRU5USVRZIHN6bGlnICAiJiMyMjM7Ij4gPCEtLSBsYXRpbiBzbWFsbCBsZXR0ZXIg
+	c2hhcnAgcyA9IGVzcy16ZWQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwREYg
+	SVNPbGF0MSAtLT4KPCFFTlRJVFkgYWdyYXZlICImIzIyNDsiPiA8IS0tIGxhdGluIHNtYWxsIGxldHRl
+	ciBhIHdpdGggZ3JhdmUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID0gbGF0aW4gc21h
+	bGwgbGV0dGVyIGEgZ3JhdmUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwRTAg
+	SVNPbGF0MSAtLT4KPCFFTlRJVFkgYWFjdXRlICImIzIyNTsiPiA8IS0tIGxhdGluIHNtYWxsIGxldHRl
+	ciBhIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwRTEgSVNP
+	bGF0MSAtLT4KPCFFTlRJVFkgYWNpcmMgICImIzIyNjsiPiA8IS0tIGxhdGluIHNtYWxsIGxldHRlciBh
+	IHdpdGggY2lyY3VtZmxleCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBFMiBJ
+	U09sYXQxIC0tPgo8IUVOVElUWSBhdGlsZGUgIiYjMjI3OyI+IDwhLS0gbGF0aW4gc21hbGwgbGV0dGVy
+	IGEgd2l0aCB0aWxkZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBFMyBJU09s
+	YXQxIC0tPgo8IUVOVElUWSBhdW1sICAgIiYjMjI4OyI+IDwhLS0gbGF0aW4gc21hbGwgbGV0dGVyIGEg
+	d2l0aCBkaWFlcmVzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAwRTQgSVNP
+	bGF0MSAtLT4KPCFFTlRJVFkgYXJpbmcgICImIzIyOTsiPiA8IS0tIGxhdGluIHNtYWxsIGxldHRlciBh
+	IHdpdGggcmluZyBhYm92ZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPSBsYXRpbiBz
+	bWFsbCBsZXR0ZXIgYSByaW5nLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSswMEU1
+	IElTT2xhdDEgLS0+CjwhRU5USVRZIGFlbGlnICAiJiMyMzA7Ij4gPCEtLSBsYXRpbiBzbWFsbCBsZXR0
+	ZXIgYWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID0gbGF0aW4gc21hbGwgbGlnYXR1
+	cmUgYWUsIFUrMDBFNiBJU09sYXQxIC0tPgo8IUVOVElUWSBjY2VkaWwgIiYjMjMxOyI+IDwhLS0gbGF0
+	aW4gc21hbGwgbGV0dGVyIGMgd2l0aCBjZWRpbGxhLAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgVSswMEU3IElTT2xhdDEgLS0+CjwhRU5USVRZIGVncmF2ZSAiJiMyMzI7Ij4gPCEtLSBsYXRp
+	biBzbWFsbCBsZXR0ZXIgZSB3aXRoIGdyYXZlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgVSswMEU4IElTT2xhdDEgLS0+CjwhRU5USVRZIGVhY3V0ZSAiJiMyMzM7Ij4gPCEtLSBsYXRpbiBz
+	bWFsbCBsZXR0ZXIgZSB3aXRoIGFjdXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	VSswMEU5IElTT2xhdDEgLS0+CjwhRU5USVRZIGVjaXJjICAiJiMyMzQ7Ij4gPCEtLSBsYXRpbiBzbWFs
+	bCBsZXR0ZXIgZSB3aXRoIGNpcmN1bWZsZXgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICBVKzAwRUEgSVNPbGF0MSAtLT4KPCFFTlRJVFkgZXVtbCAgICImIzIzNTsiPiA8IS0tIGxhdGluIHNt
+	YWxsIGxldHRlciBlIHdpdGggZGlhZXJlc2lzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgVSswMEVCIElTT2xhdDEgLS0+CjwhRU5USVRZIGlncmF2ZSAiJiMyMzY7Ij4gPCEtLSBsYXRpbiBz
+	bWFsbCBsZXR0ZXIgaSB3aXRoIGdyYXZlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	VSswMEVDIElTT2xhdDEgLS0+CjwhRU5USVRZIGlhY3V0ZSAiJiMyMzc7Ij4gPCEtLSBsYXRpbiBzbWFs
+	bCBsZXR0ZXIgaSB3aXRoIGFjdXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVSsw
+	MEVEIElTT2xhdDEgLS0+CjwhRU5USVRZIGljaXJjICAiJiMyMzg7Ij4gPCEtLSBsYXRpbiBzbWFsbCBs
+	ZXR0ZXIgaSB3aXRoIGNpcmN1bWZsZXgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBV
+	KzAwRUUgSVNPbGF0MSAtLT4KPCFFTlRJVFkgaXVtbCAgICImIzIzOTsiPiA8IS0tIGxhdGluIHNtYWxs
+	IGxldHRlciBpIHdpdGggZGlhZXJlc2lzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	VSswMEVGIElTT2xhdDEgLS0+CjwhRU5USVRZIGV0aCAgICAiJiMyNDA7Ij4gPCEtLSBsYXRpbiBzbWFs
+	bCBsZXR0ZXIgZXRoLCBVKzAwRjAgSVNPbGF0MSAtLT4KPCFFTlRJVFkgbnRpbGRlICImIzI0MTsiPiA8
+	IS0tIGxhdGluIHNtYWxsIGxldHRlciBuIHdpdGggdGlsZGUsCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICBVKzAwRjEgSVNPbGF0MSAtLT4KPCFFTlRJVFkgb2dyYXZlICImIzI0MjsiPiA8IS0t
+	IGxhdGluIHNtYWxsIGxldHRlciBvIHdpdGggZ3JhdmUsCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAwRjIgSVNPbGF0MSAtLT4KPCFFTlRJVFkgb2FjdXRlICImIzI0MzsiPiA8IS0tIGxh
+	dGluIHNtYWxsIGxldHRlciBvIHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICBVKzAwRjMgSVNPbGF0MSAtLT4KPCFFTlRJVFkgb2NpcmMgICImIzI0NDsiPiA8IS0tIGxhdGlu
+	IHNtYWxsIGxldHRlciBvIHdpdGggY2lyY3VtZmxleCwKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgIFUrMDBGNCBJU09sYXQxIC0tPgo8IUVOVElUWSBvdGlsZGUgIiYjMjQ1OyI+IDwhLS0gbGF0
+	aW4gc21hbGwgbGV0dGVyIG8gd2l0aCB0aWxkZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgIFUrMDBGNSBJU09sYXQxIC0tPgo8IUVOVElUWSBvdW1sICAgIiYjMjQ2OyI+IDwhLS0gbGF0aW4g
+	c21hbGwgbGV0dGVyIG8gd2l0aCBkaWFlcmVzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICBVKzAwRjYgSVNPbGF0MSAtLT4KPCFFTlRJVFkgZGl2aWRlICImIzI0NzsiPiA8IS0tIGRpdmlz
+	aW9uIHNpZ24sIFUrMDBGNyBJU09udW0gLS0+CjwhRU5USVRZIG9zbGFzaCAiJiMyNDg7Ij4gPCEtLSBs
+	YXRpbiBzbWFsbCBsZXR0ZXIgbyB3aXRoIHN0cm9rZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgID0gbGF0aW4gc21hbGwgbGV0dGVyIG8gc2xhc2gsCiAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICAgICBVKzAwRjggSVNPbGF0MSAtLT4KPCFFTlRJVFkgdWdyYXZlICImIzI0OTsiPiA8IS0t
+	IGxhdGluIHNtYWxsIGxldHRlciB1IHdpdGggZ3JhdmUsCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAwRjkgSVNPbGF0MSAtLT4KPCFFTlRJVFkgdWFjdXRlICImIzI1MDsiPiA8IS0tIGxh
+	dGluIHNtYWxsIGxldHRlciB1IHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICBVKzAwRkEgSVNPbGF0MSAtLT4KPCFFTlRJVFkgdWNpcmMgICImIzI1MTsiPiA8IS0tIGxhdGlu
+	IHNtYWxsIGxldHRlciB1IHdpdGggY2lyY3VtZmxleCwKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgIFUrMDBGQiBJU09sYXQxIC0tPgo8IUVOVElUWSB1dW1sICAgIiYjMjUyOyI+IDwhLS0gbGF0
+	aW4gc21hbGwgbGV0dGVyIHUgd2l0aCBkaWFlcmVzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICAgICBVKzAwRkMgSVNPbGF0MSAtLT4KPCFFTlRJVFkgeWFjdXRlICImIzI1MzsiPiA8IS0tIGxh
+	dGluIHNtYWxsIGxldHRlciB5IHdpdGggYWN1dGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+	ICAgICBVKzAwRkQgSVNPbGF0MSAtLT4KPCFFTlRJVFkgdGhvcm4gICImIzI1NDsiPiA8IS0tIGxhdGlu
+	IHNtYWxsIGxldHRlciB0aG9ybiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFUrMDBG
+	RSBJU09sYXQxIC0tPgo8IUVOVElUWSB5dW1sICAgIiYjMjU1OyI+IDwhLS0gbGF0aW4gc21hbGwgbGV0
+	dGVyIHkgd2l0aCBkaWFlcmVzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVKzAw
+	RkYgSVNPbGF0MSAtLT4K
+</value></data></root>

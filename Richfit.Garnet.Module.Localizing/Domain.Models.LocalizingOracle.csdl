@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="LocalizingOracle" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_LANGUAGE" EntityType="Model.SYS_LANGUAGE" />
+    <EntitySet Name="SYS_LOCALIZING" EntityType="Model.SYS_LOCALIZING" />
+    <AssociationSet Name="FK_Sys_Localizing_Sys_Language" Association="Model.FK_Sys_Localizing_Sys_Language">
+      <End Role="SYS_LANGUAGE" EntitySet="SYS_LANGUAGE" />
+      <End Role="SYS_LOCALIZING" EntitySet="SYS_LOCALIZING" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_LANGUAGE">
+    <Key>
+      <PropertyRef Name="LANGUAGE_ID" />
+    </Key>
+    <Property Type="Guid" Name="LANGUAGE_ID" Nullable="false" />
+    <Property Type="String" Name="LANGUAGE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CULTURE" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="IS_USE" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="Decimal" Name="SORT" Precision="38" Scale="0" />
+    <NavigationProperty Name="SYS_LOCALIZING" Relationship="Model.FK_Sys_Localizing_Sys_Language" FromRole="SYS_LANGUAGE" ToRole="SYS_LOCALIZING" />
+  </EntityType>
+  <EntityType Name="SYS_LOCALIZING">
+    <Key>
+      <PropertyRef Name="LOCALIZING_ID" />
+    </Key>
+    <Property Type="Guid" Name="LOCALIZING_ID" Nullable="false" />
+    <Property Type="Guid" Name="LANGUAGE_ID" Nullable="false" />
+    <Property Type="Decimal" Name="LOCALIZING_TYPE" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="String" Name="INSTANCE" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PAGENAME" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="STRING_KEY" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="STRING_KEY_DESC" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="STRING_KEY_TIP_DESC" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_LANGUAGE" Relationship="Model.FK_Sys_Localizing_Sys_Language" FromRole="SYS_LOCALIZING" ToRole="SYS_LANGUAGE" />
+  </EntityType>
+  <Association Name="FK_Sys_Localizing_Sys_Language">
+    <End Type="Model.SYS_LANGUAGE" Role="SYS_LANGUAGE" Multiplicity="1" />
+    <End Type="Model.SYS_LOCALIZING" Role="SYS_LOCALIZING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LANGUAGE">
+        <PropertyRef Name="LANGUAGE_ID" />
+      </Principal>
+      <Dependent Role="SYS_LOCALIZING">
+        <PropertyRef Name="LANGUAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

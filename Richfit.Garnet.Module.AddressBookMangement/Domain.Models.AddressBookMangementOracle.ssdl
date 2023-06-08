@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AddressBookMangementModel.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="AB_CATEGORY">
+    <Key>
+      <PropertyRef Name="CATEGORY_ID" />
+    </Key>
+    <Property Name="CATEGORY_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CATEGORY_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="CATEGORY_TYPE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AB_CONTACT">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTACT_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="MOBILE" Type="nvarchar2" MaxLength="64" />
+    <Property Name="MAIL" Type="nvarchar2" MaxLength="64" />
+    <Property Name="POST" Type="nvarchar2" MaxLength="64" />
+    <Property Name="UNIT_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="UNIT_ADDRESS" Type="nvarchar2" MaxLength="255" />
+    <Property Name="UNIT_POSTCODE" Type="nvarchar2" MaxLength="64" />
+    <Property Name="WORK_TEL" Type="nvarchar2" MaxLength="64" />
+    <Property Name="WORK_FAX" Type="nvarchar2" MaxLength="64" />
+    <Property Name="HOME_TEL" Type="nvarchar2" MaxLength="64" />
+    <Property Name="HOME_ADDRESS" Type="nvarchar2" MaxLength="255" />
+    <Property Name="HOME_POSTCODE" Type="nvarchar2" MaxLength="64" />
+    <Property Name="SEX" Type="number" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="date" />
+    <Property Name="QQ" Type="nvarchar2" MaxLength="128" />
+    <Property Name="MSN" Type="nvarchar2" MaxLength="128" />
+    <Property Name="MATE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="CHILD" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IMAGE_PATH" Type="nvarchar2" MaxLength="255" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ROOM_NUMBER" Type="nvarchar2" MaxLength="64" />
+    <Property Name="PERSON_ID" Type="nvarchar2" MaxLength="32" />
+    <Property Name="RESPONSIBILITY" Type="nvarchar2" MaxLength="700" />
+  </EntityType>
+  <EntityType Name="AB_GROUP_CONTACT">
+    <Key>
+      <PropertyRef Name="GROUP_CONTACT_ID" />
+    </Key>
+    <Property Name="GROUP_CONTACT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="GROUP_ID" Type="raw" MaxLength="16" />
+    <Property Name="CONTACT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AB_ORG_CONTACT">
+    <Key>
+      <PropertyRef Name="ORG_CONTACT_ID" />
+    </Key>
+    <Property Name="ORG_CONTACT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="CONTACT_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AB_PERSONAL_GROUP">
+    <Key>
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="GROUP_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="GROUP_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="CATEGORY_TYPE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="AB_VIRTUAL_CONTACT">
+    <Key>
+      <PropertyRef Name="VIRTUAL_CONTACT_ID" />
+    </Key>
+    <Property Name="VIRTUAL_CONTACT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTACT_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AB_VIRTUAL_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="PARENT_ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPLOYEE_ID" />
+    </Key>
+    <Property Name="EMPLOYEE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_TYPE" Type="raw" MaxLength="16" />
+    <Property Name="AFFILIATED_UNIT" Type="raw" MaxLength="16" />
+    <Property Name="PERSON_ID" Type="nvarchar2" MaxLength="32" />
+    <Property Name="EMPLOYEE_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="IN_CATEGORY" Type="raw" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="WROK_PLACE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="WORKING_START_DATE" Type="date" />
+    <Property Name="WORK_TIME" Type="date" />
+    <Property Name="SEX" Type="number" Precision="38" Scale="0" />
+    <Property Name="NATION" Type="raw" MaxLength="16" />
+    <Property Name="HOME_TOWN" Type="nvarchar2" MaxLength="255" />
+    <Property Name="AGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="BIRTHDAY" Type="date" />
+    <Property Name="POLITICS_STATUS" Type="raw" MaxLength="16" />
+    <Property Name="PARTY_TIME" Type="date" />
+    <Property Name="ENG_LEVEL" Type="raw" MaxLength="16" />
+    <Property Name="EDUCATION" Type="raw" MaxLength="16" />
+    <Property Name="EDUCATION_REMARK" Type="nvarchar2" MaxLength="255" />
+    <Property Name="GRADUATION_COLLEGE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="GRADUAION_TIME" Type="date" />
+    <Property Name="SCHOOL_MAJOR" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ADMINISTRATIVE_FUNCTION" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ADMINISTRATIVE_LEVEL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ORIGINAL_UNIT" Type="nvarchar2" MaxLength="128" />
+    <Property Name="TECHNICAL_POSITION" Type="raw" MaxLength="16" />
+    <Property Name="RANK" Type="raw" MaxLength="16" />
+    <Property Name="QUALIFY_TIME" Type="date" />
+    <Property Name="MOBILE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="MPHONE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="ID_NUMBER" Type="nvarchar2" MaxLength="32" />
+    <Property Name="MAIL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="UNIT_COMPILATION" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ORDER_BK_BUSINESS_TYPE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="POSITION_TYPE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="JOIN_RUI_TUO" Type="date" />
+    <Property Name="YL_START_DATE" Type="date" />
+    <Property Name="CONTRACT_NO" Type="nvarchar2" MaxLength="32" />
+    <Property Name="CONTRACT_TYPE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="CONTRACT_VALIDITY_DATE" Type="date" />
+    <Property Name="CONTRACT_EXPIRY_DATE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="WORK_TEL" Type="nvarchar2" MaxLength="32" />
+    <Property Name="WORK_HOME" Type="nvarchar2" MaxLength="32" />
+    <Property Name="JOB_PO_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="JOB_PO_UP_SEQ" Type="nvarchar2" MaxLength="255" />
+    <Property Name="JOB_PO_SEQ" Type="nvarchar2" MaxLength="255" />
+    <Property Name="JOB_PO_ETHNIC_GROUP" Type="nvarchar2" MaxLength="255" />
+    <Property Name="JOB_PO_LEVEL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="CONTACT_ID" Type="raw" MaxLength="16" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="IMAGE_PATH" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="POSITION" Type="raw" MaxLength="16" />
+    <Property Name="MARITAL_STATUS" Type="raw" MaxLength="16" />
+    <Property Name="FAMILY_CONTACT" Type="nvarchar2" MaxLength="255" />
+    <Property Name="FAMILY_CONTACT_TEL" Type="nvarchar2" MaxLength="32" />
+    <Property Name="EMPLOYEE_STATUS" Type="raw" MaxLength="16" />
+    <Property Name="APPOINTMENT_TIME" Type="date" />
+    <Property Name="TRANSFERRED_TIME" Type="date" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="TECHNICAL_TITLE" Type="raw" MaxLength="16" />
+    <Property Name="HUKOU" Type="nvarchar2" MaxLength="128" />
+    <Property Name="TECHNICAL_TITLE_STR" Type="varchar2" MaxLength="520" />
+  </EntityType>
+  <EntityType Name="SYS_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="PARENT_ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+  </EntityType>
+  <Association Name="FK_AB_GROUP_REFERENCE_AB_CONTA">
+    <End Role="AB_CONTACT" Type="Self.AB_CONTACT" Multiplicity="1" />
+    <End Role="AB_GROUP_CONTACT" Type="Self.AB_GROUP_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_GROUP_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_GROUP_REFERENCE_AB_PERSO">
+    <End Role="AB_PERSONAL_GROUP" Type="Self.AB_PERSONAL_GROUP" Multiplicity="0..1" />
+    <End Role="AB_GROUP_CONTACT" Type="Self.AB_GROUP_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_PERSONAL_GROUP">
+        <PropertyRef Name="GROUP_ID" />
+      </Principal>
+      <Dependent Role="AB_GROUP_CONTACT">
+        <PropertyRef Name="GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_ORG_C_REFERENCE_AB_CONTA">
+    <End Role="AB_CONTACT" Type="Self.AB_CONTACT" Multiplicity="0..1" />
+    <End Role="AB_ORG_CONTACT" Type="Self.AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_ORG_C_REFERENCE_SYS_ORG">
+    <End Role="SYS_ORG" Type="Self.SYS_ORG" Multiplicity="0..1" />
+    <End Role="AB_ORG_CONTACT" Type="Self.AB_ORG_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="AB_ORG_CONTACT">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_PERSO_REFERENCE_AB_CATEG">
+    <End Role="AB_CATEGORY" Type="Self.AB_CATEGORY" Multiplicity="0..1" />
+    <End Role="AB_PERSONAL_GROUP" Type="Self.AB_PERSONAL_GROUP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CATEGORY">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Principal>
+      <Dependent Role="AB_PERSONAL_GROUP">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_VIRTU_REFERENCE_AB_CONTA">
+    <End Role="AB_CONTACT" Type="Self.AB_CONTACT" Multiplicity="0..1" />
+    <End Role="AB_VIRTUAL_CONTACT" Type="Self.AB_VIRTUAL_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Principal>
+      <Dependent Role="AB_VIRTUAL_CONTACT">
+        <PropertyRef Name="CONTACT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AB_VIRTU_REFERENCE_AB_VIRTU">
+    <End Role="AB_VIRTUAL_ORG" Type="Self.AB_VIRTUAL_ORG" Multiplicity="0..1" />
+    <End Role="AB_VIRTUAL_CONTACT" Type="Self.AB_VIRTUAL_CONTACT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AB_VIRTUAL_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="AB_VIRTUAL_CONTACT">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_ORG">
+    <End Role="SYS_ORG" Type="Self.SYS_ORG" Multiplicity="0..1" />
+    <End Role="HR_EMPLOYEE" Type="Self.HR_EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="HR_EMPLOYEE">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Org_Sys_Org">
+    <End Role="SYS_ORG" Type="Self.SYS_ORG" Multiplicity="0..1" />
+    <End Role="SYS_ORG1" Type="Self.SYS_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ORG1">
+        <PropertyRef Name="PARENT_ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AddressBookMangementModelStoreContainer">
+    <EntitySet Name="AB_CATEGORY" EntityType="Self.AB_CATEGORY" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_CONTACT" EntityType="Self.AB_CONTACT" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_GROUP_CONTACT" EntityType="Self.AB_GROUP_CONTACT" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_ORG_CONTACT" EntityType="Self.AB_ORG_CONTACT" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_PERSONAL_GROUP" EntityType="Self.AB_PERSONAL_GROUP" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_VIRTUAL_CONTACT" EntityType="Self.AB_VIRTUAL_CONTACT" Schema="" store:Type="Tables" />
+    <EntitySet Name="AB_VIRTUAL_ORG" EntityType="Self.AB_VIRTUAL_ORG" Schema="" store:Type="Tables" />
+    <EntitySet Name="HR_EMPLOYEE" EntityType="Self.HR_EMPLOYEE" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_ORG" EntityType="Self.SYS_ORG" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_AB_GROUP_REFERENCE_AB_CONTA" Association="Self.FK_AB_GROUP_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_GROUP_CONTACT" EntitySet="AB_GROUP_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_GROUP_REFERENCE_AB_PERSO" Association="Self.FK_AB_GROUP_REFERENCE_AB_PERSO">
+      <End Role="AB_PERSONAL_GROUP" EntitySet="AB_PERSONAL_GROUP" />
+      <End Role="AB_GROUP_CONTACT" EntitySet="AB_GROUP_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_AB_CONTA" Association="Self.FK_AB_ORG_C_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_ORG_C_REFERENCE_SYS_ORG" Association="Self.FK_AB_ORG_C_REFERENCE_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="AB_ORG_CONTACT" EntitySet="AB_ORG_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_PERSO_REFERENCE_AB_CATEG" Association="Self.FK_AB_PERSO_REFERENCE_AB_CATEG">
+      <End Role="AB_CATEGORY" EntitySet="AB_CATEGORY" />
+      <End Role="AB_PERSONAL_GROUP" EntitySet="AB_PERSONAL_GROUP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_VIRTU_REFERENCE_AB_CONTA" Association="Self.FK_AB_VIRTU_REFERENCE_AB_CONTA">
+      <End Role="AB_CONTACT" EntitySet="AB_CONTACT" />
+      <End Role="AB_VIRTUAL_CONTACT" EntitySet="AB_VIRTUAL_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AB_VIRTU_REFERENCE_AB_VIRTU" Association="Self.FK_AB_VIRTU_REFERENCE_AB_VIRTU">
+      <End Role="AB_VIRTUAL_ORG" EntitySet="AB_VIRTUAL_ORG" />
+      <End Role="AB_VIRTUAL_CONTACT" EntitySet="AB_VIRTUAL_CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_ORG" Association="Self.FK_HR_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="HR_EMPLOYEE" EntitySet="HR_EMPLOYEE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Org_Sys_Org" Association="Self.FK_Sys_Org_Sys_Org">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ORG1" EntitySet="SYS_ORG" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

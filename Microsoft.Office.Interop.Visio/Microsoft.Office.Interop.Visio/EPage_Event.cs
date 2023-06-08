@@ -1,0 +1,81 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[ComEventInterface(typeof(EPage_0000), typeof(EPage_EventProvider_0000))]
+[TypeLibType(16)]
+[ComVisible(false)]
+public interface EPage_Event
+{
+	event EPage_PageChangedEventHandler PageChanged;
+
+	event EPage_BeforePageDeleteEventHandler BeforePageDelete;
+
+	event EPage_ShapeAddedEventHandler ShapeAdded;
+
+	event EPage_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EPage_ShapeChangedEventHandler ShapeChanged;
+
+	event EPage_SelectionAddedEventHandler SelectionAdded;
+
+	event EPage_BeforeShapeDeleteEventHandler BeforeShapeDelete;
+
+	event EPage_TextChangedEventHandler TextChanged;
+
+	event EPage_CellChangedEventHandler CellChanged;
+
+	event EPage_FormulaChangedEventHandler FormulaChanged;
+
+	event EPage_ConnectionsAddedEventHandler ConnectionsAdded;
+
+	event EPage_ConnectionsDeletedEventHandler ConnectionsDeleted;
+
+	event EPage_QueryCancelPageDeleteEventHandler QueryCancelPageDelete;
+
+	event EPage_PageDeleteCanceledEventHandler PageDeleteCanceled;
+
+	event EPage_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EPage_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EPage_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EPage_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EPage_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EPage_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EPage_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EPage_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EPage_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EPage_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EPage_GroupCanceledEventHandler GroupCanceled;
+
+	event EPage_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+
+	event EPage_ShapeLinkAddedEventHandler ShapeLinkAdded;
+
+	event EPage_ShapeLinkDeletedEventHandler ShapeLinkDeleted;
+
+	event EPage_ContainerRelationshipAddedEventHandler ContainerRelationshipAdded;
+
+	event EPage_ContainerRelationshipDeletedEventHandler ContainerRelationshipDeleted;
+
+	event EPage_CalloutRelationshipAddedEventHandler CalloutRelationshipAdded;
+
+	event EPage_CalloutRelationshipDeletedEventHandler CalloutRelationshipDeleted;
+
+	event EPage_QueryCancelReplaceShapesEventHandler QueryCancelReplaceShapes;
+
+	event EPage_ReplaceShapesCanceledEventHandler ReplaceShapesCanceled;
+
+	event EPage_BeforeReplaceShapesEventHandler BeforeReplaceShapes;
+
+	event EPage_AfterReplaceShapesEventHandler AfterReplaceShapes;
+}

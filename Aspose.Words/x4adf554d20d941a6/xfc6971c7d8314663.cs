@@ -1,0 +1,12 @@
+namespace x4adf554d20d941a6;
+
+internal enum xfc6971c7d8314663
+{
+	x4d0b9d4447ba7566 = 0,
+	xf9ad6fb78355fe13 = 1024,
+	x3e1feffd8ca6feb2 = 2048,
+	x35078e8db43b001f = 3072,
+	x52cffb079963bcb2 = 4096,
+	x5827c4f2314f1346 = 5120,
+	xe9605a4bea014f21 = 5121
+}

@@ -1,0 +1,63 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[ComVisible(false)]
+[ComEventInterface(typeof(EMasters_0000), typeof(EMasters_EventProvider_0000))]
+[TypeLibType(16)]
+public interface EMasters_Event
+{
+	event EMasters_MasterAddedEventHandler MasterAdded;
+
+	event EMasters_MasterChangedEventHandler MasterChanged;
+
+	event EMasters_BeforeMasterDeleteEventHandler BeforeMasterDelete;
+
+	event EMasters_ShapeAddedEventHandler ShapeAdded;
+
+	event EMasters_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EMasters_ShapeChangedEventHandler ShapeChanged;
+
+	event EMasters_SelectionAddedEventHandler SelectionAdded;
+
+	event EMasters_BeforeShapeDeleteEventHandler BeforeShapeDelete;
+
+	event EMasters_TextChangedEventHandler TextChanged;
+
+	event EMasters_CellChangedEventHandler CellChanged;
+
+	event EMasters_FormulaChangedEventHandler FormulaChanged;
+
+	event EMasters_ConnectionsAddedEventHandler ConnectionsAdded;
+
+	event EMasters_ConnectionsDeletedEventHandler ConnectionsDeleted;
+
+	event EMasters_QueryCancelMasterDeleteEventHandler QueryCancelMasterDelete;
+
+	event EMasters_MasterDeleteCanceledEventHandler MasterDeleteCanceled;
+
+	event EMasters_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EMasters_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EMasters_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EMasters_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EMasters_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EMasters_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EMasters_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EMasters_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EMasters_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EMasters_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EMasters_GroupCanceledEventHandler GroupCanceled;
+
+	event EMasters_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+}

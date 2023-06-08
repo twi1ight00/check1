@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SuperviseOracle.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="SUP_ASSIGN_TASK">
+    <Key>
+      <PropertyRef Name="ASSIGN_TASK_ID" />
+    </Key>
+    <Property Name="ASSIGN_TASK_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="PORJECT_ID" Type="raw" MaxLength="16" />
+    <Property Name="PARENT_ASSIGN_TASK_ID" Type="raw" MaxLength="16" />
+    <Property Name="WORK_TITLE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="WORK_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="ASSIGN_TIME" Type="date" />
+    <Property Name="BEGIN_TIME" Type="date" />
+    <Property Name="END_TIME" Type="date" />
+    <Property Name="HAND_REQUIREMENT" Type="nvarchar2" MaxLength="255" />
+    <Property Name="FINISH_TIME" Type="date" />
+    <Property Name="FINISH_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="FEEDBACK_RATE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_EVALUATION" Type="number" Precision="38" Scale="0" />
+    <Property Name="EVALUATION_CONTENT" Type="nvarchar2" MaxLength="255" />
+    <Property Name="IS_EXCEED" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_CAN_CHANGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_CHANGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="TASK_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="TASK_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="APPLY_COPLETION_TIME" Type="date" />
+  </EntityType>
+  <EntityType Name="SUP_CHANGE">
+    <Key>
+      <PropertyRef Name="CHANGE_ID" />
+    </Key>
+    <Property Name="CHANGE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="raw" MaxLength="16" />
+    <Property Name="CHANGE_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="CHANGE_END_TIME" Type="date" />
+    <Property Name="CHANGE_REASON" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="CHANGE_TIME" Type="date" />
+    <Property Name="CHANGE_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SUP_FEED_BACK">
+    <Key>
+      <PropertyRef Name="FEED_BACK_ID" />
+    </Key>
+    <Property Name="FEED_BACK_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="raw" MaxLength="16" />
+    <Property Name="FEED_BACK_USER" Type="raw" MaxLength="16" />
+    <Property Name="FEED_BACK_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="FEED_BACK_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="FEED_BACK_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SUP_PORJECT">
+    <Key>
+      <PropertyRef Name="PORJECT_ID" />
+    </Key>
+    <Property Name="PORJECT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="SUPERVISE_NUMBER" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SUPERVISE_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="SUPERVISE_CLASSIFY" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISSUED_ORGNAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ISSUED_FILENUMBER" Type="nvarchar2" MaxLength="255" />
+    <Property Name="PORJECT_TITLE" Type="nvarchar2" MaxLength="512" />
+    <Property Name="WORK_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="LEADER_INSTRUCTION" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="LEADER_NAME" Type="nvarchar2" MaxLength="64" />
+    <Property Name="ASSIGN_TIME" Type="date" />
+    <Property Name="BEGIN_TIME" Type="date" />
+    <Property Name="END_TIME" Type="date" />
+    <Property Name="HAND_REQUIREMENT" Type="nvarchar2" MaxLength="255" />
+    <Property Name="FINISH_TIME" Type="date" />
+    <Property Name="FINISH_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="IS_EXCEED" Type="number" Precision="38" Scale="0" />
+    <Property Name="SUPERVISE_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="SUPERVISOR_ID" Type="raw" MaxLength="16" />
+    <Property Name="FOCUS_ON" Type="number" Precision="38" Scale="0" />
+    <Property Name="TIME_LIMIT" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="SUP_PORJECT_USER">
+    <Key>
+      <PropertyRef Name="PORJECT_USER_ID" />
+    </Key>
+    <Property Name="PORJECT_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="PORJECT_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="TYPE_ID" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="SUP_TASK_PROGRESS">
+    <Key>
+      <PropertyRef Name="PROGRESS_ID" />
+    </Key>
+    <Property Name="PROGRESS_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="raw" MaxLength="16" />
+    <Property Name="PROGRESS_USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="PROGRESS_USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="PROGRESS_CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SUP_TASK_USER">
+    <Key>
+      <PropertyRef Name="TASK_USER_ID" />
+    </Key>
+    <Property Name="TASK_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ASSIGN_TASK_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="TYPE_ID" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="DOMAIN_ID" Type="raw" MaxLength="16" />
+    <Property Name="LOGON_NAME" Type="nvarchar2" MaxLength="64" Nullable="false" />
+    <Property Name="DISPLAY_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="nvarchar2" MaxLength="64" />
+    <Property Name="USER_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_FORBIDDEN" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+  </EntityType>
+  <Association Name="FK_SUP_ASSI_REFERENCE_SUP_PORJ">
+    <End Role="SUP_PORJECT" Type="Self.SUP_PORJECT" Multiplicity="0..1" />
+    <End Role="SUP_ASSIGN_TASK" Type="Self.SUP_ASSIGN_TASK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_PORJECT">
+        <PropertyRef Name="PORJECT_ID" />
+      </Principal>
+      <Dependent Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="PORJECT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_CHAN_REFERENCE_SUP_ASSI">
+    <End Role="SUP_ASSIGN_TASK" Type="Self.SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Role="SUP_CHANGE" Type="Self.SUP_CHANGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_CHANGE">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_FEED_REFERENCE_SUP_ASSI">
+    <End Role="SUP_ASSIGN_TASK" Type="Self.SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Role="SUP_FEED_BACK" Type="Self.SUP_FEED_BACK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_FEED_BACK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PORJ_REFERENCE_SUP_PORJ">
+    <End Role="SUP_PORJECT" Type="Self.SUP_PORJECT" Multiplicity="0..1" />
+    <End Role="SUP_PORJECT_USER" Type="Self.SUP_PORJECT_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_PORJECT">
+        <PropertyRef Name="PORJECT_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT_USER">
+        <PropertyRef Name="PORJECT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PORJ_REFERENCE_SYS_USER">
+    <End Role="SYS_USER" Type="Self.SYS_USER" Multiplicity="0..1" />
+    <End Role="SUP_PORJECT_USER" Type="Self.SUP_PORJECT_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT_USER">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_PROG_REFERENCE_SUP_TASK">
+    <End Role="SUP_ASSIGN_TASK" Type="Self.SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Role="SUP_TASK_PROGRESS" Type="Self.SUP_TASK_PROGRESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_PROGRESS">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_SUPERVISOR">
+    <End Role="SYS_USER" Type="Self.SYS_USER" Multiplicity="0..1" />
+    <End Role="SUP_PORJECT" Type="Self.SUP_PORJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT">
+        <PropertyRef Name="SUPERVISOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_TASK_REFERENCE_SUP_ASSI">
+    <End Role="SUP_ASSIGN_TASK" Type="Self.SUP_ASSIGN_TASK" Multiplicity="0..1" />
+    <End Role="SUP_TASK_USER" Type="Self.SUP_TASK_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUP_ASSIGN_TASK">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_USER">
+        <PropertyRef Name="ASSIGN_TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_TASK_REFERENCE_SYS_USER">
+    <End Role="SYS_USER" Type="Self.SYS_USER" Multiplicity="0..1" />
+    <End Role="SUP_TASK_USER" Type="Self.SUP_TASK_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_TASK_USER">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUP_USER">
+    <End Role="SYS_USER" Type="Self.SYS_USER" Multiplicity="1" />
+    <End Role="SUP_PORJECT" Type="Self.SUP_PORJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SUP_PORJECT">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SuperviseOracleStoreContainer">
+    <EntitySet Name="SUP_ASSIGN_TASK" EntityType="Self.SUP_ASSIGN_TASK" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_CHANGE" EntityType="Self.SUP_CHANGE" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_FEED_BACK" EntityType="Self.SUP_FEED_BACK" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_PORJECT" EntityType="Self.SUP_PORJECT" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_PORJECT_USER" EntityType="Self.SUP_PORJECT_USER" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_TASK_PROGRESS" EntityType="Self.SUP_TASK_PROGRESS" Schema="" store:Type="Tables" />
+    <EntitySet Name="SUP_TASK_USER" EntityType="Self.SUP_TASK_USER" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_USER" EntityType="Self.SYS_USER" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_SUP_ASSI_REFERENCE_SUP_PORJ" Association="Self.FK_SUP_ASSI_REFERENCE_SUP_PORJ">
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_CHAN_REFERENCE_SUP_ASSI" Association="Self.FK_SUP_CHAN_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_CHANGE" EntitySet="SUP_CHANGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_FEED_REFERENCE_SUP_ASSI" Association="Self.FK_SUP_FEED_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_FEED_BACK" EntitySet="SUP_FEED_BACK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PORJ_REFERENCE_SUP_PORJ" Association="Self.FK_SUP_PORJ_REFERENCE_SUP_PORJ">
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+      <End Role="SUP_PORJECT_USER" EntitySet="SUP_PORJECT_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PORJ_REFERENCE_SYS_USER" Association="Self.FK_SUP_PORJ_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT_USER" EntitySet="SUP_PORJECT_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_PROG_REFERENCE_SUP_TASK" Association="Self.FK_SUP_PROG_REFERENCE_SUP_TASK">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_TASK_PROGRESS" EntitySet="SUP_TASK_PROGRESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_SUPERVISOR" Association="Self.FK_SUP_SUPERVISOR">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_TASK_REFERENCE_SUP_ASSI" Association="Self.FK_SUP_TASK_REFERENCE_SUP_ASSI">
+      <End Role="SUP_ASSIGN_TASK" EntitySet="SUP_ASSIGN_TASK" />
+      <End Role="SUP_TASK_USER" EntitySet="SUP_TASK_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_TASK_REFERENCE_SYS_USER" Association="Self.FK_SUP_TASK_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_TASK_USER" EntitySet="SUP_TASK_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUP_USER" Association="Self.FK_SUP_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SUP_PORJECT" EntitySet="SUP_PORJECT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

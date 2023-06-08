@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeetingManageModelStoreContainer" CdmEntityContainer="MeetingManage">
+    <EntitySetMapping Name="MM_MEETING_APPLY">
+      <EntityTypeMapping TypeName="MeetingManageModel.MM_MEETING_APPLY">
+        <MappingFragment StoreEntitySet="MM_MEETING_APPLY">
+          <ScalarProperty Name="ORG_IDS" ColumnName="ORG_IDS" />
+          <ScalarProperty Name="ORG_NAMES" ColumnName="ORG_NAMES" />
+          <ScalarProperty Name="ORG_DATAS" ColumnName="ORG_DATAS" />
+          <ScalarProperty Name="PARTICIPANTS_NAME_STRING" ColumnName="PARTICIPANTS_NAME_STRING" />
+          <ScalarProperty Name="PARTICIPANTS_NAME" ColumnName="PARTICIPANTS_NAME" />
+          <ScalarProperty Name="IS_SEND" ColumnName="IS_SEND" />
+          <ScalarProperty Name="MEETING_COLOR" ColumnName="MEETING_COLOR" />
+          <ScalarProperty Name="REPEAT_INTERVAL" ColumnName="REPEAT_INTERVAL" />
+          <ScalarProperty Name="IS_REPEAT" ColumnName="IS_REPEAT" />
+          <ScalarProperty Name="IS_ALLDAY" ColumnName="IS_ALLDAY" />
+          <ScalarProperty Name="REMIND_TIME" ColumnName="REMIND_TIME" />
+          <ScalarProperty Name="REMIND_MODE" ColumnName="REMIND_MODE" />
+          <ScalarProperty Name="DISCLOSURE_LEVEL" ColumnName="DISCLOSURE_LEVEL" />
+          <ScalarProperty Name="MEETING_STATE" ColumnName="MEETING_STATE" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="BEGIN_TIME" ColumnName="BEGIN_TIME" />
+          <ScalarProperty Name="MEETING_TITLE" ColumnName="MEETING_TITLE" />
+          <ScalarProperty Name="MEETING_CONTENTS" ColumnName="MEETING_CONTENTS" />
+          <ScalarProperty Name="RESERVE_DATE" ColumnName="RESERVE_DATE" />
+          <ScalarProperty Name="MEETING_ROOM_NAME" ColumnName="MEETING_ROOM_NAME" />
+          <ScalarProperty Name="MEETING_ROOM_ID" ColumnName="MEETING_ROOM_ID" />
+          <ScalarProperty Name="MEETING_ROOM_TYPE" ColumnName="MEETING_ROOM_TYPE" />
+          <ScalarProperty Name="MEETING_ROOM_LOCATION" ColumnName="MEETING_ROOM_LOCATION" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="MEETING_APPLY_ID" ColumnName="MEETING_APPLY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MM_MEETING_PARTICIPANTS">
+      <EntityTypeMapping TypeName="MeetingManageModel.MM_MEETING_PARTICIPANTS">
+        <MappingFragment StoreEntitySet="MM_MEETING_PARTICIPANTS">
+          <ScalarProperty Name="MEETING_APPLY_ID" ColumnName="MEETING_APPLY_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MEETING_PARTICIPANTS_ID" ColumnName="MEETING_PARTICIPANTS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

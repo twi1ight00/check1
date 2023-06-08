@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="SYS_ACTION">
+      <EntityTypeMapping TypeName="Model.SYS_ACTION">
+        <MappingFragment StoreEntitySet="SYS_ACTION">
+          <ScalarProperty Name="PRIVIGE_VALIDATE_TYPE" ColumnName="PRIVIGE_VALIDATE_TYPE" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="ACTION_NAME" ColumnName="ACTION_NAME" />
+          <ScalarProperty Name="ACTION_CODE" ColumnName="ACTION_CODE" />
+          <ScalarProperty Name="HANDLER_ID" ColumnName="HANDLER_ID" />
+          <ScalarProperty Name="ACTION_ID" ColumnName="ACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ACTION_GROUP">
+      <EntityTypeMapping TypeName="Model.SYS_ACTION_GROUP">
+        <MappingFragment StoreEntitySet="SYS_ACTION_GROUP">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="BUSINESS_ID" ColumnName="BUSINESS_ID" />
+          <ScalarProperty Name="ACTION_GROUP_ID" ColumnName="ACTION_GROUP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ACTION_GROUP_ACTION">
+      <EntityTypeMapping TypeName="Model.SYS_ACTION_GROUP_ACTION">
+        <MappingFragment StoreEntitySet="SYS_ACTION_GROUP_ACTION">
+          <ScalarProperty Name="ACTION_GROUP_ID" ColumnName="ACTION_GROUP_ID" />
+          <ScalarProperty Name="ACTION_ID" ColumnName="ACTION_ID" />
+          <ScalarProperty Name="ACTION_GROUP_ACTION_ID" ColumnName="ACTION_GROUP_ACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_AUTHORIZATION">
+      <EntityTypeMapping TypeName="Model.SYS_AUTHORIZATION">
+        <MappingFragment StoreEntitySet="SYS_AUTHORIZATION">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="TO_RIGHT_ID" ColumnName="TO_RIGHT_ID" />
+          <ScalarProperty Name="TO_ROLE_ID" ColumnName="TO_ROLE_ID" />
+          <ScalarProperty Name="TO_USER_ID" ColumnName="TO_USER_ID" />
+          <ScalarProperty Name="FROM_USER_ID" ColumnName="FROM_USER_ID" />
+          <ScalarProperty Name="AUTHORIZATION_ID" ColumnName="AUTHORIZATION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_BUSINESS">
+      <EntityTypeMapping TypeName="Model.SYS_BUSINESS">
+        <MappingFragment StoreEntitySet="SYS_BUSINESS">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_ADD_ACTION_GROUP" ColumnName="IS_ADD_ACTION_GROUP" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="PARENT_BUSINESS_ID" ColumnName="PARENT_BUSINESS_ID" />
+          <ScalarProperty Name="BUSINESS_NAME" ColumnName="BUSINESS_NAME" />
+          <ScalarProperty Name="BUSINESS_CODE" ColumnName="BUSINESS_CODE" />
+          <ScalarProperty Name="LIBRARY_ID" ColumnName="LIBRARY_ID" />
+          <ScalarProperty Name="BUSINESS_ID" ColumnName="BUSINESS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_DOMAIN">
+      <EntityTypeMapping TypeName="Model.SYS_DOMAIN">
+        <MappingFragment StoreEntitySet="SYS_DOMAIN">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="DOMAIN_PWD" ColumnName="DOMAIN_PWD" />
+          <ScalarProperty Name="DOMAIN_ACCOUNT" ColumnName="DOMAIN_ACCOUNT" />
+          <ScalarProperty Name="DOMAIN_ADDRESS" ColumnName="DOMAIN_ADDRESS" />
+          <ScalarProperty Name="DOMAIN_NAME" ColumnName="DOMAIN_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_HANDLER">
+      <EntityTypeMapping TypeName="Model.SYS_HANDLER">
+        <MappingFragment StoreEntitySet="SYS_HANDLER">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="HANDLER_FULL_NAME" ColumnName="HANDLER_FULL_NAME" />
+          <ScalarProperty Name="HANDLER_NAME" ColumnName="HANDLER_NAME" />
+          <ScalarProperty Name="LIBRARY_ID" ColumnName="LIBRARY_ID" />
+          <ScalarProperty Name="HANDLER_ID" ColumnName="HANDLER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_LIBRARY">
+      <EntityTypeMapping TypeName="Model.SYS_LIBRARY">
+        <MappingFragment StoreEntitySet="SYS_LIBRARY">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="ASSEMBLY_NAME" ColumnName="ASSEMBLY_NAME" />
+          <ScalarProperty Name="LIBRARY_NAME" ColumnName="LIBRARY_NAME" />
+          <ScalarProperty Name="LIBRARY_ID" ColumnName="LIBRARY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_LOG">
+      <EntityTypeMapping TypeName="Model.SYS_LOG">
+        <MappingFragment StoreEntitySet="SYS_LOG">
+          <ScalarProperty Name="TOKEN" ColumnName="TOKEN" />
+          <ScalarProperty Name="DO_TIME" ColumnName="DO_TIME" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="DATA" ColumnName="DATA" />
+          <ScalarProperty Name="BUSINESS_TYPE" ColumnName="BUSINESS_TYPE" />
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_MENU">
+      <EntityTypeMapping TypeName="Model.SYS_MENU">
+        <MappingFragment StoreEntitySet="SYS_MENU">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="SILVERLIGHT_ASSEMBLY" ColumnName="SILVERLIGHT_ASSEMBLY" />
+          <ScalarProperty Name="SILVERLIGHT_IMAGE_URL" ColumnName="SILVERLIGHT_IMAGE_URL" />
+          <ScalarProperty Name="SHORT_CUT_IMAGE_URL" ColumnName="SHORT_CUT_IMAGE_URL" />
+          <ScalarProperty Name="IS_SHORT_CUT" ColumnName="IS_SHORT_CUT" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="OPEN_MODE" ColumnName="OPEN_MODE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="TITLE_IMAGE_URL" ColumnName="TITLE_IMAGE_URL" />
+          <ScalarProperty Name="MENU_URL" ColumnName="MENU_URL" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_MODULE">
+      <EntityTypeMapping TypeName="Model.SYS_MODULE">
+        <MappingFragment StoreEntitySet="SYS_MODULE">
+          <ScalarProperty Name="MODULE_NAME" ColumnName="MODULE_NAME" />
+          <ScalarProperty Name="MODULE_ID" ColumnName="MODULE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ORG">
+      <EntityTypeMapping TypeName="Model.SYS_ORG">
+        <MappingFragment StoreEntitySet="SYS_ORG">
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="PARENT_ORG_ID" ColumnName="PARENT_ORG_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_PRIVILEGE">
+      <EntityTypeMapping TypeName="Model.SYS_PRIVILEGE">
+        <MappingFragment StoreEntitySet="SYS_PRIVILEGE">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="BUSINESS_ID" ColumnName="BUSINESS_ID" />
+          <ScalarProperty Name="PRIVILEGE_ID" ColumnName="PRIVILEGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ROLE">
+      <EntityTypeMapping TypeName="Model.SYS_ROLE">
+        <MappingFragment StoreEntitySet="SYS_ROLE">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="ROLE_TYPE" ColumnName="ROLE_TYPE" />
+          <ScalarProperty Name="ROLE_NAME" ColumnName="ROLE_NAME" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ROLE_ORG">
+      <EntityTypeMapping TypeName="Model.SYS_ROLE_ORG">
+        <MappingFragment StoreEntitySet="SYS_ROLE_ORG">
+          <ScalarProperty Name="SOURCE_ORG_ID" ColumnName="SOURCE_ORG_ID" />
+          <ScalarProperty Name="IS_CREATE_BY_SELF_ORG" ColumnName="IS_CREATE_BY_SELF_ORG" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ROLE_ORG_ID" ColumnName="ROLE_ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER">
+      <EntityTypeMapping TypeName="Model.SYS_USER">
+        <MappingFragment StoreEntitySet="SYS_USER">
+          <ScalarProperty Name="IS_FORBIDDEN" ColumnName="IS_FORBIDDEN" />
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+          <ScalarProperty Name="LOGON_NAME" ColumnName="LOGON_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_BUSINESS">
+      <EntityTypeMapping TypeName="Model.SYS_USER_BUSINESS">
+        <MappingFragment StoreEntitySet="SYS_USER_BUSINESS">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="BUSINESS_ID" ColumnName="BUSINESS_ID" />
+          <ScalarProperty Name="USER_BUSINESS_ID" ColumnName="USER_BUSINESS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_ORG">
+      <EntityTypeMapping TypeName="Model.SYS_USER_ORG">
+        <MappingFragment StoreEntitySet="SYS_USER_ORG">
+          <ScalarProperty Name="USER_IDENTITY_TYPE" ColumnName="USER_IDENTITY_TYPE" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_ORG_ID" ColumnName="USER_ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_ROLE">
+      <EntityTypeMapping TypeName="Model.SYS_USER_ROLE">
+        <MappingFragment StoreEntitySet="SYS_USER_ROLE">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="USER_ROLE_ID" ColumnName="USER_ROLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

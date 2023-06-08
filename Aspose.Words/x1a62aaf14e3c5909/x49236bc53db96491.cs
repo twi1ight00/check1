@@ -1,0 +1,24 @@
+using System;
+
+namespace x1a62aaf14e3c5909;
+
+[Flags]
+internal enum x49236bc53db96491
+{
+	xa518e02c95c1e697 = 0x8000,
+	xc28b77981dd54e71 = 0x4000,
+	x61c108cc44ef385a = 0x2000,
+	x5d307c4bc30bdc4b = 0x1000,
+	xeede170d856df3a1 = 0x800,
+	x7f32d7479e1b37a8 = 0x400,
+	x301407a962bf6a97 = 0x200,
+	x31099be01375b7e4 = 0x100,
+	x234d65249b8ddf72 = 0x80,
+	x5b1a07beef1fff05 = 0x40,
+	x4e1d3347e7864b81 = 0x20,
+	x00d0ae795109fe11 = 0x10,
+	x2588d8c20c42e232 = 8,
+	xf398ffaf32ffe055 = 4,
+	x0080ae622855f90c = 2,
+	xfee8fbb37d29da8e = 1
+}

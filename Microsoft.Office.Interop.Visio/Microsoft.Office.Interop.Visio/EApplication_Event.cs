@@ -1,0 +1,221 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[ComVisible(false)]
+[TypeLibType(16)]
+[ComEventInterface(typeof(EApplication_0000), typeof(EApplication_EventProvider_0000))]
+public interface EApplication_Event
+{
+	event EApplication_AppActivatedEventHandler AppActivated;
+
+	event EApplication_AppDeactivatedEventHandler AppDeactivated;
+
+	event EApplication_AppObjActivatedEventHandler AppObjActivated;
+
+	event EApplication_AppObjDeactivatedEventHandler AppObjDeactivated;
+
+	event EApplication_BeforeQuitEventHandler BeforeQuit;
+
+	event EApplication_BeforeModalEventHandler BeforeModal;
+
+	event EApplication_AfterModalEventHandler AfterModal;
+
+	event EApplication_WindowOpenedEventHandler WindowOpened;
+
+	event EApplication_SelectionChangedEventHandler SelectionChanged;
+
+	event EApplication_BeforeWindowClosedEventHandler BeforeWindowClosed;
+
+	event EApplication_WindowActivatedEventHandler WindowActivated;
+
+	event EApplication_BeforeWindowSelDeleteEventHandler BeforeWindowSelDelete;
+
+	event EApplication_BeforeWindowPageTurnEventHandler BeforeWindowPageTurn;
+
+	event EApplication_WindowTurnedToPageEventHandler WindowTurnedToPage;
+
+	event EApplication_DocumentOpenedEventHandler DocumentOpened;
+
+	event EApplication_DocumentCreatedEventHandler DocumentCreated;
+
+	event EApplication_DocumentSavedEventHandler DocumentSaved;
+
+	event EApplication_DocumentSavedAsEventHandler DocumentSavedAs;
+
+	event EApplication_DocumentChangedEventHandler DocumentChanged;
+
+	event EApplication_BeforeDocumentCloseEventHandler BeforeDocumentClose;
+
+	event EApplication_StyleAddedEventHandler StyleAdded;
+
+	event EApplication_StyleChangedEventHandler StyleChanged;
+
+	event EApplication_BeforeStyleDeleteEventHandler BeforeStyleDelete;
+
+	event EApplication_MasterAddedEventHandler MasterAdded;
+
+	event EApplication_MasterChangedEventHandler MasterChanged;
+
+	event EApplication_BeforeMasterDeleteEventHandler BeforeMasterDelete;
+
+	event EApplication_PageAddedEventHandler PageAdded;
+
+	event EApplication_PageChangedEventHandler PageChanged;
+
+	event EApplication_BeforePageDeleteEventHandler BeforePageDelete;
+
+	event EApplication_ShapeAddedEventHandler ShapeAdded;
+
+	event EApplication_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EApplication_ShapeChangedEventHandler ShapeChanged;
+
+	event EApplication_SelectionAddedEventHandler SelectionAdded;
+
+	event EApplication_BeforeShapeDeleteEventHandler BeforeShapeDelete;
+
+	event EApplication_TextChangedEventHandler TextChanged;
+
+	event EApplication_CellChangedEventHandler CellChanged;
+
+	event EApplication_MarkerEventEventHandler MarkerEvent;
+
+	event EApplication_NoEventsPendingEventHandler NoEventsPending;
+
+	event EApplication_VisioIsIdleEventHandler VisioIsIdle;
+
+	event EApplication_MustFlushScopeBeginningEventHandler MustFlushScopeBeginning;
+
+	event EApplication_MustFlushScopeEndedEventHandler MustFlushScopeEnded;
+
+	event EApplication_RunModeEnteredEventHandler RunModeEntered;
+
+	event EApplication_DesignModeEnteredEventHandler DesignModeEntered;
+
+	event EApplication_BeforeDocumentSaveEventHandler BeforeDocumentSave;
+
+	event EApplication_BeforeDocumentSaveAsEventHandler BeforeDocumentSaveAs;
+
+	event EApplication_FormulaChangedEventHandler FormulaChanged;
+
+	event EApplication_ConnectionsAddedEventHandler ConnectionsAdded;
+
+	event EApplication_ConnectionsDeletedEventHandler ConnectionsDeleted;
+
+	event EApplication_EnterScopeEventHandler EnterScope;
+
+	event EApplication_ExitScopeEventHandler ExitScope;
+
+	event EApplication_QueryCancelQuitEventHandler QueryCancelQuit;
+
+	event EApplication_QuitCanceledEventHandler QuitCanceled;
+
+	event EApplication_WindowChangedEventHandler WindowChanged;
+
+	event EApplication_ViewChangedEventHandler ViewChanged;
+
+	event EApplication_QueryCancelWindowCloseEventHandler QueryCancelWindowClose;
+
+	event EApplication_WindowCloseCanceledEventHandler WindowCloseCanceled;
+
+	event EApplication_QueryCancelDocumentCloseEventHandler QueryCancelDocumentClose;
+
+	event EApplication_DocumentCloseCanceledEventHandler DocumentCloseCanceled;
+
+	event EApplication_QueryCancelStyleDeleteEventHandler QueryCancelStyleDelete;
+
+	event EApplication_StyleDeleteCanceledEventHandler StyleDeleteCanceled;
+
+	event EApplication_QueryCancelMasterDeleteEventHandler QueryCancelMasterDelete;
+
+	event EApplication_MasterDeleteCanceledEventHandler MasterDeleteCanceled;
+
+	event EApplication_QueryCancelPageDeleteEventHandler QueryCancelPageDelete;
+
+	event EApplication_PageDeleteCanceledEventHandler PageDeleteCanceled;
+
+	event EApplication_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EApplication_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EApplication_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EApplication_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EApplication_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EApplication_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EApplication_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EApplication_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EApplication_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EApplication_QueryCancelSuspendEventHandler QueryCancelSuspend;
+
+	event EApplication_SuspendCanceledEventHandler SuspendCanceled;
+
+	event EApplication_BeforeSuspendEventHandler BeforeSuspend;
+
+	event EApplication_AfterResumeEventHandler AfterResume;
+
+	event EApplication_OnKeystrokeMessageForAddonEventHandler OnKeystrokeMessageForAddon;
+
+	event EApplication_MouseDownEventHandler MouseDown;
+
+	event EApplication_MouseMoveEventHandler MouseMove;
+
+	event EApplication_MouseUpEventHandler MouseUp;
+
+	event EApplication_KeyDownEventHandler KeyDown;
+
+	event EApplication_KeyPressEventHandler KeyPress;
+
+	event EApplication_KeyUpEventHandler KeyUp;
+
+	event EApplication_QueryCancelSuspendEventsEventHandler QueryCancelSuspendEvents;
+
+	event EApplication_SuspendEventsCanceledEventHandler SuspendEventsCanceled;
+
+	event EApplication_BeforeSuspendEventsEventHandler BeforeSuspendEvents;
+
+	event EApplication_AfterResumeEventsEventHandler AfterResumeEvents;
+
+	event EApplication_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EApplication_GroupCanceledEventHandler GroupCanceled;
+
+	event EApplication_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+
+	event EApplication_BeforeDataRecordsetDeleteEventHandler BeforeDataRecordsetDelete;
+
+	event EApplication_DataRecordsetChangedEventHandler DataRecordsetChanged;
+
+	event EApplication_DataRecordsetAddedEventHandler DataRecordsetAdded;
+
+	event EApplication_ShapeLinkAddedEventHandler ShapeLinkAdded;
+
+	event EApplication_ShapeLinkDeletedEventHandler ShapeLinkDeleted;
+
+	event EApplication_AfterRemoveHiddenInformationEventHandler AfterRemoveHiddenInformation;
+
+	event EApplication_ContainerRelationshipAddedEventHandler ContainerRelationshipAdded;
+
+	event EApplication_ContainerRelationshipDeletedEventHandler ContainerRelationshipDeleted;
+
+	event EApplication_CalloutRelationshipAddedEventHandler CalloutRelationshipAdded;
+
+	event EApplication_CalloutRelationshipDeletedEventHandler CalloutRelationshipDeleted;
+
+	event EApplication_RuleSetValidatedEventHandler RuleSetValidated;
+
+	event EApplication_QueryCancelReplaceShapesEventHandler QueryCancelReplaceShapes;
+
+	event EApplication_ReplaceShapesCanceledEventHandler ReplaceShapesCanceled;
+
+	event EApplication_BeforeReplaceShapesEventHandler BeforeReplaceShapes;
+
+	event EApplication_AfterReplaceShapesEventHandler AfterReplaceShapes;
+}

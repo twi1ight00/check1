@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="ExceptionNullInterfacesCollection"><value>The collection of interfaces is null.</value></data>
+  <data name="ExceptionAbstractMethodNotImplemented"><value>Intercepted abstract method was invoked.</value></data>
+  <data name="InterceptionNotSupported"><value>The type {0} is not interceptable.</value></data>
+  <data name="ExceptionMappedParametersDoNotMatch"><value>The lengths of the mapped generic parameters do not match.</value></data>
+  <data name="ExceptionTypeIsNull"><value>Null type.</value></data>
+  <data name="ExceptionRequiredInterfacesInvalid"><value>The required interfaces for behavior {1} are invalid: {0}</value></data>
+  <data name="ExceptionAdditionalInterfacesInvalid"><value>The additional interfaces supplied are invalid: {0}</value></data>
+  <data name="ExceptionTypeIsNotInterface"><value>The type {0} is not an interface.</value></data>
+  <data name="ExceptionTypeIsOpenGeneric"><value>The type {0} is an open generic.</value></data>
+  <data name="InterfaceMethodNotImplemented"><value>Could not find the implementation of interface method {0}.{1} in type {2}</value></data>
+  <data name="NullBehavior"><value>Null is not permitted as an interception behavior.</value></data>
+  <data name="ExceptionAttributeNoSubclassOfAttribute"><value>Type must be a subclass of System.Attribute.</value></data>
+  <data name="ExceptionCannotCreateInstance"><value>Could not create instance of type {0} with no constructor arguments.</value></data>
+  <data name="ExceptionContainsNullElement"><value>Collection contains a null element.</value></data>
+  <data name="ExceptionAdditionalInterfaceNotImplemented"><value>Additional interfaces do not have an implementation.</value></data>
+  <data name="ExceptionCannotMapGenericTypeDefinition"><value>Cannot map generic type parameters on a generic type definition (an unbound generic type).</value></data>
+  </root>

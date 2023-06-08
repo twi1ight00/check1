@@ -1,0 +1,39 @@
+using System;
+using Richfit.Garnet.Module.Base.Domain;
+
+namespace Richfit.Garnet.Module.ITManagement.Domain.Models;
+
+public class IT_STOCK_OUT_DETAIL : Entity
+{
+	public Guid IT_STOCK_OUT_DETAIL_ID { get; set; }
+
+	public Guid IT_MATERIAL_APPLY_ID { get; set; }
+
+	public Guid? INSTANCE_ID { get; set; }
+
+	public Guid? MATERIAL_ID { get; set; }
+
+	public string MATERIAL_NAME { get; set; }
+
+	public decimal MATERIAL_NUMBER { get; set; }
+
+	public Guid? USER_ID { get; set; }
+
+	public string USER_NAME { get; set; }
+
+	public Guid? ORG_ID { get; set; }
+
+	public string ORG_NAME { get; set; }
+
+	public decimal ISDEL { get; set; }
+
+	public Guid CREATOR { get; set; }
+
+	public DateTime CREATETIME { get; set; }
+
+	public Guid MODIFIER { get; set; }
+
+	public DateTime MODIFYTIME { get; set; }
+
+	public decimal STOCK_QUANTITY { get; set; }
+}

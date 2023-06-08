@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITManageModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ITManage" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IT_ACCOUNT" EntityType="ITManageModel.IT_ACCOUNT" />
+    <EntitySet Name="IT_DEVICE" EntityType="ITManageModel.IT_DEVICE" />
+    <EntitySet Name="IT_DEVICE_SCRAP" EntityType="ITManageModel.IT_DEVICE_SCRAP" />
+    <EntitySet Name="IT_DEVICE_SCRAP_DETAIL" EntityType="ITManageModel.IT_DEVICE_SCRAP_DETAIL" />
+    <EntitySet Name="IT_MATERIAL" EntityType="ITManageModel.IT_MATERIAL" />
+    <EntitySet Name="IT_MATERIAL_APPLY_DETAIL" EntityType="ITManageModel.IT_MATERIAL_APPLY_DETAIL" />
+    <EntitySet Name="IT_MATERIAL_CHECKIN" EntityType="ITManageModel.IT_MATERIAL_CHECKIN" />
+    <EntitySet Name="IT_STOCK_IN" EntityType="ITManageModel.IT_STOCK_IN" />
+    <EntitySet Name="IT_STOCK_IN_DETAIL" EntityType="ITManageModel.IT_STOCK_IN_DETAIL" />
+    <EntitySet Name="IT_SUPPORTMANG" EntityType="ITManageModel.IT_SUPPORTMANG" />
+    <EntitySet Name="IT_STOCK_OUT_DETAIL" EntityType="ITManageModel.IT_STOCK_OUT_DETAIL" />
+    <AssociationSet Name="FK_IT_DEVICE_SCRAP" Association="ITManageModel.FK_IT_DEVICE_SCRAP">
+      <End Role="IT_DEVICE_SCRAP" EntitySet="IT_DEVICE_SCRAP" />
+      <End Role="IT_DEVICE_SCRAP_DETAIL" EntitySet="IT_DEVICE_SCRAP_DETAIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IT_MATERIAL_CHECKIN" Association="ITManageModel.FK_IT_MATERIAL_CHECKIN">
+      <End Role="IT_MATERIAL" EntitySet="IT_MATERIAL" />
+      <End Role="IT_MATERIAL_CHECKIN" EntitySet="IT_MATERIAL_CHECKIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IT_STOCK_IN" Association="ITManageModel.FK_IT_STOCK_IN">
+      <End Role="IT_STOCK_IN" EntitySet="IT_STOCK_IN" />
+      <End Role="IT_STOCK_IN_DETAIL" EntitySet="IT_STOCK_IN_DETAIL" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="IT_ACCOUNT">
+    <Key>
+      <PropertyRef Name="IT_ACCOUNT_ID" />
+    </Key>
+    <Property Name="IT_ACCOUNT_ID" Type="Guid" Nullable="false" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="DEVICE_TYPE_ID" Type="Guid" />
+    <Property Name="DEVICE_TYPE_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="DEVICE_SPECIFICATION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="DEVICE_SEQ" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="BUY_DATE" Type="DateTime" />
+    <Property Name="ALLOCATE_DATE" Type="DateTime" />
+    <Property Name="KEEP_TYPE_ID" Type="Guid" />
+    <Property Name="KEEP_TYPE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="KEEP_DESCRIPTION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ASSURANCE_YEAR" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="BUY_PRICE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EMPLOYEE_BUY_DATE" Type="DateTime" />
+    <Property Name="LEFT_VALUE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_BUY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_CHECK" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ACCOUNT_DATE" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_ID" Type="Guid" Nullable="false" />
+    <Property Name="SN" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ID" Type="Guid" />
+    <Property Name="SERIES" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="SUB_CENTER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PURCHASE_DATE" Type="DateTime" />
+    <Property Name="DEPRECIATE_DATE" Type="DateTime" />
+    <Property Name="WARRANTY_PERIOD" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORIGINAL_VALUE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="REMAIN_VALUE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="USE_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PRE_SCRAP" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PRE_SCRAP_DATE" Type="DateTime" />
+    <Property Name="ASSIGN_DATE" Type="DateTime" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SCRAP" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SCRAP_DATE" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE_SCRAP">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_SCRAP_ID" Type="Guid" Nullable="false" />
+    <Property Name="YEAR" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SUB_CENTER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TITLE" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="BUY_DATE_PRIOR" Type="DateTime" />
+    <Property Name="BUY_DATE_END" Type="DateTime" />
+    <Property Name="RUN_STATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CONFIRMED_BY" Type="Guid" />
+    <Property Name="CONFIRM_DATE" Type="DateTime" />
+    <Property Name="CLOSED_BY" Type="Guid" />
+    <Property Name="CLOSE_DATE" Type="DateTime" />
+    <NavigationProperty Name="IT_DEVICE_SCRAP_DETAIL" Relationship="ITManageModel.FK_IT_DEVICE_SCRAP" FromRole="IT_DEVICE_SCRAP" ToRole="IT_DEVICE_SCRAP_DETAIL" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE_SCRAP_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_SCRAP_DETAIL_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_SCRAP_DETAIL_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_DEVICE_SCRAP_ID" Type="Guid" />
+    <Property Name="IT_DEVICE_ID" Type="Guid" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BUYER_ID" Type="Guid" />
+    <Property Name="BUY_DATE" Type="DateTime" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="NOT_BUY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PAYMENT_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PAYMENT_DATE" Type="DateTime" />
+    <NavigationProperty Name="IT_DEVICE_SCRAP" Relationship="ITManageModel.FK_IT_DEVICE_SCRAP" FromRole="IT_DEVICE_SCRAP_DETAIL" ToRole="IT_DEVICE_SCRAP" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_ID" />
+    </Key>
+    <Property Name="IT_MATERIAL_ID" Type="Guid" Nullable="false" />
+    <Property Name="MATERIAL_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_TYPE_ID" Type="Guid" />
+    <Property Name="MATERIAL_TYPE_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="BUY_DATE" Type="DateTime" />
+    <Property Name="ASSURANCE_YEAR" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="BUY_PRICE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_BUY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_CHECK" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STOCK_QUANTITY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_AVAILABLE" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="IT_MATERIAL_CHECKIN" Relationship="ITManageModel.FK_IT_MATERIAL_CHECKIN" FromRole="IT_MATERIAL" ToRole="IT_MATERIAL_CHECKIN" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL_APPLY_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_APPLY_DETAIL_ID" />
+    </Key>
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_TYPE_ID" Type="Guid" />
+    <Property Name="MATERIAL_TYPE_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_NUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MATERIAL_USER_ID" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="IT_MATERIAL_APPLY_DETAIL_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL_CHECKIN">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_CHECKIN_ID" />
+    </Key>
+    <Property Name="IT_MATERIAL_CHECKIN_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_MATERIAL_ID" Type="Guid" Nullable="false" />
+    <Property Name="CHECK_IN_NO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="Guid" />
+    <Property Name="IT_MATERIAL_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="IT_MATERIAL" Relationship="ITManageModel.FK_IT_MATERIAL_CHECKIN" FromRole="IT_MATERIAL_CHECKIN" ToRole="IT_MATERIAL" />
+  </EntityType>
+  <EntityType Name="IT_STOCK_IN">
+    <Key>
+      <PropertyRef Name="IT_STOCK_IN_ID" />
+    </Key>
+    <Property Name="IT_STOCK_IN_ID" Type="Guid" Nullable="false" />
+    <Property Name="TOTALMONEY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="APPLY_DATE" Type="DateTime" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="REMARK" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="IT_STOCK_IN_NO" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="MATERIAL_DETAIL" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="IT_STOCK_IN_DETAIL" Relationship="ITManageModel.FK_IT_STOCK_IN" FromRole="IT_STOCK_IN" ToRole="IT_STOCK_IN_DETAIL" />
+  </EntityType>
+  <EntityType Name="IT_STOCK_IN_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_STOCK_IN_DETAIL_ID" />
+    </Key>
+    <Property Name="IT_STOCK_IN_DETAIL_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_STOCK_IN_ID" Type="Guid" Nullable="false" />
+    <Property Name="MATERIAL_ID" Type="Guid" />
+    <Property Name="MATERIAL_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_NUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="STOCK_QUANTITY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="INSTANCE_ID" Type="Guid" />
+    <Property Name="IT_PURCHASING_APPLY_DETAIL_ID" Type="Guid" />
+    <NavigationProperty Name="IT_STOCK_IN" Relationship="ITManageModel.FK_IT_STOCK_IN" FromRole="IT_STOCK_IN_DETAIL" ToRole="IT_STOCK_IN" />
+  </EntityType>
+  <EntityType Name="IT_SUPPORTMANG">
+    <Key>
+      <PropertyRef Name="IT_SUPPORTMANG_ID" />
+    </Key>
+    <Property Name="IT_SUPPORTMANG_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_SUPPORTMANG_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IT_SUPPORTMANG_TYPE_ID" Type="Guid" />
+    <Property Name="IT_SUPPORTMANG_TYPE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="REMARK" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FILE_RELATIVE_PATH" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="FILE_NETWORK_PATH" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATETIME" Type="DateTime" />
+    <Property Name="MODIFIER" Type="Guid" />
+    <Property Name="MODIFYTIME" Type="DateTime" />
+    <Property Name="IT_SUPPORTMANG_SIZE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="FILE_TYPE" Type="String" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IT_STOCK_OUT_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_STOCK_OUT_DETAIL_ID" />
+      <PropertyRef Name="IT_MATERIAL_APPLY_ID" />
+      <PropertyRef Name="MATERIAL_NUMBER" />
+      <PropertyRef Name="ISDEL" />
+      <PropertyRef Name="CREATOR" />
+      <PropertyRef Name="CREATETIME" />
+      <PropertyRef Name="MODIFIER" />
+      <PropertyRef Name="MODIFYTIME" />
+      <PropertyRef Name="STOCK_QUANTITY" />
+    </Key>
+    <Property Name="IT_STOCK_OUT_DETAIL_ID" Type="Guid" Nullable="false" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="Guid" Nullable="false" />
+    <Property Name="INSTANCE_ID" Type="Guid" />
+    <Property Name="MATERIAL_ID" Type="Guid" />
+    <Property Name="MATERIAL_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="MATERIAL_NUMBER" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="STOCK_QUANTITY" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+  </EntityType>
+  <Association Name="FK_IT_DEVICE_SCRAP">
+    <End Type="ITManageModel.IT_DEVICE_SCRAP" Role="IT_DEVICE_SCRAP" Multiplicity="0..1" />
+    <End Type="ITManageModel.IT_DEVICE_SCRAP_DETAIL" Role="IT_DEVICE_SCRAP_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_DEVICE_SCRAP">
+        <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+      </Principal>
+      <Dependent Role="IT_DEVICE_SCRAP_DETAIL">
+        <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IT_MATERIAL_CHECKIN">
+    <End Type="ITManageModel.IT_MATERIAL" Role="IT_MATERIAL" Multiplicity="1" />
+    <End Type="ITManageModel.IT_MATERIAL_CHECKIN" Role="IT_MATERIAL_CHECKIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_MATERIAL">
+        <PropertyRef Name="IT_MATERIAL_ID" />
+      </Principal>
+      <Dependent Role="IT_MATERIAL_CHECKIN">
+        <PropertyRef Name="IT_MATERIAL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IT_STOCK_IN">
+    <End Type="ITManageModel.IT_STOCK_IN" Role="IT_STOCK_IN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ITManageModel.IT_STOCK_IN_DETAIL" Role="IT_STOCK_IN_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_STOCK_IN">
+        <PropertyRef Name="IT_STOCK_IN_ID" />
+      </Principal>
+      <Dependent Role="IT_STOCK_IN_DETAIL">
+        <PropertyRef Name="IT_STOCK_IN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

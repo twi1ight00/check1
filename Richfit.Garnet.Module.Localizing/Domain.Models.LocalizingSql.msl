@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LocalizingModelStoreContainer" CdmEntityContainer="Localizing">
+    <EntitySetMapping Name="SYS_LANGUAGE">
+      <EntityTypeMapping TypeName="LocalizingModel.SYS_LANGUAGE">
+        <MappingFragment StoreEntitySet="SYS_LANGUAGE">
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_USE" ColumnName="IS_USE" />
+          <ScalarProperty Name="CULTURE" ColumnName="CULTURE" />
+          <ScalarProperty Name="LANGUAGE_NAME" ColumnName="LANGUAGE_NAME" />
+          <ScalarProperty Name="LANGUAGE_ID" ColumnName="LANGUAGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_LOCALIZING">
+      <EntityTypeMapping TypeName="LocalizingModel.SYS_LOCALIZING">
+        <MappingFragment StoreEntitySet="SYS_LOCALIZING">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="STRING_KEY_TIP_DESC" ColumnName="STRING_KEY_TIP_DESC" />
+          <ScalarProperty Name="STRING_KEY_DESC" ColumnName="STRING_KEY_DESC" />
+          <ScalarProperty Name="LANGUAGE_ID" ColumnName="LANGUAGE_ID" />
+          <ScalarProperty Name="STRING_KEY" ColumnName="STRING_KEY" />
+          <ScalarProperty Name="PAGENAME" ColumnName="PAGENAME" />
+          <ScalarProperty Name="INSTANCE" ColumnName="INSTANCE" />
+          <ScalarProperty Name="LOCALIZING_TYPE" ColumnName="LOCALIZING_TYPE" />
+          <ScalarProperty Name="LOCALIZING_ID" ColumnName="LOCALIZING_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

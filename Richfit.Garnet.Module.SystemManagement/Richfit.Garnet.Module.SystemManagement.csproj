@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.SystemManagement</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.SystemManageSql.csdl" />
+    <None Remove="Domain.Models.SystemManageOracle.csdl" />
+    <None Remove="Domain.Models.SystemManageSql.msl" />
+    <None Remove="Domain.Models.SystemManageOracle.msl" />
+    <None Remove="Domain.Models.SystemManageSql.ssdl" />
+    <None Remove="Domain.Models.SystemManageOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageSql.csdl" LogicalName="Domain.Models.SystemManageSql.csdl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageOracle.csdl" LogicalName="Domain.Models.SystemManageOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageSql.msl" LogicalName="Domain.Models.SystemManageSql.msl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageOracle.msl" LogicalName="Domain.Models.SystemManageOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageSql.ssdl" LogicalName="Domain.Models.SystemManageSql.ssdl" />
+    <EmbeddedResource Include="Domain.Models.SystemManageOracle.ssdl" LogicalName="Domain.Models.SystemManageOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\bin\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Fundation">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Fundation.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Localizing">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Localizing.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Importing.Aspose">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Importing.Aspose.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Richfit.Garnet.Module.Importing">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Importing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Exporting">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Exporting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

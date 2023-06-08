@@ -1,0 +1,19 @@
+namespace Oracle.DataAccess.Client;
+
+internal enum OpoExecutionMode : uint
+{
+	DEFAULT = 0u,
+	BATCH_MODE = 1u,
+	EXACT_FETCH = 2u,
+	KEEP_FETCH_STATE = 4u,
+	STMT_SCROLLABLE_READONLY = 8u,
+	DESCRIBE_ONLY = 0x10u,
+	COMMIT_ON_SUCCESS = 0x20u,
+	NON_BLOCKING = 0x40u,
+	BATCH_ERRORS = 0x80u,
+	PARSE_ONLY = 0x100u,
+	EXACT_FETCH_RESERVED_1 = 0x200u,
+	SHOW_DML_WARNINGS = 0x400u,
+	EXEC_RESERVED_2 = 0x800u,
+	DESC_RESERVED_1 = 0x1000u
+}

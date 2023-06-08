@@ -1,0 +1,10 @@
+using x011d489fb9df7027;
+
+namespace x1a62aaf14e3c5909;
+
+internal interface x663fe87979a30296
+{
+	x6299a07c6a18ef52 x53610ed4674cd9ba(int x1f6ee650d037e627);
+
+	void x6ed23a925c03438a(int x1f6ee650d037e627, x6299a07c6a18ef52 x7215137f8c179e87);
+}

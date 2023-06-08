@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MessageCenter" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MSG_CENTER" EntityType="Model.MSG_CENTER" />
+    <EntitySet Name="MSG_CENTER_USER" EntityType="Model.MSG_CENTER_USER" />
+    <AssociationSet Name="FK_MSG_CENT_REFERENCE_MSG_CENT" Association="Model.FK_MSG_CENT_REFERENCE_MSG_CENT">
+      <End Role="MSG_CENTER" EntitySet="MSG_CENTER" />
+      <End Role="MSG_CENTER_USER" EntitySet="MSG_CENTER_USER" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="MSG_CENTER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MSG_TITLE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MSG_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="MSG_BUSINESS_ID" Type="Guid" />
+    <Property Name="MSG_SOURCE" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="SEND_TIME" Type="DateTime" />
+    <Property Name="SEND_USER_ID" Type="Guid" />
+    <Property Name="SEND_USER_NAME" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="SEND_ORG_ID" Type="Guid" />
+    <Property Name="SEND_ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="MSG_OPEN_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="MSG_CENTER_USER" Relationship="Model.FK_MSG_CENT_REFERENCE_MSG_CENT" FromRole="MSG_CENTER" ToRole="MSG_CENTER_USER" />
+  </EntityType>
+  <EntityType Name="MSG_CENTER_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MSG_CENTER_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ISREAD" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="READ_TIME" Type="DateTime" />
+    <Property Name="SORT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="ISIM" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <NavigationProperty Name="MSG_CENTER" Relationship="Model.FK_MSG_CENT_REFERENCE_MSG_CENT" FromRole="MSG_CENTER_USER" ToRole="MSG_CENTER" />
+  </EntityType>
+  <Association Name="FK_MSG_CENT_REFERENCE_MSG_CENT">
+    <End Type="Model.MSG_CENTER" Role="MSG_CENTER" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.MSG_CENTER_USER" Role="MSG_CENTER_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MSG_CENTER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MSG_CENTER_USER">
+        <PropertyRef Name="MSG_CENTER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

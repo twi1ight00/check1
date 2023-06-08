@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CMSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="CMS" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CMS_ARTICLE" EntityType="CMSModel.CMS_ARTICLE" />
+    <EntitySet Name="CMS_ARTICLE_DATA" EntityType="CMSModel.CMS_ARTICLE_DATA" />
+    <EntitySet Name="CMS_AUDIT" EntityType="CMSModel.CMS_AUDIT" />
+    <EntitySet Name="CMS_CATEGORY" EntityType="CMSModel.CMS_CATEGORY" />
+    <EntitySet Name="CMS_COMMENT" EntityType="CMSModel.CMS_COMMENT" />
+    <EntitySet Name="CMS_GUESTBOOK" EntityType="CMSModel.CMS_GUESTBOOK" />
+    <EntitySet Name="CMS_PUBLISH_USERS" EntityType="CMSModel.CMS_PUBLISH_USERS" />
+    <EntitySet Name="CMS_VIEW_AUDIT" EntityType="CMSModel.CMS_VIEW_AUDIT" />
+    <EntitySet Name="CMS_ARTICLE_DATA_TEMP" EntityType="CMSModel.CMS_ARTICLE_DATA_TEMP" />
+    <EntitySet Name="CMS_SCANNED" EntityType="CMSModel.CMS_SCANNED" />
+    <AssociationSet Name="FK_ARTICLE_AUDIT" Association="CMSModel.FK_ARTICLE_AUDIT">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_AUDIT" EntitySet="CMS_AUDIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_ARTI_REFERENCE_CMS_ARTI" Association="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_ARTICLE_DATA" EntitySet="CMS_ARTICLE_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_ARTI_REFERENCE_CMS_CATE" Association="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_CATE">
+      <End Role="CMS_CATEGORY" EntitySet="CMS_CATEGORY" />
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_COMM_REFERENCE_CMS_ARTI" Association="CMSModel.FK_CMS_COMM_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_COMMENT" EntitySet="CMS_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_VIEW_REFERENCE_CMS_ARTI" Association="CMSModel.FK_CMS_VIEW_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_VIEW_AUDIT" EntitySet="CMS_VIEW_AUDIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMSP_REFERENCE_CMS_ARTI" Association="CMSModel.FK_CMSP_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_PUBLISH_USERS" EntitySet="CMS_PUBLISH_USERS" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CMS_ARTICLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="Guid" Nullable="false" />
+    <Property Name="TITLE" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="KEYWORDS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WEIGHT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WEIGHT_SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HITS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="AUDIT_STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_SHORT_MESSAGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="AUDIT_DATE" Type="DateTime" />
+    <Property Name="IS_COMMENT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PARENT_ID" Type="Guid" />
+    <Property Name="ENDDATE" Type="DateTime" />
+    <Property Name="IS_ENDDATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_DELETEDATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_MAINPAGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_IMAGE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_TOP" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="NOTICE_TYPE" Type="Guid" />
+    <Property Name="IS_PUBLISH" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="CMS_AUDIT" Relationship="CMSModel.FK_ARTICLE_AUDIT" FromRole="CMS_ARTICLE" ToRole="CMS_AUDIT" />
+    <NavigationProperty Name="CMS_ARTICLE_DATA" Relationship="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_ARTI" FromRole="CMS_ARTICLE" ToRole="CMS_ARTICLE_DATA" />
+    <NavigationProperty Name="CMS_CATEGORY" Relationship="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_CATE" FromRole="CMS_ARTICLE" ToRole="CMS_CATEGORY" />
+    <NavigationProperty Name="CMS_COMMENT" Relationship="CMSModel.FK_CMS_COMM_REFERENCE_CMS_ARTI" FromRole="CMS_ARTICLE" ToRole="CMS_COMMENT" />
+    <NavigationProperty Name="CMS_VIEW_AUDIT" Relationship="CMSModel.FK_CMS_VIEW_REFERENCE_CMS_ARTI" FromRole="CMS_ARTICLE" ToRole="CMS_VIEW_AUDIT" />
+    <NavigationProperty Name="CMS_PUBLISH_USERS" Relationship="CMSModel.FK_CMSP_REFERENCE_CMS_ARTI" FromRole="CMS_ARTICLE" ToRole="CMS_PUBLISH_USERS" />
+  </EntityType>
+  <EntityType Name="CMS_ARTICLE_DATA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTENT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_ARTI" FromRole="CMS_ARTICLE_DATA" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_AUDIT">
+    <Key>
+      <PropertyRef Name="AUDIT_ID" />
+    </Key>
+    <Property Name="AUDIT_ID" Type="Guid" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_ARTICLE_AUDIT" FromRole="CMS_AUDIT" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_CATEGORY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_ID" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HREF" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="KEYWORDS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ALLOW_COMMENT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_AUDIT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="IS_NOTIFY" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_CMS_ARTI_REFERENCE_CMS_CATE" FromRole="CMS_CATEGORY" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_COMMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="Guid" />
+    <Property Name="CONTENT" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IP" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CREATE_DATE" Type="DateTime" />
+    <Property Name="AUDIT_USER_ID" Type="Guid" />
+    <Property Name="AUDIT_DATE" Type="DateTime" />
+    <Property Name="AUDIT_USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IS_COMMENT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_CMS_COMM_REFERENCE_CMS_ARTI" FromRole="CMS_COMMENT" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_GUESTBOOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="WORKUNIT" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IP" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CREATE_DATE" Type="DateTime" />
+    <Property Name="RE_USER_ID" Type="Guid" />
+    <Property Name="RE_DATE" Type="DateTime" />
+    <Property Name="RE_CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CMS_PUBLISH_USERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="Guid" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_CMSP_REFERENCE_CMS_ARTI" FromRole="CMS_PUBLISH_USERS" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_VIEW_AUDIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="VIEW_ID" Type="Guid" Nullable="false" />
+    <Property Name="VIEW_TYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="VIEW_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CMS_ARTICLE" Relationship="CMSModel.FK_CMS_VIEW_REFERENCE_CMS_ARTI" FromRole="CMS_VIEW_AUDIT" ToRole="CMS_ARTICLE" />
+  </EntityType>
+  <EntityType Name="CMS_ARTICLE_DATA_TEMP">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CONTENT" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CONTENT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CMS_SCANNED">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ARTICLE_ID" />
+      <PropertyRef Name="IS_DEL" />
+      <PropertyRef Name="CREATOR" />
+      <PropertyRef Name="CREATETIME" />
+      <PropertyRef Name="MODIFIER" />
+      <PropertyRef Name="MODIFYTIME" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ARTICLE_AUDIT">
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_AUDIT" Role="CMS_AUDIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_AUDIT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_ARTI_REFERENCE_CMS_ARTI">
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_ARTICLE_DATA" Role="CMS_ARTICLE_DATA" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_ARTICLE_DATA">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_ARTI_REFERENCE_CMS_CATE">
+    <End Type="CMSModel.CMS_CATEGORY" Role="CMS_CATEGORY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_CATEGORY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_ARTICLE">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_COMM_REFERENCE_CMS_ARTI">
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_COMMENT" Role="CMS_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_COMMENT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_VIEW_REFERENCE_CMS_ARTI">
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_VIEW_AUDIT" Role="CMS_VIEW_AUDIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_VIEW_AUDIT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMSP_REFERENCE_CMS_ARTI">
+    <End Type="CMSModel.CMS_ARTICLE" Role="CMS_ARTICLE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CMSModel.CMS_PUBLISH_USERS" Role="CMS_PUBLISH_USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_PUBLISH_USERS">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

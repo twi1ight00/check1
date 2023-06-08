@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CMSStoreContainer" CdmEntityContainer="CMS">
+    <EntitySetMapping Name="CMS_ARTICLE">
+      <EntityTypeMapping TypeName="CMSModel.CMS_ARTICLE">
+        <MappingFragment StoreEntitySet="CMS_ARTICLE">
+          <ScalarProperty Name="IS_PUBLISH" ColumnName="IS_PUBLISH" />
+          <ScalarProperty Name="NOTICE_TYPE" ColumnName="NOTICE_TYPE" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="IS_TOP" ColumnName="IS_TOP" />
+          <ScalarProperty Name="IS_IMAGE" ColumnName="IS_IMAGE" />
+          <ScalarProperty Name="IS_MAINPAGE" ColumnName="IS_MAINPAGE" />
+          <ScalarProperty Name="IS_DELETEDATE" ColumnName="IS_DELETEDATE" />
+          <ScalarProperty Name="IS_ENDDATE" ColumnName="IS_ENDDATE" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="IS_COMMENT" ColumnName="IS_COMMENT" />
+          <ScalarProperty Name="AUDIT_DATE" ColumnName="AUDIT_DATE" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_SHORT_MESSAGE" ColumnName="IS_SHORT_MESSAGE" />
+          <ScalarProperty Name="AUDIT_STATUS" ColumnName="AUDIT_STATUS" />
+          <ScalarProperty Name="HITS" ColumnName="HITS" />
+          <ScalarProperty Name="WEIGHT_SORT" ColumnName="WEIGHT_SORT" />
+          <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+          <ScalarProperty Name="KEYWORDS" ColumnName="KEYWORDS" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_ARTICLE_DATA">
+      <EntityTypeMapping TypeName="CMSModel.CMS_ARTICLE_DATA">
+        <MappingFragment StoreEntitySet="CMS_ARTICLE_DATA">
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_AUDIT">
+      <EntityTypeMapping TypeName="CMSModel.CMS_AUDIT">
+        <MappingFragment StoreEntitySet="CMS_AUDIT">
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ARTICLE_ID" ColumnName="ARTICLE_ID" />
+          <ScalarProperty Name="AUDIT_ID" ColumnName="AUDIT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_CATEGORY">
+      <EntityTypeMapping TypeName="CMSModel.CMS_CATEGORY">
+        <MappingFragment StoreEntitySet="CMS_CATEGORY">
+          <ScalarProperty Name="IS_NOTIFY" ColumnName="IS_NOTIFY" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_AUDIT" ColumnName="IS_AUDIT" />
+          <ScalarProperty Name="ALLOW_COMMENT" ColumnName="ALLOW_COMMENT" />
+          <ScalarProperty Name="KEYWORDS" ColumnName="KEYWORDS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="HREF" ColumnName="HREF" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_COMMENT">
+      <EntityTypeMapping TypeName="CMSModel.CMS_COMMENT">
+        <MappingFragment StoreEntitySet="CMS_COMMENT">
+          <ScalarProperty Name="IS_COMMENT" ColumnName="IS_COMMENT" />
+          <ScalarProperty Name="AUDIT_USER_NAME" ColumnName="AUDIT_USER_NAME" />
+          <ScalarProperty Name="AUDIT_DATE" ColumnName="AUDIT_DATE" />
+          <ScalarProperty Name="AUDIT_USER_ID" ColumnName="AUDIT_USER_ID" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="ARTICLE_ID" ColumnName="ARTICLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_GUESTBOOK">
+      <EntityTypeMapping TypeName="CMSModel.CMS_GUESTBOOK">
+        <MappingFragment StoreEntitySet="CMS_GUESTBOOK">
+          <ScalarProperty Name="RE_CONTENT" ColumnName="RE_CONTENT" />
+          <ScalarProperty Name="RE_DATE" ColumnName="RE_DATE" />
+          <ScalarProperty Name="RE_USER_ID" ColumnName="RE_USER_ID" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="WORKUNIT" ColumnName="WORKUNIT" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_PUBLISH_USERS">
+      <EntityTypeMapping TypeName="CMSModel.CMS_PUBLISH_USERS">
+        <MappingFragment StoreEntitySet="CMS_PUBLISH_USERS">
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ARTICLE_ID" ColumnName="ARTICLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_VIEW_AUDIT">
+      <EntityTypeMapping TypeName="CMSModel.CMS_VIEW_AUDIT">
+        <MappingFragment StoreEntitySet="CMS_VIEW_AUDIT">
+          <ScalarProperty Name="VIEW_NAME" ColumnName="VIEW_NAME" />
+          <ScalarProperty Name="VIEW_TYPE" ColumnName="VIEW_TYPE" />
+          <ScalarProperty Name="VIEW_ID" ColumnName="VIEW_ID" />
+          <ScalarProperty Name="ARTICLE_ID" ColumnName="ARTICLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_ARTICLE_DATA_TEMP">
+      <EntityTypeMapping TypeName="CMSModel.CMS_ARTICLE_DATA_TEMP">
+        <MappingFragment StoreEntitySet="CMS_ARTICLE_DATA_TEMP">
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMS_SCANNED">
+      <EntityTypeMapping TypeName="CMSModel.CMS_SCANNED">
+        <MappingFragment StoreEntitySet="CMS_SCANNED">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ARTICLE_ID" ColumnName="ARTICLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,11 @@
+namespace LumiSoft.Net.Dns.Client;
+
+public enum RCODE
+{
+	NO_ERROR,
+	FORMAT_ERRROR,
+	SERVER_FAILURE,
+	NAME_ERROR,
+	NOT_IMPLEMENTED,
+	REFUSED
+}

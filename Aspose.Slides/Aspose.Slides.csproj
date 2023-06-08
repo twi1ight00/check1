@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Aspose.Slides</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ILRepack.List" />
+    <None Remove="Aspose.Slides.Util.resources.Aspose.License.BlackList.xml" />
+    <None Remove="Aspose.PptxPackage.resources.schemas.zip" />
+    <None Remove="Aspose.Slides.PptBinaryFile.resources.NotSupported.emf" />
+    <None Remove="Aspose.Resources.NoImage.png" />
+    <None Remove="Aspose.Resources.HatchMasks.dat" />
+    <None Remove="Aspose.Resources.Viewer.swf" />
+    <None Remove="Aspose.Resources.PresetShapeDefinitions.xml" />
+    <None Remove="Aspose.Resources.DocumentDescriptorAbcData.bin" />
+    <None Remove="Aspose.Resources.PageAbcData.bin" />
+    <None Remove="Aspose.Resources.GenBasR.ttf" />
+    <None Remove="Aspose.Html.Resources.xhtml-lat1.ent" />
+    <None Remove="Aspose.Html.Resources.xhtml-special.ent" />
+    <None Remove="Aspose.Html.Resources.xhtml-symbol.ent" />
+    <None Remove="Aspose.Html.Resources.xhtml1-transitional.dtd" />
+    <None Remove="Aspose.Slides.DOM.resources.empty_template.ppt" />
+    <None Remove="Aspose.Slides.DOM.resources.template.ppt" />
+    <None Remove="Aspose.Slides.DOM.resources.noImage.emf" />
+    <None Remove="Aspose.Slides.DOM.resources.EmbeddedOLE_template.png" />
+    <None Remove="Aspose.Slides.DOM.resources.AudioFrame.png" />
+    <None Remove="Aspose.Slides.DOM.resources.ObjectChanged.png" />
+    <None Remove="Aspose.Slides.DOM.resources.VideoFrame.png" />
+    <None Remove="Aspose.Slides.DOM.resources.polyline.bin" />
+    <None Remove="Aspose.Slides.DOM.resources.template.odp" />
+    <None Remove="Aspose.Slides.DOM.resources.templates.zip" />
+    <None Remove="Aspose.Slides.DOM.resources.schemas.zip" />
+    <None Remove="Aspose.Slides.DOM.resources.template.xlsx" />
+    <None Remove="Aspose.Slides.DOM.resources.OdpCustomShapes.xml" />
+    <None Remove="Aspose.Total.License.xml" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+    <EmbeddedResource Include="Aspose.Slides.Util.resources.Aspose.License.BlackList.xml" LogicalName="Aspose.Slides.Util.resources.Aspose.License.BlackList.xml" />
+    <EmbeddedResource Include="Aspose.PptxPackage.resources.schemas.zip" LogicalName="Aspose.PptxPackage.resources.schemas.zip" />
+    <EmbeddedResource Include="Aspose.Slides.PptBinaryFile.resources.NotSupported.emf" LogicalName="Aspose.Slides.PptBinaryFile.resources.NotSupported.emf" />
+    <EmbeddedResource Include="Aspose.Resources.NoImage.png" LogicalName="Aspose.Resources.NoImage.png" />
+    <EmbeddedResource Include="Aspose.Resources.HatchMasks.dat" LogicalName="Aspose.Resources.HatchMasks.dat" />
+    <EmbeddedResource Include="Aspose.Resources.Viewer.swf" LogicalName="Aspose.Resources.Viewer.swf" />
+    <EmbeddedResource Include="Aspose.Resources.PresetShapeDefinitions.xml" LogicalName="Aspose.Resources.PresetShapeDefinitions.xml" />
+    <EmbeddedResource Include="Aspose.Resources.DocumentDescriptorAbcData.bin" LogicalName="Aspose.Resources.DocumentDescriptorAbcData.bin" />
+    <EmbeddedResource Include="Aspose.Resources.PageAbcData.bin" LogicalName="Aspose.Resources.PageAbcData.bin" />
+    <EmbeddedResource Include="Aspose.Resources.GenBasR.ttf" LogicalName="Aspose.Resources.GenBasR.ttf" />
+    <EmbeddedResource Include="Aspose.Html.Resources.xhtml-lat1.ent" LogicalName="Aspose.Html.Resources.xhtml-lat1.ent" />
+    <EmbeddedResource Include="Aspose.Html.Resources.xhtml-special.ent" LogicalName="Aspose.Html.Resources.xhtml-special.ent" />
+    <EmbeddedResource Include="Aspose.Html.Resources.xhtml-symbol.ent" LogicalName="Aspose.Html.Resources.xhtml-symbol.ent" />
+    <EmbeddedResource Include="Aspose.Html.Resources.xhtml1-transitional.dtd" LogicalName="Aspose.Html.Resources.xhtml1-transitional.dtd" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.empty_template.ppt" LogicalName="Aspose.Slides.DOM.resources.empty_template.ppt" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.template.ppt" LogicalName="Aspose.Slides.DOM.resources.template.ppt" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.noImage.emf" LogicalName="Aspose.Slides.DOM.resources.noImage.emf" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.EmbeddedOLE_template.png" LogicalName="Aspose.Slides.DOM.resources.EmbeddedOLE_template.png" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.AudioFrame.png" LogicalName="Aspose.Slides.DOM.resources.AudioFrame.png" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.ObjectChanged.png" LogicalName="Aspose.Slides.DOM.resources.ObjectChanged.png" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.VideoFrame.png" LogicalName="Aspose.Slides.DOM.resources.VideoFrame.png" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.polyline.bin" LogicalName="Aspose.Slides.DOM.resources.polyline.bin" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.template.odp" LogicalName="Aspose.Slides.DOM.resources.template.odp" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.templates.zip" LogicalName="Aspose.Slides.DOM.resources.templates.zip" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.schemas.zip" LogicalName="Aspose.Slides.DOM.resources.schemas.zip" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.template.xlsx" LogicalName="Aspose.Slides.DOM.resources.template.xlsx" />
+    <EmbeddedResource Include="Aspose.Slides.DOM.resources.OdpCustomShapes.xml" LogicalName="Aspose.Slides.DOM.resources.OdpCustomShapes.xml" />
+    <EmbeddedResource Include="Aspose.Total.License.xml" LogicalName="Aspose.Total.License.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+</Project>

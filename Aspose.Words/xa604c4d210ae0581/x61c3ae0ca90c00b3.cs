@@ -1,0 +1,164 @@
+using System.IO;
+
+namespace xa604c4d210ae0581;
+
+internal class x61c3ae0ca90c00b3
+{
+	internal x3fdb33c580a0bef3 xe2220634a124deda = new x3fdb33c580a0bef3();
+
+	internal x3fdb33c580a0bef3 x5224c9069859f7f7 = new x3fdb33c580a0bef3();
+
+	internal x3fdb33c580a0bef3 xcf0f42cf05668e05 = new x3fdb33c580a0bef3();
+
+	internal x3fdb33c580a0bef3 xac020482c68805c1 = new x3fdb33c580a0bef3();
+
+	internal readonly x3fdb33c580a0bef3 x0f731a94af712eba = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x075de9cbab386109 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x0db39577d8715901 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x6c625e0d16d5afdb = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x29209cb338eeb76a = new x3fdb33c580a0bef3();
+
+	internal readonly x3fdb33c580a0bef3 x8dd2a68bb7b3e3b9 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x4cca9385de0c156a = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xfbd406ad3b15bf01 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xcdf4cfdc0da3f565 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x9e9df94392b3689b = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xb306fd4a33773d2c = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x6124815c785c158a = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x94434b78feafa38d = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x33b5692b9bed65b8 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x5480dd2b5acd0c20 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x9ddbc29e240b7882 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xcb3536138802e258 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xd3c9d71b4ae3033d = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x399429f94995fc7e = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x8f87c915473a697b = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x87dc81473ee24386 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 xbd1f234fedffbc57 = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x842e3a77c2cfb18e = new x3fdb33c580a0bef3();
+
+	private readonly x3fdb33c580a0bef3 x63706a8bbdc01acf = new x3fdb33c580a0bef3();
+
+	internal bool x68948c6d4e93bea5
+	{
+		get
+		{
+			if (x075de9cbab386109.x04c290dc4d04369c <= 0 && x0db39577d8715901.x04c290dc4d04369c <= 0 && x6c625e0d16d5afdb.x04c290dc4d04369c <= 0)
+			{
+				return x29209cb338eeb76a.x04c290dc4d04369c > 0;
+			}
+			return true;
+		}
+	}
+
+	internal bool xbea5bebc6f07ed65 => x63706a8bbdc01acf.x04c290dc4d04369c > 0;
+
+	internal void x06b0e25aa6ad68a9(BinaryReader xe134235b3526fa75)
+	{
+		xe2220634a124deda.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x5224c9069859f7f7.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xcf0f42cf05668e05.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xac020482c68805c1.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x0f731a94af712eba.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x075de9cbab386109.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x0db39577d8715901.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x6c625e0d16d5afdb.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x29209cb338eeb76a.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x8dd2a68bb7b3e3b9.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x4cca9385de0c156a.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xfbd406ad3b15bf01.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xcdf4cfdc0da3f565.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x9e9df94392b3689b.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xb306fd4a33773d2c.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x6124815c785c158a.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x94434b78feafa38d.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x33b5692b9bed65b8.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x5480dd2b5acd0c20.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x9ddbc29e240b7882.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xcb3536138802e258.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xd3c9d71b4ae3033d.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x399429f94995fc7e.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x8f87c915473a697b.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x87dc81473ee24386.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		xbd1f234fedffbc57.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x842e3a77c2cfb18e.x06b0e25aa6ad68a9(xe134235b3526fa75);
+		x63706a8bbdc01acf.x06b0e25aa6ad68a9(xe134235b3526fa75);
+	}
+
+	internal void x6210059f049f0d48(BinaryWriter xbdfb620b7167944b, int x60b34eefb3f7525b)
+	{
+		xe2220634a124deda.x6210059f049f0d48(xbdfb620b7167944b);
+		x5224c9069859f7f7.x6210059f049f0d48(xbdfb620b7167944b);
+		xcf0f42cf05668e05.x6210059f049f0d48(xbdfb620b7167944b);
+		xac020482c68805c1.x6210059f049f0d48(xbdfb620b7167944b);
+		x0f731a94af712eba.x6210059f049f0d48(xbdfb620b7167944b);
+		x075de9cbab386109.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x0db39577d8715901.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x6c625e0d16d5afdb.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x29209cb338eeb76a.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x8dd2a68bb7b3e3b9.xe53f0e68147463d1 = 0;
+		x8dd2a68bb7b3e3b9.x04c290dc4d04369c = 0;
+		x4cca9385de0c156a.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xfbd406ad3b15bf01.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xcdf4cfdc0da3f565.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x9e9df94392b3689b.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xb306fd4a33773d2c.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x6124815c785c158a.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x94434b78feafa38d.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x33b5692b9bed65b8.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x5480dd2b5acd0c20.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x9ddbc29e240b7882.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xcb3536138802e258.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xd3c9d71b4ae3033d.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x399429f94995fc7e.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x8f87c915473a697b.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x87dc81473ee24386.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		xbd1f234fedffbc57.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x842e3a77c2cfb18e.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x63706a8bbdc01acf.xe53f0e68147463d1 = x60b34eefb3f7525b;
+		x075de9cbab386109.x6210059f049f0d48(xbdfb620b7167944b);
+		x0db39577d8715901.x6210059f049f0d48(xbdfb620b7167944b);
+		x6c625e0d16d5afdb.x6210059f049f0d48(xbdfb620b7167944b);
+		x29209cb338eeb76a.x6210059f049f0d48(xbdfb620b7167944b);
+		x8dd2a68bb7b3e3b9.x6210059f049f0d48(xbdfb620b7167944b);
+		x4cca9385de0c156a.x6210059f049f0d48(xbdfb620b7167944b);
+		xfbd406ad3b15bf01.x6210059f049f0d48(xbdfb620b7167944b);
+		xcdf4cfdc0da3f565.x6210059f049f0d48(xbdfb620b7167944b);
+		x9e9df94392b3689b.x6210059f049f0d48(xbdfb620b7167944b);
+		xb306fd4a33773d2c.x6210059f049f0d48(xbdfb620b7167944b);
+		x6124815c785c158a.x6210059f049f0d48(xbdfb620b7167944b);
+		x94434b78feafa38d.x6210059f049f0d48(xbdfb620b7167944b);
+		x33b5692b9bed65b8.x6210059f049f0d48(xbdfb620b7167944b);
+		x5480dd2b5acd0c20.x6210059f049f0d48(xbdfb620b7167944b);
+		x9ddbc29e240b7882.x6210059f049f0d48(xbdfb620b7167944b);
+		xcb3536138802e258.x6210059f049f0d48(xbdfb620b7167944b);
+		xd3c9d71b4ae3033d.x6210059f049f0d48(xbdfb620b7167944b);
+		x399429f94995fc7e.x6210059f049f0d48(xbdfb620b7167944b);
+		x8f87c915473a697b.x6210059f049f0d48(xbdfb620b7167944b);
+		x87dc81473ee24386.x6210059f049f0d48(xbdfb620b7167944b);
+		xbd1f234fedffbc57.x6210059f049f0d48(xbdfb620b7167944b);
+		x842e3a77c2cfb18e.x6210059f049f0d48(xbdfb620b7167944b);
+		x63706a8bbdc01acf.x6210059f049f0d48(xbdfb620b7167944b);
+	}
+}

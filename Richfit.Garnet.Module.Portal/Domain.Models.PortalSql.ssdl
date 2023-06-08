@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PortalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PortalModelStoreContainer">
+    <EntitySet Name="SYS_PORTAL" EntityType="PortalModel.Store.SYS_PORTAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SHORTCUT" EntityType="PortalModel.Store.SYS_SHORTCUT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_USER_PORTAL" EntityType="PortalModel.Store.SYS_USER_PORTAL" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_PORT" Association="PortalModel.Store.FK_SYS_USER_REFERENCE_SYS_PORT">
+      <End Role="SYS_PORTAL" EntitySet="SYS_PORTAL" />
+      <End Role="SYS_USER_PORTAL" EntitySet="SYS_USER_PORTAL" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_PORTAL">
+    <Key>
+      <PropertyRef Name="PORTAL_ID" />
+    </Key>
+    <Property Name="PORTAL_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PORTAL_URL" Type="nvarchar" MaxLength="512" />
+    <Property Name="IMAGE_URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="SORT" Type="numeric" />
+    <Property Name="IS_REFRESH" Type="numeric" />
+    <Property Name="ISDEL" Type="numeric" Nullable="false" />
+    <Property Name="CREATOR" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CREATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_SHORTCUT">
+    <Key>
+      <PropertyRef Name="SHORTCUT_ID" />
+    </Key>
+    <Property Name="SHORTCUT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MENU_ID" Type="uniqueidentifier" />
+    <Property Name="USER_ID" Type="uniqueidentifier" />
+    <Property Name="SORT" Type="numeric" />
+  </EntityType>
+  <EntityType Name="SYS_USER_PORTAL">
+    <Key>
+      <PropertyRef Name="USER_PORTAL_ID" />
+    </Key>
+    <Property Name="USER_PORTAL_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PORTAL_ID" Type="uniqueidentifier" />
+    <Property Name="USER_ID" Type="uniqueidentifier" />
+    <Property Name="COL_NUMBER" Type="numeric" />
+    <Property Name="SORT" Type="numeric" />
+  </EntityType>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_PORT">
+    <End Role="SYS_PORTAL" Type="PortalModel.Store.SYS_PORTAL" Multiplicity="0..1" />
+    <End Role="SYS_USER_PORTAL" Type="PortalModel.Store.SYS_USER_PORTAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_PORTAL">
+        <PropertyRef Name="PORTAL_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_PORTAL">
+        <PropertyRef Name="PORTAL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Message" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MSG_MESSAGE" EntityType="Model.MSG_MESSAGE" />
+    <EntitySet Name="MSG_MESSAGE_USER" EntityType="Model.MSG_MESSAGE_USER" />
+    <AssociationSet Name="FK_MSG_MESS_REFERENCE_MSG_MESS" Association="Model.FK_MSG_MESS_REFERENCE_MSG_MESS">
+      <End Role="MSG_MESSAGE" EntitySet="MSG_MESSAGE" />
+      <End Role="MSG_MESSAGE_USER" EntitySet="MSG_MESSAGE_USER" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="MSG_MESSAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MESSAGE_TITLE" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE_CONTENT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SEND_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="SEND_USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SEND_ORG_ID" Type="Guid" />
+    <Property Name="SEND_ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="IS_ATTACHMENT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="R_USER_NAMES" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MSG_MESSAGE_USER" Relationship="Model.FK_MSG_MESS_REFERENCE_MSG_MESS" FromRole="MSG_MESSAGE" ToRole="MSG_MESSAGE_USER" />
+  </EntityType>
+  <EntityType Name="MSG_MESSAGE_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="MESSAGE_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="USER_TYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <NavigationProperty Name="MSG_MESSAGE" Relationship="Model.FK_MSG_MESS_REFERENCE_MSG_MESS" FromRole="MSG_MESSAGE_USER" ToRole="MSG_MESSAGE" />
+  </EntityType>
+  <Association Name="FK_MSG_MESS_REFERENCE_MSG_MESS">
+    <End Type="Model.MSG_MESSAGE" Role="MSG_MESSAGE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.MSG_MESSAGE_USER" Role="MSG_MESSAGE_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MSG_MESSAGE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MSG_MESSAGE_USER">
+        <PropertyRef Name="MESSAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DocumentOracle.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="DOC_CONTENTS">
+    <Key>
+      <PropertyRef Name="CONTENT_ID" />
+    </Key>
+    <Property Name="CONTENT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTENT_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="PARENT_CONTENT_ID" Type="raw" MaxLength="16" />
+    <Property Name="STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DOC_FILE">
+    <Key>
+      <PropertyRef Name="DOC_FILE_ID" />
+    </Key>
+    <Property Name="DOC_FILE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTENT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="DOC_FILE_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="UPLOADER" Type="nvarchar2" MaxLength="128" />
+    <Property Name="UPLOADTIME" Type="date" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="ATTACHMENT_TYPE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="FILE_RELATIVE_PATH" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ATTACHMENT_SIZE" Type="number" Precision="38" Scale="0" />
+    <Property Name="ATTACHMENT_NAME" Type="nvarchar2" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="DocumentOracleStoreContainer">
+    <EntitySet Name="DOC_CONTENTS" EntityType="Self.DOC_CONTENTS" Schema="" store:Type="Tables" />
+    <EntitySet Name="DOC_FILE" EntityType="Self.DOC_FILE" Schema="" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

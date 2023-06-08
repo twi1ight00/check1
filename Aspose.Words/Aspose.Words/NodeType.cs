@@ -1,0 +1,38 @@
+namespace Aspose.Words;
+
+public enum NodeType
+{
+	Any,
+	Document,
+	Section,
+	Body,
+	HeaderFooter,
+	Table,
+	Row,
+	Cell,
+	Paragraph,
+	BookmarkStart,
+	BookmarkEnd,
+	GroupShape,
+	Shape,
+	Comment,
+	Footnote,
+	Run,
+	FieldStart,
+	FieldSeparator,
+	FieldEnd,
+	FormField,
+	SpecialChar,
+	SmartTag,
+	CustomXmlMarkup,
+	StructuredDocumentTag,
+	GlossaryDocument,
+	BuildingBlock,
+	CommentRangeStart,
+	CommentRangeEnd,
+	DrawingML,
+	OfficeMath,
+	SubDocument,
+	System,
+	Null
+}

@@ -1,0 +1,83 @@
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Office.Interop.Visio;
+
+[TypeLibType(16)]
+[ComEventInterface(typeof(EPages_0000), typeof(EPages_EventProvider_0000))]
+[ComVisible(false)]
+public interface EPages_Event
+{
+	event EPages_PageAddedEventHandler PageAdded;
+
+	event EPages_PageChangedEventHandler PageChanged;
+
+	event EPages_BeforePageDeleteEventHandler BeforePageDelete;
+
+	event EPages_ShapeAddedEventHandler ShapeAdded;
+
+	event EPages_BeforeSelectionDeleteEventHandler BeforeSelectionDelete;
+
+	event EPages_ShapeChangedEventHandler ShapeChanged;
+
+	event EPages_SelectionAddedEventHandler SelectionAdded;
+
+	event EPages_BeforeShapeDeleteEventHandler BeforeShapeDelete;
+
+	event EPages_TextChangedEventHandler TextChanged;
+
+	event EPages_CellChangedEventHandler CellChanged;
+
+	event EPages_FormulaChangedEventHandler FormulaChanged;
+
+	event EPages_ConnectionsAddedEventHandler ConnectionsAdded;
+
+	event EPages_ConnectionsDeletedEventHandler ConnectionsDeleted;
+
+	event EPages_QueryCancelPageDeleteEventHandler QueryCancelPageDelete;
+
+	event EPages_PageDeleteCanceledEventHandler PageDeleteCanceled;
+
+	event EPages_ShapeParentChangedEventHandler ShapeParentChanged;
+
+	event EPages_BeforeShapeTextEditEventHandler BeforeShapeTextEdit;
+
+	event EPages_ShapeExitedTextEditEventHandler ShapeExitedTextEdit;
+
+	event EPages_QueryCancelSelectionDeleteEventHandler QueryCancelSelectionDelete;
+
+	event EPages_SelectionDeleteCanceledEventHandler SelectionDeleteCanceled;
+
+	event EPages_QueryCancelUngroupEventHandler QueryCancelUngroup;
+
+	event EPages_UngroupCanceledEventHandler UngroupCanceled;
+
+	event EPages_QueryCancelConvertToGroupEventHandler QueryCancelConvertToGroup;
+
+	event EPages_ConvertToGroupCanceledEventHandler ConvertToGroupCanceled;
+
+	event EPages_QueryCancelGroupEventHandler QueryCancelGroup;
+
+	event EPages_GroupCanceledEventHandler GroupCanceled;
+
+	event EPages_ShapeDataGraphicChangedEventHandler ShapeDataGraphicChanged;
+
+	event EPages_ShapeLinkAddedEventHandler ShapeLinkAdded;
+
+	event EPages_ShapeLinkDeletedEventHandler ShapeLinkDeleted;
+
+	event EPages_ContainerRelationshipAddedEventHandler ContainerRelationshipAdded;
+
+	event EPages_ContainerRelationshipDeletedEventHandler ContainerRelationshipDeleted;
+
+	event EPages_CalloutRelationshipAddedEventHandler CalloutRelationshipAdded;
+
+	event EPages_CalloutRelationshipDeletedEventHandler CalloutRelationshipDeleted;
+
+	event EPages_QueryCancelReplaceShapesEventHandler QueryCancelReplaceShapes;
+
+	event EPages_ReplaceShapesCanceledEventHandler ReplaceShapesCanceled;
+
+	event EPages_BeforeReplaceShapesEventHandler BeforeReplaceShapes;
+
+	event EPages_AfterReplaceShapesEventHandler AfterReplaceShapes;
+}

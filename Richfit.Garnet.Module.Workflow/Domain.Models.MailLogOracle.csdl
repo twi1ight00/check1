@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MailLog" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="SYS_MAIL_LOG">
+    <Key>
+      <PropertyRef Name="EMAIL_LOG_ID" />
+    </Key>
+    <Property Name="EMAIL_LOG_ID" Type="Guid" Nullable="false" />
+    <Property Name="SERVER_IP" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL_TO_ADDRESS" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL_FROM_ADDRESS" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL_FROM_PWD" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL_SUBJECT" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="MAIL_BODY" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="OBJECT_ID" Type="Guid" Nullable="false" />
+    <Property Name="EXTEND_ID" Type="Guid" />
+    <Property Name="ISDEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_MESSAGE_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="IP" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CREATE_TIME" Type="DateTime" />
+    <Property Name="SENDTIME" Type="DateTime" />
+    <Property Name="BROWSER" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="RRID" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PWD" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="STIME" Type="DateTime" />
+    <Property Name="CONTENT" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="EXT" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILE" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="OBJECT_ID" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="EXTEND_ID" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_MAIL_LOG" EntityType="Self.SYS_MAIL_LOG" />
+    <EntitySet Name="SYS_MESSAGE_LOG" EntityType="Self.SYS_MESSAGE_LOG" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="OL_OFFICE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="OBJ_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="FILE_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="SUBJECT" Type="nvarchar2" MaxLength="1024" Nullable="false" />
+    <Property Name="FILE_SIXE" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="STATUS" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TEMPLATE_FILE_ID" Type="raw" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OL_TEMPLATE_FILE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TEMPLATE_FILE_URL" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="TEMPLATE_FILE_NAME" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="TEMPLATE_DESCRIBE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OL_TEMPLATE_FILE_MAPPING">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="OBJ_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TEMPLATE_FILE_ID" Type="raw" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="OL_OFFICE" EntityType="Self.OL_OFFICE" Schema="" store:Type="Tables" />
+    <EntitySet Name="OL_TEMPLATE_FILE" EntityType="Self.OL_TEMPLATE_FILE" Schema="" store:Type="Tables" />
+    <EntitySet Name="OL_TEMPLATE_FILE_MAPPING" EntityType="Self.OL_TEMPLATE_FILE_MAPPING" Schema="" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

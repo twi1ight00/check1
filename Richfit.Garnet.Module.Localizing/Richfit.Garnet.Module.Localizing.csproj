@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.Localizing</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.LocalizingSql.csdl" />
+    <None Remove="Domain.Models.LocalizingOracle.csdl" />
+    <None Remove="Domain.Models.LocalizingSql.msl" />
+    <None Remove="Domain.Models.LocalizingOracle.msl" />
+    <None Remove="Domain.Models.LocalizingSql.ssdl" />
+    <None Remove="Domain.Models.LocalizingOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingSql.csdl" LogicalName="Domain.Models.LocalizingSql.csdl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingOracle.csdl" LogicalName="Domain.Models.LocalizingOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingSql.msl" LogicalName="Domain.Models.LocalizingSql.msl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingOracle.msl" LogicalName="Domain.Models.LocalizingOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingSql.ssdl" LogicalName="Domain.Models.LocalizingSql.ssdl" />
+    <EmbeddedResource Include="Domain.Models.LocalizingOracle.ssdl" LogicalName="Domain.Models.LocalizingOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

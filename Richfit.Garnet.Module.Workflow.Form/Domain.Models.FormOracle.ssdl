@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FromModel.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="W_HR_EMPLOYEE_RESUME">
+    <Key>
+      <PropertyRef Name="W_HR_EMPLOYEE_RESUME_ID" />
+    </Key>
+    <Property Name="W_HR_EMPLOYEE_RESUME_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="USER_CODE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="USER_SEX" Type="raw" MaxLength="16" />
+    <Property Name="BIRTH_PLACE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="BIRTHDAY" Type="date" />
+    <Property Name="POLITIC_STATUS" Type="raw" MaxLength="16" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="CURRENT_STATUS" Type="nvarchar2" MaxLength="255" />
+    <Property Name="FIRST_DEGREE" Type="raw" MaxLength="16" />
+    <Property Name="FIRST_SCHOOL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="MAJOR" Type="nvarchar2" MaxLength="255" />
+    <Property Name="TOP_DEGREE" Type="raw" MaxLength="16" />
+    <Property Name="TOP_SCHOOL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="TOP_MAJOR" Type="nvarchar2" MaxLength="255" />
+    <Property Name="IPHONE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="TRAIN" Type="clob" />
+    <Property Name="WORK_EXPER_PRE" Type="clob" />
+    <Property Name="WORK_EXPER_ENTER" Type="clob" />
+    <Property Name="IMAGE_URL" Type="nvarchar2" MaxLength="255" />
+    <Property Name="STUDY_MODE_FIRST" Type="nvarchar2" MaxLength="255" />
+    <Property Name="STUDY_MODE_TOP" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SELF_ASSESS" Type="clob" />
+    <Property Name="FIRST_DATE" Type="date" />
+    <Property Name="TOP_DATE" Type="date" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityContainer Name="FromModelStoreContainer">
+    <EntitySet Name="W_HR_EMPLOYEE_RESUME" EntityType="Self.W_HR_EMPLOYEE_RESUME" Schema="" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

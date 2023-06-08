@@ -1,0 +1,35 @@
+namespace Enyim.Caching.Memcached.Protocol.Binary;
+
+public enum OpCode : byte
+{
+	Get = 0,
+	Set = 1,
+	Add = 2,
+	Replace = 3,
+	Delete = 4,
+	Increment = 5,
+	Decrement = 6,
+	Quit = 7,
+	Flush = 8,
+	GetQ = 9,
+	NoOp = 10,
+	Version = 11,
+	GetK = 12,
+	GetKQ = 13,
+	Append = 14,
+	Prepend = 15,
+	Stat = 16,
+	SetQ = 17,
+	AddQ = 18,
+	ReplaceQ = 19,
+	DeleteQ = 20,
+	IncrementQ = 21,
+	DecrementQ = 22,
+	QuitQ = 23,
+	FlushQ = 24,
+	AppendQ = 25,
+	PrependQ = 26,
+	SaslList = 32,
+	SaslStart = 33,
+	SaslStep = 34
+}

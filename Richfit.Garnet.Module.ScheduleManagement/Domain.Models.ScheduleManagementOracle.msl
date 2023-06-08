@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ScheduleManagementStoreContainer" CdmEntityContainer="ScheduleManagement">
+    <EntitySetMapping Name="SCH_BELONGER_USER">
+      <EntityTypeMapping TypeName="ScheduleManagementModel.SCH_BELONGER_USER">
+        <MappingFragment StoreEntitySet="SCH_BELONGER_USER">
+          <ScalarProperty Name="SCHEDULE_ID" ColumnName="SCHEDULE_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="BELONGER_USER_ID" ColumnName="BELONGER_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCH_INFO">
+      <EntityTypeMapping TypeName="ScheduleManagementModel.SCH_INFO">
+        <MappingFragment StoreEntitySet="SCH_INFO">
+          <ScalarProperty Name="ORG_IDS" ColumnName="ORG_IDS" />
+          <ScalarProperty Name="ORG_NAMES" ColumnName="ORG_NAMES" />
+          <ScalarProperty Name="ORG_DATAS" ColumnName="ORG_DATAS" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="PARTICIPANTS_NAME_STRING" ColumnName="PARTICIPANTS_NAME_STRING" />
+          <ScalarProperty Name="PARTICIPANTS_NAME" ColumnName="PARTICIPANTS_NAME" />
+          <ScalarProperty Name="SCHEDULE_LOCATION_ID" ColumnName="SCHEDULE_LOCATION_ID" />
+          <ScalarProperty Name="SCHEDULE_LOCATION" ColumnName="SCHEDULE_LOCATION" />
+          <ScalarProperty Name="SCHEDULE_DATE" ColumnName="SCHEDULE_DATE" />
+          <ScalarProperty Name="DUTY_LEADER" ColumnName="DUTY_LEADER" />
+          <ScalarProperty Name="DUTY_LEADER_ID" ColumnName="DUTY_LEADER_ID" />
+          <ScalarProperty Name="ISSEND" ColumnName="ISSEND" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SCHEDULE_COLOR" ColumnName="SCHEDULE_COLOR" />
+          <ScalarProperty Name="REPEAT_INTERVAL" ColumnName="REPEAT_INTERVAL" />
+          <ScalarProperty Name="ISREPEAT" ColumnName="ISREPEAT" />
+          <ScalarProperty Name="ISALLDAY" ColumnName="ISALLDAY" />
+          <ScalarProperty Name="REMIND_TIME" ColumnName="REMIND_TIME" />
+          <ScalarProperty Name="REMIND_MODE" ColumnName="REMIND_MODE" />
+          <ScalarProperty Name="DISCLOSURE_LEVEL" ColumnName="DISCLOSURE_LEVEL" />
+          <ScalarProperty Name="SCHEDULE_STATE" ColumnName="SCHEDULE_STATE" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="BEGIN_TIME" ColumnName="BEGIN_TIME" />
+          <ScalarProperty Name="SCHEDULE_TYPE" ColumnName="SCHEDULE_TYPE" />
+          <ScalarProperty Name="SCHEDULE_CONTENTS" ColumnName="SCHEDULE_CONTENTS" />
+          <ScalarProperty Name="SCHEDULE_TITLE" ColumnName="SCHEDULE_TITLE" />
+          <ScalarProperty Name="SCHEDULE_ID" ColumnName="SCHEDULE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCH_PARTICIPANTS_USER">
+      <EntityTypeMapping TypeName="ScheduleManagementModel.SCH_PARTICIPANTS_USER">
+        <MappingFragment StoreEntitySet="SCH_PARTICIPANTS_USER">
+          <ScalarProperty Name="SCHEDULE_ID" ColumnName="SCHEDULE_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="PARTICIPANTS_USER_ID" ColumnName="PARTICIPANTS_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER">
+      <EntityTypeMapping TypeName="ScheduleManagementModel.SYS_USER">
+        <MappingFragment StoreEntitySet="SYS_USER">
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_FORBIDDEN" ColumnName="IS_FORBIDDEN" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+          <ScalarProperty Name="LOGON_NAME" ColumnName="LOGON_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

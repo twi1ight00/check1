@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{78CB5890-E295-4B5B-BBB5-CA6D949381EB}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>11.0</LangVersion>
+    <AssemblyName>AutoMapper</AssemblyName>
+    <TargetFrameworkIdentifier>.NETPortable</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapper.Impl\FieldAccessor.cs" />
+    <Compile Include="AutoMapper.Impl\FieldGetter.cs" />
+    <Compile Include="AutoMapper.Impl\MemberGetter.cs" />
+    <Compile Include="AutoMapper.Impl\MethodGetter.cs" />
+    <Compile Include="AutoMapper.Impl\PropertyAccessor.cs" />
+    <Compile Include="AutoMapper.Impl\PropertyGetter.cs" />
+    <Compile Include="AutoMapper.Impl\ProxyBase.cs" />
+    <Compile Include="AutoMapper.Impl\ReflectionHelper.cs" />
+    <Compile Include="AutoMapper.Impl\TypePair.cs" />
+    <Compile Include="AutoMapper.Impl\ValueTypeFieldAccessor.cs" />
+    <Compile Include="AutoMapper.Impl\ValueTypePropertyAccessor.cs" />
+    <Compile Include="AutoMapper.Internal\DictionaryFactory.cs" />
+    <Compile Include="AutoMapper.Internal\EnumNameValueMapperFactory.cs" />
+    <Compile Include="AutoMapper.Internal\FeatureDetector.cs" />
+    <Compile Include="AutoMapper.Internal\IAdapterResolver.cs" />
+    <Compile Include="AutoMapper.Internal\IDictionary.cs" />
+    <Compile Include="AutoMapper.Internal\IDictionaryFactory.cs" />
+    <Compile Include="AutoMapper.Internal\IEnumNameValueMapper.cs" />
+    <Compile Include="AutoMapper.Internal\IEnumNameValueMapperFactory.cs" />
+    <Compile Include="AutoMapper.Internal\ILazy.cs" />
+    <Compile Include="AutoMapper.Internal\INullableConverter.cs" />
+    <Compile Include="AutoMapper.Internal\INullableConverterFactory.cs" />
+    <Compile Include="AutoMapper.Internal\IProxyGenerator.cs" />
+    <Compile Include="AutoMapper.Internal\IProxyGeneratorFactory.cs" />
+    <Compile Include="AutoMapper.Internal\IReaderWriterLockSlim.cs" />
+    <Compile Include="AutoMapper.Internal\IReaderWriterLockSlimFactory.cs" />
+    <Compile Include="AutoMapper.Internal\LazyFactory.cs" />
+    <Compile Include="AutoMapper.Internal\NullableConverterFactory.cs" />
+    <Compile Include="AutoMapper.Internal\PlatformAdapter.cs" />
+    <Compile Include="AutoMapper.Internal\PrimitiveExtensions.cs" />
+    <Compile Include="AutoMapper.Internal\ProbingAdapterResolver.cs" />
+    <Compile Include="AutoMapper.Internal\ProxyGeneratorFactory.cs" />
+    <Compile Include="AutoMapper.Internal\ReaderWriterLockSlimFactory.cs" />
+    <Compile Include="AutoMapper.Mappers\ArrayMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\AssignableArrayMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\AssignableMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\CollectionMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\DictionaryMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\EnumerableMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\EnumerableMapperBase.cs" />
+    <Compile Include="AutoMapper.Mappers\EnumerableToDictionaryMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\EnumMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\ExplicitConversionOperatorMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\FlagsEnumMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\ImplicitConversionOperatorMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\IPlatformSpecificMapperRegistry.cs" />
+    <Compile Include="AutoMapper.Mappers\ITypeMapObjectMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\MapperRegistry.cs" />
+    <Compile Include="AutoMapper.Mappers\NullableMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\NullableSourceMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\ObjectCreator.cs" />
+    <Compile Include="AutoMapper.Mappers\PlatformSpecificMapperRegistry.cs" />
+    <Compile Include="AutoMapper.Mappers\PrimitiveArrayMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\ReadOnlyCollectionMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\StringMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\TypeHelper.cs" />
+    <Compile Include="AutoMapper.Mappers\TypeMapMapper.cs" />
+    <Compile Include="AutoMapper.Mappers\TypeMapObjectMapperRegistry.cs" />
+    <Compile Include="AutoMapper.QueryableExtensions\Extensions.cs" />
+    <Compile Include="AutoMapper.QueryableExtensions\IProjectionExpression.cs" />
+    <Compile Include="AutoMapper.QueryableExtensions\ProjectionExpression.cs" />
+    <Compile Include="AutoMapper\AliasedMember.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfigurationException.cs" />
+    <Compile Include="AutoMapper\AutoMapperMappingException.cs" />
+    <Compile Include="AutoMapper\ConfigurationStore.cs" />
+    <Compile Include="AutoMapper\ConstructorMap.cs" />
+    <Compile Include="AutoMapper\ConstructorParameterMap.cs" />
+    <Compile Include="AutoMapper\DefaultResolver.cs" />
+    <Compile Include="AutoMapper\DeferredInstantiatedConverter.cs" />
+    <Compile Include="AutoMapper\DeferredInstantiatedFormatter.cs" />
+    <Compile Include="AutoMapper\DeferredInstantiatedResolver.cs" />
+    <Compile Include="AutoMapper\DelegateBasedResolver.cs" />
+    <Compile Include="AutoMapper\DelegateFactory.cs" />
+    <Compile Include="AutoMapper\EnumerableExtensions.cs" />
+    <Compile Include="AutoMapper\ExpressionResolutionResult.cs" />
+    <Compile Include="AutoMapper\ExpressionValueFormatter.cs" />
+    <Compile Include="AutoMapper\FormatterCtorExpression.cs" />
+    <Compile Include="AutoMapper\FormatterExpression.cs" />
+    <Compile Include="AutoMapper\IConfiguration.cs" />
+    <Compile Include="AutoMapper\IConfigurationProvider.cs" />
+    <Compile Include="AutoMapper\IDelegateFactory.cs" />
+    <Compile Include="AutoMapper\IFormatterConfiguration.cs" />
+    <Compile Include="AutoMapper\IFormatterCtorConfigurator.cs" />
+    <Compile Include="AutoMapper\IFormatterCtorExpression.cs" />
+    <Compile Include="AutoMapper\IFormatterExpression.cs" />
+    <Compile Include="AutoMapper\IgnoreMapAttribute.cs" />
+    <Compile Include="AutoMapper\IMappingAction.cs" />
+    <Compile Include="AutoMapper\IMappingEngine.cs" />
+    <Compile Include="AutoMapper\IMappingEngineRunner.cs" />
+    <Compile Include="AutoMapper\IMappingExpression.cs" />
+    <Compile Include="AutoMapper\IMappingOperationOptions.cs" />
+    <Compile Include="AutoMapper\IMappingOptions.cs" />
+    <Compile Include="AutoMapper\IMemberAccessor.cs" />
+    <Compile Include="AutoMapper\IMemberConfigurationExpression.cs" />
+    <Compile Include="AutoMapper\IMemberGetter.cs" />
+    <Compile Include="AutoMapper\IMemberResolver.cs" />
+    <Compile Include="AutoMapper\INamingConvention.cs" />
+    <Compile Include="AutoMapper\IObjectMapper.cs" />
+    <Compile Include="AutoMapper\IProfileConfiguration.cs" />
+    <Compile Include="AutoMapper\IProfileExpression.cs" />
+    <Compile Include="AutoMapper\IResolutionExpression.cs" />
+    <Compile Include="AutoMapper\IResolverConfigurationExpression.cs" />
+    <Compile Include="AutoMapper\ISourceMemberConfigurationExpression.cs" />
+    <Compile Include="AutoMapper\ITypeConverter.cs" />
+    <Compile Include="AutoMapper\ITypeMapFactory.cs" />
+    <Compile Include="AutoMapper\IValueFormatter.cs" />
+    <Compile Include="AutoMapper\IValueResolver.cs" />
+    <Compile Include="AutoMapper\LateBoundCtor.cs" />
+    <Compile Include="AutoMapper\LateBoundFieldGet.cs" />
+    <Compile Include="AutoMapper\LateBoundFieldSet.cs" />
+    <Compile Include="AutoMapper\LateBoundMethod.cs" />
+    <Compile Include="AutoMapper\LateBoundParamsCtor.cs" />
+    <Compile Include="AutoMapper\LateBoundPropertyGet.cs" />
+    <Compile Include="AutoMapper\LateBoundPropertySet.cs" />
+    <Compile Include="AutoMapper\LateBoundValueTypeFieldSet.cs" />
+    <Compile Include="AutoMapper\LateBoundValueTypePropertySet.cs" />
+    <Compile Include="AutoMapper\LowerUnderscoreNamingConvention.cs" />
+    <Compile Include="AutoMapper\Mapper.cs" />
+    <Compile Include="AutoMapper\MappingEngine.cs" />
+    <Compile Include="AutoMapper\MappingExpression.cs" />
+    <Compile Include="AutoMapper\MappingOperationOptions.cs" />
+    <Compile Include="AutoMapper\MemberList.cs" />
+    <Compile Include="AutoMapper\NullReferenceExceptionSwallowingResolver.cs" />
+    <Compile Include="AutoMapper\NullReplacementMethod.cs" />
+    <Compile Include="AutoMapper\PascalCaseNamingConvention.cs" />
+    <Compile Include="AutoMapper\Profile.cs" />
+    <Compile Include="AutoMapper\PropertyMap.cs" />
+    <Compile Include="AutoMapper\PropertyNameResolver.cs" />
+    <Compile Include="AutoMapper\ResolutionContext.cs" />
+    <Compile Include="AutoMapper\ResolutionExpression.cs" />
+    <Compile Include="AutoMapper\ResolutionResult.cs" />
+    <Compile Include="AutoMapper\SourceMemberConfig.cs" />
+    <Compile Include="AutoMapper\ThreadSafeList.cs" />
+    <Compile Include="AutoMapper\TypeConverter.cs" />
+    <Compile Include="AutoMapper\TypeInfo.cs" />
+    <Compile Include="AutoMapper\TypeMap.cs" />
+    <Compile Include="AutoMapper\TypeMapCreatedEventArgs.cs" />
+    <Compile Include="AutoMapper\TypeMapFactory.cs" />
+    <Compile Include="AutoMapper\ValueFormatter.cs" />
+    <Compile Include="AutoMapper\ValueResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

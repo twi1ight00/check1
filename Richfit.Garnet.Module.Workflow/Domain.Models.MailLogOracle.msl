@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MailLogStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="SYS_MAIL_LOG">
+      <EntityTypeMapping TypeName="MailLog.SYS_MAIL_LOG">
+        <MappingFragment StoreEntitySet="SYS_MAIL_LOG">
+          <ScalarProperty Name="EMAIL_LOG_ID" ColumnName="EMAIL_LOG_ID" />
+          <ScalarProperty Name="SERVER_IP" ColumnName="SERVER_IP" />
+          <ScalarProperty Name="MAIL_TO_ADDRESS" ColumnName="MAIL_TO_ADDRESS" />
+          <ScalarProperty Name="MAIL_FROM_ADDRESS" ColumnName="MAIL_FROM_ADDRESS" />
+          <ScalarProperty Name="MAIL_FROM_PWD" ColumnName="MAIL_FROM_PWD" />
+          <ScalarProperty Name="MAIL_SUBJECT" ColumnName="MAIL_SUBJECT" />
+          <ScalarProperty Name="MAIL_BODY" ColumnName="MAIL_BODY" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="EXTEND_ID" ColumnName="EXTEND_ID" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_MESSAGE_LOG">
+      <EntityTypeMapping TypeName="MailLog.SYS_MESSAGE_LOG">
+        <MappingFragment StoreEntitySet="SYS_MESSAGE_LOG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="SENDTIME" ColumnName="SENDTIME" />
+          <ScalarProperty Name="BROWSER" ColumnName="BROWSER" />
+          <ScalarProperty Name="RRID" ColumnName="RRID" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="STIME" ColumnName="STIME" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="EXT" ColumnName="EXT" />
+          <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="EXTEND_ID" ColumnName="EXTEND_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

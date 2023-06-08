@@ -1,0 +1,10 @@
+namespace xa7850104c8d8c135;
+
+internal enum xe05c64a8e2a3e537
+{
+	x1a196717b0728018,
+	x9f8e2cb7980f46e3,
+	x59a719f7988c2a43,
+	x5838182c12c13e51,
+	x0ac7ea03d673fe9a
+}

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.CodeTableManagement</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.CodeTableSql.csdl" />
+    <None Remove="Domain.Models.CodeTableOracle.csdl" />
+    <None Remove="Domain.Models.CodeTableSql.msl" />
+    <None Remove="Domain.Models.CodeTableOracle.msl" />
+    <None Remove="Domain.Models.CodeTableSql.ssdl" />
+    <None Remove="Domain.Models.CodeTableOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableSql.csdl" LogicalName="Domain.Models.CodeTableSql.csdl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableOracle.csdl" LogicalName="Domain.Models.CodeTableOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableSql.msl" LogicalName="Domain.Models.CodeTableSql.msl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableOracle.msl" LogicalName="Domain.Models.CodeTableOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableSql.ssdl" LogicalName="Domain.Models.CodeTableSql.ssdl" />
+    <EmbeddedResource Include="Domain.Models.CodeTableOracle.ssdl" LogicalName="Domain.Models.CodeTableOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Localizing">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Localizing.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

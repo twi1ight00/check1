@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="OnlineOffice">
+    <EntitySetMapping Name="OL_OFFICE">
+      <EntityTypeMapping TypeName="OnlineOfficeModel.OL_OFFICE">
+        <MappingFragment StoreEntitySet="OL_OFFICE">
+          <ScalarProperty Name="TEMPLATE_FILE_ID" ColumnName="TEMPLATE_FILE_ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+          <ScalarProperty Name="FILE_SIXE" ColumnName="FILE_SIXE" />
+          <ScalarProperty Name="SUBJECT" ColumnName="SUBJECT" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="OBJ_ID" ColumnName="OBJ_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OL_TEMPLATE_FILE">
+      <EntityTypeMapping TypeName="OnlineOfficeModel.OL_TEMPLATE_FILE">
+        <MappingFragment StoreEntitySet="OL_TEMPLATE_FILE">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+          <ScalarProperty Name="TEMPLATE_DESCRIBE" ColumnName="TEMPLATE_DESCRIBE" />
+          <ScalarProperty Name="TEMPLATE_FILE_NAME" ColumnName="TEMPLATE_FILE_NAME" />
+          <ScalarProperty Name="TEMPLATE_FILE_URL" ColumnName="TEMPLATE_FILE_URL" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OL_TEMPLATE_FILE_MAPPING">
+      <EntityTypeMapping TypeName="OnlineOfficeModel.OL_TEMPLATE_FILE_MAPPING">
+        <MappingFragment StoreEntitySet="OL_TEMPLATE_FILE_MAPPING">
+          <ScalarProperty Name="TEMPLATE_FILE_ID" ColumnName="TEMPLATE_FILE_ID" />
+          <ScalarProperty Name="OBJ_ID" ColumnName="OBJ_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

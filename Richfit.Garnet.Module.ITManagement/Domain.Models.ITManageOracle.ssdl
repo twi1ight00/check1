@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITManageModel.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="IT_ACCOUNT">
+    <Key>
+      <PropertyRef Name="IT_ACCOUNT_ID" />
+    </Key>
+    <Property Name="IT_ACCOUNT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="DEVICE_TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="DEVICE_TYPE_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="DEVICE_SPECIFICATION" Type="nvarchar2" MaxLength="512" />
+    <Property Name="DEVICE_SEQ" Type="nvarchar2" MaxLength="512" />
+    <Property Name="BUY_DATE" Type="date" />
+    <Property Name="ALLOCATE_DATE" Type="date" />
+    <Property Name="KEEP_TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="KEEP_TYPE_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="KEEP_DESCRIPTION" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ASSURANCE_YEAR" Type="nvarchar2" MaxLength="128" />
+    <Property Name="BUY_PRICE" Type="number" Precision="38" Scale="0" />
+    <Property Name="EMPLOYEE_BUY_DATE" Type="date" />
+    <Property Name="LEFT_VALUE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_BUY" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_CHECK" Type="number" Precision="38" Scale="0" />
+    <Property Name="ACCOUNT_DATE" Type="date" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="SN" Type="nvarchar2" MaxLength="512" />
+    <Property Name="TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="SERIES" Type="nvarchar2" MaxLength="512" />
+    <Property Name="SUB_CENTER" Type="number" Precision="38" Scale="0" />
+    <Property Name="PURCHASE_DATE" Type="date" />
+    <Property Name="DEPRECIATE_DATE" Type="date" />
+    <Property Name="WARRANTY_PERIOD" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORIGINAL_VALUE" Type="number" Precision="38" Scale="0" />
+    <Property Name="REMAIN_VALUE" Type="number" Precision="38" Scale="0" />
+    <Property Name="USE_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="PRE_SCRAP" Type="number" Precision="38" Scale="0" />
+    <Property Name="PRE_SCRAP_DATE" Type="date" />
+    <Property Name="ASSIGN_DATE" Type="date" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="SCRAP" Type="number" Precision="38" Scale="0" />
+    <Property Name="SCRAP_DATE" Type="date" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE_SCRAP">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_SCRAP_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="YEAR" Type="number" Precision="38" Scale="0" />
+    <Property Name="SUB_CENTER" Type="number" Precision="38" Scale="0" />
+    <Property Name="TITLE" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="START_DATE" Type="date" />
+    <Property Name="BUY_DATE_PRIOR" Type="date" />
+    <Property Name="BUY_DATE_END" Type="date" />
+    <Property Name="RUN_STATE" Type="number" Precision="38" Scale="0" />
+    <Property Name="CONFIRMED_BY" Type="raw" MaxLength="16" />
+    <Property Name="CONFIRM_DATE" Type="date" />
+    <Property Name="CLOSED_BY" Type="raw" MaxLength="16" />
+    <Property Name="CLOSE_DATE" Type="date" />
+  </EntityType>
+  <EntityType Name="IT_DEVICE_SCRAP_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_DEVICE_SCRAP_DETAIL_ID" />
+    </Key>
+    <Property Name="IT_DEVICE_SCRAP_DETAIL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_DEVICE_SCRAP_ID" Type="raw" MaxLength="16" />
+    <Property Name="IT_DEVICE_ID" Type="raw" MaxLength="16" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="BUYER_ID" Type="raw" MaxLength="16" />
+    <Property Name="BUY_DATE" Type="date" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="NOT_BUY" Type="number" Precision="38" Scale="0" />
+    <Property Name="PAYMENT_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="PAYMENT_DATE" Type="date" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_ID" />
+    </Key>
+    <Property Name="IT_MATERIAL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MATERIAL_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_TYPE_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="BUY_DATE" Type="date" />
+    <Property Name="ASSURANCE_YEAR" Type="nvarchar2" MaxLength="128" />
+    <Property Name="BUY_PRICE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_BUY" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_CHECK" Type="number" Precision="38" Scale="0" />
+    <Property Name="STOCK_QUANTITY" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_AVAILABLE" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL_APPLY_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_APPLY_DETAIL_ID" />
+    </Key>
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_TYPE_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_NUMBER" Type="number" Precision="38" Scale="0" />
+    <Property Name="MATERIAL_USER_ID" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="IT_MATERIAL_APPLY_DETAIL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="IT_MATERIAL_CHECKIN">
+    <Key>
+      <PropertyRef Name="IT_MATERIAL_CHECKIN_ID" />
+    </Key>
+    <Property Name="IT_MATERIAL_CHECKIN_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_MATERIAL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CHECK_IN_NO" Type="number" Precision="38" Scale="0" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="raw" MaxLength="16" />
+    <Property Name="IT_MATERIAL_NAME" Type="nvarchar2" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="IT_STOCK_IN">
+    <Key>
+      <PropertyRef Name="IT_STOCK_IN_ID" />
+    </Key>
+    <Property Name="IT_STOCK_IN_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TOTALMONEY" Type="number" Precision="38" Scale="0" />
+    <Property Name="APPLY_DATE" Type="date" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="512" />
+    <Property Name="IT_STOCK_IN_NO" Type="nvarchar2" MaxLength="512" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_DETAIL" Type="nvarchar2" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="IT_STOCK_IN_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_STOCK_IN_DETAIL_ID" />
+    </Key>
+    <Property Name="IT_STOCK_IN_DETAIL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_STOCK_IN_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MATERIAL_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_NUMBER" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="STOCK_QUANTITY" Type="number" Precision="38" Scale="0" />
+    <Property Name="INSTANCE_ID" Type="raw" MaxLength="16" />
+    <Property Name="IT_PURCHASING_APPLY_DETAIL_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“SJZXOA.IT_STOCK_OUT_DETAIL”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IT_STOCK_OUT_DETAIL">
+    <Key>
+      <PropertyRef Name="IT_STOCK_OUT_DETAIL_ID" />
+      <PropertyRef Name="IT_MATERIAL_APPLY_ID" />
+      <PropertyRef Name="MATERIAL_NUMBER" />
+      <PropertyRef Name="ISDEL" />
+      <PropertyRef Name="CREATOR" />
+      <PropertyRef Name="CREATETIME" />
+      <PropertyRef Name="MODIFIER" />
+      <PropertyRef Name="MODIFYTIME" />
+      <PropertyRef Name="STOCK_QUANTITY" />
+    </Key>
+    <Property Name="IT_STOCK_OUT_DETAIL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_MATERIAL_APPLY_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="INSTANCE_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_ID" Type="raw" MaxLength="16" />
+    <Property Name="MATERIAL_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="MATERIAL_NUMBER" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="STOCK_QUANTITY" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IT_SUPPORTMANG">
+    <Key>
+      <PropertyRef Name="IT_SUPPORTMANG_ID" />
+    </Key>
+    <Property Name="IT_SUPPORTMANG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IT_SUPPORTMANG_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="IT_SUPPORTMANG_TYPE_ID" Type="raw" MaxLength="16" />
+    <Property Name="IT_SUPPORTMANG_TYPE_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="255" />
+    <Property Name="FILE_RELATIVE_PATH" Type="nvarchar2" MaxLength="512" />
+    <Property Name="FILE_NETWORK_PATH" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="IT_SUPPORTMANG_SIZE" Type="number" Precision="38" />
+    <Property Name="FILE_TYPE" Type="nvarchar2" MaxLength="128" />
+  </EntityType>
+  <Association Name="FK_IT_DEVICE_SCRAP">
+    <End Role="IT_DEVICE_SCRAP" Type="Self.IT_DEVICE_SCRAP" Multiplicity="0..1" />
+    <End Role="IT_DEVICE_SCRAP_DETAIL" Type="Self.IT_DEVICE_SCRAP_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_DEVICE_SCRAP">
+        <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+      </Principal>
+      <Dependent Role="IT_DEVICE_SCRAP_DETAIL">
+        <PropertyRef Name="IT_DEVICE_SCRAP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IT_MATERIAL_CHECKIN">
+    <End Role="IT_MATERIAL" Type="Self.IT_MATERIAL" Multiplicity="1" />
+    <End Role="IT_MATERIAL_CHECKIN" Type="Self.IT_MATERIAL_CHECKIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_MATERIAL">
+        <PropertyRef Name="IT_MATERIAL_ID" />
+      </Principal>
+      <Dependent Role="IT_MATERIAL_CHECKIN">
+        <PropertyRef Name="IT_MATERIAL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IT_STOCK_IN">
+    <End Role="IT_STOCK_IN" Type="Self.IT_STOCK_IN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="IT_STOCK_IN_DETAIL" Type="Self.IT_STOCK_IN_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IT_STOCK_IN">
+        <PropertyRef Name="IT_STOCK_IN_ID" />
+      </Principal>
+      <Dependent Role="IT_STOCK_IN_DETAIL">
+        <PropertyRef Name="IT_STOCK_IN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ITManageModelStoreContainer">
+    <EntitySet Name="IT_ACCOUNT" EntityType="Self.IT_ACCOUNT" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_DEVICE" EntityType="Self.IT_DEVICE" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_DEVICE_SCRAP" EntityType="Self.IT_DEVICE_SCRAP" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_DEVICE_SCRAP_DETAIL" EntityType="Self.IT_DEVICE_SCRAP_DETAIL" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_MATERIAL" EntityType="Self.IT_MATERIAL" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_MATERIAL_APPLY_DETAIL" EntityType="Self.IT_MATERIAL_APPLY_DETAIL" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_MATERIAL_CHECKIN" EntityType="Self.IT_MATERIAL_CHECKIN" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_STOCK_IN" EntityType="Self.IT_STOCK_IN" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_STOCK_IN_DETAIL" EntityType="Self.IT_STOCK_IN_DETAIL" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_SUPPORTMANG" EntityType="Self.IT_SUPPORTMANG" Schema="SJZXOA" store:Type="Tables" />
+    <EntitySet Name="IT_STOCK_OUT_DETAIL" EntityType="Self.IT_STOCK_OUT_DETAIL" store:Type="Tables" store:Schema="SJZXOA">
+      <DefiningQuery>SELECT 
+"IT_STOCK_OUT_DETAIL"."IT_STOCK_OUT_DETAIL_ID" AS "IT_STOCK_OUT_DETAIL_ID", 
+"IT_STOCK_OUT_DETAIL"."IT_MATERIAL_APPLY_ID" AS "IT_MATERIAL_APPLY_ID", 
+"IT_STOCK_OUT_DETAIL"."INSTANCE_ID" AS "INSTANCE_ID", 
+"IT_STOCK_OUT_DETAIL"."MATERIAL_ID" AS "MATERIAL_ID", 
+"IT_STOCK_OUT_DETAIL"."MATERIAL_NAME" AS "MATERIAL_NAME", 
+"IT_STOCK_OUT_DETAIL"."MATERIAL_NUMBER" AS "MATERIAL_NUMBER", 
+"IT_STOCK_OUT_DETAIL"."USER_ID" AS "USER_ID", 
+"IT_STOCK_OUT_DETAIL"."USER_NAME" AS "USER_NAME", 
+"IT_STOCK_OUT_DETAIL"."ORG_ID" AS "ORG_ID", 
+"IT_STOCK_OUT_DETAIL"."ORG_NAME" AS "ORG_NAME", 
+"IT_STOCK_OUT_DETAIL"."ISDEL" AS "ISDEL", 
+"IT_STOCK_OUT_DETAIL"."CREATOR" AS "CREATOR", 
+"IT_STOCK_OUT_DETAIL"."CREATETIME" AS "CREATETIME", 
+"IT_STOCK_OUT_DETAIL"."MODIFIER" AS "MODIFIER", 
+"IT_STOCK_OUT_DETAIL"."MODIFYTIME" AS "MODIFYTIME", 
+"IT_STOCK_OUT_DETAIL"."STOCK_QUANTITY" AS "STOCK_QUANTITY"
+FROM "SJZXOA"."IT_STOCK_OUT_DETAIL" "IT_STOCK_OUT_DETAIL"</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_IT_DEVICE_SCRAP" Association="Self.FK_IT_DEVICE_SCRAP">
+      <End Role="IT_DEVICE_SCRAP" EntitySet="IT_DEVICE_SCRAP" />
+      <End Role="IT_DEVICE_SCRAP_DETAIL" EntitySet="IT_DEVICE_SCRAP_DETAIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IT_MATERIAL_CHECKIN" Association="Self.FK_IT_MATERIAL_CHECKIN">
+      <End Role="IT_MATERIAL" EntitySet="IT_MATERIAL" />
+      <End Role="IT_MATERIAL_CHECKIN" EntitySet="IT_MATERIAL_CHECKIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IT_STOCK_IN" Association="Self.FK_IT_STOCK_IN">
+      <End Role="IT_STOCK_IN" EntitySet="IT_STOCK_IN" />
+      <End Role="IT_STOCK_IN_DETAIL" EntitySet="IT_STOCK_IN_DETAIL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

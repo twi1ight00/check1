@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Workflow" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WF_ACTIVITY" EntityType="Model.WF_ACTIVITY" />
+    <EntitySet Name="WF_ACTIVITY_PARTICIPANT" EntityType="Model.WF_ACTIVITY_PARTICIPANT" />
+    <EntitySet Name="WF_DATA_HISTORY" EntityType="Model.WF_DATA_HISTORY" />
+    <EntitySet Name="WF_FORM" EntityType="Model.WF_FORM" />
+    <EntitySet Name="WF_FORM_DEFINITION" EntityType="Model.WF_FORM_DEFINITION" />
+    <EntitySet Name="WF_FORM_DEFINITION_DATA" EntityType="Model.WF_FORM_DEFINITION_DATA" />
+    <EntitySet Name="WF_INSTANCE" EntityType="Model.WF_INSTANCE" />
+    <EntitySet Name="WF_INSTANCE_ACTIVITY" EntityType="Model.WF_INSTANCE_ACTIVITY" />
+    <EntitySet Name="WF_INSTANCE_ACTIVITY_USER" EntityType="Model.WF_INSTANCE_ACTIVITY_USER" />
+    <EntitySet Name="WF_META_TABLE" EntityType="Model.WF_META_TABLE" />
+    <EntitySet Name="WF_METADATA" EntityType="Model.WF_METADATA" />
+    <EntitySet Name="WF_PACKAGE" EntityType="Model.WF_PACKAGE" />
+    <EntitySet Name="WF_PAGE" EntityType="Model.WF_PAGE" />
+    <EntitySet Name="WF_PAGE_EVENT" EntityType="Model.WF_PAGE_EVENT" />
+    <EntitySet Name="WF_RULE" EntityType="Model.WF_RULE" />
+    <EntitySet Name="WF_TEMPLATE" EntityType="Model.WF_TEMPLATE" />
+    <EntitySet Name="WF_TEMPLATE_AUTHORIZATION" EntityType="Model.WF_TEMPLATE_AUTHORIZATION" />
+    <EntitySet Name="WF_WORKITEM" EntityType="Model.WF_WORKITEM" />
+    <EntitySet Name="WF_WORKITEM_HANDLER" EntityType="Model.WF_WORKITEM_HANDLER" />
+    <AssociationSet Name="FK_ACTIVITY_TEMPLATE" Association="Model.FK_ACTIVITY_TEMPLATE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_ACTIVITY" EntitySet="WF_ACTIVITY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ACTPARTICIPANT_ACTIVITY" Association="Model.FK_ACTPARTICIPANT_ACTIVITY">
+      <End Role="WF_ACTIVITY" EntitySet="WF_ACTIVITY" />
+      <End Role="WF_ACTIVITY_PARTICIPANT" EntitySet="WF_ACTIVITY_PARTICIPANT" />
+    </AssociationSet>
+    <AssociationSet Name="WF_INSTACTIVITY_ACTIVITY" Association="Model.WF_INSTACTIVITY_ACTIVITY">
+      <End Role="WF_ACTIVITY" EntitySet="WF_ACTIVITY" />
+      <End Role="WF_INSTANCE_ACTIVITY" EntitySet="WF_INSTANCE_ACTIVITY" />
+    </AssociationSet>
+    <AssociationSet Name="WF_WORKITEM_ACTIVITY" Association="Model.WF_WORKITEM_ACTIVITY">
+      <End Role="WF_ACTIVITY" EntitySet="WF_ACTIVITY" />
+      <End Role="WF_WORKITEM" EntitySet="WF_WORKITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WORKITEM_ID" Association="Model.FK_WORKITEM_ID">
+      <End Role="WF_WORKITEM" EntitySet="WF_WORKITEM" />
+      <End Role="WF_DATA_HISTORY" EntitySet="WF_DATA_HISTORY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FORM_FORM_DEFINITION" Association="Model.FK_FORM_FORM_DEFINITION">
+      <End Role="WF_FORM" EntitySet="WF_FORM" />
+      <End Role="WF_FORM_DEFINITION" EntitySet="WF_FORM_DEFINITION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGE_FORM" Association="Model.FK_PAGE_FORM">
+      <End Role="WF_PAGE" EntitySet="WF_PAGE" />
+      <End Role="WF_FORM" EntitySet="WF_FORM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TABLE_FORM" Association="Model.FK_TABLE_FORM">
+      <End Role="WF_META_TABLE" EntitySet="WF_META_TABLE" />
+      <End Role="WF_FORM" EntitySet="WF_FORM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEFINITION_DATA" Association="Model.FK_DEFINITION_DATA">
+      <End Role="WF_FORM_DEFINITION" EntitySet="WF_FORM_DEFINITION" />
+      <End Role="WF_FORM_DEFINITION_DATA" EntitySet="WF_FORM_DEFINITION_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INSTACTIVITY_INSTANCE" Association="Model.FK_INSTACTIVITY_INSTANCE">
+      <End Role="WF_INSTANCE" EntitySet="WF_INSTANCE" />
+      <End Role="WF_INSTANCE_ACTIVITY" EntitySet="WF_INSTANCE_ACTIVITY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WORKITEM__INSTANCE" Association="Model.FK_WORKITEM__INSTANCE">
+      <End Role="WF_INSTANCE" EntitySet="WF_INSTANCE" />
+      <End Role="WF_WORKITEM" EntitySet="WF_WORKITEM" />
+    </AssociationSet>
+    <AssociationSet Name="WF_INSTANCE_TEMPLATE" Association="Model.WF_INSTANCE_TEMPLATE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_INSTANCE" EntitySet="WF_INSTANCE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INSTACTUSER_INSTACTIVITY" Association="Model.FK_INSTACTUSER_INSTACTIVITY">
+      <End Role="WF_INSTANCE_ACTIVITY" EntitySet="WF_INSTANCE_ACTIVITY" />
+      <End Role="WF_INSTANCE_ACTIVITY_USER" EntitySet="WF_INSTANCE_ACTIVITY_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_METATABLE_METADATA" Association="Model.FK_METATABLE_METADATA">
+      <End Role="WF_META_TABLE" EntitySet="WF_META_TABLE" />
+      <End Role="WF_METADATA" EntitySet="WF_METADATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TABLE_TEMPLATE" Association="Model.FK_TABLE_TEMPLATE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_META_TABLE" EntitySet="WF_META_TABLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEMPLATE_PACKAGE" Association="Model.FK_TEMPLATE_PACKAGE">
+      <End Role="WF_PACKAGE" EntitySet="WF_PACKAGE" />
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGE_EVENT" Association="Model.FK_PAGE_EVENT">
+      <End Role="WF_PAGE" EntitySet="WF_PAGE" />
+      <End Role="WF_PAGE_EVENT" EntitySet="WF_PAGE_EVENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEMPLATE_PAGE" Association="Model.FK_TEMPLATE_PAGE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_PAGE" EntitySet="WF_PAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RULE_TEMPLATE" Association="Model.FK_RULE_TEMPLATE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_RULE" EntitySet="WF_RULE" />
+    </AssociationSet>
+    <AssociationSet Name="WF_TEMPAUTHORIZATION_TEMPLATE" Association="Model.WF_TEMPAUTHORIZATION_TEMPLATE">
+      <End Role="WF_TEMPLATE" EntitySet="WF_TEMPLATE" />
+      <End Role="WF_TEMPLATE_AUTHORIZATION" EntitySet="WF_TEMPLATE_AUTHORIZATION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WORKHANLER_WORKITEM" Association="Model.FK_WORKHANLER_WORKITEM">
+      <End Role="WF_WORKITEM" EntitySet="WF_WORKITEM" />
+      <End Role="WF_WORKITEM_HANDLER" EntitySet="WF_WORKITEM_HANDLER" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="WF_ACTIVITY">
+    <Key>
+      <PropertyRef Name="ACTIVITY_ID" />
+    </Key>
+    <Property Name="ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ACTIVITY_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ACTIVITY_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="BRANCH_ACTIVITY_ID" Type="Guid" />
+    <Property Name="ACTIVITY_COORDINATE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FINISH_NUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CONDITION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IS_MERGR" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ACTIVITY_CODE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FORM_VERSION" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PAGE_ID" Type="Guid" />
+    <Property Name="PAGE_URL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_PAGE_ID" Type="Guid" />
+    <Property Name="PARENT_DETAIL_PAGE_ID" Type="Guid" />
+    <Property Name="DETAIL_PAGE_ID" Type="Guid" />
+    <Property Name="DETAIL_PAGE_URL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.FK_ACTIVITY_TEMPLATE" FromRole="WF_ACTIVITY" ToRole="WF_TEMPLATE" />
+    <NavigationProperty Name="WF_ACTIVITY_PARTICIPANT" Relationship="Model.FK_ACTPARTICIPANT_ACTIVITY" FromRole="WF_ACTIVITY" ToRole="WF_ACTIVITY_PARTICIPANT" />
+    <NavigationProperty Name="WF_INSTANCE_ACTIVITY" Relationship="Model.WF_INSTACTIVITY_ACTIVITY" FromRole="WF_ACTIVITY" ToRole="WF_INSTANCE_ACTIVITY" />
+    <NavigationProperty Name="WF_WORKITEM" Relationship="Model.WF_WORKITEM_ACTIVITY" FromRole="WF_ACTIVITY" ToRole="WF_WORKITEM" />
+  </EntityType>
+  <EntityType Name="WF_ACTIVITY_PARTICIPANT">
+    <Key>
+      <PropertyRef Name="ACTIVITY_PARTICIPANT_ID" />
+    </Key>
+    <Property Name="ACTIVITY_PARTICIPANT_ID" Type="Guid" Nullable="false" />
+    <Property Name="ACTIVITY_ID" Type="Guid" />
+    <Property Name="PARTICIPANT_TYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="PARTICIPANT_ID" Type="Guid" Nullable="false" />
+    <Property Name="CLIENT_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="WF_ACTIVITY" Relationship="Model.FK_ACTPARTICIPANT_ACTIVITY" FromRole="WF_ACTIVITY_PARTICIPANT" ToRole="WF_ACTIVITY" />
+  </EntityType>
+  <EntityType Name="WF_DATA_HISTORY">
+    <Key>
+      <PropertyRef Name="HISTORY_ID" />
+    </Key>
+    <Property Name="HISTORY_ID" Type="Guid" Nullable="false" />
+    <Property Name="WORKITEM_ID" Type="Guid" Nullable="false" />
+    <Property Name="FORM_DATA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="WF_WORKITEM" Relationship="Model.FK_WORKITEM_ID" FromRole="WF_DATA_HISTORY" ToRole="WF_WORKITEM" />
+  </EntityType>
+  <EntityType Name="WF_FORM">
+    <Key>
+      <PropertyRef Name="FORM_ID" />
+    </Key>
+    <Property Name="FORM_ID" Type="Guid" Nullable="false" />
+    <Property Name="FORM_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TABLE_DB_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_FORM_ID" Type="Guid" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="FORM_VERSION" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="META_TABLE_ID" Type="Guid" />
+    <Property Name="COLNUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PAGE_ID" Type="Guid" />
+    <NavigationProperty Name="WF_FORM_DEFINITION" Relationship="Model.FK_FORM_FORM_DEFINITION" FromRole="WF_FORM" ToRole="WF_FORM_DEFINITION" />
+    <NavigationProperty Name="WF_PAGE" Relationship="Model.FK_PAGE_FORM" FromRole="WF_FORM" ToRole="WF_PAGE" />
+    <NavigationProperty Name="WF_META_TABLE" Relationship="Model.FK_TABLE_FORM" FromRole="WF_FORM" ToRole="WF_META_TABLE" />
+  </EntityType>
+  <EntityType Name="WF_FORM_DEFINITION">
+    <Key>
+      <PropertyRef Name="FORM_DEFINITION_ID" />
+    </Key>
+    <Property Name="FORM_DEFINITION_ID" Type="Guid" Nullable="false" />
+    <Property Name="FORM_ID" Type="Guid" Nullable="false" />
+    <Property Name="METADATA_ID" Type="Guid" Nullable="false" />
+    <Property Name="COLSPAN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="COLNUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ROWNUMBER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TAGNAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="REQUIRED" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="FORM_DEFINITION_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PLACEHOLDER" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="READONLY" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="WF_FORM" Relationship="Model.FK_FORM_FORM_DEFINITION" FromRole="WF_FORM_DEFINITION" ToRole="WF_FORM" />
+    <NavigationProperty Name="WF_FORM_DEFINITION_DATA" Relationship="Model.FK_DEFINITION_DATA" FromRole="WF_FORM_DEFINITION" ToRole="WF_FORM_DEFINITION_DATA" />
+  </EntityType>
+  <EntityType Name="WF_FORM_DEFINITION_DATA">
+    <Key>
+      <PropertyRef Name="FORM_DEFINITION_DATA_ID" />
+    </Key>
+    <Property Name="FORM_DEFINITION_DATA_ID" Type="Guid" Nullable="false" />
+    <Property Name="FORM_DEFINITION_ID" Type="Guid" Nullable="false" />
+    <Property Name="ACTION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PARAM" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_TEXT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_VALUE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="LOCAL_TEXT" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="WF_FORM_DEFINITION" Relationship="Model.FK_DEFINITION_DATA" FromRole="WF_FORM_DEFINITION_DATA" ToRole="WF_FORM_DEFINITION" />
+  </EntityType>
+  <EntityType Name="WF_INSTANCE">
+    <Key>
+      <PropertyRef Name="INSTANCE_ID" />
+    </Key>
+    <Property Name="INSTANCE_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_ID" Type="Guid" />
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="ORG_NAME" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="INSTANCE_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="TABLE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RUN_STATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="START_USER_NAME" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_INSTANCE_ID" Type="Guid" />
+    <Property Name="START_TIME" Type="DateTime" />
+    <Property Name="FINISH_TIME" Type="DateTime" />
+    <Property Name="CLIENT_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="CURRENT_ACTIVITY" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENT_HANDLER_ID" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENT_HANDLER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="TEMPLATE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PACKAGE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PACKAGE_ID" Type="Guid" />
+    <NavigationProperty Name="WF_INSTANCE_ACTIVITY" Relationship="Model.FK_INSTACTIVITY_INSTANCE" FromRole="WF_INSTANCE" ToRole="WF_INSTANCE_ACTIVITY" />
+    <NavigationProperty Name="WF_WORKITEM" Relationship="Model.FK_WORKITEM__INSTANCE" FromRole="WF_INSTANCE" ToRole="WF_WORKITEM" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.WF_INSTANCE_TEMPLATE" FromRole="WF_INSTANCE" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_INSTANCE_ACTIVITY">
+    <Key>
+      <PropertyRef Name="INSTANCE_ACTIVITY_ID" />
+    </Key>
+    <Property Name="INSTANCE_ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="INSTANCE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="WF_ACTIVITY" Relationship="Model.WF_INSTACTIVITY_ACTIVITY" FromRole="WF_INSTANCE_ACTIVITY" ToRole="WF_ACTIVITY" />
+    <NavigationProperty Name="WF_INSTANCE" Relationship="Model.FK_INSTACTIVITY_INSTANCE" FromRole="WF_INSTANCE_ACTIVITY" ToRole="WF_INSTANCE" />
+    <NavigationProperty Name="WF_INSTANCE_ACTIVITY_USER" Relationship="Model.FK_INSTACTUSER_INSTACTIVITY" FromRole="WF_INSTANCE_ACTIVITY" ToRole="WF_INSTANCE_ACTIVITY_USER" />
+  </EntityType>
+  <EntityType Name="WF_INSTANCE_ACTIVITY_USER">
+    <Key>
+      <PropertyRef Name="INSTANCE_ACTIVITY_USER_ID" />
+    </Key>
+    <Property Name="INSTANCE_ACTIVITY_USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="INSTANCE_ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WF_INSTANCE_ACTIVITY" Relationship="Model.FK_INSTACTUSER_INSTACTIVITY" FromRole="WF_INSTANCE_ACTIVITY_USER" ToRole="WF_INSTANCE_ACTIVITY" />
+  </EntityType>
+  <EntityType Name="WF_META_TABLE">
+    <Key>
+      <PropertyRef Name="META_TABLE_ID" />
+    </Key>
+    <Property Name="META_TABLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_ID" Type="Guid" Nullable="false" />
+    <Property Name="TABLE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TABLE_DB_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="PARENT_TABLE_ID" Type="Guid" />
+    <NavigationProperty Name="WF_FORM" Relationship="Model.FK_TABLE_FORM" FromRole="WF_META_TABLE" ToRole="WF_FORM" />
+    <NavigationProperty Name="WF_METADATA" Relationship="Model.FK_METATABLE_METADATA" FromRole="WF_META_TABLE" ToRole="WF_METADATA" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.FK_TABLE_TEMPLATE" FromRole="WF_META_TABLE" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_METADATA">
+    <Key>
+      <PropertyRef Name="METADATA_ID" />
+    </Key>
+    <Property Name="METADATA_ID" Type="Guid" Nullable="false" />
+    <Property Name="META_TABLE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DATATYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="FIELD_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="FIELD_DB_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="METATYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DATALENGTH" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="WF_META_TABLE" Relationship="Model.FK_METATABLE_METADATA" FromRole="WF_METADATA" ToRole="WF_META_TABLE" />
+  </EntityType>
+  <EntityType Name="WF_PACKAGE">
+    <Key>
+      <PropertyRef Name="PACKAGE_ID" />
+    </Key>
+    <Property Name="PACKAGE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ORG_ID" Type="Guid" />
+    <Property Name="PACKAGE_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CLIENT_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="IMG" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.FK_TEMPLATE_PACKAGE" FromRole="WF_PACKAGE" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_PAGE">
+    <Key>
+      <PropertyRef Name="PAGE_ID" />
+    </Key>
+    <Property Name="PAGE_ID" Type="Guid" Nullable="false" />
+    <Property Name="PAGE_NAME" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TEMPLATE_ID" Type="Guid" />
+    <Property Name="VERSION_NAME" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="VERSION_NUM" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="VERSION_ID" Type="Guid" />
+    <Property Name="ISACTIVE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="PARENT_PAGE_ID" Type="Guid" />
+    <Property Name="PAGE_URL" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WF_FORM" Relationship="Model.FK_PAGE_FORM" FromRole="WF_PAGE" ToRole="WF_FORM" />
+    <NavigationProperty Name="WF_PAGE_EVENT" Relationship="Model.FK_PAGE_EVENT" FromRole="WF_PAGE" ToRole="WF_PAGE_EVENT" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.FK_TEMPLATE_PAGE" FromRole="WF_PAGE" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_PAGE_EVENT">
+    <Key>
+      <PropertyRef Name="PAGE_EVENT_ID" />
+    </Key>
+    <Property Name="PAGE_EVENT_ID" Type="Guid" Nullable="false" />
+    <Property Name="PAGE_ID" Type="Guid" />
+    <Property Name="EVENT_TYPE" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="JSSTRING" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="WF_PAGE" Relationship="Model.FK_PAGE_EVENT" FromRole="WF_PAGE_EVENT" ToRole="WF_PAGE" />
+  </EntityType>
+  <EntityType Name="WF_RULE">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+    </Key>
+    <Property Name="RULE_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_ID" Type="Guid" Nullable="false" />
+    <Property Name="RULE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RULE_CONDITION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RULE_COORDINATE" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="TO_ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="RULE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LINE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.FK_RULE_TEMPLATE" FromRole="WF_RULE" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_TEMPLATE">
+    <Key>
+      <PropertyRef Name="TEMPLATE_ID" />
+    </Key>
+    <Property Name="TEMPLATE_ID" Type="Guid" Nullable="false" />
+    <Property Name="PACKAGE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ORG_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TEMPLATE_CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="VERSION_ID" Type="Guid" Nullable="false" />
+    <Property Name="VERSION_NUM" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IMGURL" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ISACTIVE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PARENT_TEMPLATE_ID" Type="Guid" />
+    <Property Name="TEMPLATE_CODE_PATH" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PACKAGE_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WF_ACTIVITY" Relationship="Model.FK_ACTIVITY_TEMPLATE" FromRole="WF_TEMPLATE" ToRole="WF_ACTIVITY" />
+    <NavigationProperty Name="WF_INSTANCE" Relationship="Model.WF_INSTANCE_TEMPLATE" FromRole="WF_TEMPLATE" ToRole="WF_INSTANCE" />
+    <NavigationProperty Name="WF_META_TABLE" Relationship="Model.FK_TABLE_TEMPLATE" FromRole="WF_TEMPLATE" ToRole="WF_META_TABLE" />
+    <NavigationProperty Name="WF_PACKAGE" Relationship="Model.FK_TEMPLATE_PACKAGE" FromRole="WF_TEMPLATE" ToRole="WF_PACKAGE" />
+    <NavigationProperty Name="WF_PAGE" Relationship="Model.FK_TEMPLATE_PAGE" FromRole="WF_TEMPLATE" ToRole="WF_PAGE" />
+    <NavigationProperty Name="WF_RULE" Relationship="Model.FK_RULE_TEMPLATE" FromRole="WF_TEMPLATE" ToRole="WF_RULE" />
+    <NavigationProperty Name="WF_TEMPLATE_AUTHORIZATION" Relationship="Model.WF_TEMPAUTHORIZATION_TEMPLATE" FromRole="WF_TEMPLATE" ToRole="WF_TEMPLATE_AUTHORIZATION" />
+  </EntityType>
+  <EntityType Name="WF_TEMPLATE_AUTHORIZATION">
+    <Key>
+      <PropertyRef Name="TEMPLATEAUTHORIZATION_ID" />
+    </Key>
+    <Property Name="TEMPLATEAUTHORIZATION_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_ID" Type="Guid" Nullable="false" />
+    <Property Name="ROLE_ID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="WF_TEMPLATE" Relationship="Model.WF_TEMPAUTHORIZATION_TEMPLATE" FromRole="WF_TEMPLATE_AUTHORIZATION" ToRole="WF_TEMPLATE" />
+  </EntityType>
+  <EntityType Name="WF_WORKITEM">
+    <Key>
+      <PropertyRef Name="WORKITEM_ID" />
+    </Key>
+    <Property Name="WORKITEM_ID" Type="Guid" Nullable="false" />
+    <Property Name="ACTIVITY_ID" Type="Guid" Nullable="false" />
+    <Property Name="INSTANCE_ID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_WORKITEM_ID" Type="Guid" />
+    <Property Name="SENDER_USER_ID" Type="Guid" />
+    <Property Name="SENDER_USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="WORKITEM_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SEND_TIME" Type="DateTime" />
+    <Property Name="WORKITEM_RUN_STATE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HANDLE_RESULT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="GENERATE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="SEND_TOKEN" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="CLIENT_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="SORT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="RULE_ID" Type="Guid" />
+    <NavigationProperty Name="WF_ACTIVITY" Relationship="Model.WF_WORKITEM_ACTIVITY" FromRole="WF_WORKITEM" ToRole="WF_ACTIVITY" />
+    <NavigationProperty Name="WF_DATA_HISTORY" Relationship="Model.FK_WORKITEM_ID" FromRole="WF_WORKITEM" ToRole="WF_DATA_HISTORY" />
+    <NavigationProperty Name="WF_INSTANCE" Relationship="Model.FK_WORKITEM__INSTANCE" FromRole="WF_WORKITEM" ToRole="WF_INSTANCE" />
+    <NavigationProperty Name="WF_WORKITEM_HANDLER" Relationship="Model.FK_WORKHANLER_WORKITEM" FromRole="WF_WORKITEM" ToRole="WF_WORKITEM_HANDLER" />
+  </EntityType>
+  <EntityType Name="WF_WORKITEM_HANDLER">
+    <Key>
+      <PropertyRef Name="WORKITEM_HANDLER_ID" />
+    </Key>
+    <Property Name="WORKITEM_HANDLER_ID" Type="Guid" Nullable="false" />
+    <Property Name="WORKITEM_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="HANDLE_USER_ID" Type="Guid" />
+    <Property Name="HANDLE_USER_NAME" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="HANDLE_RESULT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HANDLE_SUGGESTION" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="HANDLE_TIME" Type="DateTime" />
+    <Property Name="SIGNATURE_MODE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CLIENT_TYPE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ISDEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="INSTANCE_ID" Type="Guid" />
+    <Property Name="WORKITEM_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WF_WORKITEM" Relationship="Model.FK_WORKHANLER_WORKITEM" FromRole="WF_WORKITEM_HANDLER" ToRole="WF_WORKITEM" />
+  </EntityType>
+  <Association Name="FK_ACTIVITY_TEMPLATE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_ACTIVITY" Role="WF_ACTIVITY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_ACTIVITY">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ACTPARTICIPANT_ACTIVITY">
+    <End Type="Model.WF_ACTIVITY" Role="WF_ACTIVITY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_ACTIVITY_PARTICIPANT" Role="WF_ACTIVITY_PARTICIPANT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_ACTIVITY">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Principal>
+      <Dependent Role="WF_ACTIVITY_PARTICIPANT">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WF_INSTACTIVITY_ACTIVITY">
+    <End Type="Model.WF_ACTIVITY" Role="WF_ACTIVITY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_INSTANCE_ACTIVITY" Role="WF_INSTANCE_ACTIVITY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_ACTIVITY">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Principal>
+      <Dependent Role="WF_INSTANCE_ACTIVITY">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WF_WORKITEM_ACTIVITY">
+    <End Type="Model.WF_ACTIVITY" Role="WF_ACTIVITY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_WORKITEM" Role="WF_WORKITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_ACTIVITY">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Principal>
+      <Dependent Role="WF_WORKITEM">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WORKITEM_ID">
+    <End Type="Model.WF_WORKITEM" Role="WF_WORKITEM" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_DATA_HISTORY" Role="WF_DATA_HISTORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WORKITEM">
+        <PropertyRef Name="WORKITEM_ID" />
+      </Principal>
+      <Dependent Role="WF_DATA_HISTORY">
+        <PropertyRef Name="WORKITEM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FORM_FORM_DEFINITION">
+    <End Type="Model.WF_FORM" Role="WF_FORM" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_FORM_DEFINITION" Role="WF_FORM_DEFINITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_FORM">
+        <PropertyRef Name="FORM_ID" />
+      </Principal>
+      <Dependent Role="WF_FORM_DEFINITION">
+        <PropertyRef Name="FORM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGE_FORM">
+    <End Type="Model.WF_PAGE" Role="WF_PAGE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_FORM" Role="WF_FORM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_PAGE">
+        <PropertyRef Name="PAGE_ID" />
+      </Principal>
+      <Dependent Role="WF_FORM">
+        <PropertyRef Name="PAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TABLE_FORM">
+    <End Type="Model.WF_META_TABLE" Role="WF_META_TABLE" Multiplicity="0..1" />
+    <End Type="Model.WF_FORM" Role="WF_FORM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_META_TABLE">
+        <PropertyRef Name="META_TABLE_ID" />
+      </Principal>
+      <Dependent Role="WF_FORM">
+        <PropertyRef Name="META_TABLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEFINITION_DATA">
+    <End Type="Model.WF_FORM_DEFINITION" Role="WF_FORM_DEFINITION" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_FORM_DEFINITION_DATA" Role="WF_FORM_DEFINITION_DATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_FORM_DEFINITION">
+        <PropertyRef Name="FORM_DEFINITION_ID" />
+      </Principal>
+      <Dependent Role="WF_FORM_DEFINITION_DATA">
+        <PropertyRef Name="FORM_DEFINITION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INSTACTIVITY_INSTANCE">
+    <End Type="Model.WF_INSTANCE" Role="WF_INSTANCE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_INSTANCE_ACTIVITY" Role="WF_INSTANCE_ACTIVITY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_INSTANCE">
+        <PropertyRef Name="INSTANCE_ID" />
+      </Principal>
+      <Dependent Role="WF_INSTANCE_ACTIVITY">
+        <PropertyRef Name="INSTANCE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WORKITEM__INSTANCE">
+    <End Type="Model.WF_INSTANCE" Role="WF_INSTANCE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_WORKITEM" Role="WF_WORKITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_INSTANCE">
+        <PropertyRef Name="INSTANCE_ID" />
+      </Principal>
+      <Dependent Role="WF_WORKITEM">
+        <PropertyRef Name="INSTANCE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WF_INSTANCE_TEMPLATE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_INSTANCE" Role="WF_INSTANCE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_INSTANCE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INSTACTUSER_INSTACTIVITY">
+    <End Type="Model.WF_INSTANCE_ACTIVITY" Role="WF_INSTANCE_ACTIVITY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_INSTANCE_ACTIVITY_USER" Role="WF_INSTANCE_ACTIVITY_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_INSTANCE_ACTIVITY">
+        <PropertyRef Name="INSTANCE_ACTIVITY_ID" />
+      </Principal>
+      <Dependent Role="WF_INSTANCE_ACTIVITY_USER">
+        <PropertyRef Name="INSTANCE_ACTIVITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_METATABLE_METADATA">
+    <End Type="Model.WF_META_TABLE" Role="WF_META_TABLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_METADATA" Role="WF_METADATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_META_TABLE">
+        <PropertyRef Name="META_TABLE_ID" />
+      </Principal>
+      <Dependent Role="WF_METADATA">
+        <PropertyRef Name="META_TABLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TABLE_TEMPLATE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_META_TABLE" Role="WF_META_TABLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_META_TABLE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEMPLATE_PACKAGE">
+    <End Type="Model.WF_PACKAGE" Role="WF_PACKAGE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_PACKAGE">
+        <PropertyRef Name="PACKAGE_ID" />
+      </Principal>
+      <Dependent Role="WF_TEMPLATE">
+        <PropertyRef Name="PACKAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGE_EVENT">
+    <End Type="Model.WF_PAGE" Role="WF_PAGE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_PAGE_EVENT" Role="WF_PAGE_EVENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_PAGE">
+        <PropertyRef Name="PAGE_ID" />
+      </Principal>
+      <Dependent Role="WF_PAGE_EVENT">
+        <PropertyRef Name="PAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEMPLATE_PAGE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_PAGE" Role="WF_PAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_PAGE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RULE_TEMPLATE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_RULE" Role="WF_RULE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_RULE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WF_TEMPAUTHORIZATION_TEMPLATE">
+    <End Type="Model.WF_TEMPLATE" Role="WF_TEMPLATE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_TEMPLATE_AUTHORIZATION" Role="WF_TEMPLATE_AUTHORIZATION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_TEMPLATE">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Principal>
+      <Dependent Role="WF_TEMPLATE_AUTHORIZATION">
+        <PropertyRef Name="TEMPLATE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WORKHANLER_WORKITEM">
+    <End Type="Model.WF_WORKITEM" Role="WF_WORKITEM" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.WF_WORKITEM_HANDLER" Role="WF_WORKITEM_HANDLER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WORKITEM">
+        <PropertyRef Name="WORKITEM_ID" />
+      </Principal>
+      <Dependent Role="WF_WORKITEM_HANDLER">
+        <PropertyRef Name="WORKITEM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

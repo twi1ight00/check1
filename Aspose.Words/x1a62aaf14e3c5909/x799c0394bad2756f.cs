@@ -1,0 +1,16 @@
+using System;
+
+namespace x1a62aaf14e3c5909;
+
+[Flags]
+internal enum x799c0394bad2756f
+{
+	xce8660972d795f80 = 1,
+	xf51bb9981f8d7796 = 2,
+	x986320c87450030d = 4,
+	x04253a50feaae58a = 8,
+	x5d79b9170e821779 = 0x10000,
+	x12a19b68936194aa = 0x20000,
+	x3b78c0cc720470e0 = 0x40000,
+	xa2f47110aebc3857 = 0x80000
+}

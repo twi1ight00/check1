@@ -1,0 +1,26 @@
+using x79578da6a8a3ae37;
+
+namespace x639ad3f66698fe1b;
+
+internal class x850ef0922f0d0e08
+{
+	internal static void x6210059f049f0d48(xbfd162a6d47f59a4 xd07ce4b74c5774a7, string x010d53cb60a80dd8, x218603e609fcc201 x326b5d6503ca9dce)
+	{
+		if (!x326b5d6503ca9dce.x7149c962c02931b3)
+		{
+			xd07ce4b74c5774a7.xee60bff2900a72f2(x010d53cb60a80dd8);
+			xd07ce4b74c5774a7.xb6c076f287274764(1);
+			int xbcea506a33cf = 40 + x326b5d6503ca9dce.xf35aae0fa4a217a4.Length + x326b5d6503ca9dce.x005dbd4d94ca4423.Length;
+			xd07ce4b74c5774a7.xb6c076f287274764(xbcea506a33cf);
+			xd07ce4b74c5774a7.xb6c076f287274764(1);
+			xd07ce4b74c5774a7.xb6c076f287274764(x326b5d6503ca9dce.xc69c1bca8baaf933 + 32768);
+			xd07ce4b74c5774a7.xb6c076f287274764(x326b5d6503ca9dce.xe45f03ec1cfa61ea);
+			xd07ce4b74c5774a7.xb6c076f287274764(x326b5d6503ca9dce.xf35aae0fa4a217a4.Length);
+			xd07ce4b74c5774a7.xb6c076f287274764(x326b5d6503ca9dce.x005dbd4d94ca4423.Length);
+			xd07ce4b74c5774a7.xf7f536bd531211e3(new byte[12]);
+			xd07ce4b74c5774a7.xf7f536bd531211e3(x326b5d6503ca9dce.xf35aae0fa4a217a4);
+			xd07ce4b74c5774a7.xf7f536bd531211e3(x326b5d6503ca9dce.x005dbd4d94ca4423);
+			xd07ce4b74c5774a7.xc8a13a52db0580ae();
+		}
+	}
+}

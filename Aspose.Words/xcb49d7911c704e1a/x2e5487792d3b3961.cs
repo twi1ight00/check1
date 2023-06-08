@@ -1,0 +1,24 @@
+namespace xcb49d7911c704e1a;
+
+internal enum x2e5487792d3b3961
+{
+	x5152902c3573da3b,
+	xd26c3fb7dcb48370,
+	x8048f678aff030a4,
+	xcf1682d7276daad0,
+	x08e2d3c18866b242,
+	xb405a444ca77e2d4,
+	xca23bba3c89dba54,
+	xaa49243ef4e988af,
+	x5486e0b5e830d25c,
+	x4638ed2e9d012461,
+	x5c099a31bc1d478e,
+	xf5975cf2ebc8c335,
+	xbfec79deb3407789,
+	x63fd8fe7197bf87f,
+	x6350001a02ec65a0,
+	x8107c47cc5f67ef0,
+	x17dc74dfb393639c,
+	x4ad5870fe7522abd,
+	xa9dc75c7d1fa334f
+}

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CodeTableModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CodeTableModelStoreContainer">
+    <EntitySet Name="SYS_CODE_TABLE" EntityType="CodeTableModel.Store.SYS_CODE_TABLE" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Sys_Config_CodeTable_Sys_Config_CodeTable" Association="CodeTableModel.Store.FK_Sys_Config_CodeTable_Sys_Config_CodeTable">
+      <End Role="SYS_CODE_TABLE" EntitySet="SYS_CODE_TABLE" />
+      <End Role="SYS_CODE_TABLE1" EntitySet="SYS_CODE_TABLE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_CODE_TABLE">
+    <Key>
+      <PropertyRef Name="CODE_TABLE_ID" />
+    </Key>
+    <Property Name="CODE_TABLE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CODE_ID" Type="nvarchar" MaxLength="64" />
+    <Property Name="STATUS" Type="numeric" />
+    <Property Name="SORT" Type="numeric" />
+    <Property Name="PARENT_CODE_TABLE_ID" Type="uniqueidentifier" />
+    <Property Name="CODE_BUSINESS_NO" Type="nvarchar" MaxLength="64" />
+    <Property Name="ISDEL" Type="numeric" Nullable="false" />
+    <Property Name="CREATOR" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CREATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Sys_Config_CodeTable_Sys_Config_CodeTable">
+    <End Role="SYS_CODE_TABLE" Type="CodeTableModel.Store.SYS_CODE_TABLE" Multiplicity="0..1" />
+    <End Role="SYS_CODE_TABLE1" Type="CodeTableModel.Store.SYS_CODE_TABLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_CODE_TABLE">
+        <PropertyRef Name="CODE_TABLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_CODE_TABLE1">
+        <PropertyRef Name="PARENT_CODE_TABLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

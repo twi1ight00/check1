@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CMS.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="CMS_ARTICLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar2" MaxLength="255" Nullable="false" />
+    <Property Name="KEYWORDS" Type="nvarchar2" MaxLength="255" />
+    <Property Name="WEIGHT" Type="number" Precision="38" Scale="0" />
+    <Property Name="WEIGHT_SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="HITS" Type="number" Precision="38" Scale="0" />
+    <Property Name="AUDIT_STATUS" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_SHORT_MESSAGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="AUDIT_DATE" Type="date" />
+    <Property Name="IS_COMMENT" Type="number" Precision="38" Scale="0" />
+    <Property Name="PARENT_ID" Type="raw" MaxLength="16" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="IS_ENDDATE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_DELETEDATE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_MAINPAGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_IMAGE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_TOP" Type="number" Precision="38" Scale="0" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTICE_TYPE" Type="raw" MaxLength="16" />
+    <Property Name="IS_PUBLISH" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="CMS_ARTICLE_DATA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTENT" Type="clob" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“.CMS_ARTICLE_DATA_TEMP”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CMS_ARTICLE_DATA_TEMP">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CONTENT" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CONTENT" Type="clob" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_AUDIT">
+    <Key>
+      <PropertyRef Name="AUDIT_ID" />
+    </Key>
+    <Property Name="AUDIT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="CMS_CATEGORY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="PARENT_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IMAGE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="HREF" Type="nvarchar2" MaxLength="255" />
+    <Property Name="DESCRIPTION" Type="nvarchar2" MaxLength="255" />
+    <Property Name="KEYWORDS" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ALLOW_COMMENT" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_AUDIT" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="IS_NOTIFY" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="CMS_COMMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="raw" MaxLength="16" />
+    <Property Name="CONTENT" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IP" Type="nvarchar2" MaxLength="32" />
+    <Property Name="CREATE_DATE" Type="date" />
+    <Property Name="AUDIT_USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="AUDIT_DATE" Type="date" />
+    <Property Name="AUDIT_USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IS_COMMENT" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="CMS_GUESTBOOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="CONTENT" Type="clob" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EMAIL" Type="nvarchar2" MaxLength="128" />
+    <Property Name="PHONE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="WORKUNIT" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IP" Type="nvarchar2" MaxLength="32" />
+    <Property Name="CREATE_DATE" Type="date" />
+    <Property Name="RE_USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="RE_DATE" Type="date" />
+    <Property Name="RE_CONTENT" Type="clob" />
+  </EntityType>
+  <EntityType Name="CMS_PUBLISH_USERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="128" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“.CMS_SCANNED”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CMS_SCANNED">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ARTICLE_ID" />
+      <PropertyRef Name="IS_DEL" />
+      <PropertyRef Name="CREATOR" />
+      <PropertyRef Name="CREATETIME" />
+      <PropertyRef Name="MODIFIER" />
+      <PropertyRef Name="MODIFYTIME" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="IS_DEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMS_VIEW_AUDIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ARTICLE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="VIEW_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="VIEW_TYPE" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="VIEW_NAME" Type="nvarchar2" MaxLength="128" />
+  </EntityType>
+  <Association Name="FK_ARTICLE_AUDIT">
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_AUDIT" Type="Self.CMS_AUDIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_AUDIT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_ARTI_REFERENCE_CMS_ARTI">
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_ARTICLE_DATA" Type="Self.CMS_ARTICLE_DATA" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_ARTICLE_DATA">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_ARTI_REFERENCE_CMS_CATE">
+    <End Role="CMS_CATEGORY" Type="Self.CMS_CATEGORY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_CATEGORY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_ARTICLE">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_COMM_REFERENCE_CMS_ARTI">
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_COMMENT" Type="Self.CMS_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_COMMENT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMS_VIEW_REFERENCE_CMS_ARTI">
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_VIEW_AUDIT" Type="Self.CMS_VIEW_AUDIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_VIEW_AUDIT">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CMSP_REFERENCE_CMS_ARTI">
+    <End Role="CMS_ARTICLE" Type="Self.CMS_ARTICLE" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CMS_PUBLISH_USERS" Type="Self.CMS_PUBLISH_USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMS_ARTICLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CMS_PUBLISH_USERS">
+        <PropertyRef Name="ARTICLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CMSStoreContainer">
+    <EntitySet Name="CMS_ARTICLE" EntityType="Self.CMS_ARTICLE" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_ARTICLE_DATA" EntityType="Self.CMS_ARTICLE_DATA" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_AUDIT" EntityType="Self.CMS_AUDIT" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_CATEGORY" EntityType="Self.CMS_CATEGORY" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_COMMENT" EntityType="Self.CMS_COMMENT" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_GUESTBOOK" EntityType="Self.CMS_GUESTBOOK" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_PUBLISH_USERS" EntityType="Self.CMS_PUBLISH_USERS" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_VIEW_AUDIT" EntityType="Self.CMS_VIEW_AUDIT" Schema="" store:Type="Tables" />
+    <EntitySet Name="CMS_ARTICLE_DATA_TEMP" EntityType="Self.CMS_ARTICLE_DATA_TEMP" store:Type="Tables" store:Schema="">
+      <DefiningQuery>SELECT 
+"CMS_ARTICLE_DATA_TEMP"."ID" AS "ID", 
+"CMS_ARTICLE_DATA_TEMP"."CONTENT" AS "CONTENT"
+FROM "CMS_ARTICLE_DATA_TEMP" "CMS_ARTICLE_DATA_TEMP"</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CMS_SCANNED" EntityType="Self.CMS_SCANNED" store:Type="Tables" store:Schema="">
+      <DefiningQuery>SELECT 
+"CMS_SCANNED"."ID" AS "ID", 
+"CMS_SCANNED"."ARTICLE_ID" AS "ARTICLE_ID", 
+"CMS_SCANNED"."USER_ID" AS "USER_ID", 
+"CMS_SCANNED"."IS_DEL" AS "IS_DEL", 
+"CMS_SCANNED"."CREATOR" AS "CREATOR", 
+"CMS_SCANNED"."CREATETIME" AS "CREATETIME", 
+"CMS_SCANNED"."MODIFIER" AS "MODIFIER", 
+"CMS_SCANNED"."MODIFYTIME" AS "MODIFYTIME"
+FROM "CMS_SCANNED" "CMS_SCANNED"</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_ARTICLE_AUDIT" Association="Self.FK_ARTICLE_AUDIT">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_AUDIT" EntitySet="CMS_AUDIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_ARTI_REFERENCE_CMS_ARTI" Association="Self.FK_CMS_ARTI_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_ARTICLE_DATA" EntitySet="CMS_ARTICLE_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_ARTI_REFERENCE_CMS_CATE" Association="Self.FK_CMS_ARTI_REFERENCE_CMS_CATE">
+      <End Role="CMS_CATEGORY" EntitySet="CMS_CATEGORY" />
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_COMM_REFERENCE_CMS_ARTI" Association="Self.FK_CMS_COMM_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_COMMENT" EntitySet="CMS_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMS_VIEW_REFERENCE_CMS_ARTI" Association="Self.FK_CMS_VIEW_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_VIEW_AUDIT" EntitySet="CMS_VIEW_AUDIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CMSP_REFERENCE_CMS_ARTI" Association="Self.FK_CMSP_REFERENCE_CMS_ARTI">
+      <End Role="CMS_ARTICLE" EntitySet="CMS_ARTICLE" />
+      <End Role="CMS_PUBLISH_USERS" EntitySet="CMS_PUBLISH_USERS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

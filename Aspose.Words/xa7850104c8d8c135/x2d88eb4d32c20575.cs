@@ -1,0 +1,14 @@
+namespace xa7850104c8d8c135;
+
+internal enum x2d88eb4d32c20575
+{
+	xb56b87770d51d55a = 1,
+	x46f0ec9f7f657efb = 2,
+	x4c5ede5040bbffe5 = 3,
+	x799ceb8bdd5b54ef = 4,
+	x0542832297869ffb = 5,
+	xa07a9457a2ebbbfc = 268435456,
+	x632b457a1248cdb1 = 268435457,
+	x45260ad4b94166f2 = 268435458,
+	xfeb3e6e41aa2cb20 = 268435459
+}

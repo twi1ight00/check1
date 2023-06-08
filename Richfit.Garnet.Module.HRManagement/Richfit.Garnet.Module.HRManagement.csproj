@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.HRManagement</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.HRManageOracle.csdl" />
+    <None Remove="Domain.Models.HRManageOracle.msl" />
+    <None Remove="Domain.Models.HRManageOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.HRManageOracle.csdl" LogicalName="Domain.Models.HRManageOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.HRManageOracle.msl" LogicalName="Domain.Models.HRManageOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.HRManageOracle.ssdl" LogicalName="Domain.Models.HRManageOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.ImportingAndExporting">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.ImportingAndExporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\bin\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.SystemManagement">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.SystemManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Workflow.Form">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Workflow.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Common.Configuration">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\..\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Richfit.Garnet.Module.CMS">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.CMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Workflow">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Workflow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MailLog.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="SYS_MAIL_LOG">
+    <Key>
+      <PropertyRef Name="EMAIL_LOG_ID" />
+    </Key>
+    <Property Name="EMAIL_LOG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="SERVER_IP" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="MAIL_TO_ADDRESS" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="MAIL_FROM_ADDRESS" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="MAIL_FROM_PWD" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="MAIL_SUBJECT" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="MAIL_BODY" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="OBJECT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="EXTEND_ID" Type="raw" MaxLength="16" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_MESSAGE_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="IP" Type="nvarchar2" MaxLength="128" />
+    <Property Name="CREATE_TIME" Type="date" />
+    <Property Name="SENDTIME" Type="date" />
+    <Property Name="BROWSER" Type="nvarchar2" MaxLength="512" />
+    <Property Name="RRID" Type="nvarchar2" MaxLength="64" />
+    <Property Name="SN" Type="nvarchar2" MaxLength="256" />
+    <Property Name="PWD" Type="nvarchar2" MaxLength="256" />
+    <Property Name="STIME" Type="date" />
+    <Property Name="CONTENT" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="EXT" Type="nvarchar2" MaxLength="32" />
+    <Property Name="MOBILE" Type="nvarchar2" MaxLength="32" />
+    <Property Name="OBJECT_ID" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND_ID" Type="nvarchar2" MaxLength="64" />
+  </EntityType>
+  <EntityContainer Name="MailLogStoreContainer">
+    <EntitySet Name="SYS_MAIL_LOG" EntityType="Self.SYS_MAIL_LOG" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_MESSAGE_LOG" EntityType="Self.SYS_MESSAGE_LOG" Schema="" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

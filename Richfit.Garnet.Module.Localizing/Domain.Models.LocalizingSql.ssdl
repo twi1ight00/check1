@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LocalizingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LocalizingModelStoreContainer">
+    <EntitySet Name="SYS_LANGUAGE" EntityType="LocalizingModel.Store.SYS_LANGUAGE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_LOCALIZING" EntityType="LocalizingModel.Store.SYS_LOCALIZING" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Sys_Localizing_Sys_Language" Association="LocalizingModel.Store.FK_Sys_Localizing_Sys_Language">
+      <End Role="SYS_LANGUAGE" EntitySet="SYS_LANGUAGE" />
+      <End Role="SYS_LOCALIZING" EntitySet="SYS_LOCALIZING" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_LANGUAGE">
+    <Key>
+      <PropertyRef Name="LANGUAGE_ID" />
+    </Key>
+    <Property Name="LANGUAGE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LANGUAGE_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CULTURE" Type="nvarchar" MaxLength="32" />
+    <Property Name="IS_USE" Type="numeric" Nullable="false" />
+    <Property Name="SORT" Type="numeric" />
+  </EntityType>
+  <EntityType Name="SYS_LOCALIZING">
+    <Key>
+      <PropertyRef Name="LOCALIZING_ID" />
+    </Key>
+    <Property Name="LOCALIZING_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LOCALIZING_TYPE" Type="numeric" Nullable="false" />
+    <Property Name="INSTANCE" Type="nvarchar" MaxLength="128" />
+    <Property Name="PAGENAME" Type="nvarchar" MaxLength="128" />
+    <Property Name="STRING_KEY" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="LANGUAGE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="STRING_KEY_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="STRING_KEY_TIP_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="ISDEL" Type="numeric" Nullable="false" />
+    <Property Name="CREATOR" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CREATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Sys_Localizing_Sys_Language">
+    <End Role="SYS_LANGUAGE" Type="LocalizingModel.Store.SYS_LANGUAGE" Multiplicity="1" />
+    <End Role="SYS_LOCALIZING" Type="LocalizingModel.Store.SYS_LOCALIZING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LANGUAGE">
+        <PropertyRef Name="LANGUAGE_ID" />
+      </Principal>
+      <Dependent Role="SYS_LOCALIZING">
+        <PropertyRef Name="LANGUAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

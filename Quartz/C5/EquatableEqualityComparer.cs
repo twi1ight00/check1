@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+
+namespace C5;
+
+[Serializable]
+internal class EquatableEqualityComparer<T> : IEqualityComparer<T> where T : IEquatable<T>
+{
+	private static EquatableEqualityComparer<T> cached = new EquatableEqualityComparer<T>();
+
+	[ComVisible(true)]
+	public static EquatableEqualityComparer<T> Default
+	{
+		[ComVisible(true)]
+		get
+		{
+			return cached ?? (cached = new EquatableEqualityComparer<T>());
+		}
+	}
+
+	private EquatableEqualityComparer()
+	{
+	}
+
+	[ComVisible(true)]
+	public int GetHashCode(T item)
+	{
+		return item?.GetHashCode() ?? 0;
+	}
+
+	[ComVisible(true)]
+	public bool Equals(T item1, T item2)
+	{
+		return item1?.Equals(item2) ?? (item2 == null);
+	}
+}

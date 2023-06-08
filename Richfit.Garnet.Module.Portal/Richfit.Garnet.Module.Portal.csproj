@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Richfit.Garnet.Module.Portal</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Domain.Models.PortalSql.csdl" />
+    <None Remove="Domain.Models.PortalOracle.csdl" />
+    <None Remove="Domain.Models.PortalSql.msl" />
+    <None Remove="Domain.Models.PortalOracle.msl" />
+    <None Remove="Domain.Models.PortalSql.ssdl" />
+    <None Remove="Domain.Models.PortalOracle.ssdl" />
+    <EmbeddedResource Include="Domain.Models.PortalSql.csdl" LogicalName="Domain.Models.PortalSql.csdl" />
+    <EmbeddedResource Include="Domain.Models.PortalOracle.csdl" LogicalName="Domain.Models.PortalOracle.csdl" />
+    <EmbeddedResource Include="Domain.Models.PortalSql.msl" LogicalName="Domain.Models.PortalSql.msl" />
+    <EmbeddedResource Include="Domain.Models.PortalOracle.msl" LogicalName="Domain.Models.PortalOracle.msl" />
+    <EmbeddedResource Include="Domain.Models.PortalSql.ssdl" LogicalName="Domain.Models.PortalSql.ssdl" />
+    <EmbeddedResource Include="Domain.Models.PortalOracle.ssdl" LogicalName="Domain.Models.PortalOracle.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Richfit.Garnet.Module.Base">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Richfit.Garnet.Module.Fundation">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Fundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Module.Localizing">
+      <HintPath>..\..\bin\Richfit.Garnet.Module.Localizing.dll</HintPath>
+    </Reference>
+    <Reference Include="Richfit.Garnet.Common.Components">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Richfit.Garnet.Common">
+      <HintPath>..\..\bin\Richfit.Garnet.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

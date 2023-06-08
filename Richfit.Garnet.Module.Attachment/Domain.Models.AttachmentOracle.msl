@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Attachment">
+    <EntitySetMapping Name="SYS_ATTACHMENT">
+      <EntityTypeMapping TypeName="Model.SYS_ATTACHMENT">
+        <MappingFragment StoreEntitySet="SYS_ATTACHMENT">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="FILE_NETWORK_PATH" ColumnName="FILE_NETWORK_PATH" />
+          <ScalarProperty Name="FILE_RELATIVE_PATH" ColumnName="FILE_RELATIVE_PATH" />
+          <ScalarProperty Name="STORAGE_LOCATION" ColumnName="STORAGE_LOCATION" />
+          <ScalarProperty Name="ATTACHMENT_CONTENT" ColumnName="ATTACHMENT_CONTENT" />
+          <ScalarProperty Name="ATTACHMENT_SIZE" ColumnName="ATTACHMENT_SIZE" />
+          <ScalarProperty Name="ATTACHMENT_TYPE" ColumnName="ATTACHMENT_TYPE" />
+          <ScalarProperty Name="ATTACHMENT_NAME" ColumnName="ATTACHMENT_NAME" />
+          <ScalarProperty Name="ATTACHMENT_ID" ColumnName="ATTACHMENT_ID" />
+          <ScalarProperty Name="FILE_NO" ColumnName="FILE_NO" />
+          <ScalarProperty Name="IS_EFFECTIVE" ColumnName="IS_EFFECTIVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ATTACHMENT_MAPPING">
+      <EntityTypeMapping TypeName="Model.SYS_ATTACHMENT_MAPPING">
+        <MappingFragment StoreEntitySet="SYS_ATTACHMENT_MAPPING">
+          <ScalarProperty Name="DOC_TYPE" ColumnName="DOC_TYPE" />
+          <ScalarProperty Name="OBJECT_TABLE_NAME" ColumnName="OBJECT_TABLE_NAME" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="ATTACHMENT_ID" ColumnName="ATTACHMENT_ID" />
+          <ScalarProperty Name="ATTACHMENT_MAPPING_ID" ColumnName="ATTACHMENT_MAPPING_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+using x5794c252ba25e723;
+using x8b1f7613579e78d0;
+
+namespace xa769c310fbec8a5a;
+
+internal class x0eb63046817e1a5c : x36c3925dc7ec8012
+{
+	public x31c19fcb724dfaf5 x2f0c16e51db81725(x8b545195dd56c1c7 xf1125c563ec28c45)
+	{
+		x36c3925dc7ec8012 x36c3925dc7ec8013 = xf1125c563ec28c45.xfe2178c1f916f36c.x74a6754675df4bc3(xf1125c563ec28c45);
+		return x36c3925dc7ec8013.x2f0c16e51db81725(xf1125c563ec28c45);
+	}
+
+	public x36c3925dc7ec8012 x8b61531c8ea35b85()
+	{
+		return new x0eb63046817e1a5c();
+	}
+}

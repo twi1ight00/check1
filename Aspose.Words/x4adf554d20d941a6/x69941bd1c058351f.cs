@@ -1,0 +1,24 @@
+namespace x4adf554d20d941a6;
+
+internal class x69941bd1c058351f
+{
+	internal static int x3b4006b36c0f801e(xf6937c72cebe4ad1 x311e7a92306d7199)
+	{
+		return x311e7a92306d7199.xc255c495fd9232ca.xdc1bf80853046136 - x311e7a92306d7199.x419ba17a5322627b;
+	}
+
+	internal static int x3b4006b36c0f801e(x694f001896973fe3 xa806b754814b9ae0)
+	{
+		return xa806b754814b9ae0.xc255c495fd9232ca.xdc1bf80853046136 - xa806b754814b9ae0.x419ba17a5322627b;
+	}
+
+	internal static int x3b4006b36c0f801e(x86accec882b7012a xe6de5e5fa2d44af5)
+	{
+		return xe6de5e5fa2d44af5.xc5464084edc8e226.x838c6c67b5953bb0.x5d6d04c35215bc51.xdc1bf80853046136 - xe6de5e5fa2d44af5.x419ba17a5322627b;
+	}
+
+	internal static int x3b4006b36c0f801e(x852fe8bb5ac31098 xe3e287548b3d01f5, int xa447fc54e41dfe06, int xfc2074a859a5db8c)
+	{
+		return xfc2074a859a5db8c + xa447fc54e41dfe06 - xe3e287548b3d01f5.x419ba17a5322627b;
+	}
+}

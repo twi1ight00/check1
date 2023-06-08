@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SystemManageModelStoreContainer" CdmEntityContainer="Fundation">
+    <EntitySetMapping Name="SYS_DOMAIN">
+      <EntityTypeMapping TypeName="SystemManageModel.SYS_DOMAIN">
+        <MappingFragment StoreEntitySet="SYS_DOMAIN">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="DOMAIN_PWD" ColumnName="DOMAIN_PWD" />
+          <ScalarProperty Name="DOMAIN_ACCOUNT" ColumnName="DOMAIN_ACCOUNT" />
+          <ScalarProperty Name="DOMAIN_ADDRESS" ColumnName="DOMAIN_ADDRESS" />
+          <ScalarProperty Name="DOMAIN_NAME" ColumnName="DOMAIN_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER">
+      <EntityTypeMapping TypeName="SystemManageModel.SYS_USER">
+        <MappingFragment StoreEntitySet="SYS_USER">
+          <ScalarProperty Name="IS_FORBIDDEN" ColumnName="IS_FORBIDDEN" />
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+          <ScalarProperty Name="LOGON_NAME" ColumnName="LOGON_NAME" />
+          <ScalarProperty Name="DOMAIN_ID" ColumnName="DOMAIN_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_ORG">
+      <EntityTypeMapping TypeName="SystemManageModel.SYS_USER_ORG">
+        <MappingFragment StoreEntitySet="SYS_USER_ORG">
+          <ScalarProperty Name="USER_IDENTITY_TYPE" ColumnName="USER_IDENTITY_TYPE" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_ORG_ID" ColumnName="USER_ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

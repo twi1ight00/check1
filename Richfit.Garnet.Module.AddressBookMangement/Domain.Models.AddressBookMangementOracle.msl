@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AddressBookMangementModelStoreContainer" CdmEntityContainer="AddressBookMangement">
+    <EntitySetMapping Name="AB_CATEGORY">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_CATEGORY">
+        <MappingFragment StoreEntitySet="AB_CATEGORY">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="CATEGORY_TYPE" ColumnName="CATEGORY_TYPE" />
+          <ScalarProperty Name="CATEGORY_NAME" ColumnName="CATEGORY_NAME" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_CONTACT">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_CONTACT">
+        <MappingFragment StoreEntitySet="AB_CONTACT">
+          <ScalarProperty Name="RESPONSIBILITY" ColumnName="RESPONSIBILITY" />
+          <ScalarProperty Name="PERSON_ID" ColumnName="PERSON_ID" />
+          <ScalarProperty Name="ROOM_NUMBER" ColumnName="ROOM_NUMBER" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="IMAGE_PATH" ColumnName="IMAGE_PATH" />
+          <ScalarProperty Name="CHILD" ColumnName="CHILD" />
+          <ScalarProperty Name="MATE" ColumnName="MATE" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="HOME_POSTCODE" ColumnName="HOME_POSTCODE" />
+          <ScalarProperty Name="HOME_ADDRESS" ColumnName="HOME_ADDRESS" />
+          <ScalarProperty Name="HOME_TEL" ColumnName="HOME_TEL" />
+          <ScalarProperty Name="WORK_FAX" ColumnName="WORK_FAX" />
+          <ScalarProperty Name="WORK_TEL" ColumnName="WORK_TEL" />
+          <ScalarProperty Name="UNIT_POSTCODE" ColumnName="UNIT_POSTCODE" />
+          <ScalarProperty Name="UNIT_ADDRESS" ColumnName="UNIT_ADDRESS" />
+          <ScalarProperty Name="UNIT_NAME" ColumnName="UNIT_NAME" />
+          <ScalarProperty Name="POST" ColumnName="POST" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="CONTACT_ID" ColumnName="CONTACT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_GROUP_CONTACT">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_GROUP_CONTACT">
+        <MappingFragment StoreEntitySet="AB_GROUP_CONTACT">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CONTACT_ID" ColumnName="CONTACT_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="GROUP_CONTACT_ID" ColumnName="GROUP_CONTACT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_ORG_CONTACT">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_ORG_CONTACT">
+        <MappingFragment StoreEntitySet="AB_ORG_CONTACT">
+          <ScalarProperty Name="CONTACT_ID" ColumnName="CONTACT_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_CONTACT_ID" ColumnName="ORG_CONTACT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_PERSONAL_GROUP">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_PERSONAL_GROUP">
+        <MappingFragment StoreEntitySet="AB_PERSONAL_GROUP">
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CATEGORY_TYPE" ColumnName="CATEGORY_TYPE" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_VIRTUAL_CONTACT">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_VIRTUAL_CONTACT">
+        <MappingFragment StoreEntitySet="AB_VIRTUAL_CONTACT">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="CONTACT_ID" ColumnName="CONTACT_ID" />
+          <ScalarProperty Name="VIRTUAL_CONTACT_ID" ColumnName="VIRTUAL_CONTACT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AB_VIRTUAL_ORG">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.AB_VIRTUAL_ORG">
+        <MappingFragment StoreEntitySet="AB_VIRTUAL_ORG">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="PARENT_ORG_ID" ColumnName="PARENT_ORG_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_EMPLOYEE">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.HR_EMPLOYEE">
+        <MappingFragment StoreEntitySet="HR_EMPLOYEE">
+          <ScalarProperty Name="TECHNICAL_TITLE_STR" ColumnName="TECHNICAL_TITLE_STR" />
+          <ScalarProperty Name="HUKOU" ColumnName="HUKOU" />
+          <ScalarProperty Name="TECHNICAL_TITLE" ColumnName="TECHNICAL_TITLE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="TRANSFERRED_TIME" ColumnName="TRANSFERRED_TIME" />
+          <ScalarProperty Name="APPOINTMENT_TIME" ColumnName="APPOINTMENT_TIME" />
+          <ScalarProperty Name="EMPLOYEE_STATUS" ColumnName="EMPLOYEE_STATUS" />
+          <ScalarProperty Name="FAMILY_CONTACT_TEL" ColumnName="FAMILY_CONTACT_TEL" />
+          <ScalarProperty Name="FAMILY_CONTACT" ColumnName="FAMILY_CONTACT" />
+          <ScalarProperty Name="MARITAL_STATUS" ColumnName="MARITAL_STATUS" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="IMAGE_PATH" ColumnName="IMAGE_PATH" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="CONTACT_ID" ColumnName="CONTACT_ID" />
+          <ScalarProperty Name="JOB_PO_LEVEL" ColumnName="JOB_PO_LEVEL" />
+          <ScalarProperty Name="JOB_PO_ETHNIC_GROUP" ColumnName="JOB_PO_ETHNIC_GROUP" />
+          <ScalarProperty Name="JOB_PO_SEQ" ColumnName="JOB_PO_SEQ" />
+          <ScalarProperty Name="JOB_PO_UP_SEQ" ColumnName="JOB_PO_UP_SEQ" />
+          <ScalarProperty Name="JOB_PO_NAME" ColumnName="JOB_PO_NAME" />
+          <ScalarProperty Name="WORK_HOME" ColumnName="WORK_HOME" />
+          <ScalarProperty Name="WORK_TEL" ColumnName="WORK_TEL" />
+          <ScalarProperty Name="CONTRACT_EXPIRY_DATE" ColumnName="CONTRACT_EXPIRY_DATE" />
+          <ScalarProperty Name="CONTRACT_VALIDITY_DATE" ColumnName="CONTRACT_VALIDITY_DATE" />
+          <ScalarProperty Name="CONTRACT_TYPE" ColumnName="CONTRACT_TYPE" />
+          <ScalarProperty Name="CONTRACT_NO" ColumnName="CONTRACT_NO" />
+          <ScalarProperty Name="YL_START_DATE" ColumnName="YL_START_DATE" />
+          <ScalarProperty Name="JOIN_RUI_TUO" ColumnName="JOIN_RUI_TUO" />
+          <ScalarProperty Name="POSITION_TYPE" ColumnName="POSITION_TYPE" />
+          <ScalarProperty Name="ORDER_BK_BUSINESS_TYPE" ColumnName="ORDER_BK_BUSINESS_TYPE" />
+          <ScalarProperty Name="UNIT_COMPILATION" ColumnName="UNIT_COMPILATION" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="ID_NUMBER" ColumnName="ID_NUMBER" />
+          <ScalarProperty Name="MPHONE" ColumnName="MPHONE" />
+          <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+          <ScalarProperty Name="QUALIFY_TIME" ColumnName="QUALIFY_TIME" />
+          <ScalarProperty Name="RANK" ColumnName="RANK" />
+          <ScalarProperty Name="TECHNICAL_POSITION" ColumnName="TECHNICAL_POSITION" />
+          <ScalarProperty Name="ORIGINAL_UNIT" ColumnName="ORIGINAL_UNIT" />
+          <ScalarProperty Name="ADMINISTRATIVE_LEVEL" ColumnName="ADMINISTRATIVE_LEVEL" />
+          <ScalarProperty Name="ADMINISTRATIVE_FUNCTION" ColumnName="ADMINISTRATIVE_FUNCTION" />
+          <ScalarProperty Name="SCHOOL_MAJOR" ColumnName="SCHOOL_MAJOR" />
+          <ScalarProperty Name="GRADUAION_TIME" ColumnName="GRADUAION_TIME" />
+          <ScalarProperty Name="GRADUATION_COLLEGE" ColumnName="GRADUATION_COLLEGE" />
+          <ScalarProperty Name="EDUCATION_REMARK" ColumnName="EDUCATION_REMARK" />
+          <ScalarProperty Name="EDUCATION" ColumnName="EDUCATION" />
+          <ScalarProperty Name="ENG_LEVEL" ColumnName="ENG_LEVEL" />
+          <ScalarProperty Name="PARTY_TIME" ColumnName="PARTY_TIME" />
+          <ScalarProperty Name="POLITICS_STATUS" ColumnName="POLITICS_STATUS" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="HOME_TOWN" ColumnName="HOME_TOWN" />
+          <ScalarProperty Name="NATION" ColumnName="NATION" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="WORK_TIME" ColumnName="WORK_TIME" />
+          <ScalarProperty Name="WORKING_START_DATE" ColumnName="WORKING_START_DATE" />
+          <ScalarProperty Name="WROK_PLACE" ColumnName="WROK_PLACE" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="IN_CATEGORY" ColumnName="IN_CATEGORY" />
+          <ScalarProperty Name="EMPLOYEE_NAME" ColumnName="EMPLOYEE_NAME" />
+          <ScalarProperty Name="PERSON_ID" ColumnName="PERSON_ID" />
+          <ScalarProperty Name="AFFILIATED_UNIT" ColumnName="AFFILIATED_UNIT" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ORG">
+      <EntityTypeMapping TypeName="AddressBookMangementModel.SYS_ORG">
+        <MappingFragment StoreEntitySet="SYS_ORG">
+          <ScalarProperty Name="EXTEND5" ColumnName="EXTEND5" />
+          <ScalarProperty Name="EXTEND4" ColumnName="EXTEND4" />
+          <ScalarProperty Name="EXTEND3" ColumnName="EXTEND3" />
+          <ScalarProperty Name="EXTEND2" ColumnName="EXTEND2" />
+          <ScalarProperty Name="EXTEND1" ColumnName="EXTEND1" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="PARENT_ORG_ID" ColumnName="PARENT_ORG_ID" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

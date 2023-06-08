@@ -1,0 +1,90 @@
+using System.Xml;
+using ns16;
+
+namespace ns56;
+
+internal class Class2060 : Class1351
+{
+	public delegate Class2060 Delegate1892();
+
+	public delegate void Delegate1894(Class2060 elementData);
+
+	public delegate void Delegate1893(Class2060 elementData);
+
+	private Enum268 enum268_0;
+
+	public Enum268 Val
+	{
+		get
+		{
+			return enum268_0;
+		}
+		set
+		{
+			enum268_0 = value;
+		}
+	}
+
+	protected override void vmethod_0(XmlReader reader)
+	{
+		string localName = reader.LocalName;
+		method_2(reader);
+		if (reader.IsEmptyElement)
+		{
+			return;
+		}
+		bool flag = false;
+		while (((flag && !reader.EOF) || reader.Read()) && (reader.NodeType != XmlNodeType.EndElement || !(reader.LocalName == localName)))
+		{
+			flag = false;
+			if (reader.NodeType == XmlNodeType.Element)
+			{
+				_ = reader.LocalName;
+				reader.Skip();
+				flag = true;
+			}
+		}
+	}
+
+	private void method_2(XmlReader reader)
+	{
+		while (reader.MoveToNextAttribute())
+		{
+			string text;
+			if (!(reader.Prefix == "xmlns") && (text = method_0(reader)) != null && text == "val")
+			{
+				enum268_0 = Class2523.smethod_0(reader.Value);
+			}
+		}
+		reader.MoveToElement();
+	}
+
+	public Class2060(XmlReader reader)
+		: base(reader)
+	{
+	}
+
+	public Class2060()
+	{
+	}
+
+	protected override void vmethod_1()
+	{
+		enum268_0 = Enum268.const_0;
+	}
+
+	protected override void vmethod_2()
+	{
+	}
+
+	protected override void vmethod_3()
+	{
+	}
+
+	public override void vmethod_4(string prefix, XmlWriter writer, string elementName)
+	{
+		writer.WriteStartElement(prefix, elementName, null);
+		writer.WriteAttributeString("val", Class2523.smethod_1(enum268_0));
+		writer.WriteEndElement();
+	}
+}

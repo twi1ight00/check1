@@ -1,0 +1,18 @@
+using x8b1f7613579e78d0;
+using xa6cc8e39f9a280d7;
+using xa769c310fbec8a5a;
+
+namespace x9e34b6f7e9185197;
+
+internal interface x6ecdfaec63740001
+{
+	string xaf95fb496eb25433(xd0fe745f27933c97 xa1724a07fef092c8);
+
+	xd7e8497b32a408b8 xa7e254e6f0870f2a(x19119439284aead2 x6c50a99faab7d741);
+
+	x48d7478d49393961 xc9e90b46232365f3(int xc0c4c459c6ccbd00);
+
+	x48d7478d49393961 x0cf64e0fb1cb423b(int xc0c4c459c6ccbd00);
+
+	x064e11d707aed84f xb29c732ce60a626d(int xc0c4c459c6ccbd00);
+}

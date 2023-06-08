@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ScheduleManagement.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="SCH_BELONGER_USER">
+    <Key>
+      <PropertyRef Name="BELONGER_USER_ID" />
+    </Key>
+    <Property Name="BELONGER_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="SCHEDULE_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SCH_INFO">
+    <Key>
+      <PropertyRef Name="SCHEDULE_ID" />
+    </Key>
+    <Property Name="SCHEDULE_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="SCHEDULE_TITLE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="SCHEDULE_CONTENTS" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="SCHEDULE_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="BEGIN_TIME" Type="date" />
+    <Property Name="END_TIME" Type="date" />
+    <Property Name="SCHEDULE_STATE" Type="number" Precision="38" Scale="0" />
+    <Property Name="DISCLOSURE_LEVEL" Type="number" Precision="38" Scale="0" />
+    <Property Name="REMIND_MODE" Type="nvarchar2" MaxLength="512" />
+    <Property Name="REMIND_TIME" Type="date" />
+    <Property Name="ISALLDAY" Type="number" Precision="38" Scale="0" />
+    <Property Name="ISREPEAT" Type="number" Precision="38" Scale="0" />
+    <Property Name="REPEAT_INTERVAL" Type="number" Precision="38" Scale="0" />
+    <Property Name="SCHEDULE_COLOR" Type="number" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="ISSEND" Type="number" Precision="38" Scale="0" />
+    <Property Name="DUTY_LEADER_ID" Type="nvarchar2" MaxLength="255" />
+    <Property Name="DUTY_LEADER" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SCHEDULE_DATE" Type="date" />
+    <Property Name="SCHEDULE_LOCATION" Type="nvarchar2" MaxLength="255" />
+    <Property Name="SCHEDULE_LOCATION_ID" Type="raw" MaxLength="16" />
+    <Property Name="PARTICIPANTS_NAME" Type="clob" />
+    <Property Name="PARTICIPANTS_NAME_STRING" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="REMARK" Type="nvarchar2" MaxLength="2000" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" />
+    <Property Name="ORG_NAME" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_DATAS" Type="clob" />
+    <Property Name="ORG_NAMES" Type="nvarchar2" MaxLength="512" />
+    <Property Name="ORG_IDS" Type="nvarchar2" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="SCH_PARTICIPANTS_USER">
+    <Key>
+      <PropertyRef Name="PARTICIPANTS_USER_ID" />
+    </Key>
+    <Property Name="PARTICIPANTS_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" />
+    <Property Name="SCHEDULE_ID" Type="raw" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="DOMAIN_ID" Type="raw" MaxLength="16" />
+    <Property Name="LOGON_NAME" Type="nvarchar2" MaxLength="64" Nullable="false" />
+    <Property Name="DISPLAY_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="nvarchar2" MaxLength="64" />
+    <Property Name="USER_TYPE" Type="number" Precision="38" Scale="0" />
+    <Property Name="IS_FORBIDDEN" Type="number" Precision="38" Scale="0" />
+    <Property Name="SORT" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="EXTEND1" Type="nvarchar2" MaxLength="64" />
+    <Property Name="EXTEND2" Type="nvarchar2" MaxLength="128" />
+    <Property Name="EXTEND3" Type="nvarchar2" MaxLength="255" />
+    <Property Name="EXTEND4" Type="nvarchar2" MaxLength="512" />
+    <Property Name="EXTEND5" Type="nvarchar2" MaxLength="512" />
+  </EntityType>
+  <Association Name="FK_SCH_BELO_REFERENCE_SCH_INFO">
+    <End Role="SCH_INFO" Type="Self.SCH_INFO" Multiplicity="0..1" />
+    <End Role="SCH_BELONGER_USER" Type="Self.SCH_BELONGER_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCH_INFO">
+        <PropertyRef Name="SCHEDULE_ID" />
+      </Principal>
+      <Dependent Role="SCH_BELONGER_USER">
+        <PropertyRef Name="SCHEDULE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SCH_PART_REFERENCE_SCH_INFO">
+    <End Role="SCH_INFO" Type="Self.SCH_INFO" Multiplicity="0..1" />
+    <End Role="SCH_PARTICIPANTS_USER" Type="Self.SCH_PARTICIPANTS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCH_INFO">
+        <PropertyRef Name="SCHEDULE_ID" />
+      </Principal>
+      <Dependent Role="SCH_PARTICIPANTS_USER">
+        <PropertyRef Name="SCHEDULE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ScheduleManagementStoreContainer">
+    <EntitySet Name="SCH_BELONGER_USER" EntityType="Self.SCH_BELONGER_USER" Schema="" store:Type="Tables" />
+    <EntitySet Name="SCH_INFO" EntityType="Self.SCH_INFO" Schema="" store:Type="Tables" />
+    <EntitySet Name="SCH_PARTICIPANTS_USER" EntityType="Self.SCH_PARTICIPANTS_USER" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_USER" EntityType="Self.SYS_USER" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_SCH_BELO_REFERENCE_SCH_INFO" Association="Self.FK_SCH_BELO_REFERENCE_SCH_INFO">
+      <End Role="SCH_INFO" EntitySet="SCH_INFO" />
+      <End Role="SCH_BELONGER_USER" EntitySet="SCH_BELONGER_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SCH_PART_REFERENCE_SCH_INFO" Association="Self.FK_SCH_PART_REFERENCE_SCH_INFO">
+      <End Role="SCH_INFO" EntitySet="SCH_INFO" />
+      <End Role="SCH_PARTICIPANTS_USER" EntitySet="SCH_PARTICIPANTS_USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

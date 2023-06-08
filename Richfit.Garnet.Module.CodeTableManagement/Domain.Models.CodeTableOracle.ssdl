@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="10.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="SYS_CODE_TABLE" EntityType="Model.Store.SYS_CODE_TABLE" store:Type="Tables" />
+    <AssociationSet Name="FK_Sys_CodeTable_Code_Self" Association="Model.Store.FK_Sys_CodeTable_Code_Self">
+      <End Role="SYS_CODE_TABLE" EntitySet="SYS_CODE_TABLE" />
+      <End Role="SYS_CODE_TABLE1" EntitySet="SYS_CODE_TABLE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SYS_CODE_TABLE">
+    <Key>
+      <PropertyRef Name="CODE_TABLE_ID" />
+    </Key>
+    <Property Name="CODE_TABLE_ID" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CODE_ID" Type="nvarchar2" MaxLength="64" />
+    <Property Name="STATUS" Type="number" />
+    <Property Name="SORT" Type="number" />
+    <Property Name="PARENT_CODE_TABLE_ID" Type="raw" MaxLength="16" />
+    <Property Name="CODE_BUSINESS_NO" Type="nvarchar2" MaxLength="64" />
+    <Property Name="ISDEL" Type="number" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" Nullable="false" MaxLength="16" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Sys_CodeTable_Code_Self">
+    <End Role="SYS_CODE_TABLE" Type="Model.Store.SYS_CODE_TABLE" Multiplicity="0..1" />
+    <End Role="SYS_CODE_TABLE1" Type="Model.Store.SYS_CODE_TABLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_CODE_TABLE">
+        <PropertyRef Name="CODE_TABLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_CODE_TABLE1">
+        <PropertyRef Name="PARENT_CODE_TABLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

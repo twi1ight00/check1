@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="SYS_ATTACHMENT">
+    <Key>
+      <PropertyRef Name="ATTACHMENT_ID" />
+    </Key>
+    <Property Name="ATTACHMENT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ATTACHMENT_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ATTACHMENT_TYPE" Type="nvarchar2" MaxLength="128" />
+    <Property Name="ATTACHMENT_SIZE" Type="number" Precision="38" Scale="0" />
+    <Property Name="ATTACHMENT_CONTENT" Type="blob" />
+    <Property Name="STORAGE_LOCATION" Type="number" Precision="38" Scale="0" />
+    <Property Name="FILE_RELATIVE_PATH" Type="nvarchar2" MaxLength="512" />
+    <Property Name="FILE_NETWORK_PATH" Type="nvarchar2" MaxLength="128" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="FILE_NO" Type="nvarchar2" MaxLength="128" />
+    <Property Name="IS_EFFECTIVE" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="SYS_ATTACHMENT_MAPPING">
+    <Key>
+      <PropertyRef Name="ATTACHMENT_MAPPING_ID" />
+    </Key>
+    <Property Name="ATTACHMENT_MAPPING_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="ATTACHMENT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="OBJECT_TABLE_NAME" Type="nvarchar2" MaxLength="128" Nullable="false" />
+    <Property Name="DOC_TYPE" Type="number" Precision="38" Scale="0" />
+  </EntityType>
+  <Association Name="FK_ATTACH_REF_MAPPING">
+    <End Role="SYS_ATTACHMENT" Type="Self.SYS_ATTACHMENT" Multiplicity="1" />
+    <End Role="SYS_ATTACHMENT_MAPPING" Type="Self.SYS_ATTACHMENT_MAPPING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ATTACHMENT">
+        <PropertyRef Name="ATTACHMENT_ID" />
+      </Principal>
+      <Dependent Role="SYS_ATTACHMENT_MAPPING">
+        <PropertyRef Name="ATTACHMENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="SYS_ATTACHMENT" EntityType="Self.SYS_ATTACHMENT" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_ATTACHMENT_MAPPING" EntityType="Self.SYS_ATTACHMENT_MAPPING" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_ATTACH_REF_MAPPING" Association="Self.FK_ATTACH_REF_MAPPING">
+      <End Role="SYS_ATTACHMENT" EntitySet="SYS_ATTACHMENT" />
+      <End Role="SYS_ATTACHMENT_MAPPING" EntitySet="SYS_ATTACHMENT_MAPPING" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

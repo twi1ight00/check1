@@ -1,0 +1,57 @@
+using System.Runtime.InteropServices;
+
+namespace Aspose.Slides.Charts;
+
+[ComVisible(true)]
+[Guid("01CF5C4E-5B8D-40CB-9104-CB9B2904EE65")]
+public enum StyleType
+{
+	Style1,
+	Style2,
+	Style3,
+	Style4,
+	Style5,
+	Style6,
+	Style7,
+	Style8,
+	Style9,
+	Style10,
+	Style11,
+	Style12,
+	Style13,
+	Style14,
+	Style15,
+	Style16,
+	Style17,
+	Style18,
+	Style19,
+	Style20,
+	Style21,
+	Style22,
+	Style23,
+	Style24,
+	Style25,
+	Style26,
+	Style27,
+	Style28,
+	Style29,
+	Style30,
+	Style31,
+	Style32,
+	Style33,
+	Style34,
+	Style35,
+	Style36,
+	Style37,
+	Style38,
+	Style39,
+	Style40,
+	Style41,
+	Style42,
+	Style43,
+	Style44,
+	Style45,
+	Style46,
+	Style47,
+	Style48
+}

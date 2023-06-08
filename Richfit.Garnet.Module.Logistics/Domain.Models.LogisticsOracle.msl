@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LogisticsStoreContainer" CdmEntityContainer="Logistics">
+    <EntitySetMapping Name="LM_VEHICLE_MANAGE">
+      <EntityTypeMapping TypeName="LogisticsModel.LM_VEHICLE_MANAGE">
+        <MappingFragment StoreEntitySet="LM_VEHICLE_MANAGE">
+          <ScalarProperty Name="VEHICLE_ID" ColumnName="VEHICLE_ID" />
+          <ScalarProperty Name="VEHICLE_NO" ColumnName="VEHICLE_NO" />
+          <ScalarProperty Name="DRIVER" ColumnName="DRIVER" />
+          <ScalarProperty Name="VEHICLE_NAME" ColumnName="VEHICLE_NAME" />
+          <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
+          <ScalarProperty Name="ODOMETER_NO" ColumnName="ODOMETER_NO" />
+          <ScalarProperty Name="IS_BOUND_DRIVE" ColumnName="IS_BOUND_DRIVE" />
+          <ScalarProperty Name="URER_ID" ColumnName="URER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="IS_DEL" ColumnName="IS_DEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

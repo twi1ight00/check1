@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineOfficeModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="OnlineOffice" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OL_OFFICE" EntityType="OnlineOfficeModel.OL_OFFICE" />
+    <EntitySet Name="OL_TEMPLATE_FILE" EntityType="OnlineOfficeModel.OL_TEMPLATE_FILE" />
+    <EntitySet Name="OL_TEMPLATE_FILE_MAPPING" EntityType="OnlineOfficeModel.OL_TEMPLATE_FILE_MAPPING" />
+  </EntityContainer>
+  <EntityType Name="OL_OFFICE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="OBJ_ID" Type="Guid" Nullable="false" />
+    <Property Name="FILE_NAME" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SUBJECT" Type="String" Nullable="false" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="FILE_SIXE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+    <Property Name="USER_ID" Type="Guid" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="TEMPLATE_FILE_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OL_TEMPLATE_FILE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_FILE_URL" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="TEMPLATE_FILE_NAME" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="TEMPLATE_DESCRIBE" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="IS_DEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" Nullable="false" />
+    <Property Name="CREATETIME" Type="DateTime" Nullable="false" />
+    <Property Name="MODIFIER" Type="Guid" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OL_TEMPLATE_FILE_MAPPING">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="OBJ_ID" Type="Guid" Nullable="false" />
+    <Property Name="TEMPLATE_FILE_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+</Schema>

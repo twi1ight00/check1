@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Workflow">
+    <EntitySetMapping Name="WF_ACTIVITY">
+      <EntityTypeMapping TypeName="Model.WF_ACTIVITY">
+        <MappingFragment StoreEntitySet="WF_ACTIVITY">
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="DETAIL_PAGE_URL" ColumnName="DETAIL_PAGE_URL" />
+          <ScalarProperty Name="DETAIL_PAGE_ID" ColumnName="DETAIL_PAGE_ID" />
+          <ScalarProperty Name="PARENT_DETAIL_PAGE_ID" ColumnName="PARENT_DETAIL_PAGE_ID" />
+          <ScalarProperty Name="PARENT_PAGE_ID" ColumnName="PARENT_PAGE_ID" />
+          <ScalarProperty Name="PAGE_URL" ColumnName="PAGE_URL" />
+          <ScalarProperty Name="PAGE_ID" ColumnName="PAGE_ID" />
+          <ScalarProperty Name="FORM_VERSION" ColumnName="FORM_VERSION" />
+          <ScalarProperty Name="ACTIVITY_CODE" ColumnName="ACTIVITY_CODE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="IS_MERGR" ColumnName="IS_MERGR" />
+          <ScalarProperty Name="CONDITION" ColumnName="CONDITION" />
+          <ScalarProperty Name="FINISH_NUMBER" ColumnName="FINISH_NUMBER" />
+          <ScalarProperty Name="ACTIVITY_COORDINATE" ColumnName="ACTIVITY_COORDINATE" />
+          <ScalarProperty Name="BRANCH_ACTIVITY_ID" ColumnName="BRANCH_ACTIVITY_ID" />
+          <ScalarProperty Name="ACTIVITY_TYPE" ColumnName="ACTIVITY_TYPE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ACTIVITY_NAME" ColumnName="ACTIVITY_NAME" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_ACTIVITY_PARTICIPANT">
+      <EntityTypeMapping TypeName="Model.WF_ACTIVITY_PARTICIPANT">
+        <MappingFragment StoreEntitySet="WF_ACTIVITY_PARTICIPANT">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CLIENT_TYPE" ColumnName="CLIENT_TYPE" />
+          <ScalarProperty Name="PARTICIPANT_ID" ColumnName="PARTICIPANT_ID" />
+          <ScalarProperty Name="PARTICIPANT_TYPE" ColumnName="PARTICIPANT_TYPE" />
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+          <ScalarProperty Name="ACTIVITY_PARTICIPANT_ID" ColumnName="ACTIVITY_PARTICIPANT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_DATA_HISTORY">
+      <EntityTypeMapping TypeName="Model.WF_DATA_HISTORY">
+        <MappingFragment StoreEntitySet="WF_DATA_HISTORY">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="FORM_DATA" ColumnName="FORM_DATA" />
+          <ScalarProperty Name="WORKITEM_ID" ColumnName="WORKITEM_ID" />
+          <ScalarProperty Name="HISTORY_ID" ColumnName="HISTORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_FORM">
+      <EntityTypeMapping TypeName="Model.WF_FORM">
+        <MappingFragment StoreEntitySet="WF_FORM">
+          <ScalarProperty Name="PAGE_ID" ColumnName="PAGE_ID" />
+          <ScalarProperty Name="COLNUMBER" ColumnName="COLNUMBER" />
+          <ScalarProperty Name="META_TABLE_ID" ColumnName="META_TABLE_ID" />
+          <ScalarProperty Name="FORM_VERSION" ColumnName="FORM_VERSION" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="PARENT_FORM_ID" ColumnName="PARENT_FORM_ID" />
+          <ScalarProperty Name="TABLE_DB_NAME" ColumnName="TABLE_DB_NAME" />
+          <ScalarProperty Name="FORM_NAME" ColumnName="FORM_NAME" />
+          <ScalarProperty Name="FORM_ID" ColumnName="FORM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_FORM_DEFINITION">
+      <EntityTypeMapping TypeName="Model.WF_FORM_DEFINITION">
+        <MappingFragment StoreEntitySet="WF_FORM_DEFINITION">
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="READONLY" ColumnName="READONLY" />
+          <ScalarProperty Name="PLACEHOLDER" ColumnName="PLACEHOLDER" />
+          <ScalarProperty Name="FORM_DEFINITION_NAME" ColumnName="FORM_DEFINITION_NAME" />
+          <ScalarProperty Name="REQUIRED" ColumnName="REQUIRED" />
+          <ScalarProperty Name="TAGNAME" ColumnName="TAGNAME" />
+          <ScalarProperty Name="ROWNUMBER" ColumnName="ROWNUMBER" />
+          <ScalarProperty Name="COLNUMBER" ColumnName="COLNUMBER" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="COLSPAN" ColumnName="COLSPAN" />
+          <ScalarProperty Name="METADATA_ID" ColumnName="METADATA_ID" />
+          <ScalarProperty Name="FORM_ID" ColumnName="FORM_ID" />
+          <ScalarProperty Name="FORM_DEFINITION_ID" ColumnName="FORM_DEFINITION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_FORM_DEFINITION_DATA">
+      <EntityTypeMapping TypeName="Model.WF_FORM_DEFINITION_DATA">
+        <MappingFragment StoreEntitySet="WF_FORM_DEFINITION_DATA">
+          <ScalarProperty Name="LOCAL_TEXT" ColumnName="LOCAL_TEXT" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="FIELD_VALUE" ColumnName="FIELD_VALUE" />
+          <ScalarProperty Name="FIELD_TEXT" ColumnName="FIELD_TEXT" />
+          <ScalarProperty Name="PARAM" ColumnName="PARAM" />
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="FORM_DEFINITION_ID" ColumnName="FORM_DEFINITION_ID" />
+          <ScalarProperty Name="FORM_DEFINITION_DATA_ID" ColumnName="FORM_DEFINITION_DATA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_INSTANCE">
+      <EntityTypeMapping TypeName="Model.WF_INSTANCE">
+        <MappingFragment StoreEntitySet="WF_INSTANCE">
+          <ScalarProperty Name="PACKAGE_ID" ColumnName="PACKAGE_ID" />
+          <ScalarProperty Name="PACKAGE_NAME" ColumnName="PACKAGE_NAME" />
+          <ScalarProperty Name="TEMPLATE_NAME" ColumnName="TEMPLATE_NAME" />
+          <ScalarProperty Name="CURRENT_HANDLER_NAME" ColumnName="CURRENT_HANDLER_NAME" />
+          <ScalarProperty Name="CURRENT_HANDLER_ID" ColumnName="CURRENT_HANDLER_ID" />
+          <ScalarProperty Name="CURRENT_ACTIVITY" ColumnName="CURRENT_ACTIVITY" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CLIENT_TYPE" ColumnName="CLIENT_TYPE" />
+          <ScalarProperty Name="FINISH_TIME" ColumnName="FINISH_TIME" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="PARENT_INSTANCE_ID" ColumnName="PARENT_INSTANCE_ID" />
+          <ScalarProperty Name="START_USER_NAME" ColumnName="START_USER_NAME" />
+          <ScalarProperty Name="START_USER_ID" ColumnName="START_USER_ID" />
+          <ScalarProperty Name="RUN_STATE" ColumnName="RUN_STATE" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="INSTANCE_NAME" ColumnName="INSTANCE_NAME" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_INSTANCE_ACTIVITY">
+      <EntityTypeMapping TypeName="Model.WF_INSTANCE_ACTIVITY">
+        <MappingFragment StoreEntitySet="WF_INSTANCE_ACTIVITY">
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+          <ScalarProperty Name="INSTANCE_ACTIVITY_ID" ColumnName="INSTANCE_ACTIVITY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_INSTANCE_ACTIVITY_USER">
+      <EntityTypeMapping TypeName="Model.WF_INSTANCE_ACTIVITY_USER">
+        <MappingFragment StoreEntitySet="WF_INSTANCE_ACTIVITY_USER">
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="INSTANCE_ACTIVITY_ID" ColumnName="INSTANCE_ACTIVITY_ID" />
+          <ScalarProperty Name="INSTANCE_ACTIVITY_USER_ID" ColumnName="INSTANCE_ACTIVITY_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_META_TABLE">
+      <EntityTypeMapping TypeName="Model.WF_META_TABLE">
+        <MappingFragment StoreEntitySet="WF_META_TABLE">
+          <ScalarProperty Name="PARENT_TABLE_ID" ColumnName="PARENT_TABLE_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="TABLE_DB_NAME" ColumnName="TABLE_DB_NAME" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="META_TABLE_ID" ColumnName="META_TABLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_METADATA">
+      <EntityTypeMapping TypeName="Model.WF_METADATA">
+        <MappingFragment StoreEntitySet="WF_METADATA">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DATALENGTH" ColumnName="DATALENGTH" />
+          <ScalarProperty Name="METATYPE" ColumnName="METATYPE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="FIELD_DB_NAME" ColumnName="FIELD_DB_NAME" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="META_TABLE_ID" ColumnName="META_TABLE_ID" />
+          <ScalarProperty Name="METADATA_ID" ColumnName="METADATA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_PACKAGE">
+      <EntityTypeMapping TypeName="Model.WF_PACKAGE">
+        <MappingFragment StoreEntitySet="WF_PACKAGE">
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IMG" ColumnName="IMG" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CLIENT_TYPE" ColumnName="CLIENT_TYPE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="PACKAGE_NAME" ColumnName="PACKAGE_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="PACKAGE_ID" ColumnName="PACKAGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_PAGE">
+      <EntityTypeMapping TypeName="Model.WF_PAGE">
+        <MappingFragment StoreEntitySet="WF_PAGE">
+          <ScalarProperty Name="PAGE_URL" ColumnName="PAGE_URL" />
+          <ScalarProperty Name="PARENT_PAGE_ID" ColumnName="PARENT_PAGE_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="VERSION_ID" ColumnName="VERSION_ID" />
+          <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+          <ScalarProperty Name="VERSION_NAME" ColumnName="VERSION_NAME" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="PAGE_NAME" ColumnName="PAGE_NAME" />
+          <ScalarProperty Name="PAGE_ID" ColumnName="PAGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_PAGE_EVENT">
+      <EntityTypeMapping TypeName="Model.WF_PAGE_EVENT">
+        <MappingFragment StoreEntitySet="WF_PAGE_EVENT">
+          <ScalarProperty Name="JSSTRING" ColumnName="JSSTRING" />
+          <ScalarProperty Name="EVENT_TYPE" ColumnName="EVENT_TYPE" />
+          <ScalarProperty Name="PAGE_ID" ColumnName="PAGE_ID" />
+          <ScalarProperty Name="PAGE_EVENT_ID" ColumnName="PAGE_EVENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_RULE">
+      <EntityTypeMapping TypeName="Model.WF_RULE">
+        <MappingFragment StoreEntitySet="WF_RULE">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="LINE_TYPE" ColumnName="LINE_TYPE" />
+          <ScalarProperty Name="RULE_TYPE" ColumnName="RULE_TYPE" />
+          <ScalarProperty Name="TO_ACTIVITY_ID" ColumnName="TO_ACTIVITY_ID" />
+          <ScalarProperty Name="FROM_ACTIVITY_ID" ColumnName="FROM_ACTIVITY_ID" />
+          <ScalarProperty Name="RULE_COORDINATE" ColumnName="RULE_COORDINATE" />
+          <ScalarProperty Name="RULE_CONDITION" ColumnName="RULE_CONDITION" />
+          <ScalarProperty Name="RULE_NAME" ColumnName="RULE_NAME" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="RULE_ID" ColumnName="RULE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_TEMPLATE">
+      <EntityTypeMapping TypeName="Model.WF_TEMPLATE">
+        <MappingFragment StoreEntitySet="WF_TEMPLATE">
+          <ScalarProperty Name="PACKAGE_NAME" ColumnName="PACKAGE_NAME" />
+          <ScalarProperty Name="TEMPLATE_CODE_PATH" ColumnName="TEMPLATE_CODE_PATH" />
+          <ScalarProperty Name="PARENT_TEMPLATE_ID" ColumnName="PARENT_TEMPLATE_ID" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="IMGURL" ColumnName="IMGURL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+          <ScalarProperty Name="VERSION_ID" ColumnName="VERSION_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="TEMPLATE_CODE" ColumnName="TEMPLATE_CODE" />
+          <ScalarProperty Name="TEMPLATE_NAME" ColumnName="TEMPLATE_NAME" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="PACKAGE_ID" ColumnName="PACKAGE_ID" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_TEMPLATE_AUTHORIZATION">
+      <EntityTypeMapping TypeName="Model.WF_TEMPLATE_AUTHORIZATION">
+        <MappingFragment StoreEntitySet="WF_TEMPLATE_AUTHORIZATION">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="TEMPLATEAUTHORIZATION_ID" ColumnName="TEMPLATEAUTHORIZATION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_WORKITEM">
+      <EntityTypeMapping TypeName="Model.WF_WORKITEM">
+        <MappingFragment StoreEntitySet="WF_WORKITEM">
+          <ScalarProperty Name="RULE_ID" ColumnName="RULE_ID" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CLIENT_TYPE" ColumnName="CLIENT_TYPE" />
+          <ScalarProperty Name="SEND_TOKEN" ColumnName="SEND_TOKEN" />
+          <ScalarProperty Name="GENERATE_TYPE" ColumnName="GENERATE_TYPE" />
+          <ScalarProperty Name="HANDLE_RESULT" ColumnName="HANDLE_RESULT" />
+          <ScalarProperty Name="WORKITEM_RUN_STATE" ColumnName="WORKITEM_RUN_STATE" />
+          <ScalarProperty Name="SEND_TIME" ColumnName="SEND_TIME" />
+          <ScalarProperty Name="WORKITEM_NAME" ColumnName="WORKITEM_NAME" />
+          <ScalarProperty Name="SENDER_USER_NAME" ColumnName="SENDER_USER_NAME" />
+          <ScalarProperty Name="SENDER_USER_ID" ColumnName="SENDER_USER_ID" />
+          <ScalarProperty Name="PARENT_WORKITEM_ID" ColumnName="PARENT_WORKITEM_ID" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+          <ScalarProperty Name="WORKITEM_ID" ColumnName="WORKITEM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_WORKITEM_HANDLER">
+      <EntityTypeMapping TypeName="Model.WF_WORKITEM_HANDLER">
+        <MappingFragment StoreEntitySet="WF_WORKITEM_HANDLER">
+          <ScalarProperty Name="WORKITEM_NAME" ColumnName="WORKITEM_NAME" />
+          <ScalarProperty Name="INSTANCE_ID" ColumnName="INSTANCE_ID" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CLIENT_TYPE" ColumnName="CLIENT_TYPE" />
+          <ScalarProperty Name="SIGNATURE_MODE" ColumnName="SIGNATURE_MODE" />
+          <ScalarProperty Name="HANDLE_TIME" ColumnName="HANDLE_TIME" />
+          <ScalarProperty Name="HANDLE_SUGGESTION" ColumnName="HANDLE_SUGGESTION" />
+          <ScalarProperty Name="HANDLE_RESULT" ColumnName="HANDLE_RESULT" />
+          <ScalarProperty Name="HANDLE_USER_NAME" ColumnName="HANDLE_USER_NAME" />
+          <ScalarProperty Name="HANDLE_USER_ID" ColumnName="HANDLE_USER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="WORKITEM_ID" ColumnName="WORKITEM_ID" />
+          <ScalarProperty Name="WORKITEM_HANDLER_ID" ColumnName="WORKITEM_HANDLER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

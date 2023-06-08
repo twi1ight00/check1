@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="-2903"><value>Conversion from {0} to {1} is not supported for object attributes and collection elements</value></data>
+  <data name="-2902"><value>Custom type {0} does not implement requirement {1}</value></data>
+  <data name="-2901"><value>Custom type mapping for {0} is not specified or is invalid</value></data>
+  <data name="-2905"><value>Object attribute is not mapped to a custom type member</value></data>
+  <data name="-2904"><value>Mapping from {0} to {1} is not supported for object attributes and collection elements</value></data>
+  <data name="-2802"><value>Number of sessions being established with the Oracle Database Server every second</value></data>
+  <data name="-2803"><value>Number of sessions being severed with the Oracle Database Server every second</value></data>
+  <data name="-2801"><value>Displays the various performance counters of Oracle Data Provider for .NET</value></data>
+  <data name="-2806"><value>Total number of active connection pools</value></data>
+  <data name="-2807"><value>Total number of connection in use</value></data>
+  <data name="-2804"><value>Number of active connections originating from connection pools every second</value></data>
+  <data name="-2805"><value>Number of active connections going back to the connection pool every second</value></data>
+  <data name="-2808"><value>Total number of connections available for use in all the connection pools</value></data>
+  <data name="-2809"><value>Number of inactive connection pools that may be disposed soon</value></data>
+  <data name="-2813"><value>Number of connections that will be soon available in the pool. User has closed these connections but they are currently awaiting certain actions like transaction completion before they can be placed back into the pool as free connections</value></data>
+  <data name="-2812"><value>Number of connections which were garbage collected implicitly</value></data>
+  <data name="-2811"><value>Number of pooled active connections</value></data>
+  <data name="-2810"><value>Number of non-pooled active connections</value></data>
+  <data name="-2300"><value>Operations on Unicode byte array require certain parameters to be even values</value></data>
+  <data name="-2201"><value>File is already open</value></data>
+  <data name="-2202"><value>Invalid operation on a closed object</value></data>
+  <data name="-2750"><value>Bulk copy operation is in progress</value></data>
+  <data name="-2751"><value>All the mappings in a mapping collection should either be by name or by ordinal</value></data>
+  <data name="-2752"><value>This operation is not supported inside OracleRowsCopied event</value></data>
+  <data name="-2753"><value>Bulk copy operation aborted</value></data>
+  <data name="-2754"><value>Error in row '{0}' column '{1}'</value></data>
+  <data name="-2755"><value>Bulk copy operation timed out</value></data>
+  <data name="-2705"><value>This operation is not supported on objects created with an internal context connection</value></data>
+  <data name="-2704"><value>A context connection has already been opened</value></data>
+  <data name="-2706"><value>User Defined Types are not supported with context connection</value></data>
+  <data name="-2701"><value>This operation is not supported in a non Oracle-CLR thread</value></data>
+  <data name="-2703"><value>This operation is not supported on a context connection</value></data>
+  <data name="-2702"><value>This operation is not supported in Oracle .NET stored procedures</value></data>
+  <data name="-2651"><value>OracleNotificationRequest object already exists in the command</value></data>
+  <data name="-2653"><value>The notification registration is in an unregistered state</value></data>
+  <data name="-2652"><value>The notification listener is already started</value></data>
+  <data name="-2655"><value>The OracleDependency instance associated with the notification request does not exist</value></data>
+  <data name="-2654"><value>The Database Change Notification feature is not supported by this version of the database</value></data>
+  <data name="-2601"><value>Provider type could not be represented as a .NET type</value></data>
+  <data name="-2602"><value>Offsets greater than {0} bytes or characters are not supported</value></data>
+  <data name="-2502"><value>Invalid operation on null data</value></data>
+  <data name="-2501"><value>Two types to be compared have different collations</value></data>
+  <data name="-1300"><value>OracleParameter object is already contained in a collection</value></data>
+  <data name="-1010"><value>This operation requires the objects to use the same connection</value></data>
+  <data name="-1011"><value>Only one connection is allowed in a transaction context if 'promotable transaction' attribute is set to 'local'</value></data>
+  <data name="-1032"><value>The Schema '{0}' does not support more than '{1}' restrictions</value></data>
+  <data name="-1033"><value>Fetching of '{0}' MetaData from Database failed</value></data>
+  <data name="-1030"><value>The requested collection '{0}' is not defined</value></data>
+  <data name="-1031"><value>This version of the database does not support '{0}' Schema</value></data>
+  <data name="-1036"><value>Customized XML file '{0}' could not be found</value></data>
+  <data name="-1034"><value>No PopulationString was specified for Collection '{0}'</value></data>
+  <data name="-1035"><value>Cannot obtain XML metadata stream for collection '{0}'</value></data>
+  <data name="-1009"><value>'{0}' cannot be set to an invalid value of '{1}'</value></data>
+  <data name="-1008"><value>'{0}' is an invalid connection string attribute</value></data>
+  <data name="-1001"><value>Connection must be open for this operation</value></data>
+  <data name="-1000"><value>Connection request timed out</value></data>
+  <data name="-1003"><value>ConnectionString property cannot be set when the connection is open</value></data>
+  <data name="-1002"><value>IsolationLevel must be ReadCommitted or Serializable</value></data>
+  <data name="-1005"><value>Connection is already open</value></data>
+  <data name="-1004"><value>This object cannot use re-opened connections</value></data>
+  <data name="-1007"><value>Connection string is not well-formed</value></data>
+  <data name="-1006"><value>Connection is already part of a local or a distributed transaction</value></data>
+  <data name="-1050"><value>Unable to enlist in a distributed transaction</value></data>
+  <data name="-1051"><value>Unable to load OraMTS</value></data>
+  <data name="-1556"><value>PRIMARY KEY, ROWID, or UNIQUE NOT NULL column is required in the select list for this operation</value></data>
+  <data name="-1504"><value>Invalid length of data requested</value></data>
+  <data name="-1501"><value>Column contains NULL data</value></data>
+  <data name="-1502"><value>Unable to find specified column in result set</value></data>
+  <data name="-1503"><value>Invalid column index specified</value></data>
+  <data name="-1202"><value>{0} is invalid</value></data>
+  <data name="-1201"><value>Invalid parameter binding</value></data>
+  <data name="-1704"><value>Unsupported PL/SQL datatype at parameter position {0}</value></data>
+  <data name="-1702"><value>Dynamic SQL generation failed. No key information found</value></data>
+  <data name="-1703"><value>{0} does not support {1}</value></data>
+  <data name="-1701"><value>Dynamic SQL generation failed. Either no base tables were found or more than one base table was found</value></data>
+  <data name="-1450"><value>Unsupported column datatype</value></data>
+  <data name="-1602"><value>OracleCommand.BindByName property value should be same for each command in OracleDataAdapter</value></data>
+  <data name="-1601"><value>Unsupported type specified for safe type mapping</value></data>
+  <data name="-1600"><value>The current result set is forward-only</value></data>
+  <data name="-4000"><value>TimesTen database version is less than the minimum required version of {0}</value></data>
+  <data name="-3000"><value>Data provider internal error</value></data>
+  <data name="-6503"><value>Network Library: OraBuf sends must have at least one data segment</value></data>
+  <data name="-6502"><value>Network Library: OraBuf size overflow</value></data>
+  <data name="-6501"><value>Network Library: OraBuf segments must be monotonically increasing</value></data>
+  <data name="-6500"><value>Network Library: TNS connect string missing</value></data>
+  <data name="-6403"><value>Network Trasport: TCP transport address connect failure</value></data>
+  <data name="-6400"><value>Network Trasport: SSL failure in parsing wallet location</value></data>
+  <data name="-6309"><value>Native Services: Invalid driver name</value></data>
+  <data name="-6308"><value>Native Services: Service class failed to initialize</value></data>
+  <data name="-6307"><value>Native Services: Invalid NA authentication status received</value></data>
+  <data name="-6306"><value>Native Services: Invalid NA supervisor status received</value></data>
+  <data name="-6314"><value>Native Services: Unexpected NA packet type</value></data>
+  <data name="-6310"><value>Native Services: Array header error (either magic or type error)</value></data>
+  <data name="-6312"><value>Native Services: Invalid NA packet type length</value></data>
+  <data name="-6313"><value>Native Services: Invalid NA packet type</value></data>
+  <data name="-6329"><value>Native Services: NTS authetication invalid SSPI packet</value></data>
+  <data name="-6328"><value>Native Services: NTS authetication SSPI protocol error</value></data>
+  <data name="-6321"><value>Native Services: Incomplete NA Services from server</value></data>
+  <data name="-6320"><value>Native Services: Invalid NA Service received from server</value></data>
+  <data name="-6002"><value>Oracle Communication: Answer attempted without a listening endpoint established</value></data>
+  <data name="-6000"><value>Oracle Communication: Reset attempted while not in Break/Reset mode</value></data>
+  <data name="-6001"><value>Oracle Communication: Failed to connect to server or failed to parse connect string</value></data>
+  <data name="-5000"><value>Niladic functions cannot have parameters</value></data>
+  <data name="12618"><value>Network Session: Invalid NS version</value></data>
+  <data name="12649"><value>Native Services: Unknown encrpytion or data integrity algorithm</value></data>
+  <data name="12637"><value>Native Services: Packet receive failure</value></data>
+  <data name="12521"><value>TNS:listener does not currently know of instance requested in connect descriptor</value></data>
+  <data name="12520"><value>TNS:listener could not find available handler for requested type of server</value></data>
+  <data name="12523"><value>TNS:listener could not find instance appropriate for the client connection</value></data>
+  <data name="12522"><value>TNS:listener could not find available instance with given INSTANCE_ROLE</value></data>
+  <data name="12525"><value>TNS:listener has not received client's request in time allowed</value></data>
+  <data name="12524"><value>TNS:listener could not resolve HANDLER_NAME given in connect descriptor</value></data>
+  <data name="12527"><value>TNS:listener: all instances are in restricted mode or blocking new connections</value></data>
+  <data name="12526"><value>TNS:listener: all appropriate instances are in restricted mode</value></data>
+  <data name="12529"><value>TNS:connect request rejected based on current filtering rules</value></data>
+  <data name="12528"><value>TNS:listener: all appropriate instances are blocking new connections</value></data>
+  <data name="12532"><value>Network Session: Invalid arguments</value></data>
+  <data name="12533"><value>Network Session: Connect transport address syntax error</value></data>
+  <data name="12537"><value>Network Session: End of file</value></data>
+  <data name="12538"><value>Network Session: Invalide (transport) "protocol" specification</value></data>
+  <data name="12539"><value>Network Session: Invalid NS packet size (likely marker packet)</value></data>
+  <data name="12502"><value>TNS:listener received no CONNECT_DATA from client</value></data>
+  <data name="12500"><value>TNS:listener failed to start a dedicated server process</value></data>
+  <data name="12505"><value>TNS:listener does not currently know of SID given in connect descriptor</value></data>
+  <data name="12504"><value>TNS:listener was not given the SERVICE_NAME in CONNECT_DATA</value></data>
+  <data name="12509"><value>TNS:listener failed to redirect client to service handler</value></data>
+  <data name="12508"><value>TNS:listener could not resolve the COMMAND given</value></data>
+  <data name="12513"><value>TNS:service handler found but it has registered for a different protocol</value></data>
+  <data name="12510"><value>TNS:database temporarily lacks resources to handle the request</value></data>
+  <data name="12511"><value>TNS:service handler found but it is not accepting connections</value></data>
+  <data name="12516"><value>TNS:listener could not find available handler with matching protocol stack</value></data>
+  <data name="12514"><value>TNS:listener does not currently know of service requested in connect descriptor</value></data>
+  <data name="12515"><value>TNS:listener could not find a handler for this presentation</value></data>
+  <data name="12518"><value>TNS:listener could not hand off client connection</value></data>
+  <data name="12519"><value>TNS:no appropriate service handler found</value></data>
+  <data name="12566"><value>Network Session: Unknown or malformed NS packet received</value></data>
+  <data name="12570"><value>Network Session: Unexpected packet read error</value></data>
+  <data name="12545"><value>Network Transport: Unable to resolve specify connect hostname</value></data>
+  <data name="12550"><value>Network Session: Connect address parsing syntax error</value></data>
+  <data name="12592"><value>Network Session: Invalid NS packet format (likely marker packet)</value></data>
+  <data name="13412"><value>Invalid scale parameter</value></data>
+  <data name="13154"><value>Invalid precision specified</value></data>
+  <data name="24365"><value>error in character conversion</value></data>
+  <data name="24369"><value>Required callbacks not registered for one or more bind handles</value></data>
+  <data name="-11"><value>The provider is not compatible with the version of Oracle client</value></data>
+  <data name="-10"><value>Memory could not be allocated</value></data>
+  <data name="542"><value>Failure during SSL handshake</value></data>
+  <data name="351"><value>Network Library: Name-Value premature end of string</value></data>
+  <data name="303"><value>Network Library: Name-Value syntax error</value></data>
+  <data name="1841"><value>(full) year must be between -4713 and +9999, and not be 0</value></data>
+  <data name="3134"><value>Connections to this server version are no longer supported</value></data>
+  <data name="3135"><value>Connection lost contact</value></data>
+  <data name="3136"><value>Inbound connection timed out</value></data>
+  <data name="3137"><value>TTC protocol internal error : [%s] [%s] [%s] [%s] [%s] [%s] [%s] [%s]</value></data>
+  <data name="3130"><value>The buffer for the next piece to be fetched is required</value></data>
+  <data name="3131"><value>An invalid buffer was provided for the next piece</value></data>
+  <data name="3133"><value>Piggyback function error</value></data>
+  <data name="3116"><value>Invalid buffer length passed to a conversion routine</value></data>
+  <data name="3114"><value>Not connected to ORACLE</value></data>
+  <data name="3113"><value>End-of-file on communication channel</value></data>
+  <data name="3111"><value>Break received on communication channel</value></data>
+  <data name="3125"><value>Client-server protocol violation</value></data>
+  <data name="3124"><value>Two-task internal error</value></data>
+  <data name="3127"><value>No new operations allowed until the active operation ends</value></data>
+  <data name="3120"><value>Two-task conversion routine: integer overflow</value></data>
+  <data name="3129"><value>The next piece to be inserted is required</value></data>
+  <data name="3107"><value>Oranet buffer underflow</value></data>
+  <data name="3106"><value>Fatal two-task communication protocol error</value></data>
+  <data name="3105"><value>Internal protocol error</value></data>
+  <data name="3109"><value>Oranet buffer overflow</value></data>
+  </root>

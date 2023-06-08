@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="SYS_AUTHORIZATION">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="AUTHORIZATION_TYPE" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ORG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TO_ORG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TO_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="START_TIME" Type="date" Nullable="false" />
+    <Property Name="END_TIME" Type="date" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar2" MaxLength="1024" />
+    <Property Name="STATUS" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION_DETAILS">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_DETAILS_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_DETAILS_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="AUTHORIZATION_ID" Type="raw" MaxLength="16" />
+    <Property Name="RESOURCES_TYPE" Type="raw" MaxLength="16" />
+    <Property Name="RESOURCES_ID" Type="raw" MaxLength="16" />
+    <Property Name="ROLE_ID" Type="raw" MaxLength="16" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION_SPECIAL">
+    <Key>
+      <PropertyRef Name="SYS_AUTHORIZATION_SPECIAL_ID" />
+    </Key>
+    <Property Name="SYS_AUTHORIZATION_SPECIAL_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="USER_NAME" Type="nvarchar2" MaxLength="255" Nullable="false" />
+    <Property Name="TO_USER_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TO_USER_NAME" Type="nvarchar2" MaxLength="255" Nullable="false" />
+    <Property Name="TO_ORG_ID" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="TO_ORG_NAME" Type="nvarchar2" MaxLength="255" Nullable="false" />
+    <Property Name="TO_POSITION" Type="raw" MaxLength="16" />
+    <Property Name="TO_POSITION_NAME" Type="nvarchar2" MaxLength="255" />
+    <Property Name="ISDEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CREATOR" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="CREATETIME" Type="date" Nullable="false" />
+    <Property Name="MODIFIER" Type="raw" MaxLength="16" Nullable="false" />
+    <Property Name="MODIFYTIME" Type="date" Nullable="false" />
+    <Property Name="IS_EXCLUSIVE" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH">
+    <End Role="SYS_AUTHORIZATION" Type="Self.SYS_AUTHORIZATION" Multiplicity="0..1" />
+    <End Role="SYS_AUTHORIZATION_DETAILS" Type="Self.SYS_AUTHORIZATION_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_AUTHORIZATION">
+        <PropertyRef Name="SYS_AUTHORIZATION_ID" />
+      </Principal>
+      <Dependent Role="SYS_AUTHORIZATION_DETAILS">
+        <PropertyRef Name="AUTHORIZATION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="SYS_AUTHORIZATION" EntityType="Self.SYS_AUTHORIZATION" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_AUTHORIZATION_DETAILS" EntityType="Self.SYS_AUTHORIZATION_DETAILS" Schema="" store:Type="Tables" />
+    <EntitySet Name="SYS_AUTHORIZATION_SPECIAL" EntityType="Self.SYS_AUTHORIZATION_SPECIAL" Schema="" store:Type="Tables" />
+    <AssociationSet Name="FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH" Association="Self.FK_SYS_AUTH_FK_SYS_AU_SYS_AUTH">
+      <End Role="SYS_AUTHORIZATION" EntitySet="SYS_AUTHORIZATION" />
+      <End Role="SYS_AUTHORIZATION_DETAILS" EntitySet="SYS_AUTHORIZATION_DETAILS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

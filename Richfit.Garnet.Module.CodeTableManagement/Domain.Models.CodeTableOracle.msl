@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CodeTableOracle">
+    <EntitySetMapping Name="SYS_CODE_TABLE">
+      <EntityTypeMapping TypeName="Model.SYS_CODE_TABLE">
+        <MappingFragment StoreEntitySet="SYS_CODE_TABLE">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CODE_BUSINESS_NO" ColumnName="CODE_BUSINESS_NO" />
+          <ScalarProperty Name="PARENT_CODE_TABLE_ID" ColumnName="PARENT_CODE_TABLE_ID" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CODE_ID" ColumnName="CODE_ID" />
+          <ScalarProperty Name="CODE_TABLE_ID" ColumnName="CODE_TABLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

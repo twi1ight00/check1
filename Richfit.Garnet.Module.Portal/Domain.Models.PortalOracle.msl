@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortalModelStoreContainer" CdmEntityContainer="Portal">
+    <EntitySetMapping Name="SYS_PORTAL">
+      <EntityTypeMapping TypeName="PortalModel.SYS_PORTAL">
+        <MappingFragment StoreEntitySet="SYS_PORTAL">
+          <ScalarProperty Name="PORTAL_ID" ColumnName="PORTAL_ID" />
+          <ScalarProperty Name="PORTAL_URL" ColumnName="PORTAL_URL" />
+          <ScalarProperty Name="IMAGE_URL" ColumnName="IMAGE_URL" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="IS_REFRESH" ColumnName="IS_REFRESH" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SHORTCUT">
+      <EntityTypeMapping TypeName="PortalModel.SYS_SHORTCUT">
+        <MappingFragment StoreEntitySet="SYS_SHORTCUT">
+          <ScalarProperty Name="SHORTCUT_ID" ColumnName="SHORTCUT_ID" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_PORTAL">
+      <EntityTypeMapping TypeName="PortalModel.SYS_USER_PORTAL">
+        <MappingFragment StoreEntitySet="SYS_USER_PORTAL">
+          <ScalarProperty Name="USER_PORTAL_ID" ColumnName="USER_PORTAL_ID" />
+          <ScalarProperty Name="PORTAL_ID" ColumnName="PORTAL_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="COL_NUMBER" ColumnName="COL_NUMBER" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

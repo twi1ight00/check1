@@ -1,0 +1,140 @@
+using System.Drawing;
+using x38a89dee67fc7a16;
+using x5794c252ba25e723;
+using x6c95d9cf46ff5f25;
+using xf9a9481c3f63a419;
+
+namespace x7dc87ca8f7f7b273;
+
+internal class xed9035f57046e423 : xc7a77b17ac8b122b
+{
+	private x3c74b3c4f21844f9 x9b287b671d592594;
+
+	public xed9035f57046e423(xd878af0d0717b77a context, x3c74b3c4f21844f9 writer)
+		: base(context)
+	{
+		x9b287b671d592594 = writer;
+	}
+
+	public string x3a53bab86bc1dfad(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		if (xd8f1949f8950238a == null)
+		{
+			return "none";
+		}
+		return xd8f1949f8950238a.x4bc21f84846f912d switch
+		{
+			x0b257a9fb413b6c3.x37b6ad6b01d0c641 => xa79cda5f7755fde8(xd8f1949f8950238a), 
+			x0b257a9fb413b6c3.x1b1f1b9a5f55b7ee => x2657b6d735e613cc(xd8f1949f8950238a), 
+			x0b257a9fb413b6c3.x73039d25e580af15 => x8b0138e3a8860975(x6fb77f4cc018ceba.xa903f8f328b4c169((xa587dcb499c221cc)xd8f1949f8950238a)), 
+			x0b257a9fb413b6c3.x7b6a6d281546db99 => x8b0138e3a8860975(xd8f1949f8950238a), 
+			x0b257a9fb413b6c3.xb8751dec55f64252 => x3ee81b8db87b7dc2.xfafbf12cd38285b5(((xc020fa2f5133cba8)xd8f1949f8950238a).x9b41425268471380), 
+			_ => "none", 
+		};
+	}
+
+	public static float x27312094a1062219(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		float num = 1f;
+		if (xd8f1949f8950238a != null)
+		{
+			num = xd8f1949f8950238a.x4bc21f84846f912d switch
+			{
+				x0b257a9fb413b6c3.x7b6a6d281546db99 => ((x5e9754e56a4f759f)xd8f1949f8950238a).xd163a712710650fc, 
+				x0b257a9fb413b6c3.xb8751dec55f64252 => (float)((xc020fa2f5133cba8)xd8f1949f8950238a).x9b41425268471380.xda71bf6f7c07c3bc / 255f, 
+				_ => 1f, 
+			};
+		}
+		if (num < 0f || num > 1f)
+		{
+			num = 1f;
+		}
+		return num;
+	}
+
+	private string x2657b6d735e613cc(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		x5bdb4ba66c23277c xd8f1949f8950238a2 = (x5bdb4ba66c23277c)xd8f1949f8950238a;
+		byte[] x43e181e083db6cdf = x973c394bd6a899a2.xb19c72971505e3ca(xd8f1949f8950238a2);
+		return xb92e858a9b4707b8(x43e181e083db6cdf, RectangleF.Empty, null);
+	}
+
+	private string x8b0138e3a8860975(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		x5e9754e56a4f759f x5e9754e56a4f759f = (x5e9754e56a4f759f)xd8f1949f8950238a;
+		return xb92e858a9b4707b8(x5e9754e56a4f759f.xcc18177a965e0313, x5e9754e56a4f759f.x42eb8f4390d1e7ba, x5e9754e56a4f759f.xaccac17571a8d9fa.x8b61531c8ea35b85());
+	}
+
+	internal string xb92e858a9b4707b8(byte[] x43e181e083db6cdf, RectangleF x47807e698c6282d5, x54366fa5f75a02f7 x5b0b266e72247144)
+	{
+		string text = $"texture{base.x28fcdc775a1d069c.x8e81c5a80377d905()}";
+		xa2745adfabe0c674 xa2745adfabe0c = xdd1b8f14cc8ba86d.x16a7fb03c627ebfb(x43e181e083db6cdf);
+		float x37cf7043760b312e = ((x47807e698c6282d5.Width > 0f) ? x47807e698c6282d5.Width : ((float)xa2745adfabe0c.xdc1bf80853046136));
+		float x37cf7043760b312e2 = ((x47807e698c6282d5.Height > 0f) ? x47807e698c6282d5.Height : ((float)xa2745adfabe0c.xb0f146032f47c24e));
+		x9b287b671d592594.x2307058321cdb62f("pattern");
+		x9b287b671d592594.xff520a0047c27122("id", text);
+		x9b287b671d592594.xff520a0047c27122("patternUnits", "userSpaceOnUse");
+		x9b287b671d592594.xff520a0047c27122("patternContentUnits", "userSpaceOnUse");
+		x9b287b671d592594.xff520a0047c27122("x", xca004f56614e2431.x37804260a70f74eb(x47807e698c6282d5.X));
+		x9b287b671d592594.xff520a0047c27122("y", xca004f56614e2431.x37804260a70f74eb(x47807e698c6282d5.Y));
+		x9b287b671d592594.xff520a0047c27122("width", xca004f56614e2431.x37804260a70f74eb(x37cf7043760b312e));
+		x9b287b671d592594.xff520a0047c27122("height", xca004f56614e2431.x37804260a70f74eb(x37cf7043760b312e2));
+		if (x5b0b266e72247144 != null)
+		{
+			x9b287b671d592594.xff520a0047c27122("patternTransform", x3ee81b8db87b7dc2.x8ba7763bb24dc716(x5b0b266e72247144));
+		}
+		x9b287b671d592594.x2307058321cdb62f("use");
+		x9b287b671d592594.xff520a0047c27122("xlink:href", $"#{base.x28fcdc775a1d069c.x9728de41bb77ce76(x43e181e083db6cdf, null)}");
+		x9b287b671d592594.xff520a0047c27122("width", xca004f56614e2431.x37804260a70f74eb(xa2745adfabe0c.xdc1bf80853046136));
+		x9b287b671d592594.xff520a0047c27122("height", xca004f56614e2431.x37804260a70f74eb(xa2745adfabe0c.xb0f146032f47c24e));
+		x9b287b671d592594.x2dfde153f4ef96d0();
+		x9b287b671d592594.x2dfde153f4ef96d0();
+		return $"url(#{text})";
+	}
+
+	private string xa79cda5f7755fde8(x845d6a068e0b03c5 xd8f1949f8950238a)
+	{
+		x5f55370cc09dd787 x5f55370cc09dd = (x5f55370cc09dd787)xd8f1949f8950238a;
+		string text = $"gradient{base.x28fcdc775a1d069c.x8e81c5a80377d905()}";
+		x9b287b671d592594.x2307058321cdb62f("linearGradient");
+		x9b287b671d592594.xff520a0047c27122("id", text);
+		x9b287b671d592594.xff520a0047c27122("gradientUnits", "userSpaceOnUse");
+		x9b287b671d592594.xff520a0047c27122("spreadMethod", "repeat");
+		x9b287b671d592594.xff520a0047c27122("x1", xca004f56614e2431.x37804260a70f74eb(x5f55370cc09dd.x404d528fe2f10961.X));
+		x9b287b671d592594.xff520a0047c27122("y1", xca004f56614e2431.x37804260a70f74eb(x5f55370cc09dd.x404d528fe2f10961.Y));
+		x9b287b671d592594.xff520a0047c27122("x2", xca004f56614e2431.x37804260a70f74eb(x5f55370cc09dd.x404d528fe2f10961.Right));
+		x9b287b671d592594.xff520a0047c27122("y2", xca004f56614e2431.x37804260a70f74eb(x5f55370cc09dd.x404d528fe2f10961.Top));
+		if (x5f55370cc09dd.xaccac17571a8d9fa != null)
+		{
+			x9b287b671d592594.xff520a0047c27122("gradientTransform", x3ee81b8db87b7dc2.x8ba7763bb24dc716(x5f55370cc09dd.xaccac17571a8d9fa));
+		}
+		if (x5f55370cc09dd.xcc7b76ceb682651c == null)
+		{
+			xc9ea7c71f56791c6(x5f55370cc09dd.x7d2dc175c2f289c5, 0f);
+			xc9ea7c71f56791c6(x5f55370cc09dd.xf3874816968aabd7, 1f);
+		}
+		else
+		{
+			xee3f81a88b302c10[] xcc7b76ceb682651c = x5f55370cc09dd.xcc7b76ceb682651c;
+			foreach (xee3f81a88b302c10 xee3f81a88b302c in xcc7b76ceb682651c)
+			{
+				xc9ea7c71f56791c6(xee3f81a88b302c.x9b41425268471380, xee3f81a88b302c.xbe1e23e7d5b43370);
+			}
+		}
+		x9b287b671d592594.x2dfde153f4ef96d0();
+		return $"url(#{text})";
+	}
+
+	private void xc9ea7c71f56791c6(x26d9ecb4bdf0456d x6c50a99faab7d741, float x13d4cb8d1bd20347)
+	{
+		x9b287b671d592594.x2307058321cdb62f("stop");
+		x9b287b671d592594.xff520a0047c27122("offset", xca004f56614e2431.x37804260a70f74eb(x13d4cb8d1bd20347));
+		x9b287b671d592594.xff520a0047c27122("stop-color", x3ee81b8db87b7dc2.xfafbf12cd38285b5(x6c50a99faab7d741));
+		float num = (float)x6c50a99faab7d741.xda71bf6f7c07c3bc / 255f;
+		if (num >= 0f && num < 1f)
+		{
+			x9b287b671d592594.xff520a0047c27122("stop-opacity", xca004f56614e2431.x37804260a70f74eb(num));
+		}
+		x9b287b671d592594.x2dfde153f4ef96d0();
+	}
+}

@@ -1,0 +1,14 @@
+namespace x4f4df92b75ba3b67;
+
+internal enum xc402f9a087112e63
+{
+	x2bca50d746ec73b2,
+	x4d0b9d4447ba7566,
+	x67749da60288d66c,
+	x021301649c58465b,
+	x675c289b5339a759,
+	x3261cbcb3719c1c4,
+	x796ab23ce57ee1e0,
+	xf6875da725c82a98,
+	xd9c34d7c9f00a2f9
+}

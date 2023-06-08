@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SystemManageModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SystemManage" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SYS_ACTION" EntityType="SystemManageModel.SYS_ACTION" />
+    <EntitySet Name="SYS_ACTION_GROUP" EntityType="SystemManageModel.SYS_ACTION_GROUP" />
+    <EntitySet Name="SYS_ACTION_GROUP_ACTION" EntityType="SystemManageModel.SYS_ACTION_GROUP_ACTION" />
+    <EntitySet Name="SYS_AUTHORIZATION" EntityType="SystemManageModel.SYS_AUTHORIZATION" />
+    <EntitySet Name="SYS_BUSINESS" EntityType="SystemManageModel.SYS_BUSINESS" />
+    <EntitySet Name="SYS_DOMAIN" EntityType="SystemManageModel.SYS_DOMAIN" />
+    <EntitySet Name="SYS_HANDLER" EntityType="SystemManageModel.SYS_HANDLER" />
+    <EntitySet Name="SYS_LIBRARY" EntityType="SystemManageModel.SYS_LIBRARY" />
+    <EntitySet Name="SYS_MENU" EntityType="SystemManageModel.SYS_MENU" />
+    <EntitySet Name="SYS_MODULE" EntityType="SystemManageModel.SYS_MODULE" />
+    <EntitySet Name="SYS_ORG" EntityType="SystemManageModel.SYS_ORG" />
+    <EntitySet Name="SYS_PRIVILEGE" EntityType="SystemManageModel.SYS_PRIVILEGE" />
+    <EntitySet Name="SYS_ROLE" EntityType="SystemManageModel.SYS_ROLE" />
+    <EntitySet Name="SYS_ROLE_ORG" EntityType="SystemManageModel.SYS_ROLE_ORG" />
+    <EntitySet Name="SYS_USER" EntityType="SystemManageModel.SYS_USER" />
+    <EntitySet Name="SYS_USER_BUSINESS" EntityType="SystemManageModel.SYS_USER_BUSINESS" />
+    <EntitySet Name="SYS_USER_ORG" EntityType="SystemManageModel.SYS_USER_ORG" />
+    <EntitySet Name="SYS_USER_ROLE" EntityType="SystemManageModel.SYS_USER_ROLE" />
+    <AssociationSet Name="FK_SYS_ACTI_ACTIONGRO_SYS_ACTI" Association="SystemManageModel.FK_SYS_ACTI_ACTIONGRO_SYS_ACTI">
+      <End Role="SYS_ACTION" EntitySet="SYS_ACTION" />
+      <End Role="SYS_ACTION_GROUP_ACTION" EntitySet="SYS_ACTION_GROUP_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_FUNCTIONH_SYS_HAND" Association="SystemManageModel.FK_SYS_ACTI_FUNCTIONH_SYS_HAND">
+      <End Role="SYS_HANDLER" EntitySet="SYS_HANDLER" />
+      <End Role="SYS_ACTION" EntitySet="SYS_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_BUSINESSA_SYS_BUSI" Association="SystemManageModel.FK_SYS_ACTI_BUSINESSA_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_ACTION_GROUP" EntitySet="SYS_ACTION_GROUP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACTI_GROUPACTI_SYS_ACTI" Association="SystemManageModel.FK_SYS_ACTI_GROUPACTI_SYS_ACTI">
+      <End Role="SYS_ACTION_GROUP" EntitySet="SYS_ACTION_GROUP" />
+      <End Role="SYS_ACTION_GROUP_ACTION" EntitySet="SYS_ACTION_GROUP_ACTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_BUSI_REFERENCE_SYS_LIBR" Association="SystemManageModel.FK_SYS_BUSI_REFERENCE_SYS_LIBR">
+      <End Role="SYS_LIBRARY" EntitySet="SYS_LIBRARY" />
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_MENU_MENUBUSIN_SYS_BUSI" Association="SystemManageModel.FK_SYS_MENU_MENUBUSIN_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_MENU" EntitySet="SYS_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIV_BUSINESSP_SYS_BUSI" Association="SystemManageModel.FK_SYS_PRIV_BUSINESSP_SYS_BUSI">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_US_SYS_BUSI1" Association="SystemManageModel.FK_SYS_USER_US_SYS_BUSI1">
+      <End Role="SYS_BUSINESS" EntitySet="SYS_BUSINESS" />
+      <End Role="SYS_USER_BUSINESS" EntitySet="SYS_USER_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_REFERENCE_SYS_DOMA" Association="SystemManageModel.FK_SYS_USER_REFERENCE_SYS_DOMA">
+      <End Role="SYS_DOMAIN" EntitySet="SYS_DOMAIN" />
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_HAND_REFERENCE_SYS_LIBR" Association="SystemManageModel.FK_SYS_HAND_REFERENCE_SYS_LIBR">
+      <End Role="SYS_LIBRARY" EntitySet="SYS_LIBRARY" />
+      <End Role="SYS_HANDLER" EntitySet="SYS_HANDLER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Org_Sys_Org" Association="SystemManageModel.FK_Sys_Org_Sys_Org">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ORG1" EntitySet="SYS_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ROLE_ORGROLEOR_SYS_ORG" Association="SystemManageModel.FK_SYS_ROLE_ORGROLEOR_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_ROLE_ORG" EntitySet="SYS_ROLE_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_ORGUSEROR_SYS_ORG" Association="SystemManageModel.FK_SYS_USER_ORGUSEROR_SYS_ORG">
+      <End Role="SYS_ORG" EntitySet="SYS_ORG" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH" Association="SystemManageModel.FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ROLE_ROLEORGRO_SYS_AUTH" Association="SystemManageModel.FK_SYS_ROLE_ROLEORGRO_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_ROLE_ORG" EntitySet="SYS_ROLE_ORG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_ROLEUSERR_SYS_AUTH" Association="SystemManageModel.FK_SYS_USER_ROLEUSERR_SYS_AUTH">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_USER_ROLE" EntitySet="SYS_USER_ROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_UR_REFERENCE_SYS_USER" Association="SystemManageModel.FK_SYS_UR_REFERENCE_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ROLE" EntitySet="SYS_USER_ROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_US_SYS_BUSI2" Association="SystemManageModel.FK_SYS_USER_US_SYS_BUSI2">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_BUSINESS" EntitySet="SYS_USER_BUSINESS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_USERORGUS_SYS_USER" Association="SystemManageModel.FK_SYS_USER_USERORGUS_SYS_USER">
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+      <End Role="SYS_USER_ORG" EntitySet="SYS_USER_ORG" />
+    </AssociationSet>
+    <EntitySet Name="SYS_LOG" EntityType="SystemManageModel.SYS_LOG" />
+  </EntityContainer>
+  <EntityType Name="SYS_ACTION">
+    <Key>
+      <PropertyRef Name="ACTION_ID" />
+    </Key>
+    <Property Type="Guid" Name="ACTION_ID" Nullable="false" />
+    <Property Type="Guid" Name="HANDLER_ID" Nullable="false" />
+    <Property Type="String" Name="ACTION_CODE" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ACTION_NAME" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="PRIVIGE_VALIDATE_TYPE" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_ACTION_GROUP_ACTION" Relationship="SystemManageModel.FK_SYS_ACTI_ACTIONGRO_SYS_ACTI" FromRole="SYS_ACTION" ToRole="SYS_ACTION_GROUP_ACTION" />
+    <NavigationProperty Name="SYS_HANDLER" Relationship="SystemManageModel.FK_SYS_ACTI_FUNCTIONH_SYS_HAND" FromRole="SYS_ACTION" ToRole="SYS_HANDLER" />
+  </EntityType>
+  <EntityType Name="SYS_ACTION_GROUP">
+    <Key>
+      <PropertyRef Name="ACTION_GROUP_ID" />
+    </Key>
+    <Property Type="Guid" Name="ACTION_GROUP_ID" Nullable="false" />
+    <Property Type="Guid" Name="BUSINESS_ID" Nullable="false" />
+    <Property Type="String" Name="GROUP_NAME" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_BUSINESS" Relationship="SystemManageModel.FK_SYS_ACTI_BUSINESSA_SYS_BUSI" FromRole="SYS_ACTION_GROUP" ToRole="SYS_BUSINESS" />
+    <NavigationProperty Name="SYS_ACTION_GROUP_ACTION" Relationship="SystemManageModel.FK_SYS_ACTI_GROUPACTI_SYS_ACTI" FromRole="SYS_ACTION_GROUP" ToRole="SYS_ACTION_GROUP_ACTION" />
+  </EntityType>
+  <EntityType Name="SYS_ACTION_GROUP_ACTION">
+    <Key>
+      <PropertyRef Name="ACTION_GROUP_ACTION_ID" />
+    </Key>
+    <Property Type="Guid" Name="ACTION_GROUP_ACTION_ID" Nullable="false" />
+    <Property Type="Guid" Name="ACTION_ID" Nullable="false" />
+    <Property Type="Guid" Name="ACTION_GROUP_ID" Nullable="false" />
+    <NavigationProperty Name="SYS_ACTION" Relationship="SystemManageModel.FK_SYS_ACTI_ACTIONGRO_SYS_ACTI" FromRole="SYS_ACTION_GROUP_ACTION" ToRole="SYS_ACTION" />
+    <NavigationProperty Name="SYS_ACTION_GROUP" Relationship="SystemManageModel.FK_SYS_ACTI_GROUPACTI_SYS_ACTI" FromRole="SYS_ACTION_GROUP_ACTION" ToRole="SYS_ACTION_GROUP" />
+  </EntityType>
+  <EntityType Name="SYS_AUTHORIZATION">
+    <Key>
+      <PropertyRef Name="AUTHORIZATION_ID" />
+    </Key>
+    <Property Type="Guid" Name="AUTHORIZATION_ID" Nullable="false" />
+    <Property Type="Guid" Name="FROM_USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="TO_USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="TO_ROLE_ID" />
+    <Property Type="Guid" Name="TO_RIGHT_ID" Nullable="false" />
+    <Property Type="DateTime" Name="START_TIME" Nullable="false" />
+    <Property Type="DateTime" Name="END_TIME" Nullable="false" />
+    <Property Type="Decimal" Name="SORT" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_BUSINESS">
+    <Key>
+      <PropertyRef Name="BUSINESS_ID" />
+    </Key>
+    <Property Type="Guid" Name="BUSINESS_ID" Nullable="false" />
+    <Property Type="Guid" Name="LIBRARY_ID" />
+    <Property Type="String" Name="BUSINESS_CODE" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BUSINESS_NAME" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="PARENT_BUSINESS_ID" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="IS_ADD_ACTION_GROUP" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_ACTION_GROUP" Relationship="SystemManageModel.FK_SYS_ACTI_BUSINESSA_SYS_BUSI" FromRole="SYS_BUSINESS" ToRole="SYS_ACTION_GROUP" />
+    <NavigationProperty Name="SYS_LIBRARY" Relationship="SystemManageModel.FK_SYS_BUSI_REFERENCE_SYS_LIBR" FromRole="SYS_BUSINESS" ToRole="SYS_LIBRARY" />
+    <NavigationProperty Name="SYS_MENU" Relationship="SystemManageModel.FK_SYS_MENU_MENUBUSIN_SYS_BUSI" FromRole="SYS_BUSINESS" ToRole="SYS_MENU" />
+    <NavigationProperty Name="SYS_PRIVILEGE" Relationship="SystemManageModel.FK_SYS_PRIV_BUSINESSP_SYS_BUSI" FromRole="SYS_BUSINESS" ToRole="SYS_PRIVILEGE" />
+    <NavigationProperty Name="SYS_USER_BUSINESS" Relationship="SystemManageModel.FK_SYS_USER_US_SYS_BUSI1" FromRole="SYS_BUSINESS" ToRole="SYS_USER_BUSINESS" />
+  </EntityType>
+  <EntityType Name="SYS_DOMAIN">
+    <Key>
+      <PropertyRef Name="DOMAIN_ID" />
+    </Key>
+    <Property Type="Guid" Name="DOMAIN_ID" Nullable="false" />
+    <Property Type="String" Name="DOMAIN_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_ADDRESS" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_ACCOUNT" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DOMAIN_PWD" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SORT" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_USER" Relationship="SystemManageModel.FK_SYS_USER_REFERENCE_SYS_DOMA" FromRole="SYS_DOMAIN" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_HANDLER">
+    <Key>
+      <PropertyRef Name="HANDLER_ID" />
+    </Key>
+    <Property Type="Guid" Name="HANDLER_ID" Nullable="false" />
+    <Property Type="Guid" Name="LIBRARY_ID" Nullable="false" />
+    <Property Type="String" Name="HANDLER_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HANDLER_FULL_NAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_ACTION" Relationship="SystemManageModel.FK_SYS_ACTI_FUNCTIONH_SYS_HAND" FromRole="SYS_HANDLER" ToRole="SYS_ACTION" />
+    <NavigationProperty Name="SYS_LIBRARY" Relationship="SystemManageModel.FK_SYS_HAND_REFERENCE_SYS_LIBR" FromRole="SYS_HANDLER" ToRole="SYS_LIBRARY" />
+  </EntityType>
+  <EntityType Name="SYS_LIBRARY">
+    <Key>
+      <PropertyRef Name="LIBRARY_ID" />
+    </Key>
+    <Property Type="Guid" Name="LIBRARY_ID" Nullable="false" />
+    <Property Type="String" Name="LIBRARY_NAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ASSEMBLY_NAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_BUSINESS" Relationship="SystemManageModel.FK_SYS_BUSI_REFERENCE_SYS_LIBR" FromRole="SYS_LIBRARY" ToRole="SYS_BUSINESS" />
+    <NavigationProperty Name="SYS_HANDLER" Relationship="SystemManageModel.FK_SYS_HAND_REFERENCE_SYS_LIBR" FromRole="SYS_LIBRARY" ToRole="SYS_HANDLER" />
+  </EntityType>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+    </Key>
+    <Property Type="Guid" Name="MENU_ID" Nullable="false" />
+    <Property Type="String" Name="MENU_URL" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TITLE_IMAGE_URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SORT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="OPEN_MODE" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="IS_SHORT_CUT" Precision="18" Scale="0" />
+    <Property Type="String" Name="SHORT_CUT_IMAGE_URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SILVERLIGHT_IMAGE_URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SILVERLIGHT_ASSEMBLY" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_BUSINESS" Relationship="SystemManageModel.FK_SYS_MENU_MENUBUSIN_SYS_BUSI" FromRole="SYS_MENU" ToRole="SYS_BUSINESS" />
+  </EntityType>
+  <EntityType Name="SYS_MODULE">
+    <Key>
+      <PropertyRef Name="MODULE_ID" />
+    </Key>
+    <Property Type="Guid" Name="MODULE_ID" Nullable="false" />
+    <Property Type="String" Name="MODULE_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <Property Type="Guid" Name="PARENT_ORG_ID" />
+    <Property Type="String" Name="ORG_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SORT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <Property Type="String" Name="EXTEND1" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND2" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND3" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND4" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND5" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SYS_ORG1" Relationship="SystemManageModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG" ToRole="SYS_ORG1" />
+    <NavigationProperty Name="SYS_ORG2" Relationship="SystemManageModel.FK_Sys_Org_Sys_Org" FromRole="SYS_ORG1" ToRole="SYS_ORG" />
+    <NavigationProperty Name="SYS_ROLE_ORG" Relationship="SystemManageModel.FK_SYS_ROLE_ORGROLEOR_SYS_ORG" FromRole="SYS_ORG" ToRole="SYS_ROLE_ORG" />
+    <NavigationProperty Name="SYS_USER_ORG" Relationship="SystemManageModel.FK_SYS_USER_ORGUSEROR_SYS_ORG" FromRole="SYS_ORG" ToRole="SYS_USER_ORG" />
+  </EntityType>
+  <EntityType Name="SYS_PRIVILEGE">
+    <Key>
+      <PropertyRef Name="PRIVILEGE_ID" />
+    </Key>
+    <Property Type="Guid" Name="PRIVILEGE_ID" Nullable="false" />
+    <Property Type="Guid" Name="BUSINESS_ID" Nullable="false" />
+    <Property Type="Guid" Name="ROLE_ID" Nullable="false" />
+    <NavigationProperty Name="SYS_BUSINESS" Relationship="SystemManageModel.FK_SYS_PRIV_BUSINESSP_SYS_BUSI" FromRole="SYS_PRIVILEGE" ToRole="SYS_BUSINESS" />
+    <NavigationProperty Name="SYS_ROLE" Relationship="SystemManageModel.FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH" FromRole="SYS_PRIVILEGE" ToRole="SYS_ROLE" />
+  </EntityType>
+  <EntityType Name="SYS_ROLE">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Type="Guid" Name="ROLE_ID" Nullable="false" />
+    <Property Type="String" Name="ROLE_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ROLE_TYPE" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <NavigationProperty Name="SYS_PRIVILEGE" Relationship="SystemManageModel.FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH" FromRole="SYS_ROLE" ToRole="SYS_PRIVILEGE" />
+    <NavigationProperty Name="SYS_ROLE_ORG" Relationship="SystemManageModel.FK_SYS_ROLE_ROLEORGRO_SYS_AUTH" FromRole="SYS_ROLE" ToRole="SYS_ROLE_ORG" />
+    <NavigationProperty Name="SYS_USER_ROLE" Relationship="SystemManageModel.FK_SYS_USER_ROLEUSERR_SYS_AUTH" FromRole="SYS_ROLE" ToRole="SYS_USER_ROLE" />
+  </EntityType>
+  <EntityType Name="SYS_ROLE_ORG">
+    <Key>
+      <PropertyRef Name="ROLE_ORG_ID" />
+    </Key>
+    <Property Type="Guid" Name="ROLE_ORG_ID" Nullable="false" />
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <Property Type="Guid" Name="ROLE_ID" Nullable="false" />
+    <Property Type="Decimal" Name="IS_CREATE_BY_SELF_ORG" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="SOURCE_ORG_ID" Nullable="false" />
+    <NavigationProperty Name="SYS_ORG" Relationship="SystemManageModel.FK_SYS_ROLE_ORGROLEOR_SYS_ORG" FromRole="SYS_ROLE_ORG" ToRole="SYS_ORG" />
+    <NavigationProperty Name="SYS_ROLE" Relationship="SystemManageModel.FK_SYS_ROLE_ROLEORGRO_SYS_AUTH" FromRole="SYS_ROLE_ORG" ToRole="SYS_ROLE" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="DOMAIN_ID" />
+    <Property Type="String" Name="LOGON_NAME" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DISPLAY_NAME" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USER_PASSWORD" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="USER_TYPE" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="IS_FORBIDDEN" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="SORT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="NOTE" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ISDEL" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Guid" Name="CREATOR" Nullable="false" />
+    <Property Type="DateTime" Name="CREATETIME" Nullable="false" />
+    <Property Type="Guid" Name="MODIFIER" Nullable="false" />
+    <Property Type="DateTime" Name="MODIFYTIME" Nullable="false" />
+    <Property Type="String" Name="EXTEND1" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND2" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND3" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND4" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXTEND5" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SYS_DOMAIN" Relationship="SystemManageModel.FK_SYS_USER_REFERENCE_SYS_DOMA" FromRole="SYS_USER" ToRole="SYS_DOMAIN" />
+    <NavigationProperty Name="SYS_USER_ROLE" Relationship="SystemManageModel.FK_SYS_UR_REFERENCE_SYS_USER" FromRole="SYS_USER" ToRole="SYS_USER_ROLE" />
+    <NavigationProperty Name="SYS_USER_BUSINESS" Relationship="SystemManageModel.FK_SYS_USER_US_SYS_BUSI2" FromRole="SYS_USER" ToRole="SYS_USER_BUSINESS" />
+    <NavigationProperty Name="SYS_USER_ORG" Relationship="SystemManageModel.FK_SYS_USER_USERORGUS_SYS_USER" FromRole="SYS_USER" ToRole="SYS_USER_ORG" />
+  </EntityType>
+  <EntityType Name="SYS_USER_BUSINESS">
+    <Key>
+      <PropertyRef Name="USER_BUSINESS_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_BUSINESS_ID" Nullable="false" />
+    <Property Type="Guid" Name="BUSINESS_ID" Nullable="false" />
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <NavigationProperty Name="SYS_BUSINESS" Relationship="SystemManageModel.FK_SYS_USER_US_SYS_BUSI1" FromRole="SYS_USER_BUSINESS" ToRole="SYS_BUSINESS" />
+    <NavigationProperty Name="SYS_USER" Relationship="SystemManageModel.FK_SYS_USER_US_SYS_BUSI2" FromRole="SYS_USER_BUSINESS" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ORG">
+    <Key>
+      <PropertyRef Name="USER_ORG_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_ORG_ID" Nullable="false" />
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <Property Type="Decimal" Name="USER_IDENTITY_TYPE" Precision="18" Scale="0" />
+    <NavigationProperty Name="SYS_ORG" Relationship="SystemManageModel.FK_SYS_USER_ORGUSEROR_SYS_ORG" FromRole="SYS_USER_ORG" ToRole="SYS_ORG" />
+    <NavigationProperty Name="SYS_USER" Relationship="SystemManageModel.FK_SYS_USER_USERORGUS_SYS_USER" FromRole="SYS_USER_ORG" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_USER_ROLE">
+    <Key>
+      <PropertyRef Name="USER_ROLE_ID" />
+    </Key>
+    <Property Type="Guid" Name="USER_ROLE_ID" Nullable="false" />
+    <Property Type="Guid" Name="ROLE_ID" Nullable="false" />
+    <Property Type="Guid" Name="USER_ID" Nullable="false" />
+    <Property Type="Guid" Name="ORG_ID" Nullable="false" />
+    <NavigationProperty Name="SYS_ROLE" Relationship="SystemManageModel.FK_SYS_USER_ROLEUSERR_SYS_AUTH" FromRole="SYS_USER_ROLE" ToRole="SYS_ROLE" />
+    <NavigationProperty Name="SYS_USER" Relationship="SystemManageModel.FK_SYS_UR_REFERENCE_SYS_USER" FromRole="SYS_USER_ROLE" ToRole="SYS_USER" />
+  </EntityType>
+  <Association Name="FK_SYS_ACTI_ACTIONGRO_SYS_ACTI">
+    <End Type="SystemManageModel.SYS_ACTION" Role="SYS_ACTION" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ACTION_GROUP_ACTION" Role="SYS_ACTION_GROUP_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ACTION">
+        <PropertyRef Name="ACTION_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP_ACTION">
+        <PropertyRef Name="ACTION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_FUNCTIONH_SYS_HAND">
+    <End Type="SystemManageModel.SYS_HANDLER" Role="SYS_HANDLER" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ACTION" Role="SYS_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_HANDLER">
+        <PropertyRef Name="HANDLER_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION">
+        <PropertyRef Name="HANDLER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_BUSINESSA_SYS_BUSI">
+    <End Type="SystemManageModel.SYS_BUSINESS" Role="SYS_BUSINESS" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ACTION_GROUP" Role="SYS_ACTION_GROUP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACTI_GROUPACTI_SYS_ACTI">
+    <End Type="SystemManageModel.SYS_ACTION_GROUP" Role="SYS_ACTION_GROUP" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ACTION_GROUP_ACTION" Role="SYS_ACTION_GROUP_ACTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ACTION_GROUP">
+        <PropertyRef Name="ACTION_GROUP_ID" />
+      </Principal>
+      <Dependent Role="SYS_ACTION_GROUP_ACTION">
+        <PropertyRef Name="ACTION_GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_BUSI_REFERENCE_SYS_LIBR">
+    <End Type="SystemManageModel.SYS_LIBRARY" Role="SYS_LIBRARY" Multiplicity="0..1" />
+    <End Type="SystemManageModel.SYS_BUSINESS" Role="SYS_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LIBRARY">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Principal>
+      <Dependent Role="SYS_BUSINESS">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_MENU_MENUBUSIN_SYS_BUSI">
+    <End Type="SystemManageModel.SYS_BUSINESS" Role="SYS_BUSINESS" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_MENU" Role="SYS_MENU" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIV_BUSINESSP_SYS_BUSI">
+    <End Type="SystemManageModel.SYS_BUSINESS" Role="SYS_BUSINESS" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_PRIVILEGE" Role="SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_US_SYS_BUSI1">
+    <End Type="SystemManageModel.SYS_BUSINESS" Role="SYS_BUSINESS" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_BUSINESS" Role="SYS_USER_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_BUSINESS">
+        <PropertyRef Name="BUSINESS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_REFERENCE_SYS_DOMA">
+    <End Type="SystemManageModel.SYS_DOMAIN" Role="SYS_DOMAIN" Multiplicity="0..1" />
+    <End Type="SystemManageModel.SYS_USER" Role="SYS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_DOMAIN">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER">
+        <PropertyRef Name="DOMAIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_HAND_REFERENCE_SYS_LIBR">
+    <End Type="SystemManageModel.SYS_LIBRARY" Role="SYS_LIBRARY" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_HANDLER" Role="SYS_HANDLER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_LIBRARY">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Principal>
+      <Dependent Role="SYS_HANDLER">
+        <PropertyRef Name="LIBRARY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Org_Sys_Org">
+    <End Type="SystemManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="0..1" />
+    <End Type="SystemManageModel.SYS_ORG" Role="SYS_ORG1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ORG1">
+        <PropertyRef Name="PARENT_ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ROLE_ORGROLEOR_SYS_ORG">
+    <End Type="SystemManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ROLE_ORG" Role="SYS_ROLE_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_ROLE_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_ORGUSEROR_SYS_ORG">
+    <End Type="SystemManageModel.SYS_ORG" Role="SYS_ORG" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_ORG" Role="SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="ORG_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIV_ROLEPRIVI_SYS_AUTH">
+    <End Type="SystemManageModel.SYS_ROLE" Role="SYS_ROLE" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_PRIVILEGE" Role="SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ROLE_ROLEORGRO_SYS_AUTH">
+    <End Type="SystemManageModel.SYS_ROLE" Role="SYS_ROLE" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_ROLE_ORG" Role="SYS_ROLE_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_ROLE_ORG">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_ROLEUSERR_SYS_AUTH">
+    <End Type="SystemManageModel.SYS_ROLE" Role="SYS_ROLE" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_ROLE" Role="SYS_USER_ROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_UR_REFERENCE_SYS_USER">
+    <End Type="SystemManageModel.SYS_USER" Role="SYS_USER" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_ROLE" Role="SYS_USER_ROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ROLE">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_US_SYS_BUSI2">
+    <End Type="SystemManageModel.SYS_USER" Role="SYS_USER" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_BUSINESS" Role="SYS_USER_BUSINESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_BUSINESS">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_USERORGUS_SYS_USER">
+    <End Type="SystemManageModel.SYS_USER" Role="SYS_USER" Multiplicity="1" />
+    <End Type="SystemManageModel.SYS_USER_ORG" Role="SYS_USER_ORG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER_ORG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SYS_LOG">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Type="Guid" Name="LOG_ID" Nullable="false" />
+    <Property Type="String" Name="BUSINESS_TYPE" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DATA" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IP" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ORG_ID" />
+    <Property Type="Guid" Name="USER_ID" />
+    <Property Type="String" Name="USER_NAME" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DO_TIME" />
+    <Property Type="String" Name="TOKEN" MaxLength="36" FixedLength="true" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,37 @@
+namespace ns62;
+
+internal enum Enum390 : uint
+{
+	const_0 = 2147483648u,
+	const_1 = 1073741824u,
+	const_2 = 536870912u,
+	const_3 = 268435456u,
+	const_4 = 134217728u,
+	const_5 = 67108864u,
+	const_6 = 33554432u,
+	const_7 = 16777216u,
+	const_8 = 8388608u,
+	const_9 = 4194304u,
+	const_10 = 2097152u,
+	const_11 = 1048576u,
+	const_12 = 524288u,
+	const_13 = 262144u,
+	const_14 = 131072u,
+	const_15 = 65536u,
+	const_16 = 32768u,
+	const_17 = 16384u,
+	const_18 = 8192u,
+	const_19 = 4096u,
+	const_20 = 2048u,
+	const_21 = 1024u,
+	const_22 = 512u,
+	const_23 = 256u,
+	const_24 = 128u,
+	const_25 = 64u,
+	const_26 = 32u,
+	const_27 = 16u,
+	const_28 = 8u,
+	const_29 = 4u,
+	const_30 = 2u,
+	const_31 = 1u
+}

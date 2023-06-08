@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="DocumentOracle" />
+  <Alias Key="Target" Value="DocumentOracle.Store" />
+  <EntityContainerMapping CdmEntityContainer="Document" StorageEntityContainer="DocumentOracleStoreContainer">
+    <EntitySetMapping Name="DOC_CONTENTS">
+      <EntityTypeMapping TypeName="DocumentModel.DOC_CONTENTS">
+        <MappingFragment StoreEntitySet="DOC_CONTENTS">
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="PARENT_CONTENT_ID" ColumnName="PARENT_CONTENT_ID" />
+          <ScalarProperty Name="CONTENT_NAME" ColumnName="CONTENT_NAME" />
+          <ScalarProperty Name="CONTENT_ID" ColumnName="CONTENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOC_FILE">
+      <EntityTypeMapping TypeName="DocumentModel.DOC_FILE">
+        <MappingFragment StoreEntitySet="DOC_FILE">
+          <ScalarProperty Name="ATTACHMENT_NAME" ColumnName="ATTACHMENT_NAME" />
+          <ScalarProperty Name="ATTACHMENT_SIZE" ColumnName="ATTACHMENT_SIZE" />
+          <ScalarProperty Name="FILE_RELATIVE_PATH" ColumnName="FILE_RELATIVE_PATH" />
+          <ScalarProperty Name="ATTACHMENT_TYPE" ColumnName="ATTACHMENT_TYPE" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="MODIFIER" ColumnName="MODIFIER" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="ISDEL" ColumnName="ISDEL" />
+          <ScalarProperty Name="UPLOADTIME" ColumnName="UPLOADTIME" />
+          <ScalarProperty Name="UPLOADER" ColumnName="UPLOADER" />
+          <ScalarProperty Name="DOC_FILE_NAME" ColumnName="DOC_FILE_NAME" />
+          <ScalarProperty Name="CONTENT_ID" ColumnName="CONTENT_ID" />
+          <ScalarProperty Name="DOC_FILE_ID" ColumnName="DOC_FILE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
